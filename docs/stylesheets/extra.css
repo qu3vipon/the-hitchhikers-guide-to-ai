@@ -1,0 +1,31 @@
+/* 차분하고 클래식한 안내서 테마: 차콜 네이비 + 아이보리 + 뮤트 브라스 */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #26313b;
+  --md-primary-fg-color--light: #3d4a56;
+  --md-primary-fg-color--dark: #1a222a;
+  --md-accent-fg-color: #9a7655;
+  --md-accent-fg-color--transparent: rgba(154, 118, 85, 0.1);
+  --md-default-bg-color: #faf9f6;
+  --md-default-fg-color: #30363d;
+  --md-default-fg-color--light: #686e73;
+  --md-default-fg-color--lighter: #92979a;
+  --md-code-bg-color: #f0efeb;
+  --md-code-fg-color: #35414b;
+  --md-typeset-a-color: #7d5b3f;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #20282f;
+  --md-primary-fg-color--light: #303b45;
+  --md-primary-fg-color--dark: #151b21;
+  --md-accent-fg-color: #c3a27f;
+  --md-accent-fg-color--transparent: rgba(195, 162, 127, 0.12);
+  --md-default-bg-color: #171b20;
+  --md-default-bg-color--light: #22282e;
+  --md-default-fg-color: #e8e7e2;
+  --md-default-fg-color--light: #c4c5c1;
+  --md-default-fg-color--lighter: #969b9d;
+  --md-code-bg-color: #22282e;
+  --md-code-fg-color: #d8c2a8;
+  --md-typeset-a-color: #c3a27f;
+}

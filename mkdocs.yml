@@ -1,0 +1,41 @@
+site_name: AI Agent 시대를 여행하는 히치하이커를 위한 FastAPI 안내서
+site_description: FastAPI 기초부터 AI Agent 개발까지
+site_url: http://127.0.0.1:8000
+copyright: Copyright &copy; 2026 Dong-hyeon Shin
+
+theme:
+  name: material
+  language: ko
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+
+nav:
+  - 소개: index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
