@@ -10,7 +10,6 @@ theme:
   favicon: assets/images/logo.png
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.footer
     - navigation.top
     - search.suggest
@@ -29,6 +28,20 @@ theme:
 
 nav:
   - 소개: index.md
+  - FastAPI 기초:
+      - 1. 강의 소개:
+          - 이 강의에서 배우는 것: foundations/01-introduction/what-you-learn.md
+          - 최종 결과물 소개: foundations/01-introduction/final-project.md
+      - 2. 사전 학습 내용: foundations/02-prerequisites.md
+      - 3. FastAPI 소개: foundations/03-about.md
+      - 4. FastAPI 기초: foundations/04-api-basics.md
+      - 5. 기본 CRUD 구현: foundations/05-crud.md
+      - 6. 데이터베이스 활용: foundations/06-database.md
+      - 7. 회원가입: foundations/07-sign-up.md
+      - "8. 로그인과 인증: JWT": foundations/08-jwt-authentication.md
+      - A. 웹 화면 만들기: foundations/a-web-page.md
+      - "B. MySQL & PostgreSQL 설정": foundations/b-databases.md
+      - C. Pydantic 심화: foundations/c-pydantic-advanced.md
 
 markdown_extensions:
   - admonition

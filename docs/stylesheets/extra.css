@@ -1,4 +1,8 @@
 /* 차분하고 클래식한 안내서 테마: 차콜 네이비 + 아이보리 + 뮤트 브라스 */
+.md-content__inner {
+  padding-bottom: 4rem;
+}
+
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #26313b;
   --md-primary-fg-color--light: #3d4a56;
