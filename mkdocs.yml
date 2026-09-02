@@ -30,6 +30,7 @@ nav:
   - 시작하기:
       - 프로젝트 소개: index.md
       - 학습 방법: learning-method.md
+      - 히치하이커를 위하여: for-hitchhikers.md
   - FastAPI 기초:
       - 1. 과정 소개:
           - 이 과정에서 배우는 것: foundations/01-introduction/what-you-learn.md
