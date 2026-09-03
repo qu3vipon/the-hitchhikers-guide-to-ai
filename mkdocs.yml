@@ -29,28 +29,28 @@ theme:
 nav:
   - 시작하기:
       - 프로젝트 소개: index.md
-      - 학습 방법: learning-method.md
+      - 학습 방법: how-to-learn.md
       - 히치하이커를 위하여: for-hitchhikers.md
+  - 사전 학습:
+      - 시작하기 전에: prerequisites/index.md
+      - 웹 서비스란?: prerequisites/web-service.md
+      - 클라이언트-서버 모델: prerequisites/client-server.md
+      - HTTP 메시지 구성: prerequisites/http-message.md
+      - HTTP Method: prerequisites/http-method.md
+      - URL: prerequisites/url.md
+      - REST API: prerequisites/rest-api.md
+      - IP와 Port: prerequisites/ip-port.md
+      - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:
       - 1. 과정 소개:
           - 이 과정에서 배우는 것: foundations/01-introduction/what-you-learn.md
           - 최종 결과물: foundations/01-introduction/final-project.md
-      - 2. 사전 학습:
-          - 시작하기 전에: foundations/02-prerequisites/guide.md
-          - 웹 서비스란?: foundations/02-prerequisites/web-service.md
-          - 클라이언트-서버 모델: foundations/02-prerequisites/client-server.md
-          - HTTP 메시지 구성: foundations/02-prerequisites/http-message.md
-          - HTTP Method: foundations/02-prerequisites/http-method.md
-          - URL: foundations/02-prerequisites/url.md
-          - REST API: foundations/02-prerequisites/rest-api.md
-          - IP와 Port: foundations/02-prerequisites/ip-port.md
-          - Python 가상환경: foundations/02-prerequisites/python-virtual-environment.md
-      - 3. FastAPI 소개: foundations/03-about.md
-      - 4. FastAPI 기초: foundations/04-api-basics.md
-      - 5. 기본 CRUD 구현: foundations/05-crud.md
-      - 6. 데이터베이스 활용: foundations/06-database.md
-      - 7. 회원가입: foundations/07-sign-up.md
-      - "8. 로그인과 인증: JWT": foundations/08-jwt-authentication.md
+      - 2. FastAPI 소개: foundations/02-about.md
+      - 3. FastAPI 기초: foundations/03-api-basics.md
+      - 4. 기본 CRUD 구현: foundations/04-crud.md
+      - 5. 데이터베이스 활용: foundations/05-database.md
+      - 6. 회원가입: foundations/06-sign-up.md
+      - "7. 로그인과 인증: JWT": foundations/07-jwt-authentication.md
       - A. 웹 화면 만들기: foundations/a-web-page.md
       - "B. MySQL & PostgreSQL 설정": foundations/b-databases.md
       - C. Pydantic 심화: foundations/c-pydantic-advanced.md
