@@ -186,6 +186,13 @@
   border-radius: 0.3rem;
 }
 
+.md-typeset .example-domain-image {
+  display: block;
+  width: min(100%, 46rem);
+  margin: 1.5rem auto;
+  border-radius: 0.3rem;
+}
+
 .bmc-sidebar-button {
   margin: 1.25rem 0 0 12px;
   text-align: left;
