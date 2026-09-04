@@ -34,6 +34,7 @@ nav:
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
       - 웹 서비스란?: prerequisites/web-service.md
+      - 인터넷: prerequisites/internet.md
       - 클라이언트-서버 모델: prerequisites/client-server.md
       - HTTP 메시지 구성: prerequisites/http-message.md
       - HTTP Method: prerequisites/http-method.md
@@ -62,9 +63,17 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed:
       alternate_style: true
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid@11.12.0/dist/mermaid.min.js
+  - javascripts/mermaid.js

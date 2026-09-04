@@ -16,7 +16,7 @@ Python, 웹 개발, LLM처럼 배경지식이 필요한 부분을 짧게 보충�
 
 핵심 흐름을 확장하거나 더 깊이 이해하기 위한 내용입니다. 지금 바로 이해되지 않거나, 지금은 자세히 살펴볼 필요를 느끼지 않는다면 우선 넘어가도 괜찮습니다. 필요해졌을 때 다시 돌아와 학습할 수 있습니다.
 
-### :material-hammer-wrench: <span class="learning-label learning-label--exercise">실습 과제</span>
+### :material-pencil: <span class="learning-label learning-label--exercise">실습 과제</span>
 
 각 절의 끝에는 짧은 실습 과제가 있습니다. 먼저 스스로 구현해 본 뒤 정답·해설을 확인하세요. 정답과 다른 방식으로 구현했더라도, 의도한 기능이 동작하고 그 이유를 설명할 수 있다면 충분합니다.
 
