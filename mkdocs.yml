@@ -5,6 +5,7 @@ copyright: Copyright &copy; 2026 Dong-hyeon Shin
 
 theme:
   name: material
+  custom_dir: overrides
   language: ko
   logo: assets/images/logo.png
   favicon: assets/images/logo.png
@@ -33,13 +34,16 @@ nav:
       - 히치하이커를 위하여: for-hitchhikers.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
+      - 터미널: prerequisites/terminal.md
+      - 터미널 기본 명령어: prerequisites/terminal-commands.md
       - 웹 서비스란?: prerequisites/web-service.md
       - 인터넷: prerequisites/internet.md
       - 클라이언트-서버 모델: prerequisites/client-server.md
-      - HTTP 메시지 구성: prerequisites/http-message.md
+      - HTTP: prerequisites/http.md
       - HTTP Method: prerequisites/http-method.md
       - URL: prerequisites/url.md
       - REST API: prerequisites/rest-api.md
+      - HTTPS: prerequisites/https.md
       - IP와 Port: prerequisites/ip-port.md
       - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:

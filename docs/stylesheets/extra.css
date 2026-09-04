@@ -178,3 +178,26 @@
   max-width: 100%;
   margin: 0 auto;
 }
+
+.md-typeset .terminal-image {
+  display: block;
+  width: min(100%, 32rem);
+  margin: 1.5rem auto 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.bmc-sidebar-button {
+  margin: 1.25rem 0 0 12px;
+  text-align: left;
+}
+
+.bmc-sidebar-button .bmc-btn {
+  min-width: 180px;
+  height: 50px;
+  padding: 0 18px;
+  font-size: 24px !important;
+}
+
+.bmc-sidebar-button .bmc-btn svg {
+  height: 26px !important;
+}
