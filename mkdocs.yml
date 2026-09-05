@@ -41,6 +41,7 @@ nav:
       - 클라이언트-서버 모델: prerequisites/client-server.md
       - HTTP: prerequisites/http.md
       - HTML: prerequisites/html.md
+      - "HTTP 메시지": prerequisites/http-message.md
       - HTTP Method: prerequisites/http-method.md
       - URL: prerequisites/url.md
       - REST API: prerequisites/rest-api.md

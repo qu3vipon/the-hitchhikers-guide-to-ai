@@ -2,3 +2,5 @@
 site/
 __pycache__/
 _internal/
+
+.DS_Store
