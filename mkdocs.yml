@@ -40,6 +40,7 @@ nav:
       - 인터넷: prerequisites/internet.md
       - 클라이언트-서버 모델: prerequisites/client-server.md
       - HTTP: prerequisites/http.md
+      - HTML: prerequisites/html.md
       - HTTP Method: prerequisites/http-method.md
       - URL: prerequisites/url.md
       - REST API: prerequisites/rest-api.md
@@ -61,6 +62,7 @@ nav:
       - C. Pydantic 심화: foundations/c-pydantic-advanced.md
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji

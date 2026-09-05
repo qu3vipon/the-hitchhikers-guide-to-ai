@@ -2,7 +2,7 @@
 
 터미널에서 자주 사용되는 명령어를 배워봅시다.
 
-## pwd: 현재 위치 확인하기
+## pwd: 현재 위치 확인하기 {#pwd}
 
 터미널은 항상 특정 폴더 안에서 작업합니다. 먼저 현재 어느 폴더에 있는지 확인해 봅시다.
 
@@ -14,7 +14,7 @@ pwd
 
 ---
 
-## ls / dir: 파일과 폴더 목록 보기
+## ls / dir: 파일과 폴더 목록 보기 {#list-files}
 
 현재 폴더 안에 있는 파일과 폴더를 확인할 때는 다음 명령어를 사용합니다.
 
@@ -34,7 +34,7 @@ pwd
 
 ---
 
-## mkdir: 폴더 만들기
+## mkdir: 폴더 만들기 {#make-directory}
 
 `mkdir`로 `playground` 폴더를 만들어 봅시다.
 
@@ -46,7 +46,7 @@ mkdir playground
 
 ---
 
-## cd: 폴더 이동하기
+## cd: 폴더 이동하기 {#change-directory}
 
 `cd`로 방금 만든 `playground` 폴더 안으로 이동해 봅시다.
 
@@ -64,7 +64,7 @@ cd ..
 
 ---
 
-## touch / ni: 파일 만들기
+## touch / ni: 파일 만들기 {#create-file}
 
 현재 `playground` 폴더 안에서 `memo.txt` 파일을 만들어 봅시다.
 
@@ -86,7 +86,7 @@ cd ..
 
 ---
 
-## rm / rmdir: 파일과 폴더 삭제하기
+## rm / rmdir: 파일과 폴더 삭제하기 {#remove-files}
 
 방금 만든 파일과 폴더를 삭제해 봅시다. 먼저 파일을 삭제하고, 상위 폴더로 이동한 뒤 빈 `playground` 폴더를 삭제합니다.
 
@@ -108,7 +108,7 @@ cd ..
 
 `rm`과 `rmdir`은 **파일과 폴더를 삭제**하는 명령어입니다. `rm`은 remove(제거), `rmdir`은 remove directory(디렉터리 제거)의 줄임말입니다. Windows PowerShell에서 `rm`은 Remove-Item의 별칭입니다. `rmdir`은 비어 있는 폴더만 삭제할 수 있습니다. 파일이 남아 있는 폴더를 한 번에 삭제하는 명령어도 있지만, 실수로 중요한 파일을 지울 수 있으므로 이 과정에서는 다루지 않습니다.
 
-## :material-pencil: 실습 과제
+## :material-pencil: 실습 과제 {#exercises}
 
 터미널에서 아래 순서대로 `playground` 폴더와 `note.txt` 파일을 만들었다가 삭제해 보세요.
 
