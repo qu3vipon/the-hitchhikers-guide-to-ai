@@ -42,8 +42,8 @@ nav:
       - HTTP: prerequisites/http.md
       - HTML: prerequisites/html.md
       - "HTTP 메시지": prerequisites/http-message.md
-      - HTTP Method: prerequisites/http-method.md
       - URL: prerequisites/url.md
+      - HTTP Method: prerequisites/http-method.md
       - REST API: prerequisites/rest-api.md
       - HTTPS: prerequisites/https.md
       - IP와 Port: prerequisites/ip-port.md

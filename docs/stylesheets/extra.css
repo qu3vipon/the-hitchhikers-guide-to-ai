@@ -208,3 +208,14 @@
 .bmc-sidebar-button .bmc-btn svg {
   height: 26px !important;
 }
+
+.md-typeset .url-example {
+  margin: 1em 0;
+}
+
+.md-typeset code .url-query {
+  color: var(--md-accent-fg-color);
+  background-color: var(--md-accent-fg-color--transparent);
+  border-radius: 0.15rem;
+  font-weight: 700;
+}

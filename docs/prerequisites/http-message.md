@@ -2,11 +2,18 @@
 
 웹 브라우저와 curl를 통해 HTTP 요청을 보내는 방법을 알아봤습니다. 그런데 이때 클라이언트와 서버는 실제로 어떤 모양의 데이터를 주고받을까요? HTTP 통신에서는 **HTTP 메시지**라는 일정한 형식으로 요청과 응답을 주고받습니다. HTTP 요청은 클라이언트가 HTTP 요청 메시지를 서버로 보내는 것이고, HTTP 응답은 서버가 처리 결과를 HTTP 응답 메시지에 담아 클라이언트로 돌려보내는 것입니다.
 
-## HTTP 메시지 이해하기 {#understanding-http-messages}
+```mermaid
+flowchart LR
+    client[클라이언트] -->|요청 메시지| server[서버]
+    server -->|응답 메시지| client
 
-HTTP 메시지는 편지를 보내는 과정과 비슷합니다. 편지를 보낼 때는 봉투에 보내는 사람과 받는 사람의 주소, 우편번호를 적고, 봉투 안에는 전달할 편지를 넣습니다. 받는 사람은 봉투의 정보를 보고 어디서 온 편지인지 확인한 뒤, 편지의 내용을 읽습니다.
+    classDef client fill:transparent,stroke:#8eb7c2,stroke-width:2px
+    classDef server fill:transparent,stroke:#d0a476,stroke-width:2px
+    class client client
+    class server server
+```
 
-HTTP 메시지도 마찬가지입니다. 서버가 **어떤 동작을 해야 하는지 알려 주는 정보와 추가 정보, 실제로 전달할 데이터**를 정해진 순서로 담아 보냅니다.
+HTTP 메시지는 편지를 보내는 과정과 비슷합니다. 편지를 보낼 때는 봉투에 보내는 사람과 받는 사람의 주소, 우편번호를 적고, 봉투 안에는 전달할 편지를 넣습니다. 받는 사람은 봉투의 정보를 보고 어디서 온 편지인지 확인한 뒤, 편지의 내용을 읽습니다. HTTP 메시지도 마찬가지입니다. 클라이언트와 서버는 어떤 동작을 요청하는지, 요청과 응답을 처리하는 데 필요한 추가 정보, 실제로 전달할 데이터를 HTTP 메시지에 담아 주고받습니다.
 
 ## HTTP 메시지의 구성 {#http-message-structure}
 
@@ -158,7 +165,7 @@ Content-Type: text/html
     - Request Headers: 브라우저가 서버에 보낸 요청 헤더입니다.
     - Response Headers: 서버가 브라우저에 보낸 응답 헤더입니다.
 
-응답 본문도 확인하고 싶다면 **Response** 탭을 선택하세요. 앞에서 `curl`로 보았던 HTML 원본이 표시됩니다.
+응답 본문도 확인하고 싶다면 **Response** 탭을 선택하세요. 앞에서 보았던 HTML 원본이 표시됩니다.
 
 <img src="../../assets/images/developertool.png" alt="Chrome 개발자 도구의 Network 탭에서 HTTP 요청 정보를 확인하는 화면" class="example-domain-image">
 
