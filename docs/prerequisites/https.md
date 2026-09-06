@@ -158,63 +158,49 @@ HTTPS는 이 두 가지 암호화 방식을 함께 사용하는 하이브리드 
 
 4. **클라이언트와 서버가 대칭키를 안전하게 준비합니다.**
 
-    인증서 검증이 끝나면, 클라이언트와 서버는 비대칭키 방식을 이용해 둘만 사용할 대칭키를 안전하게 생성합니다. 이 과정을 포함한 1~4단계를 TLS 핸드셰이크(Handshake)라고 합니다.
-
+    인증서 검증이 끝나면, 클라이언트와 서버는 비대칭키 방식을 이용해 키 생성에 필요한 정보를 안전하게 교환합니다. 그리고 이 정보를 바탕으로 둘만 사용할 동일한 대칭키를 각각 생성합니다. 이 과정을 포함한 1~4단계를 TLS 핸드셰이크(Handshake)라고 합니다.
 
     ```mermaid
-    %%{init: {"flowchart": {"rankSpacing": 20}} }%%
-    flowchart LR
-        subgraph clientGroup["웹 브라우저"]
-            direction TB
-            publicKey{{공개키}}
-            clientData[공유 비밀]
-
-            clientData ~~~ publicKey
-        end
-
+    %%{init: {"flowchart": {"nodeSpacing": 10, "rankSpacing": 20}}}%%
+    flowchart TB
         subgraph serverGroup["서버"]
             direction TB
             privateKey{{개인키}}
+            serverKey{{대칭키}}
             serverData[공유 비밀]
 
             privateKey ~~~ serverData
-        end
-
-        publicKey <--> |키 생성 정보 교환| privateKey
-
-        classDef publicKey fill:#dcecf0,stroke:#5f8d9a,stroke-width:2px,color:#294650
-        classDef privateKey fill:#f2dedf,stroke:#a66d76,stroke-width:2px,color:#542f36
-        classDef encrypted fill:#e8deef,stroke:#796b91,stroke-width:2px,color:#463b56
-        class publicKey publicKey
-        class privateKey privateKey
-        class encryptedData encrypted
-        style clientGroup fill:transparent,stroke:#8eb7c2,stroke-width:2px
-        style serverGroup fill:transparent,stroke:#d0a476,stroke-width:2px
-    ```
-    ```mermaid
-    flowchart LR
-        subgraph clientGroup["웹 브라우저"]
-            direction RL
-            clientKey{{대칭키}}
-            clientData[공유 비밀]
-
-            clientData -->|생성| clientKey
-        end
-
-        subgraph serverGroup["서버"]
-            direction LR
-            serverData[공유 비밀]
-            serverKey{{대칭키}}
-
             serverData -->|생성| serverKey
         end
 
-        clientGroup ~~~ serverGroup
+        subgraph EXCHANGE[" "]
+            direction LR
+            X(( )) <-->|키 생성 정보 교환| Y(( ))
+        end
 
-        classDef encrypted fill:#e8deef,stroke:#796b91,stroke-width:2px,color:#463b56
+        subgraph clientGroup["웹 브라우저"]
+            direction TB
+            
+            clientKey{{대칭키}}
+            clientData[공유 비밀]
+            publicKey{{공개키}}
+            
+            publicKey ~~~ clientData
+            clientData -->|생성| clientKey
+        end
+
+        style X fill:none,stroke:none
+        style Y fill:none,stroke:none
+        style EXCHANGE fill:none,stroke:none
+
+        classDef publicKey fill:#dcecf0,stroke:#5f8d9a,stroke-width:2px,color:#294650
+        classDef privateKey fill:#f2dedf,stroke:#a66d76,stroke-width:2px,color:#542f36
         classDef key fill:#f2e7cd,stroke:#9a7655,stroke-width:2px,color:#55401e
-        class encryptedData encrypted
+        classDef encrypted fill:#e8deef,stroke:#796b91,stroke-width:2px,color:#463b56
+        class publicKey publicKey
+        class privateKey privateKey
         class clientKey,serverKey key
+        class encryptedData encrypted
         style clientGroup fill:transparent,stroke:#8eb7c2,stroke-width:2px
         style serverGroup fill:transparent,stroke:#d0a476,stroke-width:2px
     ```
@@ -224,6 +210,7 @@ HTTPS는 이 두 가지 암호화 방식을 함께 사용하는 하이브리드 
     준비가 끝난 뒤부터는 실제 HTTP 요청과 응답을 처리 속도가 빠른 대칭키로 암호화해 주고받습니다.
 
     ```mermaid
+    %%{init: {"flowchart": {"rankSpacing": 20}} }%%
     flowchart LR
         subgraph clientGroup["웹 브라우저"]
             direction TB
