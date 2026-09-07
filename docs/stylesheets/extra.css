@@ -219,3 +219,33 @@
   border-radius: 0.15rem;
   font-weight: 700;
 }
+
+.md-typeset tr:has(.http-status-code--success) td {
+  background-color: #e4eee3;
+}
+
+.md-typeset tr:has(.http-status-code--client-error) td {
+  background-color: #f3ead7;
+}
+
+.md-typeset tr:has(.http-status-code--server-error) td {
+  background-color: #f0dee1;
+}
+
+.md-typeset .http-status-code code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-typeset tr:has(.http-status-code--success) td {
+  background-color: #263a2a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset tr:has(.http-status-code--client-error) td {
+  background-color: #403824;
+}
+
+[data-md-color-scheme="slate"] .md-typeset tr:has(.http-status-code--server-error) td {
+  background-color: #412c33;
+}

@@ -45,6 +45,7 @@ nav:
       - URL: prerequisites/url.md
       - HTTP Method: prerequisites/http-method.md
       - REST API: prerequisites/rest-api.md
+      - HTTP 상태 코드: prerequisites/http-status-codes.md
       - HTTPS: prerequisites/https.md
       - IP와 Port: prerequisites/ip-port.md
       - Python 가상환경: prerequisites/python-virtual-environment.md
