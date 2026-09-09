@@ -11,4 +11,4 @@
 - 프로그래밍 자체가 처음이라면, [**터미널**](terminal.md)부터 시작해 하나씩 따라가 보세요.
 - 웹 개발이 처음이라면, [**웹 서비스란?**](web-service.md)부터 시작하세요.
 - 웹 개발 경험은 있지만 Python이 아직 익숙하지 않다면, [**Python 가상환경**](python-virtual-environment.md)부터 살펴보세요.
-- Python 웹 개발 경험이 있다면, 사전 학습은 건너뛰고 [**FastAPI 기초**](../foundations/01-introduction/what-you-learn.md)로 넘어가도 됩니다.
+- Python 웹 개발 경험이 있다면, 사전 학습은 건너뛰고 [**FastAPI 기초**](../fastapi/01-introduction/what-you-learn.md)로 넘어가도 됩니다.

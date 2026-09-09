@@ -62,17 +62,17 @@ nav:
       - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:
       - 1. 과정 소개:
-          - 이 과정에서 배우는 것: foundations/01-introduction/what-you-learn.md
-          - 최종 결과물: foundations/01-introduction/final-project.md
-      - 2. FastAPI 소개: foundations/02-about.md
-      - 3. FastAPI 기초: foundations/03-api-basics.md
-      - 4. 기본 CRUD 구현: foundations/04-crud.md
-      - 5. 데이터베이스 활용: foundations/05-database.md
-      - 6. 회원가입: foundations/06-sign-up.md
-      - "7. 로그인과 인증: JWT": foundations/07-jwt-authentication.md
-      - A. 웹 화면 만들기: foundations/a-web-page.md
-      - "B. MySQL & PostgreSQL 설정": foundations/b-databases.md
-      - C. Pydantic 심화: foundations/c-pydantic-advanced.md
+          - 이 과정에서 배우는 것: fastapi/01-introduction/what-you-learn.md
+          - 최종 결과물: fastapi/01-introduction/final-project.md
+      - 2. FastAPI 소개: fastapi/02-about.md
+      - 3. FastAPI 기초: fastapi/03-api-basics.md
+      - 4. 기본 CRUD 구현: fastapi/04-crud.md
+      - 5. 데이터베이스 활용: fastapi/05-database.md
+      - 6. 회원가입: fastapi/06-sign-up.md
+      - "7. 로그인과 인증: JWT": fastapi/07-jwt-authentication.md
+      - A. 웹 화면 만들기: fastapi/a-web-page.md
+      - "B. MySQL & PostgreSQL 설정": fastapi/b-databases.md
+      - C. Pydantic 심화: fastapi/c-pydantic-advanced.md
 
 markdown_extensions:
   - attr_list
