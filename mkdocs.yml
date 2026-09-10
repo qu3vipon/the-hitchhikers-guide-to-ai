@@ -45,23 +45,28 @@ nav:
       - 9. 오늘의 LLM과 한계: llm/09-modern-llms.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
-      - 터미널: prerequisites/terminal.md
-      - 터미널 기본 명령어: prerequisites/terminal-commands.md
-      - 웹 서비스란?: prerequisites/web-service.md
-      - 인터넷: prerequisites/internet.md
-      - 클라이언트-서버 모델: prerequisites/client-server.md
-      - HTTP: prerequisites/http.md
-      - HTML: prerequisites/html.md
-      - "HTTP 메시지": prerequisites/http-message.md
-      - URL: prerequisites/url.md
-      - HTTP Method: prerequisites/http-method.md
-      - REST API: prerequisites/rest-api.md
-      - HTTP 상태 코드: prerequisites/http-status-codes.md
-      - HTTPS: prerequisites/https.md
-      - IP와 Port: prerequisites/ip-port.md
-      - DNS: prerequisites/dns.md
-      - Localhost: prerequisites/localhost.md
-      - Python 가상환경: prerequisites/python-virtual-environment.md
+      - 개발 환경:
+          - 터미널: prerequisites/terminal.md
+          - 터미널 기본 명령어: prerequisites/terminal-commands.md
+          - VS Code: prerequisites/vscode.md
+      - 웹의 구조:
+          - 웹 서비스란?: prerequisites/web-service.md
+          - 인터넷: prerequisites/internet.md
+          - 클라이언트-서버 모델: prerequisites/client-server.md
+          - HTTP: prerequisites/http.md
+          - HTML: prerequisites/html.md
+          - "HTTP 메시지": prerequisites/http-message.md
+          - URL: prerequisites/url.md
+          - HTTP Method: prerequisites/http-method.md
+          - REST API: prerequisites/rest-api.md
+          - HTTP 상태 코드: prerequisites/http-status-codes.md
+          - HTTPS: prerequisites/https.md
+      - 네트워크:
+          - IP와 Port: prerequisites/ip-port.md
+          - DNS: prerequisites/dns.md
+          - Localhost: prerequisites/localhost.md
+      - Python:
+          - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:
       - 1. 과정 소개:
           - 이 과정에서 배우는 것: fastapi/01-introduction/what-you-learn.md
