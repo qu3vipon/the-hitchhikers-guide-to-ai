@@ -125,6 +125,20 @@
   background: linear-gradient(to top, rgba(174, 178, 181, 0.4) 0 45%, transparent 45%);
 }
 
+[data-md-color-scheme="slate"] .md-typeset .wip-page {
+  border-color: #c3a27f;
+  border-image: repeating-linear-gradient(
+    135deg,
+    #c3a27f 0 0.8rem,
+    #725a41 0.8rem 1.6rem
+  ) 10;
+  background-color: rgba(195, 162, 127, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .wip-page__label {
+  color: #d8c2a8;
+}
+
 [data-md-color-scheme="slate"] .md-typeset .admonition.supplement,
 [data-md-color-scheme="slate"] .md-typeset details.supplement {
   border-color: #c3a27f;
@@ -211,6 +225,46 @@
 
 .md-typeset .url-example {
   margin: 1em 0;
+}
+
+.md-tabs__link[href*="wip/"] {
+  opacity: 0.45;
+}
+
+.md-tabs__link[href*="wip/"]:hover {
+  opacity: 0.7;
+}
+
+.md-typeset .wip-page {
+  margin: 2rem 0;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border: 1px solid #9a7655;
+  border-top: 0.55rem solid transparent;
+  border-image: repeating-linear-gradient(
+    135deg,
+    #9a7655 0 0.8rem,
+    #e2c58c 0.8rem 1.6rem
+  ) 10;
+  background-color: rgba(154, 118, 85, 0.06);
+}
+
+.md-typeset .wip-page__icon {
+  margin-bottom: 0.4rem;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.md-typeset .wip-page__label {
+  margin: 0 0 0.7rem;
+  color: #7d5b3f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.md-typeset .wip-page p:last-child {
+  margin-bottom: 0;
 }
 
 .md-typeset code .url-query {

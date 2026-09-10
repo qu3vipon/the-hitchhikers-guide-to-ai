@@ -34,7 +34,7 @@ VS Code는 **확장(Extension) 프로그램**을 설치해 언어별 기능을 �
 4. **Install** 버튼을 선택합니다.
 
 !!! info "Python 확장과 Python은 다릅니다"
-    Python 확장은 VS Code에 Python 개발 기능을 추가하는 도구입니다. Python 코드를 실제로 실행하려면 컴퓨터에 Python도 별도로 설치되어 있어야 합니다. Python 설치와 가상환경은 이어지는 [Python 가상환경](python-virtual-environment.md)에서 다룹니다.
+    Python 확장은 VS Code에 Python 개발 기능을 추가하는 도구입니다. Python 코드를 실제로 실행하려면 컴퓨터에 Python도 별도로 설치되어 있어야 합니다. 설치 방법은 [Python 설치](python-install.md)에서 자세히 다룹니다.
 
 ## :material-pencil: 실습 과제 {#exercises}
 

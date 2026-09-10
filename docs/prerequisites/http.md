@@ -17,7 +17,7 @@ HTTP(HyperText Transfer Protocol)는 웹에서 **클라이언트와 서버가 �
 
 ## HTTP 요청하기 {#make-http-request}
 
-웹 브라우저에서 새로운 창을 열고 주소창에 `https://example.com`을 입력해 보세요. 잠시 뒤 간단한 웹 페이지가 표시됩니다. 우리는 주소를 입력했을 뿐이지만, 브라우저는 `example.com` 서버에 HTTP 요청을 보내고 응답으로 받은 내용을 화면에 표시합니다.
+웹 브라우저에서 새로운 창을 열고 주소창에 `http://example.com`을 입력해 보세요. 잠시 뒤 간단한 웹 페이지가 표시됩니다. 우리는 주소를 입력했을 뿐이지만, 브라우저는 `example.com` 서버에 HTTP 요청을 보내고 응답으로 받은 내용을 화면에 표시합니다.
 
 <img src="../../assets/images/exampledotcom.png" alt="웹 브라우저에서 example.com을 연 화면" class="example-domain-image">
 

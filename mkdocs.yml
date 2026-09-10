@@ -81,6 +81,10 @@ nav:
       - A. 웹 화면 만들기: fastapi/a-web-page.md
       - "B. MySQL & PostgreSQL 설정": fastapi/b-databases.md
       - C. Pydantic 심화: fastapi/c-pydantic-advanced.md
+  - 비동기 프로그래밍: wip/asyncio.md
+  - AI 모델 서빙: wip/model-serving.md
+  - LangChain & LangGraph: wip/langchain-langgraph.md
+  - AI Agent 개발: wip/agent-development.md
 
 markdown_extensions:
   - attr_list
