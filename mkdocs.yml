@@ -66,6 +66,7 @@ nav:
           - DNS: prerequisites/dns.md
           - Localhost: prerequisites/localhost.md
       - Python:
+          - Python 설치: prerequisites/python-install.md
           - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:
       - 1. 과정 소개:
