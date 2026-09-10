@@ -59,6 +59,8 @@ nav:
       - HTTP 상태 코드: prerequisites/http-status-codes.md
       - HTTPS: prerequisites/https.md
       - IP와 Port: prerequisites/ip-port.md
+      - DNS: prerequisites/dns.md
+      - Localhost: prerequisites/localhost.md
       - Python 가상환경: prerequisites/python-virtual-environment.md
   - FastAPI 기초:
       - 1. 과정 소개:
