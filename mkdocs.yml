@@ -34,7 +34,7 @@ nav:
       - 히치하이커를 위하여: for-hitchhikers.md
   - LLM 이해하기:
       - 시작하기 전에: llm/index.md
-      - 1. 컴퓨터가 배운다는 생각: llm/01-learning.md
+      - 1. 컴퓨터가 배운다는 생각: llm/01-machine-learning.md
       - 2. 실패와 긴 겨울: llm/02-ai-winter.md
       - 3. 데이터를 통해 규칙을 찾기: llm/03-machine-learning.md
       - 4. 층을 깊게 쌓다: llm/04-deep-learning.md

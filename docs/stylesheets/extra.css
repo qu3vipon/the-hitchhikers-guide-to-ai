@@ -207,6 +207,31 @@
   border-radius: 0.3rem;
 }
 
+.md-typeset .function-mapping-image {
+  display: block;
+  width: min(100%, 22rem);
+  margin: 0 auto;
+}
+
+.md-typeset p:has(.function-mapping-image) {
+  margin-block: 0.5rem;
+}
+
+.md-typeset .cat-dog-image {
+  display: block;
+  width: min(100%, 16rem);
+  aspect-ratio: 1 / 1;
+  margin: 1rem auto 0.25rem;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.md-typeset .cat-dog-caption {
+  width: min(100%, 16rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
 .bmc-sidebar-button {
   margin: 1.25rem 0 0 12px;
   text-align: left;
@@ -302,4 +327,48 @@
 
 [data-md-color-scheme="slate"] .md-typeset tr:has(.http-status-code--server-error) td {
   background-color: #412c33;
+}
+
+.md-typeset .ai-ml-venn {
+  display: block;
+  width: min(100%, 28rem);
+  margin: 1rem auto;
+}
+
+.md-typeset .binary-code-image {
+  display: block;
+  width: min(100%, 24rem);
+  margin: 1rem auto 0.25rem;
+}
+
+.md-typeset .binary-code-caption {
+  width: min(100%, 24rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.md-typeset .photo-to-numbers-image {
+  display: block;
+  width: min(100%, 45rem);
+  margin: 1rem auto;
+}
+
+.md-typeset code.learning-value {
+  color: #a5533b;
+  background-color: #f6e2da;
+  font-weight: 700;
+}
+
+.md-typeset code .learning-value {
+  color: #a5533b;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code.learning-value {
+  color: #efb5a4;
+  background-color: #472d2c;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code .learning-value {
+  color: #efb5a4;
 }

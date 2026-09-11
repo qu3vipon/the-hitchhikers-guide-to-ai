@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="635" viewBox="0 0 720 635" role="img" aria-labelledby="title desc">
+  <title id="title">함수 기계에서 알 수 없는 값을 찾는 예시</title>
+  <desc id="desc">입력값 7이 더하기 알 수 없는 값 규칙을 거쳐 결과값 42가 되는 함수 기계 그림</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#292323"/>
+    </marker>
+  </defs>
+  <style>
+    .number { font: 500 62px Georgia, serif; fill: #292323; }
+    .rule { font: 500 54px Georgia, serif; fill: #292323; }
+  </style>
+
+  <text x="133" y="70" text-anchor="middle" class="rule">7</text>
+  <path d="M133 92 V210" fill="none" stroke="#292323" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <path d="M44 108 L98 188 H30 C15 188 3 202 3 220 V411 C3 433 18 450 39 450 H500 L447 528" fill="none" stroke="#292323" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M220 108 L168 188 H680 C700 188 717 206 717 228 V411 C717 433 700 450 679 450 H570 L623 528" fill="none" stroke="#292323" stroke-width="5" stroke-linejoin="round"/>
+
+  <text x="360" y="330" text-anchor="middle" class="rule">□ + ?</text>
+
+  <path d="M535 404 V522" fill="none" stroke="#292323" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="535" y="593" text-anchor="middle" class="rule">42</text>
+</svg>

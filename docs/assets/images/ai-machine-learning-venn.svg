@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="374" viewBox="0 48 720 374" role="img" aria-labelledby="title desc">
+  <title id="title">인공지능과 머신러닝의 관계</title>
+  <desc id="desc">인공지능 원 안에 머신러닝 원이 포함된 관계를 보여 주는 벤다이어그램</desc>
+  <style>
+    .title { font: 700 31px sans-serif; fill: #26434c; }
+    .body { font: 500 22px sans-serif; fill: #496873; }
+    .ml-title { font: 700 27px sans-serif; fill: #315b3b; }
+    .ml-body { font: 500 19px sans-serif; fill: #486f50; }
+  </style>
+  <circle cx="350" cy="235" r="180" fill="#dce9ed" fill-opacity=".8" stroke="#6d9aa7" stroke-width="3"/>
+  <circle cx="418" cy="270" r="90" fill="#e4eee3" fill-opacity=".95" stroke="#6f9877" stroke-width="3"/>
+  <text x="350" y="115" text-anchor="middle" class="title">
+    <tspan x="350">인공지능</tspan>
+    <tspan x="350" dy="33">(AI)</tspan>
+  </text>
+  <text x="250" y="225" text-anchor="middle" class="body">사람의 판단과</text>
+  <text x="250" y="255" text-anchor="middle" class="body">문제 해결을</text>
+  <text x="250" y="285" text-anchor="middle" class="body">컴퓨터로 구현</text>
+  <text x="418" y="234" text-anchor="middle" class="ml-title">머신러닝</text>
+  <text x="418" y="262" text-anchor="middle" class="ml-title">(ML)</text>
+  <text x="418" y="299" text-anchor="middle" class="ml-body">컴퓨터 스스로</text>
+  <text x="418" y="324" text-anchor="middle" class="ml-body">판단 기준을 찾음</text>
+</svg>

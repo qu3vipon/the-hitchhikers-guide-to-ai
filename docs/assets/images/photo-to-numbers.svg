@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="275" viewBox="0 0 900 275" role="img" aria-labelledby="title description">
+  <title id="title">사진 일부가 숫자 행렬로 표현되는 과정</title>
+  <desc id="description">고양이 사진의 일부를 확대하면 픽셀 격자가 되고, 각 픽셀은 숫자로 표현된다.</desc>
+  <defs>
+    <style>
+      .label { font: 600 18px sans-serif; fill: #36525b; }
+      .number { font: 500 17px monospace; fill: #36525b; }
+    </style>
+  </defs>
+
+  <rect x="25" y="50" width="190" height="190" fill="#d7e0e3"/>
+  <rect x="25" y="172" width="190" height="68" fill="#aebf9d"/>
+  <ellipse cx="122" cy="195" rx="54" ry="39" fill="#a88f7a"/>
+  <path d="M77 155 L83 98 L112 130 L151 130 L180 98 L186 155 Z" fill="#b39a84"/>
+  <ellipse cx="131" cy="163" rx="55" ry="45" fill="#bda48c"/>
+  <path d="M87 123 L92 107 L106 132 M156 132 L171 107 L176 123" fill="#d6c0aa"/>
+  <ellipse cx="111" cy="157" rx="7" ry="9" fill="#36525b"/>
+  <ellipse cx="151" cy="157" rx="7" ry="9" fill="#36525b"/>
+  <path d="M126 171 L136 171 L131 177 Z" fill="#765f58"/>
+  <path d="M131 178 Q121 187 111 181 M131 178 Q141 187 151 181" fill="none" stroke="#765f58" stroke-width="2"/>
+  <path d="M105 177 L66 170 M105 183 L64 188 M157 177 L198 170 M157 183 L198 188" stroke="#765f58" stroke-width="2"/>
+  <rect x="25" y="50" width="190" height="190" fill="none" stroke="#6d8790" stroke-width="2"/>
+  <rect x="162" y="116" width="20" height="20" fill="none" stroke="#e07b54" stroke-width="4"/>
+
+  <path d="M182 116 L335 35 M182 136 L335 215" fill="none" stroke="#e07b54" stroke-width="2.5"/>
+  <g transform="translate(335 35)" stroke="#ffffff" stroke-width="2">
+    <rect width="60" height="60" fill="#d6c0aa"/><rect x="60" width="60" height="60" fill="#d6c0aa"/><rect x="120" width="60" height="60" fill="#b39a84"/>
+    <rect y="60" width="60" height="60" fill="#d6c0aa"/><rect x="60" y="60" width="60" height="60" fill="#d6c0aa"/><rect x="120" y="60" width="60" height="60" fill="#b39a84"/>
+    <rect y="120" width="60" height="60" fill="#bda48c"/><rect x="60" y="120" width="60" height="60" fill="#b39a84"/><rect x="120" y="120" width="60" height="60" fill="#b39a84"/>
+  </g>
+  <rect x="335" y="35" width="180" height="180" fill="none" stroke="#e07b54" stroke-width="4"/>
+
+  <g>
+    <path d="M560 35 H548 V215 H560" fill="none" stroke="#6d8790" stroke-width="3"/>
+    <g fill="none" stroke="#c5d3d7" stroke-width="1.5">
+      <rect x="570" y="35" width="60" height="60"/><rect x="630" y="35" width="60" height="60"/><rect x="690" y="35" width="60" height="60"/>
+      <rect x="570" y="95" width="60" height="60"/><rect x="630" y="95" width="60" height="60"/><rect x="690" y="95" width="60" height="60"/>
+      <rect x="570" y="155" width="60" height="60"/><rect x="630" y="155" width="60" height="60"/><rect x="690" y="155" width="60" height="60"/>
+    </g>
+    <g class="number" text-anchor="middle">
+      <text x="600" y="71">214</text><text x="660" y="71">214</text><text x="720" y="71">179</text>
+      <text x="600" y="131">214</text><text x="660" y="131">214</text><text x="720" y="131">179</text>
+      <text x="600" y="191">189</text><text x="660" y="191">179</text><text x="720" y="191">179</text>
+    </g>
+    <path d="M760 35 H772 V215 H760" fill="none" stroke="#6d8790" stroke-width="3"/>
+  </g>
+</svg>
