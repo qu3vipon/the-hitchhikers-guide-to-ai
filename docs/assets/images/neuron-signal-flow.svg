@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="150" viewBox="0 0 660 150" role="img" aria-labelledby="title desc">
+  <title id="title">뉴런 사이의 신호 전달</title>
+  <desc id="desc">뉴런 A가 뉴런 B로, 뉴런 B가 뉴런 C로 신호를 전달한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#5a6670"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#5a6670" stroke-width="2.25" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="160" y1="84" x2="290" y2="84"/>
+    <line x1="370" y1="84" x2="500" y2="84"/>
+  </g>
+  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
+    <circle cx="130" cy="84" r="30"/>
+    <circle cx="330" cy="84" r="30"/>
+    <circle cx="530" cy="84" r="30"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="130" y="90">뉴런 A</text>
+    <text x="330" y="90">뉴런 B</text>
+    <text x="530" y="90">뉴런 C</text>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">
+    <text x="225" y="66">신호</text>
+    <text x="435" y="66">신호</text>
+  </g>
+</svg>

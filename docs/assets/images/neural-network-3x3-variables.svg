@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="262" viewBox="0 34 660 262" role="img" aria-labelledby="title desc">
+  <title id="title">입력 x₁, x₂, x₃으로 출력 y₁, y₂, y₃을 만드는 신경망</title>
+  <desc id="desc">왼쪽의 입력 뉴런 x₁, x₂, x₃이 가중치를 거쳐 관계 함수 f₁, f₂, f₃으로 계산된 출력 y₁, y₂, y₃과 모두 연결되어 있다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <g fill="none" marker-end="url(#arrow)" stroke-linecap="round">
+    <line x1="151" y1="84" x2="509" y2="84" stroke="#93b6ca" stroke-width="2.25"/>
+    <line x1="151" y1="84" x2="509" y2="165" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="151" y1="84" x2="509" y2="246" stroke="#d3e1e9" stroke-width="2.25"/>
+    <line x1="151" y1="165" x2="509" y2="84" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="151" y1="165" x2="509" y2="165" stroke="#93b6ca" stroke-width="2.25"/>
+    <line x1="151" y1="165" x2="509" y2="246" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="151" y1="246" x2="509" y2="84" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="151" y1="246" x2="509" y2="165" stroke="#93b6ca" stroke-width="2.25"/>
+    <line x1="151" y1="246" x2="509" y2="246" stroke="#d3e1e9" stroke-width="2.25"/>
+  </g>
+  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
+    <circle cx="121" cy="84" r="30"/>
+    <circle cx="121" cy="165" r="30"/>
+    <circle cx="121" cy="246" r="30"/>
+    <circle cx="539" cy="84" r="30"/>
+    <circle cx="539" cy="165" r="30"/>
+    <circle cx="539" cy="246" r="30"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
+    <text x="121" y="90">x₁</text>
+    <text x="121" y="171">x₂</text>
+    <text x="121" y="252">x₃</text>
+    <text x="539" y="90">y₁</text>
+    <text x="539" y="171">y₂</text>
+    <text x="539" y="252">y₃</text>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="16" font-style="italic" font-weight="700" text-anchor="middle">
+    <text x="487" y="61">f₁</text>
+    <text x="487" y="142">f₂</text>
+    <text x="487" y="223">f₃</text>
+  </g>
+</svg>

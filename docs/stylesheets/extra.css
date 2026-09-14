@@ -372,3 +372,127 @@
 [data-md-color-scheme="slate"] .md-typeset code .learning-value {
   color: #efb5a4;
 }
+
+.md-typeset code .weight-value {
+  color: #2d6e91;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code .weight-value {
+  color: #9bd2eb;
+}
+
+.md-typeset .function-formulas {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dedbd5;
+  border-left: 0.2rem solid #a88c67;
+  border-radius: 0.2rem;
+  background-color: #fbfaf8;
+}
+
+.md-typeset .function-formulas > div + div {
+  margin-top: 0.35rem;
+}
+
+.md-typeset .function-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1.25rem 0 0.75rem;
+  text-align: center;
+}
+
+.md-typeset .function-overview__inputs,
+.md-typeset .function-overview__functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.md-typeset .function-overview__inputs > span,
+.md-typeset .function-overview__label {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+
+.md-typeset .function-overview__arrow {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.4rem;
+}
+
+.md-typeset .function-overview__ellipsis {
+  color: var(--md-default-fg-color--light);
+  font-family: var(--md-code-font-family);
+  font-size: 1.1rem;
+  line-height: 0.8;
+}
+
+.md-typeset .function-formulas code {
+  padding: 0;
+  background-color: transparent;
+}
+
+.md-typeset .matrix-example {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.md-typeset .matrix-example code {
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  line-height: 1.65;
+  text-align: left;
+  white-space: pre;
+}
+
+.md-typeset .weight-output-index {
+  color: #a5533b;
+  font-weight: 700;
+}
+
+.md-typeset .weight-input-index {
+  color: #2d6e91;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .weight-output-index {
+  color: #efb5a4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .weight-input-index {
+  color: #9bd2eb;
+}
+
+.md-typeset .function-formulas__ellipsis {
+  color: #536268;
+  font-family: var(--md-code-font-family);
+  font-size: 1.2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .function-formulas {
+  border-color: #655f56;
+  border-left-color: #c4a474;
+  background-color: #272522;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .function-formulas__ellipsis {
+  color: #cdc5bb;
+}
+
+.md-typeset .neural-network-image {
+  display: block;
+  width: min(100%, 38rem);
+  margin: 1rem auto;
+}
+
+.md-typeset .neuron-signal-flow-image {
+  display: block;
+  width: min(100%, 38rem);
+  margin: 1rem auto;
+}

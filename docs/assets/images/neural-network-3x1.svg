@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="262" viewBox="0 34 660 262" role="img" aria-labelledby="title desc">
+  <title id="title">세 입력 뉴런이 하나의 출력 뉴런으로 연결된 인공 신경망</title>
+  <desc id="desc">왼쪽의 세 뉴런이 가운데의 출력 뉴런 하나로 연결되어 있다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <g fill="none" marker-end="url(#arrow)" stroke-linecap="round">
+    <line x1="151" y1="84" x2="509" y2="165" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="151" y1="165" x2="509" y2="165" stroke="#93b6ca" stroke-width="2.25"/>
+    <line x1="151" y1="246" x2="509" y2="165" stroke="#b7ceda" stroke-width="2.25"/>
+  </g>
+  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
+    <circle cx="121" cy="84" r="30"/>
+    <circle cx="121" cy="165" r="30"/>
+    <circle cx="121" cy="246" r="30"/>
+    <circle cx="539" cy="165" r="30"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="16" text-anchor="middle">
+    <text x="121" y="90">0.2</text>
+    <text x="121" y="171">0.4</text>
+    <text x="121" y="252">0.5</text>
+    <text x="539" y="171">0.42</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="330" y="111" fill="#3d789d">0.8</text>
+    <text x="330" y="156" fill="#5d8094">0.4</text>
+    <text x="330" y="221" fill="#7899aa">0.2</text>
+  </g>
+</svg>

@@ -34,15 +34,16 @@ nav:
       - 히치하이커를 위하여: for-hitchhikers.md
   - LLM 이해하기:
       - 시작하기 전에: llm/index.md
-      - 1. 컴퓨터가 배운다는 생각: llm/01-machine-learning.md
-      - 2. 실패와 긴 겨울: llm/02-ai-winter.md
-      - 3. 데이터를 통해 규칙을 찾기: llm/03-machine-learning.md
-      - 4. 층을 깊게 쌓다: llm/04-deep-learning.md
-      - 5. 언어를 숫자로 다루기: llm/05-embeddings.md
-      - 6. 중요한 부분을 고르기: llm/06-attention.md
-      - 7. Transformer와 대규모 사전학습: llm/07-transformer.md
-      - 8. 사람의 의도에 맞추기: llm/08-alignment.md
-      - 9. 오늘의 LLM과 한계: llm/09-modern-llms.md
+      - 1. 컴퓨터가 배우는 방법: llm/01-machine-learning.md
+      - 2. 인공 신경망의 발명: llm/02-neural-networks.md
+      - 3. 퍼셉트론의 등장: llm/03-perceptron.md
+      - 4. 데이터를 통해 규칙을 찾기: llm/03-machine-learning.md
+      - 5. 층을 깊게 쌓다: llm/04-deep-learning.md
+      - 6. 언어를 숫자로 다루기: llm/05-embeddings.md
+      - 7. 중요한 부분을 고르기: llm/06-attention.md
+      - 8. Transformer와 대규모 사전학습: llm/07-transformer.md
+      - 9. 사람의 의도에 맞추기: llm/08-alignment.md
+      - 10. 오늘의 LLM과 한계: llm/09-modern-llms.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
       - 개발 환경:
