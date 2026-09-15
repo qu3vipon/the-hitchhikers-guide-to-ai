@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="230" viewBox="0 35 660 230" role="img" aria-labelledby="title desc">
+  <title id="title">초기값이 모두 0인 퍼셉트론의 예측</title>
+  <desc id="desc">무료라는 표현과 모르는 발신자라는 두 입력이 각각 가중치 0을 거치고 편향 0이 더해져 평가 점수 0이 된다. 퍼셉트론은 스팸이 아니라고 예측했지만 실제 정답은 스팸이다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="171" y1="82" x2="410" y2="142" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="171" y1="196" x2="410" y2="158" stroke="#93b6ca" stroke-width="2.25"/>
+    <line x1="440" y1="82" x2="440" y2="120" stroke="#c7834c" stroke-width="2.25"/>
+  </g>
+  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
+    <circle cx="141" cy="82" r="30"/>
+    <circle cx="141" cy="196" r="30"/>
+    <circle cx="440" cy="150" r="30"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="141" y="88" font-size="18">1</text>
+    <text x="141" y="202" font-size="18">1</text>
+    <text x="440" y="156" font-size="18">0</text>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif">
+    <text x="100" y="88" font-size="18" text-anchor="end">x₁</text>
+    <text x="141" y="131" font-size="13" text-anchor="middle">“무료” 포함</text>
+    <text x="100" y="202" font-size="18" text-anchor="end">x₂</text>
+    <text x="141" y="245" font-size="13" text-anchor="middle">모르는 발신자</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="276" y="96" fill="#3d789d">w₁ = 0</text>
+    <text x="276" y="175" fill="#93b6ca">w₂ = 0</text>
+    <text x="440" y="70" fill="#c7834c">편향 0</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-weight="700">
+    <text x="500" y="156" fill="#c35243" font-size="16">예측 실패</text>
+  </g>
+</svg>

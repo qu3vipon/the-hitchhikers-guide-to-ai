@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">계단 함수, 시그모이드, ReLU 활성화 함수 비교</title>
+  <desc id="desc">세 그래프가 입력값 z에 따른 출력을 비교한다. 계단 함수는 0에서 1로 갑자기 바뀌고, 시그모이드는 부드러운 S자 곡선이며, ReLU는 음수에서 0이고 양수에서 직선으로 증가한다.</desc>
+  <g fill="#ffffff" stroke="#d5dde0" stroke-width="1.5">
+    <rect x="10" y="10" width="220" height="240" rx="8"/>
+    <rect x="250" y="10" width="220" height="240" rx="8"/>
+    <rect x="490" y="10" width="220" height="240" rx="8"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="120" y="39" font-size="16" font-weight="700">계단 함수</text>
+    <text x="120" y="58" font-size="13">Step function</text>
+    <text x="360" y="39" font-size="16" font-weight="700">시그모이드</text>
+    <text x="360" y="58" font-size="13">Sigmoid</text>
+    <text x="600" y="39" font-size="16" font-weight="700">ReLU</text>
+    <text x="600" y="58" font-size="13">Rectified Linear Unit</text>
+  </g>
+  <g fill="none" stroke="#8b989e" stroke-width="1.5" stroke-linecap="round">
+    <path d="M40 178 H205 M120 82 V198"/>
+    <path d="M280 178 H445 M360 82 V198"/>
+    <path d="M520 178 H685 M600 82 V198"/>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="12">
+    <text x="199" y="194">z</text>
+    <text x="439" y="194">z</text>
+    <text x="679" y="194">z</text>
+    <text x="126" y="94">출력</text>
+    <text x="366" y="94">출력</text>
+    <text x="606" y="94">출력</text>
+    <text x="108" y="191">0</text>
+    <text x="108" y="112">1</text>
+    <text x="348" y="191">0</text>
+    <text x="348" y="112">1</text>
+    <text x="588" y="191">0</text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M40 178 H120 M120 110 H205" stroke="#b58a53"/>
+    <path d="M120 178 V110" stroke="#b58a53" stroke-dasharray="5 5"/>
+    <path d="M280 177 C310 177 327 173 342 161 C357 149 363 136 378 124 C393 112 410 110 445 110" stroke="#3d789d"/>
+    <path d="M520 178 H600 L685 93" stroke="#2c7a64"/>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+    <text x="120" y="225">기준에서 출력이 바뀜</text>
+    <text x="360" y="225">부드럽게 0과 1 사이를 지남</text>
+    <text x="600" y="225">음수는 0, 양수는 증가</text>
+  </g>
+</svg>

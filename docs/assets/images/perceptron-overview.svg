@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 35 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">퍼셉트론의 전체 흐름</title>
+  <desc id="desc">두 입력이 가중치와 편향을 거쳐 평가 점수를 만들고, 활성화 함수를 통해 결과를 출력한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="171" y1="82" x2="330" y2="120" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="171" y1="196" x2="330" y2="140" stroke="#3d789d" stroke-width="2.25"/>
+    <line x1="360" y1="82" x2="360" y2="100" stroke="#c7834c" stroke-width="2.25"/>
+    <line x1="390" y1="130" x2="450" y2="130" stroke="#5a6670" stroke-width="2.25"/>
+    <line x1="540" y1="130" x2="590" y2="130" stroke="#5a6670" stroke-width="2.25"/>
+  </g>
+  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
+    <circle cx="141" cy="82" r="30"/>
+    <circle cx="141" cy="196" r="30"/>
+    <circle cx="360" cy="130" r="30"/>
+    <rect x="450" y="95" width="90" height="70" rx="12"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="141" y="88" font-size="18">x₁</text>
+    <text x="141" y="202" font-size="18">x₂</text>
+    <text x="360" y="125" font-size="14" font-weight="700">평가</text>
+    <text x="360" y="145" font-size="14" font-weight="700">점수</text>
+    <text x="495" y="125" font-size="14" font-weight="700">활성화</text>
+    <text x="495" y="145" font-size="14" font-weight="700">함수</text>
+    <text x="630" y="136" font-size="17" font-weight="700">0 ~ ∞</text>
+  </g>
+  <g fill="#3d789d" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+    <text x="250" y="85">w₁</text>
+    <text x="250" y="188">w₂</text>
+  </g>
+  <text x="360" y="70" fill="#c7834c" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">편향 b</text>
+</svg>

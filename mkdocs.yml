@@ -36,7 +36,7 @@ nav:
       - 시작하기 전에: llm/index.md
       - 1. 컴퓨터가 배우는 방법: llm/01-machine-learning.md
       - 2. 인공 신경망의 발명: llm/02-neural-networks.md
-      - 3. 퍼셉트론의 등장: llm/03-perceptron.md
+      - 3. 판단하는 장치, 퍼셉트론: llm/03-perceptron.md
       - 4. 데이터를 통해 규칙을 찾기: llm/03-machine-learning.md
       - 5. 층을 깊게 쌓다: llm/04-deep-learning.md
       - 6. 언어를 숫자로 다루기: llm/05-embeddings.md
