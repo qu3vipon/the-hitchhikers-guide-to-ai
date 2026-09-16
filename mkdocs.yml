@@ -37,13 +37,8 @@ nav:
       - 1. 컴퓨터가 배우는 방법: llm/01-machine-learning.md
       - 2. 인공 신경망의 발명: llm/02-neural-networks.md
       - 3. 판단하는 장치, 퍼셉트론: llm/03-perceptron.md
-      - 4. 데이터를 통해 규칙을 찾기: llm/03-machine-learning.md
-      - 5. 층을 깊게 쌓다: llm/04-deep-learning.md
-      - 6. 언어를 숫자로 다루기: llm/05-embeddings.md
-      - 7. 중요한 부분을 고르기: llm/06-attention.md
-      - 8. Transformer와 대규모 사전학습: llm/07-transformer.md
-      - 9. 사람의 의도에 맞추기: llm/08-alignment.md
-      - 10. 오늘의 LLM과 한계: llm/09-modern-llms.md
+      - 4. 거꾸로 배우는 다층 신경망: llm/04-multilayer-perceptron.md
+      - 5. 고차원 공간에서의 학습: llm/05-high-dimensional-learning.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
       - 개발 환경:

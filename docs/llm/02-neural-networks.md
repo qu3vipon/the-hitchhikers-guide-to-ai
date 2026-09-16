@@ -1,6 +1,10 @@
 # 인공 신경망의 발명
 
-머신러닝에서 컴퓨터는 다양한 예시 데이터를 통해 판단 기준을 스스로 학습한다고 했습니다. 그렇다면 컴퓨터가 이런 판단 기준을 찾아가려면, 입력을 어떤 방식으로 처리해 답을 만들도록 해야 할까요? 연구자들은 이 질문에 답하기 위해 다양한 수학적·통계적 모델을 제안했습니다. 그 가운데 지금의 AI 발전에 가장 큰 영향을 준 모델 중 하나가 **인공 신경망(Artificial Neural Network)**입니다. 인공 신경망은 인간의 뇌를 이루는 **뉴런(neuron)**에서 착안했습니다. 이는 뉴런들이 서로 신호를 주고받으며 복잡한 정보를 처리하는 방식을, 기계 안에서 계산과 연결 구조로 구현해 보려는 시도였습니다.
+머신러닝에서 컴퓨터는 다양한 예시 데이터를 통해 판단 기준을 스스로 학습한다고 했습니다. 그렇다면 컴퓨터가 이런 판단 기준을 찾아가려면, 입력을 어떤 방식으로 처리해 답을 만들도록 해야 할까요? 연구자들은 이 질문에 답하기 위해 다양한 수학적·통계적 모델을 제안했습니다. 그 가운데 지금의 AI 발전에 가장 큰 영향을 준 모델 중 하나가 **인공 신경망(Artificial Neural Network)**입니다. 인공 신경망은 인간의 뇌를 이루는 **뉴런(neuron)**에서 착안했습니다. 이는 뉴런들이 서로 신호를 주고받으며 복잡한 정보를 처리하는 방식을 기계 안에서 계산과 연결 구조로 구현해 보려는 시도였습니다.
+
+![건강한 뉴런 일러스트](https://commons.wikimedia.org/wiki/Special:FilePath/Healthy_neuron_(NIH_BioArt_197).svg){ .neuron-intro-image }
+
+<p class="neuron-intro-caption"><em><a href="https://commons.wikimedia.org/wiki/File:Healthy_neuron_(NIH_BioArt_197).svg">NIH BioArt</a> · Public domain</em></p>
 
 ## 뉴런과 가중치 {#neurons-and-weights}
 

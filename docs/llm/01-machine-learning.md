@@ -82,7 +82,7 @@ flowchart TB
 
 ![놀란 표정의 고양이 사진](https://commons.wikimedia.org/wiki/Special:FilePath/Surprised_Cat.jpg){ .cat-dog-image }
 
-<p class="cat-dog-caption"><em>사진: <a href="https://commons.wikimedia.org/wiki/File:Surprised_Cat.jpg">Rudi Riet</a> (CC BY-SA 2.0)</em></p>
+<p class="cat-dog-caption"><em><a href="https://commons.wikimedia.org/wiki/File:Surprised_Cat.jpg">Rudi Riet</a> (CC BY-SA 2.0)</em></p>
 
 기존 프로그램에서는 사람이 판단 규칙을 모두 직접 적어야 했습니다. 그런데 규칙을 미리 적지 않고, 많은 예시를 통해 **컴퓨터가 스스로 판단 기준을 찾아가게 하는 프로그램**을 만들 수 있다면 어떨까요? 컴퓨터가 예시 속에서 반복되는 패턴을 살피고, 판단에 도움이 되는 특징을 찾아내게 하는 것입니다.
 

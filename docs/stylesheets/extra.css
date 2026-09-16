@@ -491,6 +491,70 @@
   margin: 1rem auto;
 }
 
+.md-typeset .neuron-intro-image {
+  display: block;
+  width: min(100%, 16rem);
+  height: 12rem;
+  margin: 1rem auto 0.25rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.md-typeset .neuron-intro-caption {
+  width: min(100%, 16rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.md-typeset .hinton-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.md-typeset .hinton-profile__photo {
+  flex: 0 0 8rem;
+}
+
+.md-typeset .hinton-profile__photo img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.3rem;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.md-typeset .hinton-profile__content {
+  display: flex;
+  min-height: 8rem;
+  flex-direction: column;
+}
+
+.md-typeset .hinton-profile__content > p:first-child {
+  margin: 0;
+}
+
+.md-typeset .hinton-profile__paper {
+  margin: 0.5rem 0 0;
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.md-typeset .hinton-profile__credit {
+  margin: auto 0 0;
+  font-size: 0.65rem;
+  line-height: 1.25;
+  text-align: right;
+}
+
+@media screen and (max-width: 30rem) {
+  .md-typeset .hinton-profile {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .md-typeset .neuron-signal-flow-image {
   display: block;
   width: min(100%, 38rem);
