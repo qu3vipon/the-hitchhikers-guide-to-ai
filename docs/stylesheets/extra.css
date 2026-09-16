@@ -435,6 +435,59 @@
   background-color: transparent;
 }
 
+.md-typeset .chain-rule-formula {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--md-code-font-family);
+}
+
+.md-typeset .chain-rule-fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.15;
+}
+
+.md-typeset .chain-rule-fraction > span:first-child {
+  padding: 0 0.15rem 0.1rem;
+  border-bottom: 1px solid currentColor;
+}
+
+.md-typeset .chain-rule-fraction > span:last-child {
+  padding: 0.1rem 0.15rem 0;
+}
+
+.md-typeset .chain-rule-mark {
+  padding: 0 0.1rem;
+  border-radius: 0.15rem;
+}
+
+.md-typeset .chain-rule-mark--y {
+  background-color: #dcecf4;
+}
+
+.md-typeset .chain-rule-mark--h {
+  background-color: #e4eee3;
+}
+
+.md-typeset .chain-rule-mark--z {
+  background-color: #f3ead7;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .chain-rule-mark--y {
+  background-color: #254b61;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .chain-rule-mark--h {
+  background-color: #35523c;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .chain-rule-mark--z {
+  background-color: #625033;
+}
+
 .md-typeset .matrix-example {
   margin: 1rem auto;
   text-align: center;
