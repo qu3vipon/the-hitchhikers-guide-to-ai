@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 45 640 240" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">두 벡터의 내적</title>
+  <desc id="desc">3차원 좌표 공간에서 비슷한 방향을 가리키는 입력 벡터와 가중치 벡터, 그리고 두 벡터 사이의 각도</desc>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
+    </marker>
+    <marker id="arrow-input" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#4d88a9"/>
+    </marker>
+    <marker id="arrow-weight" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#c7834c"/>
+    </marker>
+  </defs>
+
+  <path d="M320 238L140 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M320 238L500 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M320 238L320 55" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <text x="125" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">y</text>
+  <text x="510" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">x</text>
+  <text x="331" y="55" fill="#536268" font-family="system-ui, sans-serif" font-size="15">z</text>
+
+  <path d="M320 238L390 157" stroke="#4d88a9" stroke-width="2.5" marker-end="url(#arrow-input)"/>
+  <path d="M320 238L435 185" stroke="#c7834c" stroke-width="2.5" marker-end="url(#arrow-weight)"/>
+  <path d="M344 211A36 36 0 0 1 353 223" stroke="#8b989e" stroke-width="1.3"/>
+  <circle cx="320" cy="238" r="4" fill="#536268"/>
+  <text x="397" y="151" fill="#2d6e91" font-family="system-ui, sans-serif" font-size="15" font-weight="600">입력 벡터 x</text>
+  <text x="443" y="184" fill="#a65f32" font-family="system-ui, sans-serif" font-size="15" font-weight="600">가중치 벡터 w</text>
+  <text x="354" y="212" fill="#536268" font-family="system-ui, sans-serif" font-size="11">θ</text>
+</svg>

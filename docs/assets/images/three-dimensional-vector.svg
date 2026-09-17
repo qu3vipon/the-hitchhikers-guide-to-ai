@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 45 640 240" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">3차원 공간의 벡터</title>
+  <desc id="desc">x, y, z 축으로 이루어진 3차원 공간에서 원점으로부터 한 점을 가리키는 벡터</desc>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
+    </marker>
+    <marker id="arrow-vector" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#c7834c"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(35 0)">
+  <path d="M285 238L105 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M285 238L465 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M285 238L285 55" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <text x="90" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">y</text>
+  <text x="475" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">x</text>
+  <text x="296" y="55" fill="#536268" font-family="system-ui, sans-serif" font-size="15">z</text>
+
+  <path d="M285 238L357 190" stroke="#c7834c" stroke-width="2.5" marker-end="url(#arrow-vector)"/>
+  <circle cx="285" cy="238" r="4" fill="#536268"/>
+  <text x="371" y="186" fill="#a65f32" font-family="system-ui, sans-serif" font-size="16" font-weight="600">v = (3, 1, 2)</text>
+  <text x="272" y="258" fill="#536268" font-family="system-ui, sans-serif" font-size="13">원점</text>
+  </g>
+</svg>

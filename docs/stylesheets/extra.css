@@ -544,6 +544,10 @@
   margin: 1rem auto;
 }
 
+.md-typeset .loss-landscape-image {
+  width: min(100%, 28rem);
+}
+
 .md-typeset .neuron-intro-image {
   display: block;
   width: min(100%, 16rem);
