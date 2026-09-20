@@ -6,6 +6,6 @@
   <g fill="#ffffff" stroke="#26353a" stroke-width="3"><circle cx="141" cy="82" r="30"/><circle cx="141" cy="196" r="30"/><circle cx="440" cy="150" r="30"/></g>
   <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle"><text x="141" y="88" font-size="18">0</text><text x="141" y="202" font-size="18">0</text><text x="440" y="156" font-size="18">0</text></g>
   <g fill="#26353a" font-family="system-ui, sans-serif"><text x="100" y="88" font-size="18" text-anchor="end">x₁</text><text x="141" y="131" font-size="13" text-anchor="middle">“무료” 미포함</text><text x="100" y="202" font-size="18" text-anchor="end">x₂</text><text x="141" y="245" font-size="13" text-anchor="middle">알려진 발신자</text></g>
-  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle"><text x="276" y="96" fill="#3d789d">w₁ = 1</text><text x="276" y="175" fill="#93b6ca">w₂ = 1</text><text x="440" y="70" fill="#c7834c">편향 0</text></g>
+  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle"><text x="276" y="96" fill="#3d789d">w₁ = 1</text><text x="276" y="169" fill="#93b6ca">w₂ = 1</text><text x="440" y="70" fill="#c7834c">편향 0</text></g>
   <text x="500" y="156" fill="#2c7a64" font-family="system-ui, sans-serif" font-size="16" font-weight="700">예측 성공</text>
 </svg>

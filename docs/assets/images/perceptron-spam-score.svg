@@ -30,7 +30,7 @@
   </g>
   <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
     <text x="276" y="96" fill="#3d789d">w₁ = 2</text>
-    <text x="276" y="175" fill="#93b6ca">w₂ = 1</text>
+    <text x="276" y="169" fill="#93b6ca">w₂ = 1</text>
     <text x="440" y="70" fill="#c7834c">편향 −2</text>
   </g>
 </svg>

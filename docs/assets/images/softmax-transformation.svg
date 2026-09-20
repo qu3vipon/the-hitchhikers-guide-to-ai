@@ -1,20 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="260" viewBox="0 0 240 260" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="184" viewBox="20 42 200 184" role="img" aria-labelledby="title desc">
   <title id="title">로짓에 따른 소프트맥스 확률</title>
   <desc id="desc">다른 후보의 로짓을 고정했을 때, 한 후보의 로짓이 커질수록 소프트맥스 확률이 S자 형태로 커진다.</desc>
-  <rect x="10" y="10" width="220" height="240" rx="8" fill="#ffffff" stroke="#d5dde0" stroke-width="1.5"/>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="120" y="39" font-size="16" font-weight="700">소프트맥스</text>
-    <text x="120" y="58" font-size="13">Softmax</text>
-  </g>
   <g fill="none" stroke="#8b989e" stroke-width="1.5" stroke-linecap="round">
-    <path d="M40 178H205 M120 82V198"/>
+    <path d="M28 202H212 M120 48V222"/>
   </g>
   <g fill="#536268" font-family="system-ui, sans-serif" font-size="12">
-    <text x="194" y="194">zᵢ</text>
-    <text x="126" y="94">확률</text>
-    <text x="108" y="191">0</text>
-    <text x="108" y="112">1</text>
+    <text x="200" y="218">zᵢ</text>
+    <text x="128" y="61">pᵢ</text>
+    <text x="108" y="215">0</text>
+    <text x="108" y="77">1</text>
   </g>
-  <path d="M40 177 C70 177 87 173 102 161 C117 149 123 136 138 124 C153 112 170 110 205 110" fill="none" stroke="#806aa8" stroke-width="3" stroke-linecap="round"/>
-  <text x="120" y="225" fill="#536268" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">로짓(zᵢ)을 확률로 바꿈</text>
+  <path d="M28 201 C70 201 100 177 120 138.5 C140 100 170 75 212 75" fill="none" stroke="#806aa8" stroke-width="3.4" stroke-linecap="round"/>
 </svg>
