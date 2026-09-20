@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 30 640 300" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">3차원 공간에서 나타낸 단어 임베딩의 관계</title>
+  <desc id="desc">3차원 좌표 공간에서 man, woman, king, queen 벡터와 두 단어 관계의 같은 방향을 나타낸 그림.</desc>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#4d88a9"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#c7834c"/>
+    </marker>
+    <marker id="arrow-relation" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
+    </marker>
+  </defs>
+
+  <g stroke="#7d8a90" stroke-width="1.6">
+    <path d="M300 244L120 274" marker-end="url(#arrow-axis)"/>
+    <path d="M300 244L480 274" marker-end="url(#arrow-axis)"/>
+    <path d="M300 244L300 48" marker-end="url(#arrow-axis)"/>
+  </g>
+  <g fill="none" stroke-linecap="butt" stroke-width="2.4">
+    <path d="M300 244L430 122" stroke="#4d88a9" marker-end="url(#arrow-blue)"/>
+    <path d="M300 244L380 227" stroke="#4d88a9" marker-end="url(#arrow-blue)"/>
+    <path d="M300 244L250 90" stroke="#c7834c" marker-end="url(#arrow-orange)"/>
+    <path d="M300 244L200 195" stroke="#c7834c" marker-end="url(#arrow-orange)"/>
+  </g>
+  <g fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-dasharray="5 5" stroke-linecap="butt" marker-end="url(#arrow-relation)">
+    <path d="M418.3 142.2L383.7 214.8"/>
+    <path d="M242.3 106.2L207.7 178.8"/>
+  </g>
+
+  <g font-family="system-ui, sans-serif" font-size="16" font-weight="600">
+    <text x="438" y="119" fill="#2d6e91">E(man)</text>
+    <text x="387" y="235" fill="#2d6e91">E(woman)</text>
+    <text x="233" y="78" fill="#a65f32">E(king)</text>
+    <text x="120" y="212" fill="#a65f32">E(queen)</text>
+  </g>
+
+  <text x="320" y="308" fill="#52636b" font-family="system-ui, sans-serif" font-size="17" font-weight="600" text-anchor="middle">E(man) − E(woman) + E(queen) ≈ E(king)</text>
+</svg>

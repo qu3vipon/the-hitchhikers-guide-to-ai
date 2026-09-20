@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Skip-gram의 주변 단어 예측</title>
+  <desc id="desc">Skip-gram은 가운데 단어 커피를 이용해 양쪽 주변 빈칸의 단어를 예측한다.</desc>
+  <rect x="0.75" y="0.75" width="638.5" height="148.5" rx="18" fill="#f7fafb" stroke="#c6d9df" stroke-width="1.5"/>
+
+  <path d="M193 106H261" stroke="#202124" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 7"/>
+  <text x="227" y="98" fill="#2171c5" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">?</text>
+  <text x="320" y="102" fill="#202124" font-family="system-ui, sans-serif" font-size="32" font-weight="700" text-anchor="middle">커피를</text>
+  <path d="M379 106H447" stroke="#202124" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 7"/>
+  <text x="413" y="98" fill="#2171c5" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">?</text>
+
+  <path d="M294 58C296 37 255 24 236 45" stroke="#2171c5" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M244 24L236 45L256 48" stroke="#2171c5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M346 58C344 37 385 24 404 45" stroke="#2171c5" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M396 24L404 45L384 48" stroke="#2171c5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <text x="227" y="133" fill="#a65f32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">정답: 아침마다</text>
+  <text x="413" y="133" fill="#a65f32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">정답: 마신다</text>
+</svg>

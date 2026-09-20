@@ -1,4 +1,4 @@
-# 거꾸로 배우는 다층 신경망 {#multilayer-neural-network}
+# 거꾸로 계산하는 다층 신경망 {#multilayer-neural-network}
 
 ## 단층 신경망의 한계 {#single-layer-limitations}
 

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="350" viewBox="0 0 720 350" fill="none">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" viewBox="0 0 10 10" refX="8.5" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#71828a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <g transform="translate(-14 5) scale(1.2)">
+  <g transform="translate(0 8)" stroke="#3d789d" stroke-width="1.8" opacity=".55">
+    <path d="M104 94L209 72"/><path d="M104 94L209 140"/><path d="M104 94L209 208"/>
+    <path d="M104 186L209 72"/><path d="M104 186L209 140"/><path d="M104 186L209 208"/>
+  </g>
+  <g transform="translate(0 8)" stroke="#c7834c" stroke-width="1.65" opacity=".55">
+    <path d="M261 72L369 56"/><path d="M261 72L369 103"/><path d="M261 72L369 150"/><path d="M261 72L369 197"/><path d="M261 72L369 244"/>
+    <path d="M261 140L369 56"/><path d="M261 140L369 103"/><path d="M261 140L369 150"/><path d="M261 140L369 197"/><path d="M261 140L369 244"/>
+    <path d="M261 208L369 56"/><path d="M261 208L369 103"/><path d="M261 208L369 150"/><path d="M261 208L369 197"/><path d="M261 208L369 244"/>
+  </g>
+
+  <text x="80" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">입력층</text>
+  <text x="235" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">은닉층</text>
+  <text x="390" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">출력층</text>
+  <text x="590" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="end">확률</text>
+
+  <g transform="translate(0 8)">
+    <circle cx="80" cy="94" r="27" fill="#eef5f8" stroke="#3d789d" stroke-width="2"/>
+    <circle cx="80" cy="186" r="27" fill="#eef5f8" stroke="#3d789d" stroke-width="2"/>
+    <text x="80" y="98" fill="#26353a" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">아침마다</text>
+    <text x="80" y="190" fill="#26353a" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">마신다</text>
+  </g>
+  <g transform="translate(0 8)" fill="#fff4e9" stroke="#c7834c" stroke-width="2">
+    <circle cx="235" cy="72" r="27"/><circle cx="235" cy="140" r="27"/><circle cx="235" cy="208" r="27"/>
+  </g>
+  <g transform="translate(0 8)" fill="#26353a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">
+    <text x="235" y="77">h₁</text><text x="235" y="145">h₂</text><text x="235" y="213">h₃</text>
+  </g>
+
+  <g transform="translate(0 8)" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.7">
+    <circle cx="390" cy="56" r="21"/><circle cx="390" cy="103" r="21"/><circle cx="390" cy="150" r="21"/><circle cx="390" cy="197" r="21"/><circle cx="390" cy="244" r="21"/>
+  </g>
+  <g transform="translate(0 8)" fill="#26353a" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="390" y="60">커피</text><text x="390" y="107">물</text><text x="390" y="154">우유</text><text x="390" y="201" font-size="10">자동차</text><text x="390" y="248">…</text>
+  </g>
+  <g transform="translate(0 8)" fill="#52636b" font-family="sans-serif" font-size="13" text-anchor="end">
+    <text x="438" y="60">2.4</text><text x="438" y="107">1.1</text><text x="438" y="154">0.3</text><text x="438" y="201">−1.2</text><text x="438" y="248">…</text>
+  </g>
+
+  <path d="M470 158H534" stroke="#71828a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="502" y="142" fill="#71828a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">softmax</text>
+  <g transform="translate(0 8)" fill="#3d8b75" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="end">
+    <text x="590" y="60">0.68</text><text x="590" y="107">0.19</text><text x="590" y="154">0.08</text><text x="590" y="201">0.02</text><text x="590" y="248">0.03</text>
+  </g>
+  </g>
+</svg>

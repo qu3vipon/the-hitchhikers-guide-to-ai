@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="150" viewBox="0 0 640 150" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">CBOW의 가운데 단어 예측</title>
+  <desc id="desc">CBOW는 문장 주변 단어를 이용해 가운데 빈칸의 단어를 예측한다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10.5" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L12 6L0 12Z" fill="#2171c5"/>
+    </marker>
+  </defs>
+  <rect x="0.75" y="0.75" width="638.5" height="148.5" rx="18" fill="#f7fafb" stroke="#c6d9df" stroke-width="1.5"/>
+  <g transform="translate(38 -58)">
+  <text x="134" y="157" fill="#202124" font-family="system-ui, sans-serif" font-size="32" font-weight="700">아침마다</text>
+  <path d="M263 157H331" stroke="#202124" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 7"/>
+  <text x="297" y="149" fill="#2171c5" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">?</text>
+  <text x="348" y="157" fill="#202124" font-family="system-ui, sans-serif" font-size="32" font-weight="700">마신다</text>
+  <path d="M190 116C188 95 229 82 248 103" stroke="#2171c5" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M240 82L248 103L228 106" stroke="#2171c5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M393 116C395 95 354 82 335 103" stroke="#2171c5" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M343 82L335 103L355 106" stroke="#2171c5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="297" y="187" fill="#a65f32" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">정답: 커피를</text>
+  </g>
+</svg>

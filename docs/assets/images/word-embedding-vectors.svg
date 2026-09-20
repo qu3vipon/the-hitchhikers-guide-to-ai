@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 45 640 240" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">단어 임베딩 벡터의 방향</title>
+  <desc id="desc">3차원 좌표 공간에서 고양이와 강아지 벡터는 비슷한 방향을, 자동차 벡터는 다른 방향을 가리킨다.</desc>
+  <defs>
+    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
+    </marker>
+    <marker id="arrow-cat" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#4d88a9"/>
+    </marker>
+    <marker id="arrow-dog" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#78a9c0"/>
+    </marker>
+    <marker id="arrow-car" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#c7834c"/>
+    </marker>
+  </defs>
+
+  <path d="M300 238L120 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M300 238L480 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <path d="M300 238L300 55" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
+  <text x="105" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">y</text>
+  <text x="490" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">x</text>
+  <text x="311" y="55" fill="#536268" font-family="system-ui, sans-serif" font-size="15">z</text>
+
+  <path d="M300 238L365 142" stroke="#4d88a9" stroke-width="2.5" marker-end="url(#arrow-cat)"/>
+  <path d="M300 238L410 159" stroke="#78a9c0" stroke-width="2.5" marker-end="url(#arrow-dog)"/>
+  <path d="M300 238L180 182" stroke="#c7834c" stroke-width="2.5" marker-end="url(#arrow-car)"/>
+  <circle cx="300" cy="238" r="4" fill="#536268"/>
+  <text x="372" y="138" fill="#2d6e91" font-family="system-ui, sans-serif" font-size="15" font-weight="600">고양이</text>
+  <text x="418" y="161" fill="#5f8fa7" font-family="system-ui, sans-serif" font-size="15" font-weight="600">강아지</text>
+  <text x="122" y="181" fill="#a65f32" font-family="system-ui, sans-serif" font-size="15" font-weight="600">자동차</text>
+</svg>
