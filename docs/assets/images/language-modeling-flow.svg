@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="176" viewBox="0 42 720 176" role="img" aria-labelledby="title desc">
+  <title id="title">텍스트에서 토큰 예측까지의 언어 처리 흐름</title>
+  <desc id="desc">텍스트가 토큰화, 임베딩, 모델, 로짓, 소프트맥스, 확률 분포를 거쳐 다음 토큰 예측으로 이어지는 과정이다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" viewBox="0 0 10 10" refX="8.5" refY="5" orient="auto">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#71828a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="51" y="72">텍스트</text>
+    <text x="144" y="72">토큰화</text>
+    <text x="224" y="72">임베딩</text>
+    <text x="333" y="72">모델</text>
+    <text x="441" y="72">로짓</text>
+    <text x="521" y="72">softmax</text>
+    <text x="601" y="72">확률 분포</text>
+    <text x="681" y="72">토큰 예측</text>
+  </g>
+
+  <g fill="none" stroke="#71828a" stroke-width="1.5" marker-end="url(#arrow)">
+    <path d="M95 143H113"/>
+    <path d="M175 143H193"/>
+    <path d="M255 143H273"/>
+    <path d="M392 143H410"/>
+    <path d="M472 143H490"/>
+    <path d="M552 143H570"/>
+    <path d="M632 143H650"/>
+  </g>
+
+  <rect x="16" y="113" width="72" height="60" rx="9" fill="#eef5f8" stroke="#3d789d" stroke-width="1.8"/>
+  <text x="52" y="148" fill="#26353a" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">텍스트</text>
+
+  <g fill="#eef5f8" stroke="#3d789d" stroke-width="1.5">
+    <rect x="120" y="115" width="48" height="21" rx="5"/>
+    <rect x="120" y="150" width="48" height="21" rx="5"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="144" y="130">t₁</text><text x="144" y="165">t₂</text>
+  </g>
+
+  <g fill="#eef5f8" stroke="#3d789d" stroke-width="1.5">
+    <rect x="200" y="115" width="48" height="21" rx="5"/>
+    <rect x="200" y="150" width="48" height="21" rx="5"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="224" y="130">e₁</text><text x="224" y="165">e₂</text>
+  </g>
+
+  <g fill="none" stroke="#c7834c" stroke-width="1.65" opacity=".55">
+    <path d="M280 126L309 105"/><path d="M280 126L309 143"/><path d="M280 126L309 181"/>
+    <path d="M280 160L309 105"/><path d="M280 160L309 143"/><path d="M280 160L309 181"/>
+    <path d="M345 105L367 143"/><path d="M345 143L367 143"/><path d="M345 181L367 143"/>
+  </g>
+  <g fill="#fff4e9" stroke="#c7834c" stroke-width="1.8">
+    <circle cx="327" cy="105" r="18"/><circle cx="327" cy="143" r="18"/><circle cx="327" cy="181" r="18"/>
+  </g>
+  <circle cx="367" cy="143" r="18" fill="#fff4e9" stroke="#c7834c" stroke-width="1.8"/>
+
+  <g fill="#edf7f2" stroke="#3d8b75" stroke-width="1.5">
+    <rect x="417" y="115" width="48" height="21" rx="5"/>
+    <rect x="417" y="150" width="48" height="21" rx="5"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="441" y="130">z₁</text><text x="441" y="165">z₂</text>
+  </g>
+
+  <rect x="497" y="112" width="48" height="62" rx="9" fill="#f4f7f8" stroke="#71828a" stroke-width="1.6"/>
+  <text x="521" y="149" fill="#71828a" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">f</text>
+
+  <g fill="#edf7f2" stroke="#3d8b75" stroke-width="1.5">
+    <rect x="577" y="115" width="48" height="21" rx="5"/>
+    <rect x="577" y="150" width="48" height="21" rx="5"/>
+  </g>
+  <g fill="#3d8b75" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">
+    <text x="601" y="130">p₁</text><text x="601" y="165">p₂</text>
+  </g>
+
+  <rect x="657" y="129" width="48" height="27" rx="6" fill="#eef5f8" stroke="#3d789d" stroke-width="1.8"/>
+  <text x="681" y="150" fill="#26353a" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">t</text>
+  <path d="M678.5 138 L681 135 L683.5 138" fill="none" stroke="#26353a" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

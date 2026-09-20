@@ -5,7 +5,7 @@
     </marker>
   </defs>
 
-  <g transform="translate(-14 5) scale(1.2)">
+  <g transform="translate(-26 5) scale(1.2)">
   <g transform="translate(0 8)" stroke="#3d789d" stroke-width="1.8" opacity=".55">
     <path d="M104 94L209 72"/><path d="M104 94L209 140"/><path d="M104 94L209 208"/>
     <path d="M104 186L209 72"/><path d="M104 186L209 140"/><path d="M104 186L209 208"/>
@@ -16,10 +16,10 @@
     <path d="M261 208L369 56"/><path d="M261 208L369 103"/><path d="M261 208L369 150"/><path d="M261 208L369 197"/><path d="M261 208L369 244"/>
   </g>
 
-  <text x="80" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">입력층</text>
-  <text x="235" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">은닉층</text>
-  <text x="390" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">출력층</text>
-  <text x="590" y="32" fill="#52636b" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="end">확률</text>
+  <text x="80" y="32" fill="#26353a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">입력층</text>
+  <text x="235" y="32" fill="#26353a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">은닉층</text>
+  <text x="390" y="32" fill="#26353a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">출력층</text>
+  <text x="590" y="32" fill="#26353a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="end">확률</text>
 
   <g transform="translate(0 8)">
     <circle cx="80" cy="94" r="27" fill="#eef5f8" stroke="#3d789d" stroke-width="2"/>
@@ -45,7 +45,14 @@
   </g>
 
   <path d="M470 158H534" stroke="#71828a" stroke-width="1.5" marker-end="url(#arrow)"/>
-  <text x="502" y="142" fill="#71828a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">softmax</text>
+  <text x="502" y="100" fill="#71828a" font-family="sans-serif" font-size="16" font-weight="600" text-anchor="middle">softmax</text>
+  <g fill="#71828a" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+    <text x="474" y="138" font-size="25" font-weight="200">(</text>
+    <text x="502" y="121">e<tspan baseline-shift="super" font-size="9">z<tspan baseline-shift="sub" font-size="7">i</tspan></tspan></text>
+    <path d="M478 128H526" stroke="#71828a" stroke-width="1"/>
+    <text x="502" y="145">Σⱼe<tspan baseline-shift="super" font-size="9">z<tspan baseline-shift="sub" font-size="7">j</tspan></tspan></text>
+    <text x="530" y="138" font-size="25" font-weight="200">)</text>
+  </g>
   <g transform="translate(0 8)" fill="#3d8b75" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="end">
     <text x="590" y="60">0.68</text><text x="590" y="107">0.19</text><text x="590" y="154">0.08</text><text x="590" y="201">0.02</text><text x="590" y="248">0.03</text>
   </g>

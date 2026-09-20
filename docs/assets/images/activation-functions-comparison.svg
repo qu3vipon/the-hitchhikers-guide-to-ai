@@ -35,7 +35,7 @@
   <g fill="none" stroke-linecap="round" stroke-width="3">
     <path d="M40 178 H120 M120 110 H205" stroke="#b58a53"/>
     <path d="M120 178 V110" stroke="#b58a53" stroke-dasharray="5 5"/>
-    <path d="M280 177 C310 177 327 173 342 161 C357 149 363 136 378 124 C393 112 410 110 445 110" stroke="#3d789d"/>
+    <path d="M280 177 C328 177 344 177 353 165 C359 156 360 139 367 125 C374 111 385 110 445 110" stroke="#3d789d"/>
     <path d="M520 178 H600 L685 93" stroke="#2c7a64"/>
   </g>
   <g fill="#536268" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">

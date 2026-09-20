@@ -544,6 +544,12 @@
   margin: 1rem auto;
 }
 
+.md-typeset .softmax-function-image {
+  display: block;
+  width: min(100%, 12.7rem);
+  margin: 1rem auto;
+}
+
 .md-typeset .loss-landscape-image {
   width: min(100%, 28rem);
 }
