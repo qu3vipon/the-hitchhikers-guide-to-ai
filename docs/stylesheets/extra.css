@@ -569,6 +569,13 @@
   text-align: center;
 }
 
+.md-typeset .cnn-visualization-credit {
+  margin: -0.45rem 0 1rem;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
 .md-typeset .hinton-profile {
   display: flex;
   align-items: flex-start;

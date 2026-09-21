@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="280" viewBox="0 8 720 280" role="img" aria-labelledby="title desc">
+  <title id="title">토큰 벡터를 Q K V 벡터로 변환하는 구조</title>
+  <desc id="desc">하나의 토큰 벡터 x에 서로 다른 가중치 행렬을 적용해 Query Key Value 벡터를 만든다.</desc>
+  <g fill="none" stroke-linecap="round" stroke-width="2" opacity="0.65">
+    <line x1="200" y1="160" x2="430" y2="92" stroke="#806aa8"/>
+    <line x1="200" y1="160" x2="430" y2="160" stroke="#c7834c"/>
+    <line x1="200" y1="160" x2="430" y2="228" stroke="#3d8b75"/>
+  </g>
+  <g stroke-width="2.5">
+    <circle cx="170" cy="160" r="30" fill="#eef5f8" stroke="#3d789d"/>
+    <circle cx="460" cy="92" r="30" fill="#f1ecf8" stroke="#806aa8"/>
+    <circle cx="460" cy="160" r="30" fill="#fff4e9" stroke="#c7834c"/>
+    <circle cx="460" cy="228" r="30" fill="#edf7f2" stroke="#3d8b75"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="170" y="40" font-size="16" font-weight="700">토큰 벡터</text>
+    <text x="460" y="40" font-size="16" font-weight="700">Q · K · V 벡터</text>
+    <text x="170" y="166" font-size="18" font-weight="700">x</text>
+    <text x="460" y="98" font-size="18" font-weight="700">Q</text>
+    <text x="460" y="166" font-size="18" font-weight="700">K</text>
+    <text x="460" y="234" font-size="18" font-weight="700">V</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="13" font-weight="650">
+    <text x="508" y="97" fill="#4f3f71">Q = XW<tspan baseline-shift="sub" font-size="9">Q</tspan></text>
+    <text x="508" y="165" fill="#925b31">K = XW<tspan baseline-shift="sub" font-size="9">K</tspan></text>
+    <text x="508" y="233" fill="#276d5d">V = XW<tspan baseline-shift="sub" font-size="9">V</tspan></text>
+  </g>
+</svg>

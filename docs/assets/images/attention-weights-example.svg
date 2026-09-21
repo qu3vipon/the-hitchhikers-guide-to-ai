@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="234" viewBox="0 0 720 234" role="img" aria-labelledby="title desc">
+  <title id="title">어텐션 가중치 예시에 사용하는 문장 토큰</title>
+  <desc id="desc">Every morning I drink coffee before work 문장을 일곱 개의 토큰 박스로 나열한 모습이다.</desc>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <g fill="none" stroke="#c7834c" stroke-linecap="round">
+      <path d="M 424 72 C 382 94 249 112 184 128" stroke-width="3" opacity="0.4"/>
+      <path d="M 435 72 C 419 94 372 115 345 128" stroke-width="5" opacity="0.9"/>
+      <path d="M 450 72 C 452 91 447 109 440 128" stroke-width="3.5" opacity="0.55"/>
+    </g>
+
+    <g stroke="#3d789d" stroke-width="2">
+      <rect x="42" y="25" width="82" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="134" y="25" width="100" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="244" y="25" width="52" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="306" y="25" width="78" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="394" y="25" width="92" height="46" rx="9" fill="#f1ecf8" stroke="#806aa8"/>
+      <rect x="496" y="25" width="86" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="592" y="25" width="86" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="42" y="129" width="82" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="134" y="129" width="100" height="46" rx="9" fill="#fff4e9" stroke="#c7834c"/>
+      <rect x="244" y="129" width="52" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="306" y="129" width="78" height="46" rx="9" fill="#f7dec6" stroke="#c7834c"/>
+      <rect x="394" y="129" width="92" height="46" rx="9" fill="#fff4e9" stroke="#c7834c"/>
+      <rect x="496" y="129" width="86" height="46" rx="9" fill="#eef5f8"/>
+      <rect x="592" y="129" width="86" height="46" rx="9" fill="#eef5f8"/>
+    </g>
+
+    <g font-size="16" font-weight="700" fill="#26353a">
+      <text x="83" y="54">Every</text>
+      <text x="184" y="54">morning</text>
+      <text x="270" y="54">I</text>
+      <text x="345" y="54">drink</text>
+      <text x="440" y="54">coffee</text>
+      <text x="539" y="54">before</text>
+      <text x="635" y="54">work</text>
+      <text x="83" y="158">Every</text>
+      <text x="184" y="158">morning</text>
+      <text x="270" y="158">I</text>
+      <text x="345" y="158">drink</text>
+      <text x="440" y="158">coffee</text>
+      <text x="539" y="158">before</text>
+      <text x="635" y="158">work</text>
+    </g>
+
+    <g fill="#26353a" font-size="14" font-weight="650">
+      <text x="83" y="204">0.01</text>
+      <text x="184" y="204">0.12</text>
+      <text x="270" y="204">0.02</text>
+      <text x="345" y="204">0.55</text>
+      <text x="440" y="204">0.24</text>
+      <text x="539" y="204">0.03</text>
+      <text x="635" y="204">0.03</text>
+    </g>
+  </g>
+</svg>
