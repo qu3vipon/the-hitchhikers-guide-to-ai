@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="270" viewBox="0 16 720 270" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">선형 변환과 ReLU 비선형 변환의 그래프 비교</title>
+  <desc id="desc">왼쪽은 입력과 출력이 직선 관계를 이루는 선형 변환 그래프이고, 오른쪽은 입력이 0 이하일 때 0을 출력하고 양수일 때 증가하는 ReLU 그래프이다.</desc>
+  <defs>
+    <marker id="axis-arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+      <path d="M0 0L6 3.5L0 7Z" fill="#52636b"/>
+    </marker>
+  </defs>
+
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">
+    <text x="190" y="44">선형 변환</text>
+    <text x="530" y="44">비선형 변환: ReLU</text>
+  </g>
+
+  <g stroke="#52636b" stroke-width="1.8" stroke-linecap="round" marker-end="url(#axis-arrow)">
+    <path d="M82 215H303"/>
+    <path d="M190 245V70"/>
+    <path d="M422 215H683"/>
+    <path d="M530 245V70"/>
+  </g>
+
+  <path d="M101 199L279 81" stroke="#3d789d" stroke-width="3" stroke-linecap="round"/>
+  <path d="M440 215H530L650 86" stroke="#c7834c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="530" cy="215" r="4.5" fill="#c7834c"/>
+
+  <g fill="#52636b" font-family="system-ui, sans-serif" font-size="14" font-weight="600">
+    <text x="296" y="237">입력 x</text>
+    <text x="176" y="83">출력 y</text>
+    <text x="676" y="237">입력 x</text>
+    <text x="516" y="83">출력 y</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="260" y="98" fill="#2d6e91">y = ax + b</text>
+    <text x="618" y="104" fill="#a65f32">ReLU(x)</text>
+  </g>
+  <text x="530" y="235" fill="#a65f32" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">0</text>
+</svg>
