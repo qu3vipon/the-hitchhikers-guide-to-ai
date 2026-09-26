@@ -42,6 +42,7 @@ nav:
       - 6. 언어를 벡터로 표현하기: llm/06-word-embeddings.md
       - 7. 언어는 확률적 패턴을 따른다: llm/07-probabilistic-language-modeling.md
       - 8. 문맥을 연결하는 트랜스포머: llm/08-transformer.md
+      - "9. 트랜스포머 뜯어보기: 인코더": llm/09-transformer-encoder.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
       - 개발 환경:

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 20 720 220" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">어휘집의 토큰 ID가 임베딩 테이블의 벡터를 찾는 과정</title>
+  <desc id="desc">주머니 모양의 어휘집에 153 apple과 287 banana 토큰이 들어 있다. 153번 토큰 ID가 임베딩 테이블의 153번 행에 있는 벡터 값과 연결된다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#2d6e91"/>
+    </marker>
+  </defs>
+
+  <g fill="#000" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+    <text x="140" y="52">어휘집</text>
+    <text x="560" y="52">임베딩 테이블</text>
+  </g>
+
+  <rect x="56" y="66" width="168" height="154" rx="10" fill="#eef5f8" stroke="#3d789d" stroke-width="2.5"/>
+
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="108" y="104" fill="#000" font-size="14" font-weight="700">토큰 ID</text>
+    <text x="172" y="104" fill="#000" font-size="14" font-weight="700">토큰</text>
+    <line x1="76" y1="116" x2="204" y2="116" stroke="#000" stroke-width="1.5"/>
+    <text x="108" y="146" fill="#2d6e91" font-size="18" font-weight="700">153</text>
+    <text x="172" y="146" fill="#2d6e91" font-size="17" font-weight="700">apple</text>
+    <line x1="76" y1="161" x2="204" y2="161" stroke="#000" stroke-width="1.5"/>
+    <text x="108" y="191" fill="#000" font-size="18" font-weight="700">287</text>
+    <text x="172" y="191" fill="#000" font-size="17" font-weight="700">banana</text>
+  </g>
+
+  <path d="M224 139H438" stroke="#2d6e91" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="331" y="132" fill="#2d6e91" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">벡터 조회</text>
+
+  <rect x="440" y="66" width="240" height="154" rx="10" fill="#fff4e9" stroke="#c7834c" stroke-width="2"/>
+  <path d="M503 66V220M440 112H680M440 166H680" stroke="#c7834c" stroke-width="1.5"/>
+  <g fill="#000" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="472" y="95">ID</text>
+    <text x="592" y="95">임베딩 벡터</text>
+    <text x="472" y="145" fill="#2d6e91" font-size="18">153</text>
+    <text x="472" y="199" fill="#000" font-size="18">287</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" text-anchor="middle">
+    <text x="592" y="145" fill="#2d6e91">[0.12, -0.31, 0.87, …]</text>
+    <text x="592" y="199" fill="#000">[-0.45, 0.26, 0.09, …]</text>
+  </g>
+</svg>

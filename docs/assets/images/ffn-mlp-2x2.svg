@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 55 760 240" role="img" aria-labelledby="title desc">
+  <title id="title">활성화 함수 없이 계산하는 두 입력 두 은닉 뉴런 신경망</title>
+  <desc id="desc">x1이 4, x2가 2일 때 가중치가 두 은닉 뉴런을 거쳐 출력으로 전달되는 과정을 보인다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="180" y1="105" x2="370" y2="105" stroke="#3d789d" stroke-width="2"/>
+    <line x1="180" y1="105" x2="370" y2="245" stroke="#76a7c4" stroke-width="2"/>
+    <line x1="180" y1="245" x2="370" y2="105" stroke="#3d789d" stroke-width="2"/>
+    <line x1="180" y1="245" x2="370" y2="245" stroke="#76a7c4" stroke-width="2"/>
+    <line x1="430" y1="105" x2="590" y2="175" stroke="#3d789d" stroke-width="2"/>
+    <line x1="430" y1="245" x2="590" y2="175" stroke="#76a7c4" stroke-width="2"/>
+  </g>
+  <g fill="#3d789d" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+    <text x="235" y="88">w₁</text>
+    <text x="235" y="132" fill="#76a7c4">w₂</text>
+    <text x="235" y="224">w₃</text>
+    <text x="235" y="270" fill="#76a7c4">w₄</text>
+    <text x="510" y="125">w₅</text>
+    <text x="510" y="234" fill="#76a7c4">w₆</text>
+  </g>
+  <g stroke-width="2.5">
+    <circle cx="150" cy="105" r="30" fill="#ffffff" stroke="#8b989e"/>
+    <circle cx="150" cy="245" r="30" fill="#ffffff" stroke="#8b989e"/>
+    <circle cx="400" cy="105" r="30" fill="#ffffff" stroke="#8b989e"/>
+    <circle cx="400" cy="245" r="30" fill="#ffffff" stroke="#8b989e"/>
+    <circle cx="620" cy="175" r="30" fill="#ffffff" stroke="#8b989e"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="150" y="111" font-size="18" font-weight="700">4</text>
+    <text x="150" y="251" font-size="18" font-weight="700">2</text>
+    <text x="400" y="111" font-size="18" font-weight="700">h₁</text>
+    <text x="400" y="251" font-size="18" font-weight="700">h₂</text>
+    <text x="620" y="181" font-size="18" font-weight="700">y</text>
+  </g>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" font-weight="600" text-anchor="middle">
+    <text x="620" y="116" fill="#3d789d">(4w₁ + 2w₃)w₅</text>
+    <text x="620" y="245" fill="#76a7c4">(4w₂ + 2w₄)w₆</text>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="end">
+    <text x="105" y="111">x₁</text>
+    <text x="105" y="251">x₂</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">두 선형 경계를 조합해 비선형 영역을 만드는 모습</title>
+  <desc id="desc">초록 포인트가 오른쪽 위에 모이고 빨간 포인트가 나머지를 채우는 ㄴ자 형태의 입력 데이터에 두 선형 경계를 적용한다.</desc>
+  <g transform="translate(100 -9)">
+  <g fill="#52636b" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle"><text x="125" y="159">입력 데이터</text><text x="400" y="270">선형 경계</text><text x="695" y="139">비선형 경계</text></g>
+  <!-- 입력 데이터: 180 × 180 -->
+  <g transform="translate(0 -16)">
+  <g stroke="#52636b" stroke-width="2"><path d="M35 375V195M35 375H215"/></g>
+  <g fill="#d84c5b"><circle cx="70" cy="230" r="5"/><circle cx="95" cy="250" r="5"/><circle cx="110" cy="270" r="5"/><circle cx="65" cy="290" r="5"/><circle cx="100" cy="305" r="5"/><circle cx="135" cy="295" r="5"/><circle cx="170" cy="310" r="5"/><circle cx="195" cy="295" r="5"/><circle cx="75" cy="330" r="5"/><circle cx="110" cy="350" r="5"/><circle cx="147" cy="340" r="5"/><circle cx="180" cy="360" r="5"/></g>
+  <g fill="#26856a"><circle cx="145" cy="225" r="5"/><circle cx="171" cy="235" r="5"/><circle cx="195" cy="223" r="5"/><circle cx="157" cy="260" r="5"/><circle cx="186" cy="270" r="5"/><circle cx="206" cy="250" r="5"/></g>
+  </g>
+  <path d="M238 269H273" stroke="#26353a" stroke-width="2.5"/><path d="M264 261L273 269L264 277" stroke="#26353a" stroke-width="2.5"/>
+  <!-- 첫 번째 선형 경계: 180 × 180 -->
+  <clipPath id="top"><rect x="310" y="50" width="180" height="180"/></clipPath><g clip-path="url(#top)"><rect x="310" y="50" width="180" height="180" fill="#fff4e9"/><path d="M300 140H500V45H300Z" fill="#e6f2d9"/></g><g stroke="#52636b" stroke-width="2"><path d="M310 230V50M310 230H490"/><path d="M300 140H500" stroke="#26353a" stroke-width="3.5"/></g>
+  <g fill="#d84c5b"><circle cx="345" cy="85" r="5"/><circle cx="370" cy="105" r="5"/><circle cx="385" cy="125" r="5"/><circle cx="340" cy="145" r="5"/><circle cx="375" cy="160" r="5"/><circle cx="410" cy="150" r="5"/><circle cx="445" cy="165" r="5"/><circle cx="470" cy="150" r="5"/><circle cx="350" cy="185" r="5"/><circle cx="385" cy="205" r="5"/><circle cx="422" cy="195" r="5"/><circle cx="455" cy="215" r="5"/></g><g fill="#26856a"><circle cx="420" cy="80" r="5"/><circle cx="446" cy="90" r="5"/><circle cx="470" cy="78" r="5"/><circle cx="432" cy="115" r="5"/><circle cx="461" cy="125" r="5"/><circle cx="481" cy="105" r="5"/></g>
+  <!-- 두 번째 선형 경계: 180 × 180 -->
+  <clipPath id="bottom"><rect x="310" y="300" width="180" height="180"/></clipPath><g clip-path="url(#bottom)"><rect x="310" y="300" width="180" height="180" fill="#fff4e9"/><path d="M400 292H500V488H400Z" fill="#e6f2d9"/></g><g stroke="#52636b" stroke-width="2"><path d="M310 480V300M310 480H490"/><path d="M400 292V488" stroke="#26353a" stroke-width="3.5"/></g>
+  <g fill="#d84c5b"><circle cx="345" cy="335" r="5"/><circle cx="370" cy="355" r="5"/><circle cx="385" cy="375" r="5"/><circle cx="340" cy="395" r="5"/><circle cx="375" cy="410" r="5"/><circle cx="410" cy="400" r="5"/><circle cx="445" cy="415" r="5"/><circle cx="470" cy="400" r="5"/><circle cx="350" cy="435" r="5"/><circle cx="385" cy="455" r="5"/><circle cx="422" cy="445" r="5"/><circle cx="455" cy="465" r="5"/></g><g fill="#26856a"><circle cx="420" cy="330" r="5"/><circle cx="446" cy="340" r="5"/><circle cx="470" cy="328" r="5"/><circle cx="432" cy="365" r="5"/><circle cx="461" cy="375" r="5"/><circle cx="481" cy="355" r="5"/></g>
+  <path d="M522 269H562" stroke="#26353a" stroke-width="2.5"/><path d="M553 261L562 269L553 277" stroke="#26353a" stroke-width="2.5"/>
+  <!-- 조합된 결과: 220 × 220 -->
+  <g transform="translate(-95 -6)">
+  <clipPath id="result"><rect x="680" y="165" width="220" height="220"/></clipPath><g clip-path="url(#result)"><rect x="680" y="165" width="220" height="220" fill="#fff0f3"/><path d="M780 165H900V270H840C795 270 780 215 780 165Z" fill="#e6f2d9"/></g><g stroke="#52636b" stroke-width="2"><path d="M680 385V165M680 385H900"/><path d="M780 165C780 215 795 270 840 270H900" stroke="#26353a" stroke-width="3.5"/></g>
+  <g fill="#d84c5b"><circle cx="723" cy="208" r="5"/><circle cx="753" cy="232" r="5"/><circle cx="772" cy="257" r="5"/><circle cx="717" cy="281" r="5"/><circle cx="759" cy="299" r="5"/><circle cx="802" cy="287" r="5"/><circle cx="845" cy="306" r="5"/><circle cx="876" cy="287" r="5"/><circle cx="729" cy="330" r="5"/><circle cx="772" cy="354" r="5"/><circle cx="817" cy="342" r="5"/><circle cx="857" cy="367" r="5"/></g><g fill="#26856a"><circle cx="814" cy="202" r="5"/><circle cx="846" cy="214" r="5"/><circle cx="876" cy="199" r="5"/><circle cx="829" cy="244" r="5"/><circle cx="865" cy="257" r="5"/><circle cx="889" cy="232" r="5"/></g>
+  </g>
+  </g>
+</svg>

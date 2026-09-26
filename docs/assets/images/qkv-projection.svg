@@ -6,6 +6,16 @@
     <line x1="200" y1="160" x2="430" y2="160" stroke="#c7834c"/>
     <line x1="200" y1="160" x2="430" y2="228" stroke="#3d8b75"/>
   </g>
+  <g stroke-width="1.8">
+    <rect x="290" y="109" width="62" height="28" rx="6" fill="#f1ecf8" stroke="#806aa8"/>
+    <rect x="290" y="146" width="62" height="28" rx="6" fill="#fff4e9" stroke="#c7834c"/>
+    <rect x="290" y="183" width="62" height="28" rx="6" fill="#edf7f2" stroke="#3d8b75"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="321" y="128">W<tspan baseline-shift="sub" font-size="9">Q</tspan></text>
+    <text x="321" y="165">W<tspan baseline-shift="sub" font-size="9">K</tspan></text>
+    <text x="321" y="202">W<tspan baseline-shift="sub" font-size="9">V</tspan></text>
+  </g>
   <g stroke-width="2.5">
     <circle cx="170" cy="160" r="30" fill="#eef5f8" stroke="#3d789d"/>
     <circle cx="460" cy="92" r="30" fill="#f1ecf8" stroke="#806aa8"/>
