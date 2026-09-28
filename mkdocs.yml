@@ -1,7 +1,10 @@
 site_name: AI 시대를 여행하는 히치하이커를 위한 안내서
-site_description: LLM의 원리부터 AI Agent 개발까지
-site_url: http://127.0.0.1:8000
+site_description: An easy-to-understand e-book covering AI fundamentals, large language models, and AI agent development.
+site_url: https://ai.qu3vipon.com
 copyright: Copyright &copy; 2026 Dong-hyeon Shin
+
+repo_url: https://github.com/qu3vipon/the-hitchhikers-guide-to-ai
+repo_name: the-hitchhikers-guide-to-ai
 
 theme:
   name: material
@@ -26,6 +29,11 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: 라이트 모드로 전환
+
+extra:
+  analytics:
+    provider: google
+    property: G-XYJMJ6G0BR
 
 nav:
   - 시작하기:
