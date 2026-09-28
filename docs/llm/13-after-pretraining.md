@@ -32,7 +32,7 @@ GPT와 같은 LLM은 방대한 텍스트를 학습하며 언어의 다양한 패
 
 LoRA의 핵심 아이디어는 **기존 모델의 가중치를 직접 수정하지 않고, 필요한 변화량만 따로 학습하는 것**입니다. 이를 위해 기존 가중치는 고정한 채, 각 층의 일부 가중치에 작은 크기의 행렬을 추가합니다. 원래 가중치와 같은 크기의 변화량을 모두 학습하는 대신, LoRA는 이 변화량을 **두 개의 작은 행렬로 분해해 표현**합니다. <br>
 
-![LoRA의 재매개변수화 구조: 사전 학습된 가중치는 고정하고, 행렬 A와 B만 학습한다](../assets/images/lora-figure1.png){ .neural-network-image style="width: min(100%, 28rem);" }
+![LoRA의 재매개변수화 구조: 사전 학습된 가중치는 고정하고, 행렬 A와 B만 학습한다](../assets/images/lora-figure1.png){ .neural-network-image .after-pretraining-image style="width: min(100%, 28rem);" }
 
 <p style="text-align: center;"><em><a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models, Figure 1</a></em></p>
 
@@ -77,7 +77,7 @@ RAG는 크게 **검색(Retrieval)과 생성(Generation)**의 과정으로 이루
 
 예를 들어 사내 규정에 대해 질문하는 RAG 시스템이라면 다음과 같은 순서로 처리됩니다.
 
-![사용자 질문으로 관련 사내 문서를 검색하고, 질문과 문서를 함께 LLM에 전달해 답변을 만드는 RAG의 흐름](../assets/images/rag-retrieval-flow.svg){ .neural-network-image style="width: min(100%, 48rem);" }
+![사용자 질문으로 관련 사내 문서를 검색하고, 질문과 문서를 함께 LLM에 전달해 답변을 만드는 RAG의 흐름](../assets/images/rag-retrieval-flow.svg){ .neural-network-image .after-pretraining-image style="width: min(100%, 48rem);" }
 
 이러한 과정을 통해 LLM은 모델 자체가 학습하지 않은 정보뿐만 아니라 최신 정보나 특정 조직이 보유한 데이터도 활용할 수 있습니다. 또한 외부에서 검색한 정보를 근거로 답변을 생성하기 때문에, 모델의 기존 지식에만 의존하는 것보다 **더 정확하고 신뢰할 수 있는 답변을 생성하고 할루시네이션을 줄이는 데 도움**이 됩니다.
 

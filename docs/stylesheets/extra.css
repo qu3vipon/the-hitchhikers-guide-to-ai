@@ -213,6 +213,46 @@
   margin: 0 auto;
 }
 
+[data-md-color-scheme="slate"] .md-typeset .function-mapping-image {
+  filter: invert(0.9);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .perceptron-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .multilayer-perceptron-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .coordinate-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .language-modeling-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .transformer-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .transformer-encoder-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .transformer-decoder-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .chatgpt-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .after-pretraining-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
 .md-typeset p:has(.function-mapping-image) {
   margin-block: 0.5rem;
 }
@@ -669,6 +709,11 @@
 [data-md-color-scheme="slate"] .md-typeset .chat-user-message-wrap {
   border-color: #56606b;
   background-color: #252a30;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .chat-user-message__role,
+[data-md-color-scheme="slate"] .md-typeset .chat-exchange__role {
+  color: #f2f0eb;
 }
 
 .md-typeset .chat-exchange {

@@ -2,7 +2,7 @@
 
 이번에는 트랜스포머의 디코더에 대해 알아보겠습니다.
 
-![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/transformer-architecture-overview.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/transformer-architecture-overview.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 22rem);" }
 
 <p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., “Attention Is All You Need” (2017), Figure 1</a></em></p>
 
@@ -22,7 +22,7 @@
 
 ## 마스크드 다중 헤드 어텐션 {#masked-multi-head-attention}
 
-![디코더 블록에서 마스크드 다중 헤드 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-masked-multi-head-attention.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![디코더 블록에서 마스크드 다중 헤드 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-masked-multi-head-attention.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 22rem);" }
 
 디코더 블록의 첫 번째 층은 **마스크드 다중 헤드 어텐션(masked multi-head attention)**입니다. 원래 셀프 어텐션은 각 토큰이 모든 토큰과의 관계를 계산하지만, 마스크드 어텐션은 **현재 위치보다 뒤에 있는 토큰과의 어텐션을 계산하지 못하도록 막습니다.**
 
@@ -32,7 +32,7 @@
 
 ## 크로스 어텐션 {#cross-attention}
 
-![디코더 블록에서 인코더의 출력을 참고하는 크로스 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-cross-attention.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![디코더 블록에서 인코더의 출력을 참고하는 크로스 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-cross-attention.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 22rem);" }
 
 그다음은 **크로스 어텐션(cross-attention)**입니다. 크로스 어텐션은 **디코더가 인코더의 정보를 참고하는 과정**입니다.
 
@@ -51,7 +51,7 @@
 
 ## 다음 토큰 예측 {#next-token}
 
-![디코더의 Linear와 Softmax가 다음 토큰의 확률을 계산하는 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-next-token-prediction.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![디코더의 Linear와 Softmax가 다음 토큰의 확률을 계산하는 부분을 강조한 트랜스포머 구조](../assets/images/transformer-decoder-next-token-prediction.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 22rem);" }
 
 크로스 어텐션과 피드 포워드 신경망을 거친 디코더의 최종 출력은 각 위치에서 다음에 올 토큰을 예측하는 데 사용됩니다.
 

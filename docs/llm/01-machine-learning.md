@@ -20,9 +20,9 @@ flowchart TB
     rain -->|예| yes[우산 챙기기]
     rain -->|아니오| no[우산 챙기지 않기]
 
-    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px
-    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px
-    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px
+    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px,color:#26353a
+    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px,color:#26353a
+    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px,color:#26353a
     class start boxStyle
     class rain decisionStyle
     class yes,no choiceStyle
@@ -51,9 +51,9 @@ flowchart TB
     yesRoute --> yes[우산 챙기기]
     noRoute --> no[우산 챙기지 않기]
 
-    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px
-    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px
-    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px
+    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px,color:#26353a
+    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px,color:#26353a
+    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px,color:#26353a
     classDef routeStyle fill:transparent,stroke:transparent
     class input boxStyle
     class rain decisionStyle

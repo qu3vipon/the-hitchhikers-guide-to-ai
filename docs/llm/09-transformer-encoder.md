@@ -4,7 +4,7 @@
 
 ## 트랜스포머의 구조 {#transformer-architecture}
 
-![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/transformer-architecture-overview.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/transformer-architecture-overview.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 22rem);" }
 
 <p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., “Attention Is All You Need” (2017), Figure 1</a></em></p>
 
@@ -20,7 +20,7 @@
 
 ## 입력 임베딩 {#input-embedding}
 
-![어휘집의 토큰이 토큰 ID를 거쳐 임베딩 테이블의 벡터로 연결되는 구조](../assets/images/token-id-to-embedding.svg){ .neural-network-image }
+![어휘집의 토큰이 토큰 ID를 거쳐 임베딩 테이블의 벡터로 연결되는 구조](../assets/images/token-id-to-embedding.svg){ .neural-network-image .transformer-encoder-image }
 
 트랜스포머가 문장을 처리하려면 먼저 모델이 사용할 토큰의 목록인 **[어휘집(vocabulary)](07-probabilistic-language-modeling.md#context)**을 준비합니다. 어휘집에 토큰이 `n`개 있다고 해 봅시다. 각 토큰에는 구분을 위한 고유한 **토큰 ID**가 대응됩니다. 토큰 ID는 단지 토큰을 식별하는 번호이며, 토큰의 의미나 다른 토큰과의 관계를 담지는 않습니다.
 
@@ -34,7 +34,7 @@
 
 ## 입력 표현 {#input-representation}
 
-![입력 임베딩과 위치 인코딩이 결합되는 인코더 입력 부분을 강조한 트랜스포머 구조](../assets/images/transformer-input-embedding-positional-encoding.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![입력 임베딩과 위치 인코딩이 결합되는 인코더 입력 부분을 강조한 트랜스포머 구조](../assets/images/transformer-input-embedding-positional-encoding.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 22rem);" }
 
 앞에서 각 토큰을 임베딩 벡터로 표현했습니다. 하지만 임베딩 벡터만으로는 해당 토큰이 문장의 어느 위치에 놓여 있는지 알 수 없습니다. 셀프 어텐션은 모든 토큰을 한꺼번에 처리하기 때문에, 토큰의 순서 정보를 별도로 알려 주어야 합니다.
 
@@ -44,7 +44,7 @@
 
 ## 다중 헤드 어텐션 {#multi-head-attention}
 
-![인코더 블록의 다중 헤드 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-encoder-multi-head-attention.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![인코더 블록의 다중 헤드 어텐션 부분을 강조한 트랜스포머 구조](../assets/images/transformer-encoder-multi-head-attention.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 22rem);" }
 
 인코더 블록은 먼저 **다중 헤드 어텐션(multi-head attention)**으로 입력 표현을 처리합니다. 다중 헤드 어텐션은 셀프 어텐션을 여러 갈래로 나누어 병렬로 수행하는 방식이며, 각각의 갈래를 헤드(head)라고 부릅니다. 각 헤드는 서로 다른 Q, K, V 가중치를 사용하므로, 하나는 주어와 동사의 관계, 다른 하나는 대명사가 가리키는 대상, 또 다른 하나는 멀리 떨어진 단어 사이의 관계처럼 **서로 다른 패턴에 주목하도록 학습**될 수 있습니다.
 
@@ -56,7 +56,7 @@ Add & Norm에서는 먼저 잔차 연결을 통해 전달된 원래 입력과 �
 
 ## 피드 포워드 신경망(FFN) {#feed-forward-network}
 
-![인코더 블록의 피드포워드 신경망 부분을 강조한 트랜스포머 구조](../assets/images/transformer-encoder-feed-forward-network.png){ .neural-network-image style="width: min(100%, 22rem);" }
+![인코더 블록의 피드포워드 신경망 부분을 강조한 트랜스포머 구조](../assets/images/transformer-encoder-feed-forward-network.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 22rem);" }
 
 이렇게 정규화된 값은 다음 **피드 포워드 신경망(Feed-Forward Network, FFN)**으로 넘어갑니다. FFN은 작은 **[다층 신경망(MLP)](04-multilayer-perceptron.md#stacking-perceptrons)**입니다.
 
@@ -71,7 +71,7 @@ Add & Norm에서는 먼저 잔차 연결을 통해 전달된 원래 입력과 �
 
 만약 활성화 함수가 없다면 층을 아무리 쌓아도 모든 계산은 계속 선형성을 가집니다. **선형성(linearity)**이란 입력의 변화가 출력에 비례해, 그래프에서 일직선 형태로 나타나는 성질입니다.
 
-![두 입력과 두 은닉 뉴런으로 구성된 피드포워드 신경망 예시](../assets/images/ffn-mlp-2x2.svg){ .neural-network-image }
+![두 입력과 두 은닉 뉴런으로 구성된 피드포워드 신경망 예시](../assets/images/ffn-mlp-2x2.svg){ .neural-network-image .transformer-encoder-image }
 
 예를 들어 입력값이 **4와 2**이고, 은닉층에 두 개의 노드가 있다고 해봅시다. 전체 계산 과정은 다음과 같습니다.
 
@@ -88,7 +88,7 @@ Add & Norm에서는 먼저 잔차 연결을 통해 전달된 원래 입력과 �
 
 그래서 MLP에는 층 사이에 ReLU와 같은 활성화 함수를 넣습니다. 활성화 함수가 중간중간 비선형성을 추가하면, 입력과 출력 사이의 관계는 더 이상 하나의 직선으로 표현되지 않고 복잡한 형태를 띠게 됩니다.
 
-![선형 모델과 활성화 함수를 적용한 다층 신경망이 비선형 패턴을 구분하는 방식의 비교](../assets/images/linear-vs-nonlinear-decision-boundary.svg){ .neural-network-image }
+![선형 모델과 활성화 함수를 적용한 다층 신경망이 비선형 패턴을 구분하는 방식의 비교](../assets/images/linear-vs-nonlinear-decision-boundary.svg){ .neural-network-image .transformer-encoder-image }
 
 예를 들어 위와 같은 데이터 분포를 MLP에 통과시키면, 각 뉴런은 위쪽인가 오른쪽인가처럼 단순한 선형 경계를 기준으로 입력을 나눕니다. 이렇게 나눈 결과에 활성화 함수를 적용하고 이를 조합하면, 마지막 그래프처럼 하나의 직선으로는 만들 수 없는 **복잡한 형태의 경계**도 만들 수 있습니다. 즉, 여러 층과 활성화 함수는 입력 공간을 조금씩 나누고 조합해 더 복잡한 패턴을 구분할 수 있게 합니다.
 

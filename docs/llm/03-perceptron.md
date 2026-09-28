@@ -16,17 +16,17 @@
 
 “무료”라는 표현이 있고 모르는 발신자가 보낸 메일이라면, 가중 합은 `(1 × 2) + (1 × 1) = 3`입니다. 여기에 편향 `-2`를 더하면 최종 평가 점수는 `1`이 되고, 이 메일은 스팸으로 판단합니다.
 
-![두 스팸 단서가 가중치와 편향을 거쳐 평가 점수를 만드는 퍼셉트론](../assets/images/perceptron-spam-score.svg){ .neural-network-image }
+![두 스팸 단서가 가중치와 편향을 거쳐 평가 점수를 만드는 퍼셉트론](../assets/images/perceptron-spam-score.svg){ .neural-network-image .perceptron-image }
 
 반대로 모르는 발신자가 보냈지만 “무료”라는 표현이 없다면, 가중 합은 `(0 × 2) + (1 × 1) = 1`이고 편향을 더한 최종 평가 점수는 `-1`이기 때문에 이 메일은 스팸이 아닙니다.
 
-![“무료”라는 표현이 없는 경우의 퍼셉트론](../assets/images/perceptron-spam-score-no-free.svg){ .neural-network-image }
+![“무료”라는 표현이 없는 경우의 퍼셉트론](../assets/images/perceptron-spam-score-no-free.svg){ .neural-network-image .perceptron-image }
 
 편향은 평가 점수에 더해, 스팸으로 판단하기 위한 기준을 조절하는 값입니다. 이 예시에서 모르는 발신자라는 단서만 있으면 가중 합은 `1`점이고, “무료”라는 표현까지 있으면 `3`점입니다.
 
 편향이 없다면 두 점수는 모두 `0`점을 넘습니다. 즉, 모르는 발신자라는 단서 하나만으로도 스팸으로 판단하게 됩니다. 하지만 편향 `-2`를 더하면 두 점수에서 모두 `2`점이 빠집니다. 모르는 발신자만 있는 메일의 최종 평가 점수는 `-1`점이 되어 스팸이 아니게 됩니다. 반면 “무료”라는 표현까지 있는 메일의 최종 평가 점수는 `1`점이므로 스팸으로 판단합니다.
 
-![편향 전 가중 합 1점과 3점이 점선 화살표를 따라 각각 최종 평가 점수 −1점과 1점으로 왼쪽 이동하는 모습](../assets/images/perceptron-bias-threshold.svg){ .neural-network-image }
+![편향 전 가중 합 1점과 3점이 점선 화살표를 따라 각각 최종 평가 점수 −1점과 1점으로 왼쪽 이동하는 모습](../assets/images/perceptron-bias-threshold.svg){ .neural-network-image .perceptron-image }
 
 결국 이 예시의 편향 `-2`는 “단서 하나만으로는 스팸이라고 하지 말고, 가중 합이 `2`점을 초과할 때만 스팸으로 판단하자”라는 기준을 만드는 역할입니다. 편향은 **같은 단서들이 주어졌을 때, 퍼셉트론이 얼마나 엄격하게 판단할지**를 조절합니다.
 
@@ -45,9 +45,9 @@ flowchart TB
     threshold -->|예| spam[1 → 스팸]
     threshold -->|아니오| notSpam[0 → 스팸 아님]
 
-    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px
-    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px
-    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px
+    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px,color:#26353a
+    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px,color:#26353a
+    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px,color:#26353a
     class start boxStyle
     class threshold decisionStyle
     class spam,notSpam choiceStyle
@@ -57,7 +57,7 @@ flowchart TB
 
 따라서 더 복잡한 문제를 다루고 가중치를 효율적으로 조정하려면, 입력값의 변화에 더 부드럽게 반응하거나 다양한 값을 출력하는 활성화 함수가 필요합니다. 그래서 여러 형태의 활성화 함수가 연구되었고, 아래와 같은 함수들은 입력값을 서로 다른 방식으로 바꿉니다.
 
-![계단 함수, 시그모이드, ReLU 활성화 함수의 입력값에 따른 출력 비교](../assets/images/activation-functions-comparison.svg){ .neural-network-image }
+![계단 함수, 시그모이드, ReLU 활성화 함수의 입력값에 따른 출력 비교](../assets/images/activation-functions-comparison.svg){ .neural-network-image .perceptron-image }
 
 그래프의 가로축 `z`는 평가 점수를 의미합니다. 지금까지 스팸 메일 예시에서는 `z`가 `0`점을 넘는지에 따라 `0` 또는 `1`을 출력하는 **계단 함수** 방식의 활성화 함수를 사용했습니다.
 
@@ -65,7 +65,7 @@ flowchart TB
 
 지금까지 배운 내용을 모두 적용하면, 퍼셉트론은 다음과 같은 형태가 됩니다. 입력값에 가중치를 곱해 더하고 편향을 더해 평가 점수를 만듭니다. 이어서 활성화 함수가 이 점수를 바탕으로 기계적으로 결과를 선택합니다. 두 입력을 사용하는 퍼셉트론의 전체 계산은 `y = activation(w₁x₁ + w₂x₂ + b)`로 나타낼 수 있습니다. 그림으로 나타내면 다음과 같습니다.
 
-![입력값이 가중치와 편향을 거쳐 평가 점수가 되고, 활성화 함수를 통해 결과가 되는 퍼셉트론](../assets/images/perceptron-overview.svg){ .neural-network-image }
+![입력값이 가중치와 편향을 거쳐 평가 점수가 되고, 활성화 함수를 통해 결과가 되는 퍼셉트론](../assets/images/perceptron-overview.svg){ .neural-network-image .perceptron-image }
 
 ## 틀리면서 배우기 {#learning-from-mistakes}
 
@@ -106,15 +106,15 @@ flowchart TB
 
 먼저 “무료”라는 표현이 있고 모르는 발신자가 보낸 실제 스팸 메일을 봅시다. 평가 점수는 `0`이고 스팸이 아니라고 예측합니다. 정답은 스팸이므로 틀린 판단입니다.
 
-![초기값이 모두 0일 때, 실제 스팸 메일을 스팸이 아니라고 예측하는 퍼셉트론](../assets/images/perceptron-learning-initial.svg){ .neural-network-image }
+![초기값이 모두 0일 때, 실제 스팸 메일을 스팸이 아니라고 예측하는 퍼셉트론](../assets/images/perceptron-learning-initial.svg){ .neural-network-image .perceptron-image }
 
 이 메일은 실제로는 스팸인데 스팸이 아니라고 예측했으므로, 다음에는 평가 점수가 더 커지는 방향으로 값을 조정해야 합니다. 이 메일에서는 `x₁`과 `x₂`가 모두 `1`이므로 `w₁`과 `w₂`가 평가 점수 계산에 반영됩니다. 편향은 모든 평가 점수에 더해지는 값이므로 함께 조정합니다. 따라서 `w₁`, `w₂`, 편향을 각각 `1`로 바꾸고, 같은 메일의 평가 점수는 `3`이 됩니다. 이제 퍼셉트론은 스팸으로 예측합니다.
 
-![스팸 메일 오류를 반영해 가중치와 편향을 각각 1로 조정한 퍼셉트론](../assets/images/perceptron-learning-after-positive.svg){ .neural-network-image }
+![스팸 메일 오류를 반영해 가중치와 편향을 각각 1로 조정한 퍼셉트론](../assets/images/perceptron-learning-after-positive.svg){ .neural-network-image .perceptron-image }
 
 이번에는 두 단서가 모두 없는 실제 정상 메일을 보겠습니다. 현재 편향이 `1`이므로 평가 점수는 `1`이 되고, 퍼셉트론은 이 메일을 스팸으로 잘못 예측합니다. 이 오류를 반영해 편향을 `0`으로 낮추면 평가 점수도 `0`이 되어, 단서가 없는 메일은 더 이상 스팸으로 판단하지 않습니다.
 
-![정상 메일의 오류를 반영해 편향을 낮춘 뒤 올바르게 예측하는 퍼셉트론](../assets/images/perceptron-learning-adjust-bias.svg){ .neural-network-image }
+![정상 메일의 오류를 반영해 편향을 낮춘 뒤 올바르게 예측하는 퍼셉트론](../assets/images/perceptron-learning-adjust-bias.svg){ .neural-network-image .perceptron-image }
 
 이처럼 데이터셋의 여러 예시를 통해 예측 오류를 바로잡는 과정을 반복하면, 앞서 스팸 메일 예시에서 사용했던 `w₁=2`, `w₂=1`, `b=-2`와 같은 값의 조합을 찾게 됩니다.
 
