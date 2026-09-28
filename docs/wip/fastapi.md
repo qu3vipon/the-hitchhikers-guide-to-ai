@@ -1,4 +1,4 @@
-# AI 모델 서빙
+# FastAPI 기초
 
 <div class="wip-page">
   <div class="wip-page__icon" aria-hidden="true">⏳</div>
