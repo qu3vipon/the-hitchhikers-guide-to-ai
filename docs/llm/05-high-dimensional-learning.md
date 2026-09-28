@@ -1,4 +1,4 @@
-# 고차원 공간에서의 학습 {#high-dimensional-learning}
+# 고차원 공간에서의 학습
 
 ## 공간에서 보는 벡터 {#vectors}
 

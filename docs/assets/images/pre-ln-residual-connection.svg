@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" role="img" aria-labelledby="title desc">
+  <title id="title">Pre-LN 블록의 잔차 연결</title>
+  <desc id="desc">입력 x가 LayerNorm과 연산을 거치는 경로와 원래 입력 x가 더하기 연산으로 직접 전달되는 잔차 경로를 보여 준다.</desc>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="13" refX="9.5" refY="6.5" orient="auto"><path d="M0,0 L13,6.5 L0,13 Z" fill="#303038"/></marker>
+    <marker id="arrow-residual" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="13" refX="9.5" refY="6.5" orient="auto"><path d="M0,0 L13,6.5 L0,13 Z" fill="#6b7280"/></marker>
+    <marker id="arrow-backprop" markerUnits="userSpaceOnUse" markerWidth="13" markerHeight="13" refX="9.5" refY="6.5" orient="auto"><path d="M0,0 L13,6.5 L0,13 Z" fill="#9ca3af"/></marker>
+    <style>
+      .box { stroke: #303038; stroke-width: 3; }
+      .label { fill: #202027; font-family: sans-serif; font-size: 23px; font-weight: 600; text-anchor: middle; }
+      .small { fill: #5c5c66; font-family: sans-serif; font-size: 18px; text-anchor: middle; }
+      .flow { fill: none; stroke: #303038; stroke-width: 4; marker-end: url(#arrow); }
+      .residual { fill: none; stroke: #6b7280; stroke-width: 4; marker-end: url(#arrow-residual); }
+      .backprop { fill: none; stroke: #9ca3af; stroke-width: 3; stroke-dasharray: 7 5; marker-end: url(#arrow-backprop); }
+    </style>
+  </defs>
+  <g transform="translate(-32.5 0)">
+  <rect x="235" y="321.5" width="210" height="56" rx="12" class="box" fill="#d5e8d4"/>
+  <text x="340" y="357.5" class="label">입력</text>
+  <text x="510" y="413" class="small" style="fill:#6b7280;text-anchor:end">역전파 시 LayerNorm 우회</text>
+  <path d="M340 321.5 V293.5" class="flow"/>
+  <rect x="235" y="229" width="210" height="58" rx="12" class="box" fill="#dae8fc"/>
+  <text x="340" y="265" class="label">LayerNorm</text>
+  <path d="M340 229 V201" class="flow"/>
+  <rect x="235" y="136.5" width="210" height="58" rx="12" class="box" fill="#ffe6cc"/>
+  <text x="340" y="164.5" class="label">연산 블록</text>
+  <text x="340" y="187.5" class="small">(Attention 또는 FFN)</text>
+  <path d="M340 136.5 V108.5" class="flow"/>
+  <path d="M445 357.25 H510 V68 H373.5" class="residual"/>
+  <path d="M373.5 82 H492 V341.75 H448.5" class="backprop"/>
+  <text x="510" y="55" class="small" style="fill:#6b7280;text-anchor:end">잔차 연결</text>
+  <circle cx="340" cy="75" r="27" fill="#fff" stroke="#303038" stroke-width="3"/>
+  <path d="M330 75 H350 M340 65 V85" fill="none" stroke="#202027" stroke-width="4" stroke-linecap="round"/>
+  <path d="M340 48 V20" class="flow"/>
+  </g>
+</svg>

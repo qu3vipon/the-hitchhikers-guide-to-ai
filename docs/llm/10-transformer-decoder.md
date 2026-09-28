@@ -1,4 +1,4 @@
-# 트랜스포머 뜯어보기: 디코더 {#transformer-decoder}
+# 트랜스포머 뜯어보기: 디코더
 
 이번에는 트랜스포머의 디코더에 대해 알아보겠습니다.
 
@@ -12,10 +12,9 @@
 
 예를 들어 한국어 문장 “나는 커피를 마신다”의 정답 번역이 `I drink coffee`라고 해 봅시다. 학습할 때는 정답 문장을 그대로 디코더에 넣지 않고, 시작을 나타내는 `<BOS>` 토큰을 앞에 추가해 한 칸 오른쪽으로 이동한 형태로 입력합니다. BOS는 Beginning of Sequence의 약자로, 시퀀스의 시작을 나타내는 특별한 토큰입니다.
 
-`정답: I → drink → coffee`\\
-`입력: <BOS> → I → drink`
+`정답: I → drink → coffee` / `입력: <BOS> → I → drink`
 
-이를 **Shifted Right**라고 합니다. 이렇게 하면 디코더는 `<BOS>`를 보고 `I`를, `<BOS> I`를 보고 `drink`를, `<BOS> I drink`를 보고 `coffee`를 예측하도록 학습합니다.
+정답 문장의 각 토큰을 한 칸씩 오른쪽으로 이동시킨 형태이기 때문에 이를 **Shifted Right**라고 합니다. 이렇게 하면 디코더는 `<BOS>`를 보고 `I`를, `<BOS> I`를 보고 `drink`를, `<BOS> I drink`를 보고 `coffee`를 예측하도록 학습합니다.
 
 이러한 디코더 입력 토큰도 토큰 ID를 거쳐 임베딩 벡터로 변환됩니다. 이를 **출력 임베딩(output embedding)**이라고 합니다. 여기서 ‘출력’은 번역문의 토큰이라는 의미이며, 만들어진 임베딩 벡터 자체는 디코더의 입력으로 사용됩니다.
 
@@ -66,7 +65,7 @@
 
 ## 트랜스포머의 범용성 {#transformer-versatility}
 
-테슬라 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 [스탠퍼드 CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E)에서 논문의 제목인 “Attention Is All You Need”보다 “Transformer: A general-purpose, efficient, optimizable computer”(범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 더 어울리는 제목이었을 것이라고 말했습니다.
+테슬라 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 [스탠퍼드 CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E)에서 논문의 제목인 “Attention Is All You Need”보다 “Transformer: A general-purpose, efficient, optimizable computer” (범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 더 어울리는 제목이었을 것이라고 말했습니다.
 
 그만큼 트랜스포머는 특정 분야에 한정되지 않고 **다양한 종류의 데이터를 처리할 수 있는 범용적인 구조**입니다. 처음에는 기계 번역과 같은 자연어 처리에 활용되었지만, 이후 이미지, 음성, 영상, 로보틱스 등 다양한 분야로 활용 범위가 확장되었습니다. 텍스트가 아니더라도 이미지를 작은 조각으로 나누거나 음성과 영상을 일정한 단위의 시퀀스로 표현하면, 트랜스포머의 구조를 그대로 활용할 수 있기 때문입니다.
 

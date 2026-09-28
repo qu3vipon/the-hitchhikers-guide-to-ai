@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" role="img" aria-labelledby="title desc">
+  <title id="title">ReLU와 GELU 활성화 함수 비교</title>
+  <desc id="desc">ReLU는 음수 입력을 0으로 만들고 양수 입력을 그대로 통과시킨다. GELU는 입력값에 따라 출력을 부드럽게 조절한다.</desc>
+  <g transform="translate(120 0)">
+  <g fill="#ffffff" stroke="#d5dde0" stroke-width="1.5">
+    <rect x="10" y="10" width="220" height="240" rx="8"/>
+    <rect x="250" y="10" width="220" height="240" rx="8"/>
+  </g>
+  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="120" y="39" font-size="16" font-weight="700">ReLU</text>
+    <text x="120" y="58" font-size="13">Rectified Linear Unit</text>
+    <text x="360" y="39" font-size="16" font-weight="700">GELU</text>
+    <text x="360" y="58" font-size="13">Gaussian Error Linear Unit</text>
+  </g>
+  <g fill="none" stroke="#8b989e" stroke-width="1.5" stroke-linecap="round">
+    <path d="M40 178 H205 M120 82 V198"/>
+    <path d="M280 178 H445 M360 82 V198"/>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="12">
+    <text x="199" y="194">z</text>
+    <text x="439" y="194">z</text>
+    <text x="126" y="94">출력</text>
+    <text x="366" y="94">출력</text>
+    <text x="108" y="191">0</text>
+    <text x="348" y="191">0</text>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M40 178 H120 L205 93" stroke="#2c7a64"/>
+    <path d="M280 178 C303 178 318 179 331 182 C344 185 352 182 360 178 C373 172 386 157 399 142 C414 126 429 110 445 93" stroke="#2c7a64"/>
+  </g>
+  <g fill="#536268" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+    <text x="120" y="225">음수는 0, 양수는 증가</text>
+    <text x="360" y="225">입력에 따라 부드럽게 조절</text>
+  </g>
+  </g>
+</svg>
