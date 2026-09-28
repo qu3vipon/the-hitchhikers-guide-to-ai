@@ -47,6 +47,7 @@ nav:
       - "11. 대화하는 트랜스포머": llm/11-chatgpt.md
       - "12. LLM에게 지시하는 방법": llm/12-prompting.md
       - "13. LLM 학습, 그 이후": llm/13-after-pretraining.md
+      - "끝 마치며": llm/14-conclusion.md
   - 사전 학습:
       - 시작하기 전에: prerequisites/index.md
       - 개발 환경:
