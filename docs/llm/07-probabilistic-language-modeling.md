@@ -1,6 +1,6 @@
 # 언어는 확률적 패턴을 따른다
 
-## 자언어의 규칙과 패턴 {#patterns-in-natural-language}
+## 자연어의 규칙과 패턴 {#patterns-in-natural-language}
 
 사람이 일상에서 말하고 쓰는 한국어, 영어처럼 자연스럽게 발달한 언어를 **자연어(natural language)**라고 합니다. 프로그래밍 언어처럼 사람이 명확한 규칙을 설계한 언어와 구분하는 말입니다.
 
