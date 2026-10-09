@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+  <title id="title">뉴런의 기본 구조</title>
+  <desc id="desc">가지를 뻗은 가지돌기, 핵이 있는 세포체, 길게 이어지는 축삭과 축삭 말단을 단순화한 손그림이다.</desc>
+  <style>
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; }
+    text { fill: #393630; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 19px; font-weight: 500; text-anchor: middle; }
+  </style>
+  <!-- Dendrites branch around the cell body. -->
+  <path class="ink" d="M192 124 Q164 99 136 83 L110 53 M137 84 L97 87 L75 70 M111 55 L112 31 M111 55 L85 43 M98 87 L77 108 M184 146 Q139 130 113 142 L73 135 M114 142 L84 162 L56 160 M74 135 L56 117 M188 171 Q155 186 138 211 L109 227 M138 210 L139 244 M109 227 L86 220 M139 243 L122 260 M207 116 Q199 83 211 62 L201 39 M211 63 L234 47 M208 84 L184 66 M211 190 Q201 217 218 242 L211 264 M218 242 L243 252"/>
+  <path class="echo" d="M190 127 Q161 98 134 86 L108 54 M183 149 Q139 133 112 145 M189 174 Q155 189 141 213 M208 117 Q202 82 214 61"/>
+  <!-- Cell body narrows into a single axon. -->
+  <path d="M204 112 C217 105 235 110 246 125 Q257 142 278 148 Q259 158 249 178 C239 195 215 200 198 188 Q184 178 182 156 C179 138 188 121 204 112 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.5" stroke-linejoin="round"/>
+  <path class="echo" d="M206 115 Q237 103 248 130 L275 151 Q258 158 246 180 Q219 208 195 185 Q175 156 188 133"/>
+  <path d="M220 138 C232 137 240 146 237 157 C235 169 220 174 211 165 C201 156 207 140 220 138 Z" fill="#fbefd5" stroke="#393630" stroke-width="2"/>
+  <path class="ink" d="M277 148 Q364 143 449 149 Q535 155 613 149 M277 155 Q363 150 449 156 Q535 162 613 156"/>
+  <!-- Myelin segments follow the axon. -->
+  <g fill="#e7efdf" stroke="#393630" stroke-width="2" stroke-linejoin="round">
+    <path d="M311 138 Q329 134 350 138 L351 166 Q331 170 311 165 Z"/>
+    <path d="M368 137 Q387 134 408 139 L409 167 Q389 170 369 165 Z"/>
+    <path d="M426 140 Q446 137 466 142 L467 170 Q447 173 427 168 Z"/>
+    <path d="M484 143 Q504 140 524 144 L525 172 Q505 175 485 170 Z"/>
+    <path d="M542 142 Q562 138 581 141 L582 168 Q562 172 543 169 Z"/>
+  </g>
+  <path class="ink" d="M613 152 Q640 135 654 110 L678 91 M653 112 L652 86 M613 152 Q652 152 681 141 L703 146 M613 152 Q640 174 660 196 L688 204 M660 196 L660 220"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2">
+    <path d="M674 87 Q683 83 685 91 Q684 100 677 97 Q671 95 674 87 Z"/>
+    <path d="M647 81 Q655 77 658 84 Q658 92 650 91 Q645 88 647 81 Z"/>
+    <path d="M700 141 Q708 140 710 147 Q709 154 702 152 Q697 149 700 141 Z"/>
+    <path d="M685 199 Q693 197 696 205 Q693 213 686 210 Q681 207 685 199 Z"/>
+    <path d="M655 217 Q663 213 666 220 Q665 228 658 227 Q652 224 655 217 Z"/>
+  </g>
+  <text x="108" y="285">가지돌기</text>
+  <text x="223" y="285">세포체</text>
+  <text x="447" y="285">축삭</text>
+  <text x="672" y="285">축삭 말단</text>
+</svg>

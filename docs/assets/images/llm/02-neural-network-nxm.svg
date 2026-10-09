@@ -1,29 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="320" viewBox="0 0 660 320" role="img" aria-labelledby="title desc">
   <title id="title">n개의 입력과 m개의 출력을 가진 신경망</title>
   <desc id="desc">입력 x₁, x₂, xₙ과 출력 y₁, y₂, yₘ이 여러 연결로 이어진 신경망이다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#5a6670"/></marker>
-  </defs>
   <g>
-    <rect x="65" y="30" width="110" height="270" rx="8" fill="#e8f2f6"/>
-    <rect x="485" y="30" width="110" height="270" rx="8" fill="#f8e9e4"/>
+    <path d="M73 30 Q120 28 167 30 Q175 30 175 38 L175 292 Q175 300 167 300 Q120 302 73 300 Q65 300 65 292 L65 38 Q65 30 73 30 Z" fill="#e8f2f6"/>
+    <path d="M493 30 Q540 28 587 30 Q595 30 595 38 L595 292 Q595 300 587 300 Q540 302 493 300 Q485 300 485 292 L485 38 Q485 30 493 30 Z" fill="#f8e9e4"/>
   </g>
-  <g fill="none" stroke="#5a6670" stroke-width="2.25" stroke-linecap="round" marker-end="url(#arrow)">
-    <line x1="150" y1="70" x2="510" y2="70"/><line x1="150" y1="70" x2="510" y2="130"/><line x1="150" y1="70" x2="510" y2="250"/>
-    <line x1="150" y1="130" x2="510" y2="70"/><line x1="150" y1="130" x2="510" y2="130"/><line x1="150" y1="130" x2="510" y2="250"/>
-    <line x1="150" y1="250" x2="510" y2="70"/><line x1="150" y1="250" x2="510" y2="130"/><line x1="150" y1="250" x2="510" y2="250"/>
+  <g fill="none" stroke="#716c64" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 70 Q330 72 510 70 M501.00 66.00 L510 70 L501.00 74.00" /><path d="M150 70 Q329.671 101.973 510 130 M501.78 124.57 L510 130 L500.46 132.47" /><path d="M150 70 Q329.106 161.789 510 250 M503.74 242.40 L510 250 L500.16 249.55" />
+    <path d="M150 130 Q330.329 101.973 510 70 M500.46 67.53 L510 70 L501.78 75.43" /><path d="M150 130 Q330 132 510 130 M501.00 126.00 L510 130 L501.00 134.00" /><path d="M150 130 Q329.368 191.897 510 250 M502.73 243.36 L510 250 L500.20 250.95" />
+    <path d="M150 250 Q330.894 161.789 510 70 M500.16 70.45 L510 70 L503.74 77.60" /><path d="M150 250 Q330.632 191.897 510 130 M500.20 129.05 L510 130 L502.73 136.64" /><path d="M150 250 Q330 252 510 250 M501.00 246.00 L510 250 L501.00 254.00" />
   </g>
-  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
-    <circle cx="120" cy="70" r="30"/><circle cx="120" cy="130" r="30"/><circle cx="120" cy="250" r="30"/>
-    <circle cx="540" cy="70" r="30"/><circle cx="540" cy="130" r="30"/><circle cx="540" cy="250" r="30"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M120 40 C137 39 151 53 150 70 C151 87 137 101 120 100 C103 101 89 87 90 70 C89 53 103 39 120 40 Z"/>
+    <path d="M120 40 C137 39 151 53 150 70 C151 87 137 101 120 100 C103 101 89 87 90 70 C89 53 103 39 120 40 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/><path d="M120 100 C137 99 151 113 150 130 C151 147 137 161 120 160 C103 161 89 147 90 130 C89 113 103 99 120 100 Z"/>
+    <path d="M120 100 C137 99 151 113 150 130 C151 147 137 161 120 160 C103 161 89 147 90 130 C89 113 103 99 120 100 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/><path d="M120 220 C137 219 151 233 150 250 C151 267 137 281 120 280 C103 281 89 267 90 250 C89 233 103 219 120 220 Z"/>
+    <path d="M120 220 C137 219 151 233 150 250 C151 267 137 281 120 280 C103 281 89 267 90 250 C89 233 103 219 120 220 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
+    <path d="M540 40 C557 39 571 53 570 70 C571 87 557 101 540 100 C523 101 509 87 510 70 C509 53 523 39 540 40 Z"/>
+    <path d="M540 40 C557 39 571 53 570 70 C571 87 557 101 540 100 C523 101 509 87 510 70 C509 53 523 39 540 40 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/><path d="M540 100 C557 99 571 113 570 130 C571 147 557 161 540 160 C523 161 509 147 510 130 C509 113 523 99 540 100 Z"/>
+    <path d="M540 100 C557 99 571 113 570 130 C571 147 557 161 540 160 C523 161 509 147 510 130 C509 113 523 99 540 100 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/><path d="M540 220 C557 219 571 233 570 250 C571 267 557 281 540 280 C523 281 509 267 510 250 C509 233 523 219 540 220 Z"/>
+    <path d="M540 220 C557 219 571 233 570 250 C571 267 557 281 540 280 C523 281 509 267 510 250 C509 233 523 219 540 220 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" text-anchor="middle">
     <text x="120" y="76">x₁</text><text x="120" y="136">x₂</text><text x="120" y="256">xₙ</text>
     <text x="540" y="76">y₁</text><text x="540" y="136">y₂</text><text x="540" y="256">yₘ</text>
   </g>
-  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="700" text-anchor="middle">
     <text x="120" y="20" fill="#2d6e91">입력층</text>
     <text x="540" y="20" fill="#a5533b">출력층</text>
   </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="30" text-anchor="middle"><text x="120" y="190" dominant-baseline="middle">⋮</text><text x="540" y="190" dominant-baseline="middle">⋮</text></g>
+  <g fill="#536268" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="30" text-anchor="middle"><text x="120" y="190" dominant-baseline="middle">⋮</text><text x="540" y="190" dominant-baseline="middle">⋮</text></g>
 </svg>

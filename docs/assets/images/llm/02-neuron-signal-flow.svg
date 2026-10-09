@@ -1,27 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="150" viewBox="0 0 660 150" role="img" aria-labelledby="title desc">
-  <title id="title">뉴런 사이의 신호 전달</title>
-  <desc id="desc">뉴런 A가 뉴런 B로, 뉴런 B가 뉴런 C로 신호를 전달한다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="#5a6670"/>
-    </marker>
-  </defs>
-  <g fill="none" stroke="#5a6670" stroke-width="2.25" stroke-linecap="round" marker-end="url(#arrow)">
-    <line x1="160" y1="84" x2="290" y2="84"/>
-    <line x1="370" y1="84" x2="500" y2="84"/>
+  <title id="title">뜨거운 냄비에서 손을 떼기까지의 신호 전달</title>
+  <desc id="desc">뜨거움을 감지한 감각 뉴런의 정보가 중간 뉴런들을 거쳐 운동 뉴런으로 전달되고, 근육이 움직여 손을 뗀다. 이 도식은 여러 뉴런을 거치는 과정을 단순화한 것이다.</desc>
+  <style>
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; }
+    text { fill: #393630; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 15px; text-anchor: middle; }
+    .neuron { font-weight: 600; dominant-baseline: central; }
+  </style>
+  <g transform="translate(0 -24)">
+  <path class="ink" d="M163 84 Q225 81 289 84 M279 77 L290 84 L279 91"/>
+  <path class="ink" d="M363 84 Q431 81 489 84 M479 77 L490 84 L479 91"/>
+  <path d="M130 54 C147 53 161 67 160 84 C161 101 147 115 130 114 C113 115 99 101 100 84 C99 67 113 53 130 54 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.5"/>
+  <path class="echo" d="M132 56 C149 54 159 69 162 83 C159 103 145 113 129 116 C111 113 102 99 98 85 C101 65 115 56 132 56 Z"/>
+  <path d="M330 54 C347 53 361 67 360 84 C361 101 347 115 330 114 C313 115 299 101 300 84 C299 67 313 53 330 54 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.5"/>
+  <path class="echo" d="M332 56 C349 54 359 69 362 83 C359 103 345 113 329 116 C311 113 302 99 298 85 C301 65 315 56 332 56 Z"/>
+  <path d="M530 54 C547 53 561 67 560 84 C561 101 547 115 530 114 C513 115 499 101 500 84 C499 67 513 53 530 54 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.5"/>
+  <path class="echo" d="M532 56 C549 54 559 69 562 83 C559 103 545 113 529 116 C511 113 502 99 498 85 C501 65 515 56 532 56 Z"/>
+  <text class="neuron" x="130" y="75">감각</text>
+  <text class="neuron" x="130" y="93">뉴런</text>
+  <text class="neuron" x="330" y="75">중간</text>
+  <text class="neuron" x="330" y="93">뉴런들</text>
+  <text class="neuron" x="530" y="75">운동</text>
+  <text class="neuron" x="530" y="93">뉴런</text>
+  <text x="225" y="66">신경 신호</text>
+  <text x="425" y="66">운동 신호</text>
+  <g transform="translate(19.4 26) scale(0.8)">
+  <path d="M70 145 C59 144 57 136 61 130 L65 124 Q64 131 68 132 C66 125 74 122 72 115 C82 122 77 128 78 132 Q81 130 81 126 C88 135 83 145 74 145 Z" fill="#ef9a87" stroke="#a65043" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M70 142 Q65 139 68 135 Q72 132 72 128 Q78 134 77 138 Q76 142 73 143" fill="#fbd5a5" stroke="#a65043" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
-    <circle cx="130" cy="84" r="30"/>
-    <circle cx="330" cy="84" r="30"/>
-    <circle cx="530" cy="84" r="30"/>
-  </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
-    <text x="130" y="90">뉴런 A</text>
-    <text x="330" y="90">뉴런 B</text>
-    <text x="530" y="90">뉴런 C</text>
-  </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="15" text-anchor="middle">
-    <text x="225" y="66">신호</text>
-    <text x="435" y="66">신호</text>
+  <text x="130" y="140">뜨거운 자극</text>
+  <path d="M286 122 L277 133 L283 133 L279 143 L291 130 L285 130 Z" fill="#f3d788" stroke="#8a713d" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="330" y="140">신호 전달</text>
+  <path d="M486 144 L483 137 L479 133 Q478 130 480 130 Q482 129 485 133 L484 124 Q484 121 486 122 L488 131 L488 120 Q489 118 490 120 L491 131 L493 122 Q495 120 495 123 L494 133 L497 127 Q500 125 499 129 L496 139 L494 144 Z" fill="#f5dcc4" stroke="#796454" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="530" y="140">손 떼기</text>
   </g>
 </svg>

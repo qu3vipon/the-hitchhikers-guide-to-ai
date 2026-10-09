@@ -1,29 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="262" viewBox="0 34 660 262" role="img" aria-labelledby="title desc">
   <title id="title">세 입력 x₁, x₂, x₃으로 출력 y를 만드는 신경망</title>
   <desc id="desc">왼쪽의 입력 뉴런 x₁, x₂, x₃이 가중치를 거쳐 오른쪽 뉴런 y로 연결되어 있다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
-    </marker>
-  </defs>
-  <g fill="none" marker-end="url(#arrow)" stroke-linecap="round">
-    <line x1="151" y1="84" x2="509" y2="165" stroke="#3d789d" stroke-width="2.25"/>
-    <line x1="151" y1="165" x2="509" y2="165" stroke="#93b6ca" stroke-width="2.25"/>
-    <line x1="151" y1="246" x2="509" y2="165" stroke="#b7ceda" stroke-width="2.25"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M151 84 Q329.559 126.451 509 165 M501.10 159.11 L509 165 L499.34 166.92" stroke="#3d789d" stroke-width="2.25"/>
+    <path d="M151 165 Q330 167 509 165 M500.00 161.00 L509 165 L500.00 169.00" stroke="#93b6ca" stroke-width="2.25"/>
+    <path d="M151 246 Q330.441 207.451 509 165 M499.34 163.08 L509 165 L501.10 170.89" stroke="#b7ceda" stroke-width="2.25"/>
   </g>
-  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
-    <circle cx="121" cy="84" r="30"/>
-    <circle cx="121" cy="165" r="30"/>
-    <circle cx="121" cy="246" r="30"/>
-    <circle cx="539" cy="165" r="30"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M121 54 C138 53 152 67 151 84 C152 101 138 115 121 114 C104 115 90 101 91 84 C90 67 104 53 121 54 Z"/>
+    <path d="M121 54 C138 53 152 67 151 84 C152 101 138 115 121 114 C104 115 90 101 91 84 C90 67 104 53 121 54 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
+    <path d="M121 135 C138 134 152 148 151 165 C152 182 138 196 121 195 C104 196 90 182 91 165 C90 148 104 134 121 135 Z"/>
+    <path d="M121 135 C138 134 152 148 151 165 C152 182 138 196 121 195 C104 196 90 182 91 165 C90 148 104 134 121 135 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
+    <path d="M121 216 C138 215 152 229 151 246 C152 263 138 277 121 276 C104 277 90 263 91 246 C90 229 104 215 121 216 Z"/>
+    <path d="M121 216 C138 215 152 229 151 246 C152 263 138 277 121 276 C104 277 90 263 91 246 C90 229 104 215 121 216 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
+    <path d="M539 135 C556 134 570 148 569 165 C570 182 556 196 539 195 C522 196 508 182 509 165 C508 148 522 134 539 135 Z"/>
+    <path d="M539 135 C556 134 570 148 569 165 C570 182 556 196 539 195 C522 196 508 182 509 165 C508 148 522 134 539 135 Z" transform="translate(1 -1)" fill="none" stroke-width="1" opacity=".28"/>
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="18" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" text-anchor="middle">
     <text x="121" y="90">x₁</text>
     <text x="121" y="171">x₂</text>
     <text x="121" y="252">x₃</text>
     <text x="539" y="171">y</text>
   </g>
-  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="700" text-anchor="middle">
     <text x="330" y="111" fill="#3d789d">0.8</text>
     <text x="330" y="156" fill="#5d8094">0.4</text>
     <text x="330" y="221" fill="#7899aa">0.2</text>
