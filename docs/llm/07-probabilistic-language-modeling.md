@@ -20,7 +20,7 @@
 
 따라서 기본적인 Word2Vec에서는 출력층의 뉴런 수가 어휘집에 포함된 단어 수와 같습니다. 예를 들어 `10,000`개의 단어가 있다면 출력층에도 `10,000`개의 뉴런이 있고, 각 뉴런은 하나의 단어에 대응합니다.
 
-![Word2Vec 모델이 어휘집의 모든 후보에 점수를 출력하는 모습](../assets/images/word2vec-output-layer.svg){ .neural-network-image .language-modeling-image }
+![Word2Vec 모델이 어휘집의 모든 후보에 점수를 출력하는 모습](../assets/images/llm/07-word2vec-output-layer.svg){ .neural-network-image .language-modeling-image }
 
 “아침마다”와 “마신다”를 이용해 그 사이에 들어갈 단어를 예측한다고 해 봅시다.
 
@@ -33,7 +33,7 @@
 !!! info "소프트맥스는 어떻게 확률을 만들까?"
     <div class="hinton-profile">
       <div class="hinton-profile__photo">
-        <img class="language-modeling-image" src="../../assets/images/softmax-transformation.svg" alt="로짓을 확률로 바꾸는 소프트맥스 그래프">
+        <img class="language-modeling-image" src="../../assets/images/llm/07-softmax-transformation.svg" alt="로짓을 확률로 바꾸는 소프트맥스 그래프">
       </div>
       <div class="hinton-profile__content">
         <p>소프트맥스는 각 로짓 <code>z<sub>i</sub></code>에 자연상수 <code>e</code>를 밑으로 하는 지수 함수 <code>e<sup>z<sub>i</sub></sup></code>를 적용합니다. 그러면 음수였던 점수도 모두 양수가 되고, 큰 점수와 작은 점수의 차이도 더 뚜렷해집니다. 그다음 각 값을 모든 후보의 지수 값 합으로 나눕니다. 즉, <code>p<sub>i</sub> = e<sup>z<sub>i</sub></sup> / Σe<sup>z<sub>j</sub></sup></code>로 계산합니다. 이렇게 하면 각 값은 확률로 변환되고, 모든 확률의 합은 <code>1</code>이 됩니다.</p>
@@ -66,7 +66,7 @@
 
 따라서 일반적인 언어 모델이 텍스트를 처리하는 흐름은 다음과 같이 정리할 수 있습니다.
 
-![텍스트가 토큰화와 임베딩을 거쳐 다음 토큰을 예측하는 과정](../assets/images/language-modeling-flow.svg){ .neural-network-image .language-modeling-image }
+![텍스트가 토큰화와 임베딩을 거쳐 다음 토큰을 예측하는 과정](../assets/images/llm/07-language-modeling-flow.svg){ .neural-network-image .language-modeling-image }
 
 ## Word2Vec이 남긴 것 {#word2vec-significance}
 

@@ -46,7 +46,7 @@
 
 이런 문서 형식을 HTML(HyperText Markup Language)이라고 부릅니다. HTML은 미리 정해진 규칙에 따라 **웹 페이지의 구조와 내용**을 표현하는 마크업 언어입니다. 여기서 `<h1>`은 제목, `<p>`는 문단, `<a>`는 링크를 나타내며, 각각 화면에 보이는 제목, 설명 문장, Learn more 링크에 대응합니다.
 
-<img src="../../assets/images/exampledotcom_highlight.png" alt="HTML을 렌더링한 Example Domain 화면" class="example-domain-image">
+<img src="../../assets/images/prerequisites/08-exampledotcom_highlight.png" alt="HTML을 렌더링한 Example Domain 화면" class="example-domain-image">
 
 !!! info "HTML 문법 더 알아보기"
     이 과정에서는 HTML 문법을 하나씩 자세히 다루지 않습니다. HTML 문법이 궁금하다면 [MDN의 HTML 시작하기](https://developer.mozilla.org/ko/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax)를 참고해 보세요.

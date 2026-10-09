@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="140" viewBox="0 0 760 140" role="img" aria-labelledby="title desc">
+  <title id="title">고양이 판별 결과를 출력하는 함수</title>
+  <desc id="desc">고양이 판별 결과는 사진을 입력받는 함수 f의 출력이다.</desc>
+  <style>
+    text { fill: #393630; dominant-baseline: central; }
+    .word { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 30px; font-weight: 500; }
+    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 38px; }
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <text class="word" x="151" y="70">고양이 판별 결과</text>
+  <path class="ink" d="M400 63 Q413 62 426 63 M400 77 Q413 76 426 77"/>
+  <text class="math" x="468" y="70">f</text>
+  <path class="ink" d="M501 43 Q485 69 501 97 M585 43 Q601 69 585 97"/>
+  <text class="word" x="543" y="70" text-anchor="middle">사진</text>
+</svg>

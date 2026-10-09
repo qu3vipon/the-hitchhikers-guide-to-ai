@@ -10,8 +10,8 @@ theme:
   name: material
   custom_dir: overrides
   language: ko
-  logo: assets/images/logo.png
-  favicon: assets/images/logo.png
+  logo: assets/images/shared/logo.png
+  favicon: assets/images/shared/logo.png
   features:
     - navigation.tabs
     - navigation.footer

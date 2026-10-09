@@ -6,7 +6,7 @@
 
 먼저 트랜스포머가 등장하기 전에는 언어 모델에서 **RNN(Recurrent Neural Network)** 계열의 모델이 널리 사용되었습니다. Recurrent는 ‘되풀이되는’, ‘순환하는’이라는 뜻입니다. RNN은 문장을 앞에서부터 단어 하나씩 순서대로 읽습니다. 이때 매 단계에서 현재 단어와 이전 단계의 결과를 함께 사용해 새로운 결과를 만들고, 이 결과를 다시 다음 단계로 전달합니다. 이런 반복적인 구조를 통해 앞에서 읽은 정보를 뒤쪽 단어를 처리할 때까지 이어갈 수 있습니다.
 
-![입력과 은닉 상태가 시간 순서에 따라 반복 전달되는 RNN 구조](../assets/images/rnn-overview.svg){ .neural-network-image .transformer-image }
+![입력과 은닉 상태가 시간 순서에 따라 반복 전달되는 RNN 구조](../assets/images/llm/08-rnn-overview.svg){ .neural-network-image .transformer-image }
 
 여기서 `t`는 문장을 읽어 가는 시간 단계입니다. 각 단계 `t`에서 RNN은 현재 입력 `xᵗ`와 이전 단계의 은닉 상태 `hᵗ⁻¹`를 함께 사용해, 현재 은닉 상태 `hᵗ`를 계산합니다. `hᵗ`에는 지금까지 읽은 입력을 요약한 정보가 담기고, 이 값이 다시 다음 단계로 전달됩니다.
 
@@ -21,7 +21,7 @@ RNN은 특히 기계 번역에 많이 활용되었습니다. 이때는 보통 �
 - 인코더(Encoder): **입력을 이해하여** 문맥이 반영된 표현으로 변환
 - 디코더(Decoder): 문맥을 바탕으로 다음 토큰을 예측하여 **출력 생성**
 
-![인코더 RNN이 입력 문장을 읽어 문맥 벡터를 만들고, 디코더 RNN이 이를 바탕으로 번역 문장을 생성하는 구조](../assets/images/rnn-encoder-decoder.svg){ .neural-network-image .transformer-image }
+![인코더 RNN이 입력 문장을 읽어 문맥 벡터를 만들고, 디코더 RNN이 이를 바탕으로 번역 문장을 생성하는 구조](../assets/images/llm/08-rnn-encoder-decoder.svg){ .neural-network-image .transformer-image }
 
 예를 들어 한국어 문장을 읽은 뒤 영어 문장으로 번역하는 과정입니다. 위 도식에서 `<sos>`와 `<eos>`는 문장의 시작과 끝을 표시하기 위해 사용하는 특수 토큰입니다. `<sos>`는 start of sequence, 즉 문장의 시작을 알리고, `<eos>`는 end of sequence, 즉 문장의 끝을 알립니다. 디코더 위의 토큰은 해당 단계에서 다음 토큰을 예측하기 위해 넣는 입력이고, 아래의 토큰은 그 결과로 예측한 출력입니다.
 
@@ -51,7 +51,7 @@ RNN은 특히 기계 번역에 많이 활용되었습니다. 이때는 보통 �
 
 기존 RNN 번역 모델은 입력 문장 전체를 하나의 고정된 문맥 벡터에 압축해야 했습니다. 반면 어텐션을 적용하면 디코더는 매 단계마다 인코더가 만든 각 단어의 정보를 다시 살펴보고, 지금 필요한 부분에 더 집중할 수 있습니다.
 
-![RNN 인코더-디코더에서 어텐션을 적용하는 구조](../assets/images/rnn-attention.svg){ .neural-network-image .transformer-image }
+![RNN 인코더-디코더에서 어텐션을 적용하는 구조](../assets/images/llm/08-rnn-attention.svg){ .neural-network-image .transformer-image }
 
 위 그림은 디코더가 다음 단어로 `coffee`를 만들려는 순간을 나타냅니다. 이때 디코더는 입력 문장을 올바르게 번역하기 위해 “나는”, “커피를”, “마신다”에 대응하는 인코더의 은닉 벡터를 모두 확인하여, 현재 번역에 더 집중해야 할 정보를 찾아냅니다.
 
@@ -85,7 +85,7 @@ Query, Key, Value는 각각 다음과 같은 역할을 합니다.
 
 이 세 벡터는 원래 토큰 벡터에 각각 서로 다른 가중치 행렬 <code>W<sub>Q</sub></code>, <code>W<sub>K</sub></code>, <code>W<sub>V</sub></code>를 곱해 만듭니다.
 
-![하나의 토큰 벡터를 Q K V 벡터로 변환하는 과정](../assets/images/qkv-projection.svg){ .neural-network-image .transformer-image }
+![하나의 토큰 벡터를 Q K V 벡터로 변환하는 과정](../assets/images/llm/08-qkv-projection.svg){ .neural-network-image .transformer-image }
 
 그렇다면 이 벡터들은 어떻게 사용될까요? 먼저 각 토큰의 Q를 문장 내 모든 토큰의 K와 비교해 서로 얼마나 관련이 있는지를 나타내는 점수를 계산합니다. 이때 Q와 K를 [내적](05-high-dimensional-learning.md#learning-and-vectors)하여 점수를 구하고, 값이 지나치게 커지는 것을 막기 위해 K 벡터의 차원인 `dₖ`의 제곱근으로 나눕니다. 그리고 여기에 [소프트맥스](07-probabilistic-language-modeling.md#context)를 적용해 모든 값의 합이 1이 되도록 변환합니다. 이렇게 얻은 값이 각 토큰을 얼마나 참고할지를 나타내는 어텐션 가중치입니다.
 
@@ -99,7 +99,7 @@ Query, Key, Value는 각각 다음과 같은 역할을 합니다.
 
 여기서 `QKᵀ`의 위 첨자 `T`는 K 행렬의 행과 열을 바꾸는 전치(transpose)를 뜻하며, 이렇게 전치된 K와 Q를 곱하면 각 Q와 모든 K의 내적을 한 번에 계산할 수 있습니다. 이를 통해 각 토큰이 문장 내 다른 토큰들과 얼마나 관련되어 있는지를 나타내는 점수를 구할 수 있습니다.
 
-![coffee 토큰이 다른 토큰에 부여한 어텐션 가중치](../assets/images/attention-weights-example.svg){ .neural-network-image .transformer-image }
+![coffee 토큰이 다른 토큰에 부여한 어텐션 가중치](../assets/images/llm/08-attention-weights-example.svg){ .neural-network-image .transformer-image }
 
 앞서 살펴본 과정을 간단한 예시로 확인해보겠습니다.
 

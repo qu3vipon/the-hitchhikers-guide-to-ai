@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="210" viewBox="0 0 760 210" role="img" aria-labelledby="title desc">
+  <title id="title">우산을 챙길지 결정하는 조건부 함수</title>
+  <desc id="desc">f(x)는 x가 1 이상이면 우산 챙기기, 1 미만이면 우산 챙기지 않기이다.</desc>
+  <style>
+    text { fill: #393630; dominant-baseline: central; }
+    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 34px; }
+    .word { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 26px; font-weight: 500; }
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <text class="math" x="74" y="105">f(x)</text>
+  <path class="ink" d="M154 98 Q166 97 179 98 M154 111 Q166 110 179 111"/>
+  <path class="ink" d="M229 35 C208 34 211 57 211 76 Q212 98 199 105 Q213 111 211 134 C210 156 210 176 229 175"/>
+  <text class="word" x="259" y="69">우산 챙기기,</text>
+  <text class="word" x="259" y="141">우산 챙기지 않기,</text>
+  <text class="math" x="535" y="69">x ≥ 1</text>
+  <text class="math" x="535" y="141">x &lt; 1</text>
+</svg>

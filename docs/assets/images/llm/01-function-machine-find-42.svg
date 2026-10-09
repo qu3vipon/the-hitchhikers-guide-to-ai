@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="635" viewBox="0 0 720 635" role="img" aria-labelledby="title desc">
+  <title id="title">함수 기계에서 알 수 없는 값을 찾는 예시</title>
+  <desc id="desc">입력값 3이 더하기 알 수 없는 값 규칙을 거쳐 결과값 45가 되는 함수 기계 그림</desc>
+  <style>
+    .number { font: 500 62px 'Chalkboard SE', 'Segoe Print', cursive; fill: #292323; }
+    .rule { font: 500 54px 'Chalkboard SE', 'Segoe Print', cursive; fill: #292323; }
+  </style>
+
+  <text x="133" y="70" text-anchor="middle" class="rule">3</text>
+  <g fill="none" stroke="#292323" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M133 92 Q130 147 134 208 M121 193 Q128 200 134 210 Q140 201 146 192" stroke-width="4"/>
+    <path d="M136 94 Q132 148 137 205 M123 195 L133 207 L144 194" stroke-width="1.2" opacity=".28"/>
+  </g>
+
+  <g fill="none" stroke="#292323" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M44 108 Q70 145 98 188 Q63 186 30 188 C15 188 5 202 5 220 Q2 315 4 411 C4 433 18 451 39 450 Q270 447 500 450 Q474 489 447 528" stroke-width="4"/>
+    <path d="M220 108 Q193 149 168 188 Q423 191 680 188 C700 188 715 206 715 228 Q718 319 716 411 C716 433 700 449 679 450 Q624 448 570 450 Q598 488 623 528" stroke-width="4"/>
+    <path d="M47 110 L101 191 Q64 189 31 185 Q1 187 8 220 Q5 318 7 412 Q6 447 39 453 Q268 450 496 447 L450 526" stroke-width="1.2" opacity=".28"/>
+    <path d="M217 110 L165 185 Q424 188 679 191 Q719 189 712 229 Q715 320 713 410 Q718 453 678 447 L574 453 L620 530" stroke-width="1.2" opacity=".28"/>
+  </g>
+
+  <rect x="266" y="289" width="42" height="42" fill="none" stroke="#292323" stroke-width="3" rx="1"/>
+  <path d="M334 310 H370 M352 292 V328" fill="none" stroke="#292323" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="419" y="310" text-anchor="middle" dominant-baseline="central" class="rule">?</text>
+
+  <g fill="none" stroke="#292323" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M535 404 Q532 461 536 520 M523 505 Q530 513 536 522 Q542 513 548 504" stroke-width="4"/>
+    <path d="M538 406 Q534 462 539 517 M525 507 L535 519 L546 506" stroke-width="1.2" opacity=".28"/>
+  </g>
+  <text x="535" y="593" text-anchor="middle" class="rule">45</text>
+</svg>

@@ -19,7 +19,7 @@
 
 GPT의 전체적인 구조를 살펴보겠습니다. 여기서는 GPT-2의 구조를 기준으로 설명하겠습니다. GPT-2는 이후 생성형 LLM으로 이어지는 디코더 온리 트랜스포머의 기본적인 구조를 잘 보여줍니다. 왼쪽은 GPT의 전체적인 데이터 처리 흐름을 보여주고, 오른쪽은 그 안에서 반복되는 트랜스포머 블록 하나의 내부 구조를 자세히 보여줍니다.
 
-![GPT의 전체 아키텍처: 입력 토큰에서 반복되는 트랜스포머 블록과 다음 토큰 예측까지의 흐름](../assets/images/gpt-architecture-overview.svg){ .neural-network-image .chatgpt-image style="width: min(100%, 34rem);" }
+![GPT의 전체 아키텍처: 입력 토큰에서 반복되는 트랜스포머 블록과 다음 토큰 예측까지의 흐름](../assets/images/llm/11-gpt-architecture-overview.svg){ .neural-network-image .chatgpt-image style="width: min(100%, 34rem);" }
 
 <p style="text-align: center;"><em><a href="https://en.wikipedia.org/wiki/File:Full_GPT_architecture.svg">Full GPT architecture, CC0</a></em></p>
 
@@ -53,7 +53,7 @@ Dropout은 학습할 때마다 일부 뉴런을 무작위로 제외함으로써 
 
 다만 GPT-2에서는 정규화를 적용하는 위치가 달라졌습니다. 원래 트랜스포머에서는 Attention이나 FFN 연산을 수행한 뒤 정규화했습니다. 반면 GPT-2에서는 Attention과 FFN에 들어가기 전에 먼저 정규화합니다. 이렇게 정규화를 각 연산의 앞에 배치하는 구조를 **Pre-LN(Pre-Layer Normalization)**이라고 합니다.
 
-![Pre-LN 블록에서 입력이 LayerNorm과 연산을 거친 뒤 원래 입력과 더해지는 잔차 연결](../assets/images/pre-ln-residual-connection.svg){ .neural-network-image .chatgpt-image style="width: min(100%, 34rem);" }
+![Pre-LN 블록에서 입력이 LayerNorm과 연산을 거친 뒤 원래 입력과 더해지는 잔차 연결](../assets/images/llm/11-pre-ln-residual-connection.svg){ .neural-network-image .chatgpt-image style="width: min(100%, 34rem);" }
 
 Pre-LN이라는 이름은 순전파를 기준으로 정규화를 Attention이나 FFN보다 먼저 수행한다는 뜻입니다. 이렇게 정규화를 앞에 배치하면, 잔차 연결에는 정규화를 거치지 않고 앞쪽 층과 이어지는 지름길이 만들어집니다.
 
@@ -63,7 +63,7 @@ Pre-LN이라는 이름은 순전파를 기준으로 정규화를 Attention이나
 
 다음으로 FFN에서는 기존 트랜스포머의 ReLU 대신 **GELU(Gaussian Error Linear Unit)**라는 활성화 함수를 사용합니다. 트랜스포머에서 사용한 ReLU가 음수 값을 0으로 잘라내는 방식이라면, GELU는 입력값의 크기에 따라 출력을 부드럽게 조절합니다. 이를 통해 신경망에 비선형성을 추가하면서도 입력값의 변화에 따라 출력값이 부드럽게 변화하도록 합니다.
 
-![ReLU와 GELU 활성화 함수 그래프 비교](../assets/images/gelu-activation-function.svg){ .neural-network-image .chatgpt-image }
+![ReLU와 GELU 활성화 함수 그래프 비교](../assets/images/llm/11-gelu-activation-function.svg){ .neural-network-image .chatgpt-image }
 
 ## ChatGPT {#chatgpt}
 

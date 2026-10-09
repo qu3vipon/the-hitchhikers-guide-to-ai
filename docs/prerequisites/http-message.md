@@ -167,7 +167,7 @@ Content-Type: text/html
 
 응답 본문도 확인하고 싶다면 **Response** 탭을 선택하세요. 앞에서 보았던 HTML 원본이 표시됩니다.
 
-<img src="../../assets/images/developertool.png" alt="Chrome 개발자 도구의 Network 탭에서 HTTP 요청 정보를 확인하는 화면" class="example-domain-image">
+<img src="../../assets/images/prerequisites/09-developertool.png" alt="Chrome 개발자 도구의 Network 탭에서 HTTP 요청 정보를 확인하는 화면" class="example-domain-image">
 
 !!! info "HTML 원본 바로 보기"
     Chrome에서 페이지를 마우스 오른쪽 버튼으로 클릭한 뒤 **페이지 소스 보기**를 선택하면, 브라우저가 서버에서 받은 HTML 원본을 바로 확인할 수 있습니다.

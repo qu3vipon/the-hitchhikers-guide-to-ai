@@ -188,6 +188,16 @@
   text-align: center;
 }
 
+.md-typeset .drawing-diagram {
+  display: block;
+  width: min(100%, 38rem);
+  margin: 1.5rem auto;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .drawing-diagram {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
 .md-typeset .mermaid svg {
   max-width: 100%;
   margin: 0 auto;

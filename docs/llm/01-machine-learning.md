@@ -15,20 +15,7 @@
 
 앞서 계산기 프로그램에서는 이미 정해진 덧셈 규칙을 사용했습니다. 하지만 모든 문제가 수학처럼 명확한 규칙을 가지고 있는 것은 아닙니다. 예를 들어 외출할 때 우산을 챙겨야 할지 알려주는 프로그램을 만든다고 해 봅시다. 이를 위해 다음과 같은 규칙을 직접 정하겠습니다.
 
-```mermaid
-%%{init: {"flowchart": {"curve": "linear"}} }%%
-flowchart TB
-    start[외출 준비] --> rain{예상 강수량 ≥ 1mm/h?}
-    rain -->|예| yes[우산 챙기기]
-    rain -->|아니오| no[우산 챙기지 않기]
-
-    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px,color:#26353a
-    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px,color:#26353a
-    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px,color:#26353a
-    class start boxStyle
-    class rain decisionStyle
-    class yes,no choiceStyle
-```
+![예상 강수량에 따라 우산을 챙길지 결정하는 손그림 도식](../assets/images/llm/01-umbrella-decision.svg){ .drawing-diagram }
 
 위의 도식은 우산을 챙길지 결정하는 프로그램의 실행 흐름을 나타낸 것입니다. 이 프로그램은 예상 강수량을 기준으로 우산을 챙길지 판단합니다. 시간당 예상 강수량이 1mm 이상이면 우산을 챙기고, 그렇지 않으면 챙기지 않도록 되어 있습니다.
 
@@ -44,7 +31,7 @@ flowchart TB
 
 어떤 숫자를 넣든 항상 42를 더해주는 상자가 있다고 해봅시다. 이 상자에 `3`을 넣으면 `45`가 나오고, `10`을 넣으면 `52`가 나옵니다. 이때 상자에 넣는 값을 **입력(input)**, 상자에서 나오는 값을 **출력(output)**이라고 합니다. 그리고 이처럼 입력값에 따라 정해진 규칙으로 출력값이 결정되는 관계를 **함수(function)**라고 합니다.
 
-![입력값 3이 함수 규칙 더하기 42를 거쳐 출력값 45가 되는 함수 기계](../assets/images/function-machine.svg){ .function-mapping-image }
+![입력값 3이 함수 규칙 더하기 42를 거쳐 출력값 45가 되는 함수 기계](../assets/images/llm/01-function-machine.svg){ .function-mapping-image }
 
 함수의 장점은 **입력값이 달라져도 같은 규칙을 적용할 수 있다**는 것입니다. 앞서 살펴본 상자처럼 `3`을 넣든 `10`을 넣든 항상 42를 더한다는 규칙은 변하지 않습니다. 따라서 가능한 모든 입력과 출력을 하나하나 나열하지 않고도, 하나의 규칙으로 다양한 입력값에 대한 출력값을 설명할 수 있습니다.
 
@@ -52,41 +39,11 @@ flowchart TB
 
 이제 앞서 만든 우산을 챙길지 결정하는 프로그램을 다시 살펴봅시다. 이 프로그램은 시간당 예상 강수량을 이용해 우산을 챙길지 여부를 결정합니다. 이때 함수와 마찬가지로 시간당 예상 강수량이 입력값이 되고, 우산을 챙길지 여부가 출력값이 됩니다. 이처럼 컴퓨터 프로그램도 입력을 받아 정해진 규칙에 따라 처리하고 결과를 출력한다는 점에서 함수와 비슷한 구조로 이해할 수 있습니다.
 
-```mermaid
-%%{init: {"flowchart": {"curve": "linear"}} }%%
-flowchart TB
-    input[비가 오는지] --> rain
-
-    subgraph program[ ]
-        direction TB
-        rain{예상 강수량 ≥ 1mm/h?}
-        rain --> yesRoute[예]
-        rain --> noRoute[아니오]
-    end
-
-    yesRoute --> yes[우산 챙기기]
-    noRoute --> no[우산 챙기지 않기]
-
-    classDef boxStyle fill:#dce9ed,stroke:#6d9aa7,stroke-width:2px,color:#26353a
-    classDef decisionStyle fill:#f3ead7,stroke:#b58a53,stroke-width:2px,color:#26353a
-    classDef choiceStyle fill:#e4eee3,stroke:#6f9877,stroke-width:2px,color:#26353a
-    classDef routeStyle fill:transparent,stroke:transparent
-    class input boxStyle
-    class rain decisionStyle
-    class yes,no choiceStyle
-    class yesRoute,noRoute routeStyle
-    style program fill:transparent,stroke:#6d9aa7,stroke-width:2px
-```
+![입력값을 받아 조건을 확인하고 우산을 챙길지 출력하는 프로그램의 손그림 도식](../assets/images/llm/01-umbrella-function.svg){ .drawing-diagram }
 
 이를 앞서 배운 함수의 형태로 표현하면 `우산을 챙길지 여부 = f(시간당 예상 강수량)`로 나타낼 수 있습니다. 여기서 `f`는 시간당 예상 강수량이 1mm 이상인지 확인하고, 그 결과에 따라 우산을 챙길지 결정하는 규칙을 나타냅니다.
 
-\[
-f(x)=
-\begin{cases}
-\text{우산 챙기기}, & x \geq 1\\
-\text{우산 챙기지 않기}, & x < 1
-\end{cases}
-\]
+![x가 1 이상이면 우산 챙기기, 1 미만이면 우산 챙기지 않기를 출력하는 조건부 함수](../assets/images/llm/01-umbrella-piecewise-function.svg){ .drawing-diagram }
 
 여기서 `x`는 시간당 예상 강수량을 의미합니다. 따라서 함수 `f`에 `x`를 입력하면, 그 값이 1mm 이상일 때는 ‘우산 챙기기’를, 1mm 미만일 때는 ‘우산 챙기지 않기’를 결과로 내놓습니다. 이는 앞서 살펴본 결정 트리의 판단 규칙을 함수의 형태로 표현한 것입니다.
 
@@ -127,7 +84,7 @@ f(x)=
 
 인공지능이라고 해서 반드시 사람처럼 모든 문제를 해결할 수 있어야 하는 것은 아닙니다. 특정한 문제에 대해 사람의 판단이나 문제 해결 능력을 구현하는 것 역시 인공지능에 해당합니다. 이처럼 특정한 범위의 문제를 해결하도록 만들어진 인공지능을 **좁은 인공지능(narrow AI)**이라고 합니다. 따라서 머신러닝은 인공지능의 한 분야이지만, 모든 인공지능이 머신러닝을 사용하는 것은 아닙니다.
 
-![인공지능 안에 머신러닝이 포함된 관계](../assets/images/ai-machine-learning-venn.svg){ .ai-ml-venn }
+![인공지능 안에 머신러닝이 포함된 관계](../assets/images/llm/01-ai-machine-learning-venn.svg){ .ai-ml-venn }
 
 ## 컴퓨터의 학습은 무엇일까? {#what-machine-learning-means}
 
@@ -137,7 +94,7 @@ f(x)=
 
 여기서 중요한 점은 **현실 세계의 다양한 정보를 숫자로 표현하면, 컴퓨터가 이를 계산하고 분석할 수 있다는 것**입니다. 사진이든 글이든 소리든 숫자로 표현할 수 있다면, 컴퓨터는 그 안에서 반복되는 패턴이나 규칙을 찾아볼 수 있습니다.
 
-![고양이 사진의 일부가 픽셀을 거쳐 숫자 행렬로 표현되는 과정](../assets/images/photo-to-numbers.svg){ .photo-to-numbers-image }
+![고양이 사진의 일부가 픽셀을 거쳐 숫자 행렬로 표현되는 과정](../assets/images/llm/01-photo-to-numbers.svg){ .photo-to-numbers-image }
 
 예를 들어 어떤 고양이 사진이 있다고 해봅시다. 이 사진은 수많은 픽셀로 이루어져 있으며, 각 픽셀의 색상을 숫자로 표현하면 사진 전체를 숫자의 배열로 나타낼 수 있습니다.
 
@@ -149,9 +106,7 @@ f(x)=
 
 머신러닝을 통해 고양이를 구별하도록 학습시킨 프로그램이 있다고 해봅시다. 이 프로그램은 사진을 입력하면 고양이인지 아닌지를 판단합니다. 여기서 앞서 살펴본 함수를 다시 떠올려 봅시다. 이 프로그램이 사진을 입력받아 고양이인지 판단하는 과정 역시 하나의 함수로 표현할 수 있습니다.
 
-\[
-\text{고양이 판별 결과} = f(\text{사진})
-\]
+![고양이 판별 결과 = f(사진)을 나타내는 손그림 수식](../assets/images/llm/01-cat-classification-function.svg){ .drawing-diagram }
 
 실제로는 훨씬 복잡하지만, 이해를 돕기 위해 고양이를 판별하는 함수를 `f(x) = ax + b`라고 가정해 보겠습니다. 여기서 `x`는 고양이인지 판단하려는 사진을 숫자로 표현한 값이고, `a`와 `b`는 함수의 결과를 결정하는 숫자입니다. 함수 `f`에 사진을 입력하면 `a`와 `b`를 이용해 계산하고, 그 결과를 바탕으로 고양이인지 아닌지를 판단하는 방식입니다.
 
@@ -161,7 +116,7 @@ f(x)=
 
 앞에서 살펴본 계산 상자를 다시 떠올려 봅시다. 기존에는 함수 안에 +42라는 규칙을 미리 정해 두었습니다. 따라서 `3`을 입력하면 `45`가 나옵니다. 반면 머신러닝에서는 더해야 할 숫자를 미리 알려주지 않고, 컴퓨터가 데이터를 통해 그 값을 찾아내도록 합니다.
 
-![입력값 3과 출력값 45를 보고 함수 규칙의 알 수 없는 값을 찾는 함수 기계](../assets/images/function-machine-find-42.svg){ .function-mapping-image }
+![입력값 3과 출력값 45를 보고 함수 규칙의 알 수 없는 값을 찾는 함수 기계](../assets/images/llm/01-function-machine-find-42.svg){ .function-mapping-image }
 
 그렇다면 컴퓨터는 어떻게 이 숫자를 스스로 찾아낼 수 있을까요? 아무런 정보 없이 정답을 알아낼 수는 없으므로, 숫자를 찾아낼 수 있는 단서가 필요합니다. 핵심은 **입력값과 그에 따른 정답을 함께 보여주는 것**입니다.
 

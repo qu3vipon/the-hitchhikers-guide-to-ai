@@ -8,13 +8,13 @@
 
 예를 들어 두 경고 신호 `x₁`, `x₂`가 있을 때, 둘 중 정확히 하나만 켜지면 점검하고 둘 다 켜지거나 둘 다 꺼지면 점검하지 않는 규칙을 생각해 봅시다. `x₁`만 켜졌을 때와 `x₂`만 켜졌을 때 모두 점수가 기준을 넘어야 합니다. 그런데 두 신호가 함께 켜지면 두 점수가 더해지므로 기준을 더 크게 넘게 됩니다. 하지만 우리가 원하는 결과는 점검하지 않는 것입니다. 가중치와 편향을 어떻게 바꿔도, 점수를 한 번 합산하는 구조만으로는 이 규칙을 표현할 수 없습니다.
 
-![두 경고 신호 중 정확히 하나만 켜졌을 때 점검하는 규칙](../assets/images/single-layer-xor-limit.svg){ .neural-network-image .multilayer-perceptron-image }
+![두 경고 신호 중 정확히 하나만 켜졌을 때 점검하는 규칙](../assets/images/llm/04-single-layer-xor-limit.svg){ .neural-network-image .multilayer-perceptron-image }
 
 ## 층을 쌓아 해결한다 {#stacking-perceptrons}
 
 이는 학습이 부족해서가 아니라 단층 신경망의 구조적인 한계입니다. 따라서 학습을 아무리 계속해도 이 규칙을 표현할 수 없습니다. 이 한계를 넘기 위해 퍼셉트론을 여러 개 연결할 수 있습니다. 첫 번째 층의 퍼셉트론은 입력값을 받아 작은 조합 패턴을 각각 찾아내고, 그 결과를 다음 층으로 넘깁니다. 다음 층은 앞선 층의 결과를 새로운 입력값으로 받아 다시 조합한 뒤, 그 결과를 또 다음 층으로 전달합니다. 이런 과정이 층마다 이어지고, 마지막 층이 최종 판단을 내립니다. 이렇게 퍼셉트론을 여러 층으로 쌓은 구조를 **다층 퍼셉트론(multilayer perceptron, MLP)**이라고 합니다.
 
-![입력층, 은닉층, 출력층으로 구성된 다층 퍼셉트론](../assets/images/multilayer-perceptron-overview.svg){ .neural-network-image .multilayer-perceptron-image }
+![입력층, 은닉층, 출력층으로 구성된 다층 퍼셉트론](../assets/images/llm/04-multilayer-perceptron-overview.svg){ .neural-network-image .multilayer-perceptron-image }
 
 위 그림은 퍼셉트론 두 개를 연결해 층을 쌓은 구조를 나타냅니다. 첫 번째 퍼셉트론이 입력값을 받아 결과를 만들고, 그 결과가 두 번째 퍼셉트론의 입력값으로 전달됩니다. 그림에서는 연결 구조에 집중하기 위해 생략했지만, 각 퍼셉트론에는 가중치와 편향으로 값을 계산하고 활성화 함수를 적용하는 과정이 포함됩니다.
 
@@ -31,7 +31,7 @@
 
 가중치와 편향에 실제 값을 넣고, `x₁=1`, `x₂=1`인 경우를 계산해 보면 다음과 같습니다.
 
-![가중치와 편향을 적용해 경고 신호를 판단하는 다층 퍼셉트론](../assets/images/mlp-xor-weight-example.svg){ .neural-network-image .multilayer-perceptron-image }
+![가중치와 편향을 적용해 경고 신호를 판단하는 다층 퍼셉트론](../assets/images/llm/04-mlp-xor-weight-example.svg){ .neural-network-image .multilayer-perceptron-image }
 
 <div class="function-formulas">
   <div><code>h₁ = ReLU((2 × 1) + (−2 × 1) − 1) = ReLU(−1) = 0</code></div>

@@ -43,7 +43,7 @@
 
 이렇게 단어를 임베딩해 벡터로 바꿨을 때, 단어 사이의 의미나 관계가 잘 반영되었다고 가정해 봅시다. “고양이”와 “강아지”처럼 비슷한 의미를 가진 단어의 벡터는 비슷한 방향을 향하고, “자동차”처럼 관계가 먼 단어의 벡터는 다른 방향을 향합니다. 이처럼 벡터의 위치와 방향을 이용해 단어 사이의 의미와 관계를 표현하는 것이 임베딩의 핵심입니다. 따라서 벡터의 [내적](05-high-dimensional-learning.md#learning-and-vectors)을 활용하면 두 단어의 벡터가 얼마나 비슷한지 수치로 비교할 수 있습니다.
 
-![고양이와 강아지는 비슷한 방향, 자동차는 다른 방향을 가리키는 단어 임베딩 벡터](../assets/images/word-embedding-vectors.svg){ .neural-network-image .coordinate-image }
+![고양이와 강아지는 비슷한 방향, 자동차는 다른 방향을 가리키는 단어 임베딩 벡터](../assets/images/llm/06-word-embedding-vectors.svg){ .neural-network-image .coordinate-image }
 
 다만 이 때 벡터의 각 성분이 (‘생물인지’, ‘크기가 큰지’, ‘움직이는지’)처럼 각각 하나의 의미를 나타내는 것은 아닙니다. 여러 성분이 함께 작용해 단어의 의미와 관계를 표현합니다. 따라서 각각의 숫자를 따로 해석하기보다, 벡터 전체가 다른 단어의 벡터와 어떤 관계를 이루는지가 중요합니다.
 
@@ -61,13 +61,13 @@
 
 첫 번째 방법은 **CBOW(Continuous Bag of Words)**입니다. CBOW는 주변에 있는 단어들을 하나의 묶음으로 보고, 그 가운데에 들어갈 단어를 예측합니다. 이름의 Bag of Words는 단어의 순서를 엄격하게 구분하지 않고 하나의 묶음으로 다룬다는 뜻입니다. Continuous는 문장에서 연속적으로 이어지는 주변 단어들을 문맥으로 사용한다는 의미입니다.
 
-![주변 단어로 가운데 빈칸을 맞히는 CBOW](../assets/images/word2vec-cbow.svg){ .neural-network-image }
+![주변 단어로 가운데 빈칸을 맞히는 CBOW](../assets/images/llm/06-word2vec-cbow.svg){ .neural-network-image }
 
 ### Skip-gram {#skip-gram}
 
 두 번째 방법은 **Skip-gram**입니다. Skip-gram은 가운데 단어 하나를 보고 일정 범위 안에 있는 주변 단어들을 각각 예측합니다. 이름의 gram은 단어로 이루어진 짧은 단위를 의미하고, skip은 바로 옆에 붙어 있는 단어뿐만 아니라 일정 범위 안에서 떨어져 있는 단어와의 관계도 학습한다는 의미입니다.
 
-![가운데 단어로 주변 빈칸을 맞히는 Skip-gram](../assets/images/word2vec-skip-gram.svg){ .neural-network-image }
+![가운데 단어로 주변 빈칸을 맞히는 Skip-gram](../assets/images/llm/06-word2vec-skip-gram.svg){ .neural-network-image }
 
 CBOW와 Skip-gram은 각각 장단점이 있기 때문에 학습 목적과 데이터의 특성에 따라 적절한 방식을 선택합니다. Skip-gram은 하나의 가운데 단어로 주변 단어를 각각 예측하기 때문에 단어와 문맥의 관계를 더 세밀하게 학습하는 편입니다. 특히 데이터가 적거나 등장 빈도가 낮은 단어에서도 좋은 임베딩을 얻는 데 유리한 경향이 있습니다. 다만 예측해야 할 대상이 많아 계산량이 크고 학습 속도는 상대적으로 느립니다.
 
@@ -79,7 +79,7 @@ Word2Vec은 주변 단어를 맞히는 과정을 반복하면서, 예측에 도�
 
 여기서 놀라운 점은 사람이 단어마다 “동물”, “국가”, “직업”처럼 의미적 특징을 하나씩 알려 주지 않았음에도, 모델은 이러한 차이를 주변 단어 예측에 필요한 표현으로 바꾸어 벡터에 담는다는 것입니다. 즉, 사람이 따로 가르치지 않은 **의미와 관계가 단어 벡터 속에 자연스럽게 녹아드는 것**입니다.
 
-![man에서 woman으로, king에서 queen으로 향하는 관계 벡터](../assets/images/word-embedding-analogy.svg){ .neural-network-image .coordinate-image }
+![man에서 woman으로, king에서 queen으로 향하는 관계 벡터](../assets/images/llm/06-word-embedding-analogy.svg){ .neural-network-image .coordinate-image }
 
 위와 같이 단어를 벡터 공간에 표현해 보았습니다. `E`는 단어를 임베딩 벡터로 표현한다는 뜻입니다. 회색 점선 화살표는 두 임베딩 벡터 사이의 차이, 즉 한 벡터에서 다른 벡터로 이동하는 방향과 크기를 나타냅니다.
 

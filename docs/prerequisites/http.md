@@ -19,7 +19,7 @@ HTTP(HyperText Transfer Protocol)는 웹에서 **클라이언트와 서버가 �
 
 웹 브라우저에서 새로운 창을 열고 주소창에 `http://example.com`을 입력해 보세요. 잠시 뒤 간단한 웹 페이지가 표시됩니다. 우리는 주소를 입력했을 뿐이지만, 브라우저는 `example.com` 서버에 HTTP 요청을 보내고 응답으로 받은 내용을 화면에 표시합니다.
 
-<img src="../../assets/images/exampledotcom.png" alt="웹 브라우저에서 example.com을 연 화면" class="example-domain-image">
+<img src="../../assets/images/prerequisites/07-exampledotcom.png" alt="웹 브라우저에서 example.com을 연 화면" class="example-domain-image">
 
 웹 브라우저는 **사용자가 웹 서비스를 쉽게 이용할 수 있도록** 웹 서버에 HTTP 요청을 보내고, 응답을 화면에 보여주는 클라이언트 프로그램입니다. 그렇기 때문에 우리는 그동안 HTTP라는 통신 규칙의 존재를 의식하지 않아도 웹 서비스를 사용할 수 있었습니다.
 
@@ -39,7 +39,7 @@ HTTP(HyperText Transfer Protocol)는 웹에서 **클라이언트와 서버가 �
     curl.exe example.com
     ```
 
-<img src="../../assets/images/curl.png" alt="터미널에서 curl example.com 명령어를 실행한 화면" class="terminal-image">
+<img src="../../assets/images/prerequisites/07-curl.png" alt="터미널에서 curl example.com 명령어를 실행한 화면" class="terminal-image">
 
 명령어를 실행해 보면 터미널에 처음 보는 긴 텍스트가 출력됩니다. 사실 이 텍스트는 아까 브라우저로 봤던 내용과 같습니다. 자세히 보면 중간에 `Example Domain`이라는 글씨도 보입니다. 이것이 서버가 응답으로 보낸 웹 페이지의 원본입니다. 이 텍스트가 무엇을 뜻하는지는 뒤에서 자세히 살펴봅니다.
 

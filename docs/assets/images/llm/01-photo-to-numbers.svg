@@ -4,7 +4,7 @@
   <defs>
     <style>
       .label { font: 600 18px sans-serif; fill: #36525b; }
-      .number { font: 500 17px monospace; fill: #36525b; }
+      .number { font: 500 19px 'Chalkboard SE', 'Segoe Print', cursive; fill: #393630; }
     </style>
   </defs>
 
@@ -31,17 +31,17 @@
   <rect x="335" y="35" width="180" height="180" fill="none" stroke="#e07b54" stroke-width="4"/>
 
   <g>
-    <path d="M560 35 H548 V215 H560" fill="none" stroke="#6d8790" stroke-width="3"/>
+    <path d="M560 35 L548 36 Q546 125 548 214 L560 215" fill="none" stroke="#393630" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     <g fill="none" stroke="#c5d3d7" stroke-width="1.5">
-      <rect x="570" y="35" width="60" height="60"/><rect x="630" y="35" width="60" height="60"/><rect x="690" y="35" width="60" height="60"/>
-      <rect x="570" y="95" width="60" height="60"/><rect x="630" y="95" width="60" height="60"/><rect x="690" y="95" width="60" height="60"/>
-      <rect x="570" y="155" width="60" height="60"/><rect x="630" y="155" width="60" height="60"/><rect x="690" y="155" width="60" height="60"/>
+      <path d="M570 35 Q600 34.2 630 35 Q630.8 65 630 95 Q600 95.8 570 95 Q569.2 65 570 35 Z"/><path d="M630 35 Q660 34.2 690 35 Q690.8 65 690 95 Q660 95.8 630 95 Q629.2 65 630 35 Z"/><path d="M690 35 Q720 34.2 750 35 Q750.8 65 750 95 Q720 95.8 690 95 Q689.2 65 690 35 Z"/>
+      <path d="M570 95 Q600 94.2 630 95 Q630.8 125 630 155 Q600 155.8 570 155 Q569.2 125 570 95 Z"/><path d="M630 95 Q660 94.2 690 95 Q690.8 125 690 155 Q660 155.8 630 155 Q629.2 125 630 95 Z"/><path d="M690 95 Q720 94.2 750 95 Q750.8 125 750 155 Q720 155.8 690 155 Q689.2 125 690 95 Z"/>
+      <path d="M570 155 Q600 154.2 630 155 Q630.8 185 630 215 Q600 215.8 570 215 Q569.2 185 570 155 Z"/><path d="M630 155 Q660 154.2 690 155 Q690.8 185 690 215 Q660 215.8 630 215 Q629.2 185 630 155 Z"/><path d="M690 155 Q720 154.2 750 155 Q750.8 185 750 215 Q720 215.8 690 215 Q689.2 185 690 155 Z"/>
     </g>
     <g class="number" text-anchor="middle">
       <text x="600" y="71">214</text><text x="660" y="71">214</text><text x="720" y="71">179</text>
       <text x="600" y="131">214</text><text x="660" y="131">214</text><text x="720" y="131">179</text>
       <text x="600" y="191">189</text><text x="660" y="191">179</text><text x="720" y="191">179</text>
     </g>
-    <path d="M760 35 H772 V215 H760" fill="none" stroke="#6d8790" stroke-width="3"/>
+    <path d="M760 35 L772 36 Q774 125 772 214 L760 215" fill="none" stroke="#393630" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>

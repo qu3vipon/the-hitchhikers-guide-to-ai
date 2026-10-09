@@ -4,7 +4,7 @@
 
 마우스로 아이콘과 메뉴를 눌러 조작하는 방식과 달리, 터미널에서는 원하는 작업을 명령어로 직접 전달합니다. 앞으로 Python 개발 환경을 준비하고 프로그램을 실행할 때도 터미널을 자주 사용합니다.
 
-<img src="../../assets/images/terminal.png" alt="명령어와 파일 목록이 표시된 터미널 화면" class="terminal-image">
+<img src="../../assets/images/prerequisites/01-terminal.png" alt="명령어와 파일 목록이 표시된 터미널 화면" class="terminal-image">
 
 !!! info "CLI와 GUI"
     터미널을 통해 명령어로 컴퓨터를 제어하는 방식을 **CLI(Command Line Interface)**라고 합니다. 명령어를 입력하면 컴퓨터가 이를 실행하고 결과를 보여 줍니다.

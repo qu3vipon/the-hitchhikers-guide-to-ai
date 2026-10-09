@@ -46,7 +46,7 @@ flowchart LR
 
 웹 브라우저에서 `https://example.com:443`을 입력해 보세요. 페이지가 열린 뒤 주소창을 보면 `:443` 부분이 사라져 있습니다. HTTPS의 기본 포트가 443이므로 브라우저가 굳이 표시하지 않는 것입니다. 마찬가지로 포트 번호 없이 `https://example.com`까지만 입력해도 실제로는 443번 포트를 이용해 통신합니다.
 
-<img src="../../assets/images/exampledotcom_port.png" alt="브라우저 주소창에 example.com:443을 입력한 화면" class="example-domain-image">
+<img src="../../assets/images/prerequisites/15-exampledotcom_port.png" alt="브라우저 주소창에 example.com:443을 입력한 화면" class="example-domain-image">
 
 이번에는 curl로도 기본 포트가 어떻게 사용되는지 확인해 보겠습니다. 아래 명령어를 실행해 보세요.
 

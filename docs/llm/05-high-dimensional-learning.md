@@ -8,7 +8,7 @@
 
 벡터의 중요한 특징은 좌표 공간에 놓고 기하학적으로 해석할 수 있다는 점입니다. 벡터를 크기와 방향을 가진 화살표로 생각하면, 각 벡터가 공간의 어느 위치를 가리키는지와 벡터 사이의 관계를 그림으로 살펴볼 수 있습니다.
 
-![3차원 공간에서 위치와 방향을 나타내는 벡터](../assets/images/three-dimensional-vector.svg){ .neural-network-image .coordinate-image }
+![3차원 공간에서 위치와 방향을 나타내는 벡터](../assets/images/llm/05-three-dimensional-vector.svg){ .neural-network-image .coordinate-image }
 
 실제 컴퓨터는 이것이 벡터인지 따로 이해하는 것이 아니라, 여러 숫자를 배열 형태로 저장하고 정해진 연산을 수행할 뿐입니다. 하지만 이 숫자들을 벡터로 바라보면, 수많은 값을 한 덩어리로 이해하고 계산 결과를 더 쉽게 해석할 수 있습니다. 그래서 우리는 벡터를 어떤 `n`차원 공간 위의 위치나 방향으로 생각합니다.
 
@@ -21,7 +21,7 @@
 
 그런데 가중치 벡터가 바뀌면 입력 벡터와의 **내적(dot product)** 값도 달라집니다. 내적은 두 벡터에서 같은 위치에 있는 성분끼리 곱한 뒤, 그 결과를 모두 더하는 계산입니다. 기하학적으로는 **두 벡터가 얼마나 같은 방향을 향하는지**를 크기까지 함께 반영해 나타내는 값입니다. 두 벡터의 방향이 비슷할수록 내적은 커지고, 서로 수직이면 `0`이 되며, 반대 방향에 가까울수록 음수가 됩니다.
 
-![입력 벡터와 가중치 벡터의 각도로 이해하는 내적](../assets/images/vector-dot-product.svg){ .neural-network-image .coordinate-image }
+![입력 벡터와 가중치 벡터의 각도로 이해하는 내적](../assets/images/llm/05-vector-dot-product.svg){ .neural-network-image .coordinate-image }
 
 그렇다면 이 두 벡터를 실제 계산에 어떻게 사용할까요? 입력 벡터와 가중치 벡터를 내적하면, 앞에서 살펴본 가중 합 `w₁x₁ + w₂x₂ + w₃x₃`을 얻습니다.
 
@@ -37,11 +37,11 @@
 
 실제 신경망에는 수많은 파라미터가 있기 때문에 이 공간은 훨씬 높은 차원을 가집니다. 하지만 고차원 공간은 직접 그릴 수 없기 때문에, 여기서는 이해를 돕기 위해 파라미터가 두 개라고 가정하고 손실을 높이로 나타낸 3차원 공간으로 단순화해 살펴보겠습니다.
 
-![파라미터의 위치에 따라 높이가 달라지는 손실 지형](../assets/images/loss_landscape.png){ .neural-network-image .loss-landscape-image }
+![파라미터의 위치에 따라 높이가 달라지는 손실 지형](../assets/images/llm/05-loss_landscape.png){ .neural-network-image .loss-landscape-image }
 
 신경망을 학습시키는 일은 단순히 손실 함수를 계산하는 데서 끝나지 않습니다. 현재 위치의 손실을 확인하고, 더 낮은 손실을 만드는 파라미터 위치를 찾아 이동하는 문제입니다. 이처럼 손실이 가장 낮은 지점, 또는 충분히 낮은 지점을 찾는 것을 **최적화(optimization)**라고 합니다.
 
-![더 낮은 손실을 향해 이동하는 최적화 과정](../assets/images/loss_landscape_optimization.png){ .neural-network-image .loss-landscape-image }
+![더 낮은 손실을 향해 이동하는 최적화 과정](../assets/images/llm/05-loss_landscape_optimization.png){ .neural-network-image .loss-landscape-image }
 
 ## 가파른 내리막길 찾기 {#gradient-descent}
 
@@ -55,7 +55,7 @@
 
 문제는 지역 최적점 바로 주변에서는 어느 방향으로 조금 움직여도 손실이 커진다는 점입니다. 경사 하강법은 현재 위치에서 손실이 줄어드는 방향만 선택하므로, 손실이 먼저 높아지는 길을 지나 이 주변을 벗어나기 어렵습니다. 하지만 전체적으로 보면 멀리 떨어진 곳에 손실이 가장 낮은 **전역 최적점(global optimum)**이 있을 수 있습니다. 학습 과정에서는 이런 지역 최적점에 너무 일찍 머무르지 않으면서 더 좋은 위치를 찾아가야 합니다.
 
-![지역 최적점과 전역 최적점](../assets/images/loss_landscape_global_optimum.png){ .neural-network-image .loss-landscape-image }
+![지역 최적점과 전역 최적점](../assets/images/llm/05-loss_landscape_global_optimum.png){ .neural-network-image .loss-landscape-image }
 
 이런 문제를 줄이기 위해 경사 하강법을 보완한 여러 **최적화 알고리즘(optimizer)**이 사용됩니다. 대표적으로 **모멘텀(momentum)**은 이전에 움직이던 방향을 일부 유지해 관성처럼 활용합니다. 덕분에 얕은 지역 최적점이나 울퉁불퉁한 구간에서 멈추지 않고 지나갈 가능성을 높입니다.
 

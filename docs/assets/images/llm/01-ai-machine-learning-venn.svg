@@ -2,13 +2,18 @@
   <title id="title">인공지능과 머신러닝의 관계</title>
   <desc id="desc">인공지능 원 안에 머신러닝 원이 포함된 관계를 보여 주는 벤다이어그램</desc>
   <style>
-    .title { font: 700 31px sans-serif; fill: #26434c; }
-    .body { font: 500 22px sans-serif; fill: #496873; }
-    .ml-title { font: 700 27px sans-serif; fill: #315b3b; }
-    .ml-body { font: 500 19px sans-serif; fill: #486f50; }
+    text { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; fill: #393630; }
+    .title { font-size: 31px; font-weight: 700; }
+    .body { font-size: 22px; font-weight: 500; }
+    .ml-title { font-size: 27px; font-weight: 700; }
+    .ml-body { font-size: 19px; font-weight: 500; }
+    .ink { stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; }
   </style>
-  <circle cx="350" cy="235" r="180" fill="#dce9ed" fill-opacity=".8" stroke="#6d9aa7" stroke-width="3"/>
-  <circle cx="418" cy="270" r="90" fill="#e4eee3" fill-opacity=".95" stroke="#6f9877" stroke-width="3"/>
+  <path class="ink" d="M350 55 C449 52 532 136 530 235 C533 334 449 417 350 415 C251 418 168 334 170 235 C167 136 251 53 350 55 Z" fill="#e7eef0"/>
+  <path class="echo" d="M353 58 C454 55 528 139 533 233 C530 337 446 413 348 418 C248 414 173 331 167 237 C171 133 254 58 353 58 Z"/>
+  <path class="ink" d="M418 180 C469 178 510 219 508 270 C511 320 468 362 418 360 C367 363 326 321 328 270 C325 220 368 178 418 180 Z" fill="#e7efdf"/>
+  <path class="echo" d="M421 183 C471 181 505 222 511 268 C507 323 465 358 416 363 C364 359 331 318 325 272 C329 217 371 183 421 183 Z"/>
   <text x="350" y="115" text-anchor="middle" class="title">
     <tspan x="350">인공지능</tspan>
     <tspan x="350" dy="33">(AI)</tspan>

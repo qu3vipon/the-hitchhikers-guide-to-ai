@@ -10,19 +10,19 @@
 
 우리 몸 안에서는 수없이 많은 뉴런들이 서로 신호를 주고받으며, 감각을 느끼고 움직임을 조절하는 등 다양한 정보를 처리합니다. 예를 들어 뜨거운 냄비를 만졌다고 해 봅시다. 손의 피부가 뜨거움을 감지하면, 그 정보는 전기 신호로 변환되어 여러 뉴런을 거쳐 전달됩니다. 이어서 손과 팔의 근육으로 신호가 전달되고, 우리는 즉각적으로 손을 뗍니다.
 
-![뉴런 A에서 B와 C로 이어지는 신호 전달](../assets/images/neuron-signal-flow.svg){ .neuron-signal-flow-image }
+![뉴런 A에서 B와 C로 이어지는 신호 전달](../assets/images/llm/02-neuron-signal-flow.svg){ .neuron-signal-flow-image }
 
 모든 뉴런이 모든 행동에 똑같이 관여하는 것은 아닙니다. 어떤 뉴런들의 연결은 손을 움직이는 일에 더 많이 관여하고, 다른 연결은 소리나 시각 정보를 처리하는 일에 더 많이 관여합니다. 반복적인 경험을 통해 자주 함께 쓰이는 뉴런 사이의 연결은 더 강해질 수도 있습니다.
 
 인공 신경망도 이 아이디어를 빌립니다. 인공 신경망에서는 뉴런 사이 연결이 결과에 미치는 정도를 숫자로 표현하며, 이 숫자를 **가중치(weight)**라고 합니다. 가중치는 특정 뉴런 사이의 연결이 **다음 뉴런에 얼마나 강하게 영향을 주는지**를 나타내는 값이라고 보면 됩니다.
 
-![두 층의 뉴런이 가중치로 모두 연결된 인공 신경망](../assets/images/neural-network-3x3.svg){ .neural-network-image }
+![두 층의 뉴런이 가중치로 모두 연결된 인공 신경망](../assets/images/llm/02-neural-network-3x3.svg){ .neural-network-image }
 
 위 뉴런 사이의 연결에서 선의 색이 진할수록 가중치가 커서, 그 연결의 신호가 다음 뉴런에 더 큰 영향을 준다는 뜻입니다. 하나의 뉴런은 여러 뉴런과 서로 다른 강도로 연결될 수 있으며, 동시에 여러 뉴런으로부터 영향을 받을 수 있습니다.
 
 ## 가중 합 {#weighted-sum}
 
-![세 입력 뉴런이 하나의 출력 뉴런으로 연결된 인공 신경망](../assets/images/neural-network-3x1.svg){ .neural-network-image }
+![세 입력 뉴런이 하나의 출력 뉴런으로 연결된 인공 신경망](../assets/images/llm/02-neural-network-3x1.svg){ .neural-network-image }
 
 뉴런 사이에서 신호가 전달될 때, 가중치는 다음처럼 신호에 반영됩니다. 먼저 뉴런 안의 값은 해당 뉴런이 다음 뉴런으로 전달하는 **신호의 세기**를 나타냅니다. 이때 신호를 받는 뉴런은 앞선 뉴런에서 전달된 신호에 각 연결의 가중치를 곱한 뒤, 그 결과를 모두 더합니다. 그 결과 이 뉴런이 여러 연결로부터 받는 신호의 세기는 `(0.2 × 0.8) + (0.4 × 0.4) + (0.5 × 0.2) = 0.42`가 됩니다. 이러한 계산 방식을 **가중 합(weighted sum)**이라고 합니다.
 
@@ -39,7 +39,7 @@
 
 ## 함수로 보는 신경망 {#neural-networks-as-functions}
 
-![세 입력 x₁, x₂, x₃이 가중치를 거쳐 출력 y를 만드는 신경망](../assets/images/neural-network-3x1-variables.svg){ .neural-network-image }
+![세 입력 x₁, x₂, x₃이 가중치를 거쳐 출력 y를 만드는 신경망](../assets/images/llm/02-neural-network-3x1-variables.svg){ .neural-network-image }
 
 이러한 뉴런 사이의 관계도 [함수](01-machine-learning.md#functions-turn-inputs-into-outputs)로 볼 수 있습니다. 1장에서 함수는 입력과 출력이 규칙으로 연결되는 관계라고 배웠습니다. 앞쪽에서 신호를 전달하는 뉴런을 입력, 신호를 받는 뉴런을 출력으로 보고, 가중치를 적용해 신호를 계산하는 과정을 이들을 연결하는 규칙으로 보면 뉴런 간의 관계 역시 하나의 함수 구조를 따릅니다.
 
@@ -54,7 +54,7 @@
     - `0.8 × x₁`, `0.4 × x₂`, `0.2 × x₃`: 각 입력에 연결의 세기를 나타내는 가중치가 곱해집니다.
     - `+`: 가중치가 곱해진 세 값을 모두 더해, 출력 뉴런으로 전달되는 신호의 세기를 계산합니다.
 
-![세 입력 x₁, x₂, x₃이 관계 함수 f₁, f₂, f₃을 거쳐 출력 y₁, y₂, y₃을 만드는 신경망](../assets/images/neural-network-3x3-variables.svg){ .neural-network-image }
+![세 입력 x₁, x₂, x₃이 관계 함수 f₁, f₂, f₃을 거쳐 출력 y₁, y₂, y₃을 만드는 신경망](../assets/images/llm/02-neural-network-3x3-variables.svg){ .neural-network-image }
 
 이제 출력 뉴런의 개수를 다시 3개로 늘려 봅시다. 이번에는 출력 뉴런의 개수만큼 함수가 정의됩니다. 따라서 입력 `x₁`, `x₂`, `x₃`으로부터 세 개의 함수가 만들어집니다. `f₁`, `f₂`, `f₃`은 모두 같은 입력을 받아 출력을 만드는 함수이지만, 각 출력 뉴런은 앞선 뉴런의 신호를 서로 다른 세기로 받아들입니다. 
 
@@ -74,7 +74,7 @@
 
 신경망에서는 같은 단계에 있는 뉴런들을 하나의 **층(layer)**이라고 부릅니다. 바깥에서 들어온 신호를 처음 받는 뉴런들을 **입력층(input layer)**, 계산한 결과를 내보내는 뉴런들을 **출력층(output layer)**이라고 합니다.
 
-![n개의 입력 x와 m개의 출력 y를 가진 신경망](../assets/images/neural-network-nxm.svg){ .neural-network-image }
+![n개의 입력 x와 m개의 출력 y를 가진 신경망](../assets/images/llm/02-neural-network-nxm.svg){ .neural-network-image }
 
 많은 뉴런과 연결이 얽힌 관계를 함수로 표현하면 다음과 같습니다.
 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="540" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+  <title id="title">입력과 출력을 연결하는 우산 프로그램</title>
+  <desc id="desc">시간당 예상 강수량을 입력받아 프로그램 안에서 조건을 확인하고, 우산을 챙길지 여부를 출력한다.</desc>
+  <style>
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; stroke-linejoin: round; }
+    text { fill: #393630; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 23px; font-weight: 500; text-anchor: middle; }
+    .label { font-size: 21px; }
+    .stage-label { dominant-baseline: central; }
+  </style>
+  <g transform="translate(52 0)">
+  <path d="M19 59 Q54 56 91 59 L89 81 Q54 84 20 81 Z" fill="#e7eef0"/>
+  <path d="M19 256 Q55 253 91 256 L89 278 Q54 281 20 278 Z" fill="#fbefd5"/>
+  <path d="M19 458 Q54 455 91 458 L89 480 Q54 483 20 480 Z" fill="#e7efdf"/>
+  <text class="label stage-label" x="55" y="70">입력</text>
+  <text class="label stage-label" x="55" y="267">함수</text>
+  <text class="label stage-label" x="55" y="469">출력</text>
+
+  <!-- Slightly uneven outlines and a second pencil stroke keep the drawing editable. -->
+  <path d="M247 35 Q377 31 510 36 L513 104 Q384 109 246 104 Z" fill="#e7eef0"/>
+  <path class="ink" d="M245 36 Q375 32 511 35 L514 105 Q381 108 246 105 Z"/>
+  <path class="echo" d="M249 33 L509 38 L511 108 L243 102 Z"/>
+  <text x="380" y="79">시간당 예상 강수량</text>
+
+  <path class="ink" d="M380 110 Q377 141 381 170 M373 159 L381 171 L389 158"/>
+
+  <path class="ink" d="M129 143 Q378 139 631 144 L634 390 Q381 394 127 391 Z"/>
+  <path class="echo" d="M132 140 L629 147 L637 388 L130 394 Z"/>
+
+  <path d="M380 178 L551 267 L380 359 L208 267 Z" fill="#fbefd5"/>
+  <path class="ink" d="M379 177 Q463 219 552 267 Q466 312 381 359 Q294 314 207 268 Q291 220 379 177 Z"/>
+  <path class="echo" d="M383 180 L548 270 L377 356 L211 264 Z"/>
+  <text x="380" y="255">시간당 예상 강수량이</text>
+  <text x="380" y="290">1mm 이상인가?</text>
+
+  <path class="ink" d="M257 298 Q249 325 248 351 Q244 383 247 421 M239 410 L247 423 L255 409"/>
+  <path class="ink" d="M503 298 Q511 325 512 351 Q516 384 513 421 M505 409 L513 423 L521 410"/>
+  <text class="label" x="218" y="339">예</text>
+  <text class="label" x="550" y="339">아니오</text>
+
+  <g transform="translate(70 0)">
+  <path d="M63 433 L290 431 L293 505 L61 507 Z" fill="#e7efdf"/>
+  <path class="ink" d="M62 432 Q177 429 291 432 L293 506 Q179 509 61 506 Z"/>
+  <path class="echo" d="M65 435 L289 429 L296 503 L64 509 Z"/>
+  <text x="177" y="479">우산 챙기기</text>
+
+  </g>
+
+  <g transform="translate(-70 0)">
+  <path d="M469 433 L697 431 L698 506 L467 508 Z" fill="#e7efdf"/>
+  <path class="ink" d="M468 432 Q583 429 698 433 L699 506 Q583 509 467 506 Z"/>
+  <path class="echo" d="M471 435 L696 429 L702 503 L470 509 Z"/>
+  <text x="583" y="479">우산 챙기지 않기</text>
+  </g>
+  </g>
+</svg>
