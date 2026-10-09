@@ -90,6 +90,8 @@ nav:
 markdown_extensions:
   - attr_list
   - admonition
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -107,5 +109,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid@11.12.0/dist/mermaid.min.js
   - javascripts/mermaid.js
