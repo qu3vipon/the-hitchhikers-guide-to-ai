@@ -18,7 +18,7 @@
     </g>
   </defs>
   <text class="word" x="-60" y="167">원점수</text>
-  <text class="word" x="-60" y="276">가중 합</text>
+  <text class="word" x="-60" y="276">가중합</text>
   <use href="#person" transform="translate(183 55)"/>
   <use href="#person" transform="translate(703 55)"/>
   <text class="word heading" x="287" y="62">지원자 A</text>

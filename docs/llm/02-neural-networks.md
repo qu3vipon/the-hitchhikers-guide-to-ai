@@ -30,11 +30,11 @@
 
 위 뉴런 사이의 연결에서 선의 색이 진할수록 가중치가 커서, 그 연결의 신호가 다음 뉴런에 더 큰 영향을 준다는 뜻입니다. 하나의 뉴런은 여러 뉴런과 서로 다른 강도로 연결될 수 있으며, 동시에 여러 뉴런으로부터 영향을 받을 수 있습니다.
 
-## 가중 합 {#weighted-sum}
+## 가중합 {#weighted-sum}
 
 ![세 입력 뉴런이 하나의 출력 뉴런으로 연결된 인공 신경망](../assets/images/llm/02-neural-network-3x1.svg){ .neural-network-image }
 
-뉴런 사이에서 신호가 전달될 때, 가중치는 다음처럼 신호에 반영됩니다. 먼저 뉴런 안의 값은 해당 뉴런이 다음 뉴런으로 전달하는 **신호의 세기**를 나타냅니다. 이때 신호를 받는 뉴런은 앞선 뉴런에서 전달된 신호에 각 연결의 가중치를 곱한 뒤, 그 결과를 모두 더합니다. 그 결과 이 뉴런이 여러 연결로부터 받는 신호의 세기는 `(0.2 × 0.8) + (0.4 × 0.4) + (0.5 × 0.2) = 0.42`가 됩니다. 이러한 계산 방식을 **가중 합(weighted sum)**이라고 합니다.
+뉴런 사이에서 신호가 전달될 때, 가중치는 다음처럼 신호에 반영됩니다. 먼저 뉴런 안의 값은 해당 뉴런이 다음 뉴런으로 전달하는 **신호의 세기**를 나타냅니다. 이때 신호를 받는 뉴런은 앞선 뉴런에서 전달된 신호에 각 연결의 가중치를 곱한 뒤, 그 결과를 모두 더합니다. 그 결과 이 뉴런이 여러 연결로부터 받는 신호의 세기는 `(0.2 × 0.8) + (0.4 × 0.4) + (0.5 × 0.2) = 0.42`가 됩니다. 이러한 계산 방식을 **가중합(weighted sum)**이라고 합니다.
 
 국어·영어·수학 점수로 합격자를 뽑는다고 생각해 봅시다. 세 과목 중 수학을 더 중요하게 평가하고 싶다면, 국어와 영어 점수에는 `1`을 곱하고 수학 점수에는 `2`를 곱할 수 있습니다. 그러면 수학 점수는 최종 결과에 두 배 더 크게 반영됩니다.
 
@@ -101,23 +101,23 @@
 이때 수식의 <code>w<sub><span class="weight-output-index">i</span><span class="weight-input-index">j</span></sub></code>는 입력 <code>x<sub><span class="weight-input-index">j</span></sub></code>가 출력 <code>y<sub><span class="weight-output-index">i</span></sub></code>에 얼마나 큰 영향을 미치는지를 결정하는 가중치입니다. 앞의 <code><span class="weight-output-index">i</span></code>는 어느 출력 뉴런에 연결되는지를, 뒤의 <code><span class="weight-input-index">j</span></code>는 어느 입력 뉴런에서 온 신호인지를 나타냅니다.
 예를 들어 <code>w<sub><span class="weight-output-index">2</span><span class="weight-input-index">3</span></sub></code>은 세 번째 입력 뉴런 <code>x<sub><span class="weight-input-index">3</span></sub></code>과 두 번째 출력 뉴런 <code>y<sub><span class="weight-output-index">2</span></sub></code> 사이의 연결 가중치를 의미합니다.
 
+![세 번째 입력 x₃에서 두 번째 출력 y₂로 이어지는 가중치 w₂₃을 강조한 도식](../assets/images/llm/02-weight-w23.svg){ .neural-network-image }
+
 그런데 <code><span class="weight-input-index">n</span></code>개의 입력을 받는 <code><span class="weight-output-index">m</span></code>개의 함수를 모두 풀어 쓰려면 식이 너무 길어집니다. 이를 간단하게 표현하기 위해 먼저 하나의 함수를 다음과 같이 줄여서 나타내 보겠습니다.
 
 <div class="function-formulas">
   <div><code>f(x) = w · x</code></div>
 </div>
 
-여기서 <code>x</code>는 <code>x₁</code>, <code>x₂</code>, …, <code>xₙ</code>을 묶어 부르는 입력값이고, <code>w</code>는 각 입력에 곱하는 가중치를 묶어 부르는 표기입니다. 가운데 점 <code>·</code>은 각 입력과 가중치를 곱한 뒤 모두 더한다는 뜻입니다. 따라서 `f(x) = w · x`는 하나의 출력 뉴런에 대한 가중합을 간단하게 표현한 것으로, 수식이 짧아졌을 뿐 계산 방식은 동일합니다.
+여기서 <code>x</code>는 <code>x₁</code>, <code>x₂</code>, …, <code>xₙ</code>을 묶어 부르는 입력값이고, <code>w</code>는 각 입력에 곱하는 가중치를 묶어 부르는 표기입니다. 가운데 점 <code>·</code>은 각 입력과 가중치를 곱한 뒤 모두 더한다는 뜻입니다. 따라서 `f(x) = w · x`는 **하나의 출력 뉴런에 대한 가중합**을 간단하게 표현한 것으로, 수식이 짧아졌을 뿐 계산 방식은 동일합니다.
 
-그런데 출력 뉴런이 <code><span class="weight-output-index">m</span></code>개라면 함수도 <code><span class="weight-output-index">m</span></code>개이고, 각 함수는 서로 다른 가중치를 갖습니다. 따라서 각 함수의 가중치 묶음인 `w₁`, `w₂`, …, `wₘ`을 하나로 모아 `W`라는 **행렬(matrix)**로 표현합니다.
-
-이렇게 하면 `y₁`, `y₂`, …, `yₘ`이라는 여러 출력값을 다음과 같이 하나의 수식으로 나타낼 수 있습니다.
+그런데 출력 뉴런이 <code><span class="weight-output-index">m</span></code>개라면 함수도 <code><span class="weight-output-index">m</span></code>개이고, 각 함수는 서로 다른 가중치를 갖습니다. 따라서 각 함수의 가중치 묶음인 `w₁`, `w₂`, …, `wₘ`을 하나의 **행렬(matrix) W**로 표현할 수 있습니다. 이를 이용하면 여러 출력값 `y₁`, `y₂`, …, `yₘ`도 다음과 같이 하나의 수식으로 나타낼 수 있습니다.
 
 <div class="function-formulas">
   <div><code>y = Wx</code></div>
 </div>
 
-이는 입력값 묶음 `x`에 가중치 행렬 `W`를 곱하면, 여러 출력값을 묶은 `y`가 만들어진다는 뜻입니다. 그래서 이제 `y = Wx`를 보면, **여러 입력 신호에 서로 다른 가중치를 적용해 여러 출력 신호를 만드는 신경망의 한 층**을 나타낸 식이라고 이해하면 됩니다.
+이는 입력값 묶음 `x`에 가중치 행렬 `W`를 곱하면, 여러 출력값을 묶은 `y`가 만들어진다는 뜻입니다. 따라서 `y = Wx`는 **서로 연결된 두 층 사이에서 여러 입력 신호에 가중치를 적용해 여러 출력 신호를 만들어 내는 관계**를 나타낸 수식이라고 이해하면 됩니다.
 
 !!! info "행렬(matrix)"
     행렬은 숫자를 가로와 세로로 정리한 표입니다. 이때 `W`의 한 줄은 함수 하나에 쓰이는 가중치 묶음 하나와 같습니다.
