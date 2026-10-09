@@ -1,37 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="215" viewBox="0 45 660 215" role="img" aria-labelledby="title desc">
   <title id="title">무료라는 표현이 없는 스팸 메일의 퍼셉트론 계산</title>
-  <desc id="desc">무료라는 표현이 없는 입력 0과 모르는 발신자라는 입력 1이 가중치와 함께 퍼셉트론으로 들어가고, 위쪽에서 편향 -2가 더해져 평가 점수 -1이 만들어진다. 이 점수는 스팸 아님으로 판단된다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
-    </marker>
-  </defs>
-  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
-    <line x1="171" y1="82" x2="410" y2="142" stroke="#3d789d" stroke-width="2.25"/>
-    <line x1="171" y1="196" x2="410" y2="158" stroke="#93b6ca" stroke-width="2.25"/>
-    <line x1="440" y1="82" x2="440" y2="120" stroke="#c7834c" stroke-width="2.25"/>
+  <desc id="desc">무료라는 표현이 없는 입력 0과 모르는 발신자라는 입력 1이 가중치와 함께 퍼셉트론으로 들어가고, 위쪽에서 편향 -2가 더해져 평가 점수 -1이 만들어진다. 이 점수는 정상으로 판단된다.</desc>
+  <g transform="translate(42 0)">
+  <g fill="none" stroke-linecap="round">
+    <path stroke="#393630" stroke-width="2.25" d="M171 82 Q290.135 113.455 410 142 M403.21 136.17 L410 142 L401.27 143.93" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M171 196 Q290.736 178.481 410 158 M401.47 155.31 L410 158 L402.73 163.21" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M440 82 Q439.62 101 440 120 M444.00 112.00 L440 120 L436.00 112.00" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
-    <circle cx="141" cy="82" r="30"/>
-    <circle cx="141" cy="196" r="30"/>
-    <circle cx="440" cy="150" r="30"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5">
+    <path d="M141 52 C157.8 51 172 65.2 171 82 C172 98.8 157.8 113 141 112 C124.2 113 110 98.8 111 82 C110 65.2 124.2 51 141 52 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M141 166 C157.8 165 172 179.2 171 196 C172 212.8 157.8 227 141 226 C124.2 227 110 212.8 111 196 C110 179.2 124.2 165 141 166 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M440 120 C456.8 119 471 133.2 470 150 C471 166.8 456.8 181 440 180 C423.2 181 409 166.8 410 150 C409 133.2 423.2 119 440 120 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
     <text x="141" y="88" font-size="18">0</text>
     <text x="141" y="202" font-size="18">1</text>
     <text x="440" y="156" font-size="18">−1</text>
-    <text x="500" y="145" fill="#2c7a64" font-size="17" font-weight="700">스팸</text>
-    <text x="500" y="166" fill="#2c7a64" font-size="17" font-weight="700">아님</text>
+    <text x="500" y="156" fill="#2c7a64" font-size="17" font-weight="400">정상</text>
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif">
+  <g stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#e7efdf"/>
+    <path d="M65 119 Q77 118 87 119 M65 126 Q74 125 83 126" fill="none"/>
+    <path d="M75 234 C79 233 82 236 81 239 C81 243 76 244 74 241 C72 238 72 235 75 234 Z" fill="#f5d5cf"/>
+    <path d="M69 252 Q69 244 76 244 Q83 244 84 252 Z" fill="#f5d5cf"/>
+    <path d="M85 234 Q88 231 91 234 Q93 237 89 239 L89 242 M89 245 L89 245.5" fill="none" stroke="#a65043"/>
+  </g>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive">
     <text x="100" y="88" font-size="18" text-anchor="end">x₁</text>
     <text x="141" y="131" font-size="13" text-anchor="middle">“무료” 미포함</text>
     <text x="100" y="202" font-size="18" text-anchor="end">x₂</text>
     <text x="141" y="245" font-size="13" text-anchor="middle">모르는 발신자</text>
   </g>
-  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
-    <text x="276" y="96" fill="#3d789d">w₁ = 2</text>
-    <text x="276" y="169" fill="#93b6ca">w₂ = 1</text>
-    <text x="440" y="70" fill="#c7834c">편향 −2</text>
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
+    <text x="276" y="96" fill="#5b9564">w₁ = 2</text>
+    <text x="276" y="169" fill="#5b9564">w₂ = 1</text>
+    <text x="440" y="70" fill="#b28a20">편향 −2</text>
+  </g>
   </g>
 </svg>

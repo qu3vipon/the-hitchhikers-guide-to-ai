@@ -1,36 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 35 720 220" role="img" aria-labelledby="title desc">
   <title id="title">퍼셉트론의 전체 흐름</title>
   <desc id="desc">두 입력이 가중치와 편향을 거쳐 평가 점수를 만들고, 활성화 함수를 통해 결과를 출력한다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
-    </marker>
-  </defs>
-  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
-    <line x1="171" y1="82" x2="330" y2="120" stroke="#3d789d" stroke-width="2.25"/>
-    <line x1="171" y1="196" x2="330" y2="140" stroke="#3d789d" stroke-width="2.25"/>
-    <line x1="360" y1="82" x2="360" y2="100" stroke="#c7834c" stroke-width="2.25"/>
-    <line x1="390" y1="130" x2="450" y2="130" stroke="#5a6670" stroke-width="2.25"/>
-    <line x1="540" y1="130" x2="590" y2="130" stroke="#5a6670" stroke-width="2.25"/>
+  <g fill="none" stroke-linecap="round">
+    <path stroke="#393630" stroke-width="2.25" d="M171 82 Q244 101 319 117 M312 111 L319 117 L310 119" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M171 196 Q245 171 319 143 M310 142 L319 143 L313 150" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M360 65 Q359.8 75 360 85 M364 79 L360 85 L356 79" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M404 130 Q427 130.5 450 130 M442 126 L450 130 L442 134" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#393630" stroke-width="2.25" d="M540 130 Q565 130.5 590 130 M582.00 126.00 L590 130 L582.00 134.00" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#ffffff" stroke="#26353a" stroke-width="3">
-    <circle cx="141" cy="82" r="30"/>
-    <circle cx="141" cy="196" r="30"/>
-    <circle cx="360" cy="130" r="30"/>
-    <rect x="450" y="95" width="90" height="70" rx="12"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5">
+    <path d="M141 52 C157.8 51 172 65.2 171 82 C172 98.8 157.8 113 141 112 C124.2 113 110 98.8 111 82 C110 65.2 124.2 51 141 52 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M141 166 C157.8 165 172 179.2 171 196 C172 212.8 157.8 227 141 226 C124.2 227 110 212.8 111 196 C110 179.2 124.2 165 141 166 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#e7efdf" d="M360 88 C383.5 87 403 106.5 402 130 C403 153.5 383.5 173 360 172 C336.5 173 317 153.5 318 130 C317 106.5 336.5 87 360 88 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#fbefd5" d="M462 95 Q495 94 528 95 Q540 95 540 107 L540 153 Q540 165 528 165 Q495 166 462 165 Q450 165 450 153 L450 107 Q450 95 462 95 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
     <text x="141" y="88" font-size="18">x₁</text>
     <text x="141" y="202" font-size="18">x₂</text>
-    <text x="360" y="125" font-size="14" font-weight="700">평가</text>
-    <text x="360" y="145" font-size="14" font-weight="700">점수</text>
-    <text x="495" y="125" font-size="14" font-weight="700">활성화</text>
-    <text x="495" y="145" font-size="14" font-weight="700">함수</text>
-    <text x="630" y="136" font-size="17" font-weight="700">0 ~ ∞</text>
+    <text x="360" y="120" font-size="14" dominant-baseline="central">평가 점수</text>
+    <text x="360" y="140" font-size="25" dominant-baseline="central">z</text>
+    <text x="495" y="120" font-size="13" dominant-baseline="central">활성화 함수</text>
+    <text x="495" y="140" font-size="25" dominant-baseline="central">φ</text>
+    <text x="630" y="136" fill="#a5533b" font-size="17" font-weight="400">출력 y</text>
   </g>
-  <g fill="#3d789d" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">
+  <g fill="#5b9564" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
     <text x="250" y="85">w₁</text>
     <text x="250" y="188">w₂</text>
   </g>
-  <text x="360" y="70" fill="#c7834c" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">편향 b</text>
+  <text x="360" y="58" fill="#b28a20" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">편향 b</text>
 </svg>

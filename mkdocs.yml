@@ -44,7 +44,7 @@ nav:
       - 시작하기 전에: llm/index.md
       - 1. 컴퓨터가 배우는 방법: llm/01-machine-learning.md
       - 2. 인공 신경망의 발명: llm/02-neural-networks.md
-      - 3. 판단하는 장치, 퍼셉트론: llm/03-perceptron.md
+      - 3. 판단하는 모델, 퍼셉트론: llm/03-perceptron.md
       - 4. 거꾸로 계산하는 다층 신경망: llm/04-multilayer-perceptron.md
       - 5. 고차원 공간에서의 학습: llm/05-high-dimensional-learning.md
       - 6. 언어를 벡터로 표현하기: llm/06-word-embeddings.md

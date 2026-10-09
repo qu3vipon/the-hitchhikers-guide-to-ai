@@ -1,41 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="180" viewBox="0 0 660 180" role="img" aria-labelledby="title desc">
-  <title id="title">편향이 가중 합 점수를 왼쪽으로 이동시키는 효과</title>
-  <desc id="desc">편향을 더하기 전 가중 합 1점과 3점이 점선 화살표를 따라 각각 최종 평가 점수 -1점과 1점으로 왼쪽 이동한다. 0점 판단 기준의 왼쪽은 스팸 아님, 오른쪽은 스팸이다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="5" markerHeight="5" refX="4.5" refY="2.5" orient="auto-start-reverse">
-      <path d="M0,0 L5,2.5 L0,5 Z" fill="context-stroke"/>
-    </marker>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="225" viewBox="0 -45 660 225" role="img" aria-labelledby="title desc">
+  <title id="title">편향이 가중합 점수를 왼쪽으로 이동시키는 효과</title>
+  <desc id="desc">편향을 더하기 전 가중합 1점과 3점이 점선 화살표를 따라 각각 최종 평가 점수 -1점과 1점으로 왼쪽 이동한다. 위쪽 1점은 무료 문구가 없는 모르는 발신자의 메일, 3점은 무료 문구가 있는 모르는 발신자의 메일이다. 0점 판단 기준의 왼쪽은 정상, 오른쪽은 스팸이다.</desc>
   <g fill="none" stroke-linecap="round">
-    <line x1="95" y1="42" x2="565" y2="42" stroke="#5a6670" stroke-width="2.25" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <line x1="95" y1="118" x2="565" y2="118" stroke="#5a6670" stroke-width="2.25" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
-    <line x1="330" y1="35" x2="330" y2="158" stroke="#c7834c" stroke-width="2.5" stroke-dasharray="5 5"/>
-    <line x1="270" y1="112" x2="270" y2="124" stroke="#5a6670" stroke-width="2"/>
-    <line x1="330" y1="112" x2="330" y2="124" stroke="#5a6670" stroke-width="2"/>
-    <line x1="390" y1="112" x2="390" y2="124" stroke="#5a6670" stroke-width="2"/>
-    <line x1="390" y1="54" x2="270" y2="101" stroke="#c7834c" stroke-width="2.25" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
-    <line x1="510" y1="54" x2="390" y2="101" stroke="#c7834c" stroke-width="2.25" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+    <path stroke="#5a6670" stroke-width="2.25" d="M95 42 Q330 43.5 565 42 M557.00 38.00 L565 42 L557.00 46.00 M103.00 38.00 L95 42 L103.00 46.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#5a6670" stroke-width="2.25" d="M95 118 Q330 119.5 565 118 M557.00 114.00 L565 118 L557.00 122.00 M103.00 114.00 L95 118 L103.00 122.00" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#a9a5a0" stroke-width="2.5" stroke-dasharray="5 5" d="M330 35 Q328.77 82.5 330 130" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#5a6670" stroke-width="2" d="M270 112 Q269.88 118 270 124" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#5a6670" stroke-width="2" d="M330 112 Q329.88 118 330 124" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#5a6670" stroke-width="2" d="M390 112 Q389.88 118 390 124" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#c7834c" stroke-width="2.25" stroke-dasharray="5 5" d="M390 54 Q329.53 76.3 270 101" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#c7834c" stroke-width="2.25" d="M278.91 101.81 L270 101 L275.99 94.36" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#c7834c" stroke-width="2.25" stroke-dasharray="5 5" d="M510 54 Q449.53 76.3 390 101" stroke-linecap="round" stroke-linejoin="round" />
+    <path stroke="#c7834c" stroke-width="2.25" d="M398.91 101.81 L390 101 L395.99 94.36" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g stroke="#26353a" stroke-width="2.5">
-    <circle cx="390" cy="42" r="9" fill="#ffffff"/>
-    <circle cx="510" cy="42" r="9" fill="#ffffff"/>
-    <circle cx="270" cy="118" r="11" fill="#2c7a64"/>
-    <circle cx="390" cy="118" r="11" fill="#c35243"/>
+  <g stroke="#393630" stroke-width="2.5">
+    <path fill="#ffffff" d="M390 33 C395.04 32.55 399.45 36.96 399 42 C399.45 47.04 395.04 51.45 390 51 C384.96 51.45 380.55 47.04 381 42 C380.55 36.96 384.96 32.55 390 33 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#ffffff" d="M510 33 C515.04 32.55 519.45 36.96 519 42 C519.45 47.04 515.04 51.45 510 51 C504.96 51.45 500.55 47.04 501 42 C500.55 36.96 504.96 32.55 510 33 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#2c7a64" d="M270 107 C276.16 106.45 281.55 111.84 281 118 C281.55 124.16 276.16 129.55 270 129 C263.84 129.55 258.45 124.16 259 118 C258.45 111.84 263.84 106.45 270 107 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#c35243" d="M390 107 C396.16 106.45 401.55 111.84 401 118 C401.55 124.16 396.16 129.55 390 129 C383.84 129.55 378.45 124.16 379 118 C378.45 111.84 383.84 106.45 390 107 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="390" y="25" font-size="15" font-weight="700">1점</text>
-    <text x="510" y="25" font-size="15" font-weight="700">3점</text>
-    <text x="270" y="95" font-size="16" font-weight="700">−1점</text>
-    <text x="390" y="95" font-size="16" font-weight="700">1점</text>
-    <text x="270" y="153" fill="#2c7a64" font-size="14" font-weight="700">스팸 아님</text>
-    <text x="390" y="153" fill="#c35243" font-size="14" font-weight="700">스팸</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="390" y="71" font-size="15" font-weight="700">1점</text>
+    <text x="510" y="71" font-size="15" font-weight="700">3점</text>
+    <text x="270" y="153" font-size="16" font-weight="700">−1점</text>
+    <text x="390" y="153" font-size="16" font-weight="700">1점</text>
   </g>
-  <g font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="330" y="22" fill="#c7834c" font-size="15" font-weight="700">판단 기준</text>
-    <text x="330" y="175" fill="#c7834c" font-size="14">0점</text>
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="330" y="153" fill="#393630" font-size="14">0점</text>
   </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="14" font-weight="700">
+  <g fill="#536268" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="14" font-weight="700">
     <text x="120" y="31">편향 적용 전</text>
     <text x="120" y="107">편향 적용 후</text>
+  </g>
+  <g transform="translate(390 -10)" stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-33 -13 Q-18 -15 -3 -12 L-1 6 Q-1 10 -6 10 L-23 10 L-30 16 L-30 10 L-34 10 Q-37 10 -37 6 L-37 -8 Q-37 -13 -33 -13 Z" fill="#e7efdf" />
+    <path d="M-29 -4 Q-18 -5 -7 -4 M-29 3 Q-20 2 -11 3" fill="none" />
+    <path d="M19 -13 C23 -14 26 -11 25 -8 C25 -4 20 -3 18 -6 C16 -9 16 -12 19 -13 Z" fill="#f5d5cf" />
+    <path d="M13 5 Q13 -3 20 -3 Q27 -3 28 5 Z" fill="#f5d5cf" />
+    <path d="M29 -13 Q32 -16 35 -13 Q37 -10 33 -8 L33 -5 M33 -2 L33 -1.5" fill="none" stroke="#a65043" />
+    <path d="M-3 20 L-3 33" fill="none" stroke="#9d978f" stroke-dasharray="2 3" />
+  </g>
+  <g transform="translate(510 -10)" stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-33 -13 Q-18 -15 -3 -12 L-1 6 Q-1 10 -6 10 L-23 10 L-30 16 L-30 10 L-34 10 Q-37 10 -37 6 L-37 -8 Q-37 -13 -33 -13 Z" fill="#f5d5cf" />
+    <text x="-18" y="1" dominant-baseline="central" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="13" fill="#a65043" stroke="none">무료</text>
+    <path d="M19 -13 C23 -14 26 -11 25 -8 C25 -4 20 -3 18 -6 C16 -9 16 -12 19 -13 Z" fill="#f5d5cf" />
+    <path d="M13 5 Q13 -3 20 -3 Q27 -3 28 5 Z" fill="#f5d5cf" />
+    <path d="M29 -13 Q32 -16 35 -13 Q37 -10 33 -8 L33 -5 M33 -2 L33 -1.5" fill="none" stroke="#a65043" />
+    <path d="M-3 20 L-3 33" fill="none" stroke="#9d978f" stroke-dasharray="2 3" />
   </g>
 </svg>

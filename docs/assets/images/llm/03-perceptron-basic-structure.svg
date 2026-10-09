@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="270" viewBox="0 30 760 270" role="img" aria-labelledby="title desc">
+  <title id="title">퍼셉트론의 기본 구조</title>
+  <desc id="desc">입력 x₁과 x₂에 각각 가중치 w₁과 w₂를 곱해 더하고 편향 b를 반영한 계산 결과로 판단한다.</desc>
+  <style>
+    text { fill: #393630; text-anchor: middle; dominant-baseline: central; }
+    .word { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 20px; font-weight: 500; }
+    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 25px; }
+    .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; }
+    .weight { fill: #5b9564; }
+  </style>
+  <g transform="translate(30 9)">
+  <path class="ink" d="M130 105 Q204 125 278 151 M265 140 L279 151 L263 153 M130 235 Q205 212 278 189 M263 187 L279 189 L267 200 M391 76 Q388 100 391 122 M383 112 L391 124 L399 112 M503 170 Q539 168 575 170 M563 162 L577 170 L563 178"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5">
+    <path d="M96 72 C115 70 132 85 130 105 C132 124 115 139 96 137 C77 139 61 124 63 105 C61 85 77 71 96 72 Z"/>
+    <path d="M96 202 C115 200 132 215 130 235 C132 254 115 269 96 267 C77 269 61 254 63 235 C61 215 77 201 96 202 Z"/>
+  </g>
+  <path d="M283 127 Q392 124 501 128 L503 211 Q393 215 282 212 Z" fill="#e7efdf" stroke="#393630" stroke-width="2.5"/>
+  <path class="echo" d="M286 124 L499 131 L506 209 L285 215 Z"/>
+  <text class="math" x="96" y="105" style="dominant-baseline: middle;">x₁</text>
+  <text class="math" x="96" y="235" style="dominant-baseline: middle;">x₂</text>
+  <text class="math weight" x="204" y="108">w₁</text>
+  <text class="math weight" x="204" y="237">w₂</text>
+  <text class="word" x="392" y="53" style="fill: #b28a20;">편향 b</text>
+  <text class="word" x="392" y="155">가중합 + 편향</text>
+  <text class="math" x="392" y="190" style="font-size: 21px;">(w₁x₁) + (w₂x₂) + b</text>
+  <text class="word" x="619" y="170">판단</text>
+  </g>
+</svg>

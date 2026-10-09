@@ -2,11 +2,11 @@
   <title id="title">계단 함수, 시그모이드, ReLU 활성화 함수 비교</title>
   <desc id="desc">세 그래프가 입력값 z에 따른 출력을 비교한다. 계단 함수는 0에서 1로 갑자기 바뀌고, 시그모이드는 부드러운 S자 곡선이며, ReLU는 음수에서 0이고 양수에서 직선으로 증가한다.</desc>
   <g fill="#ffffff" stroke="#d5dde0" stroke-width="1.5">
-    <rect x="10" y="10" width="220" height="240" rx="8"/>
-    <rect x="250" y="10" width="220" height="240" rx="8"/>
-    <rect x="490" y="10" width="220" height="240" rx="8"/>
+    <path d="M18 10 Q120 9 222 10 Q230 10 230 18 L230 242 Q230 250 222 250 Q120 251 18 250 Q10 250 10 242 L10 18 Q10 10 18 10 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M258 10 Q360 9 462 10 Q470 10 470 18 L470 242 Q470 250 462 250 Q360 251 258 250 Q250 250 250 242 L250 18 Q250 10 258 10 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M498 10 Q600 9 702 10 Q710 10 710 18 L710 242 Q710 250 702 250 Q600 251 498 250 Q490 250 490 242 L490 18 Q490 10 498 10 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
     <text x="120" y="39" font-size="16" font-weight="700">계단 함수</text>
     <text x="120" y="58" font-size="13">Step function</text>
     <text x="360" y="39" font-size="16" font-weight="700">시그모이드</text>
@@ -15,11 +15,11 @@
     <text x="600" y="58" font-size="13">Rectified Linear Unit</text>
   </g>
   <g fill="none" stroke="#8b989e" stroke-width="1.5" stroke-linecap="round">
-    <path d="M40 178 H205 M120 82 V198"/>
-    <path d="M280 178 H445 M360 82 V198"/>
-    <path d="M520 178 H685 M600 82 V198"/>
+    <path d="M40 178 H205 M120 82 V198" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M280 178 H445 M360 82 V198" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M520 178 H685 M600 82 V198" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="12">
+  <g fill="#536268" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="12">
     <text x="199" y="194">z</text>
     <text x="439" y="194">z</text>
     <text x="679" y="194">z</text>
@@ -33,12 +33,12 @@
     <text x="588" y="191">0</text>
   </g>
   <g fill="none" stroke-linecap="round" stroke-width="3">
-    <path d="M40 178 H120 M120 110 H205" stroke="#b58a53"/>
-    <path d="M120 178 V110" stroke="#b58a53" stroke-dasharray="5 5"/>
-    <path d="M280 177 C328 177 344 177 353 165 C359 156 360 139 367 125 C374 111 385 110 445 110" stroke="#3d789d"/>
-    <path d="M520 178 H600 L685 93" stroke="#2c7a64"/>
+    <path d="M40 178 H120 M120 110 H205" stroke="#b58a53" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M120 178 V110" stroke="#b58a53" stroke-dasharray="5 5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M280 177 C328 177 344 177 353 165 C359 156 360 139 367 125 C374 111 385 110 445 110" stroke="#3d789d" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M520 178 H600 L685 93" stroke="#2c7a64" stroke-linecap="round" stroke-linejoin="round" />
   </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">
+  <g fill="#536268" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="13" text-anchor="middle">
     <text x="120" y="225">기준에서 출력이 바뀜</text>
     <text x="360" y="225">부드럽게 0과 1 사이를 지남</text>
     <text x="600" y="225">음수는 0, 양수는 증가</text>
