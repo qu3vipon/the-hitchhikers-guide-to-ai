@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 -50 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">y = Wx를 행렬과 벡터로 풀어 쓴 형태</title>
+  <desc id="desc">m개 출력의 열벡터는 m행 n열의 가중치 행렬과 n개 입력의 열벡터를 곱한 결과다. 가중치의 첫 첨자는 출력, 두 번째 첨자는 입력을 나타낸다.</desc>
+  <style>
+    .math { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:27px; text-anchor:middle; dominant-baseline:alphabetic; }
+    .sub { font-size:18px; dominant-baseline:alphabetic; }
+    .label { fill:#393630; font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif; font-size:19px; text-anchor:middle; }
+    .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+    .out { fill:#a5533b; } .in { fill:#2d6e91; }
+  </style>
+  <text class="math" x="64" y="-12" style="text-anchor:start">y = Wx</text>
+  <g fill="#e7efdf">
+    <path d="M74 93 Q96 91 118 93 L119 132 Q96 134 73 132 Z"/>
+    <path d="M267 93 Q419 91 571 93 L572 132 Q419 134 266 132 Z"/>
+    <path d="M646 43 Q668 41 690 43 L691 232 Q668 234 645 232 Z"/>
+  </g>
+<text class="math" x="96" y="68">y<tspan class="sub out" dy="8">1</tspan></text>
+<text class="math" x="96" y="118">y<tspan class="sub out" dy="8">2</tspan></text>
+<text class="math" x="96" y="218">y<tspan class="sub out" dy="8">m</tspan></text>
+<text class="math" x="96" y="168">⋮</text>
+<text class="math" x="668" y="68">x<tspan class="sub in" dy="8">1</tspan></text>
+<text class="math" x="668" y="118">x<tspan class="sub in" dy="8">2</tspan></text>
+<text class="math" x="668" y="218">x<tspan class="sub in" dy="8">n</tspan></text>
+<text class="math" x="668" y="168">⋮</text>
+<text class="math" x="300" y="68">w<tspan class="sub out" dy="8">1</tspan><tspan class="sub in">1</tspan></text>
+<text class="math" x="390" y="68">w<tspan class="sub out" dy="8">1</tspan><tspan class="sub in">2</tspan></text>
+<text class="math" x="540" y="68">w<tspan class="sub out" dy="8">1</tspan><tspan class="sub in">n</tspan></text>
+<text class="math" x="465" y="68">…</text>
+<text class="math" x="300" y="118">w<tspan class="sub out" dy="8">2</tspan><tspan class="sub in">1</tspan></text>
+<text class="math" x="390" y="118">w<tspan class="sub out" dy="8">2</tspan><tspan class="sub in">2</tspan></text>
+<text class="math" x="540" y="118">w<tspan class="sub out" dy="8">2</tspan><tspan class="sub in">n</tspan></text>
+<text class="math" x="465" y="118">…</text>
+<text class="math" x="300" y="218">w<tspan class="sub out" dy="8">m</tspan><tspan class="sub in">1</tspan></text>
+<text class="math" x="390" y="218">w<tspan class="sub out" dy="8">m</tspan><tspan class="sub in">2</tspan></text>
+<text class="math" x="540" y="218">w<tspan class="sub out" dy="8">m</tspan><tspan class="sub in">n</tspan></text>
+<text class="math" x="465" y="218">…</text>
+<text class="math" x="300" y="168">⋮</text>
+<text class="math" x="390" y="168">⋮</text>
+<text class="math" x="465" y="168">⋱</text>
+<text class="math" x="540" y="168">⋮</text>
+<path class="ink" d="M76 38 L64 38 Q62 135 64 238 L76 238 M116 38 L128 38 Q130 135 128 238 L116 238"/>
+<path class="ink" d="M266 38 L254 38 Q252 135 254 238 L266 238 M572 38 L584 38 Q586 135 584 238 L572 238"/>
+<path class="ink" d="M648 38 L636 38 Q634 135 636 238 L648 238 M688 38 L700 38 Q702 135 700 238 L688 238"/>
+<path class="ink" d="M178 129 Q192 128 206 129 M178 141 Q192 140 206 141"/>
+<text class="math" x="610" y="145">×</text>
+<text class="label" x="96" y="281">출력 y</text>
+<text class="label" x="419" y="281">가중치 행렬 W (m × n)</text>
+<text class="label" x="668" y="281">입력 x</text>
+</svg>

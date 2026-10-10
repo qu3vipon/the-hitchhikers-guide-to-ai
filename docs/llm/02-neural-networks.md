@@ -99,9 +99,9 @@
 즉, <span class="weight-input-index">n</span>개의 입력값으로부터 <code><span class="weight-output-index">m</span></code>개의 출력값을 만들어 내는 구조입니다.
 
 이때 수식의 <code>w<sub><span class="weight-output-index">i</span><span class="weight-input-index">j</span></sub></code>는 입력 <code>x<sub><span class="weight-input-index">j</span></sub></code>가 출력 <code>y<sub><span class="weight-output-index">i</span></sub></code>에 얼마나 큰 영향을 미치는지를 결정하는 가중치입니다. 앞의 <code><span class="weight-output-index">i</span></code>는 어느 출력 뉴런에 연결되는지를, 뒤의 <code><span class="weight-input-index">j</span></code>는 어느 입력 뉴런에서 온 신호인지를 나타냅니다.
-예를 들어 <code>w<sub><span class="weight-output-index">2</span><span class="weight-input-index">3</span></sub></code>은 세 번째 입력 뉴런 <code>x<sub><span class="weight-input-index">3</span></sub></code>과 두 번째 출력 뉴런 <code>y<sub><span class="weight-output-index">2</span></sub></code> 사이의 연결 가중치를 의미합니다.
+예를 들어 <code>w<sub><span class="weight-output-index">2</span><span class="weight-input-index">1</span></sub></code>은 첫 번째 입력 뉴런 <code>x<sub><span class="weight-input-index">1</span></sub></code>과 두 번째 출력 뉴런 <code>y<sub><span class="weight-output-index">2</span></sub></code> 사이의 연결 가중치를 의미합니다.
 
-![세 번째 입력 x₃에서 두 번째 출력 y₂로 이어지는 가중치 w₂₃을 강조한 도식](../assets/images/llm/02-weight-w23.svg){ .neural-network-image }
+![첫 번째 입력 x₁에서 두 번째 출력 y₂로 이어지는 가중치 w₂₁을 강조한 도식](../assets/images/llm/02-weight-w21.svg){ .neural-network-image }
 
 그런데 <code><span class="weight-input-index">n</span></code>개의 입력을 받는 <code><span class="weight-output-index">m</span></code>개의 함수를 모두 풀어 쓰려면 식이 너무 길어집니다. 이를 간단하게 표현하기 위해 먼저 하나의 함수를 다음과 같이 줄여서 나타내 보겠습니다.
 
@@ -113,11 +113,11 @@
 
 그런데 출력 뉴런이 <code><span class="weight-output-index">m</span></code>개라면 함수도 <code><span class="weight-output-index">m</span></code>개이고, 각 함수는 서로 다른 가중치를 갖습니다. 따라서 각 함수의 가중치 묶음인 `w₁`, `w₂`, …, `wₘ`을 하나의 **행렬(matrix) W**로 표현할 수 있습니다. 이를 이용하면 여러 출력값 `y₁`, `y₂`, …, `yₘ`도 다음과 같이 하나의 수식으로 나타낼 수 있습니다.
 
-<div class="function-formulas">
-  <div><code>y = Wx</code></div>
-</div>
+![출력 벡터 y가 가중치 행렬 W와 입력 벡터 x의 곱으로 표현되는 행렬 도식](../assets/images/llm/02-matrix-vector-product.svg){ .drawing-diagram }
 
 이는 입력값 묶음 `x`에 가중치 행렬 `W`를 곱하면, 여러 출력값을 묶은 `y`가 만들어진다는 뜻입니다. 따라서 `y = Wx`는 **서로 연결된 두 층 사이에서 여러 입력 신호에 가중치를 적용해 여러 출력 신호를 만들어 내는 관계**를 나타낸 수식이라고 이해하면 됩니다.
+
+예를 들어 `y₂`를 계산할 때는 가중치 행렬 `W`의 두 번째 행에 있는 가중치들을 사용합니다. 각 가중치에 대응하는 입력값을 하나씩 곱한 뒤, 그 결과를 모두 더하면 `y₂`가 됩니다. 표현만 행렬로 바뀌었을 뿐, `y₂`는 앞서 살펴본 것처럼 각 입력값에 가중치를 곱한 뒤 모두 더한 결과입니다.
 
 !!! info "행렬(matrix)"
     행렬은 숫자를 가로와 세로로 정리한 표입니다. 이때 `W`의 한 줄은 함수 하나에 쓰이는 가중치 묶음 하나와 같습니다.
@@ -137,12 +137,12 @@
 1. 신경망의 가중치는 두 뉴런 사이의 연결이 결과에 미치는 정도를 나타낸다.
 2. 가중치가 크다는 것은 해당 뉴런 자체가 항상 더 활발하다는 뜻이다.
 3. 바깥에서 들어온 신호를 처음 받는 뉴런들의 묶음을 출력층이라고 한다.
-4. `w₂₃`은 세 번째 입력 뉴런 `x₃`에서 두 번째 출력 뉴런 `y₂`으로 이어지는 연결의 가중치다.
+4. `w₂₁`은 첫 번째 입력 뉴런 `x₁`에서 두 번째 출력 뉴런 `y₂`으로 이어지는 연결의 가중치다.
 5. `y = Wx`는 여러 입력 신호에 가중치를 적용해 여러 출력 신호를 만드는 신경망의 한 층을 나타낼 수 있다.
 
 ??? success "정답·해설"
     1. **O** — 가중치는 특정 뉴런 하나의 성질이 아니라, 두 뉴런을 잇는 연결이 결과에 미치는 정도를 나타냅니다.
     2. **X** — 가중치는 뉴런 자체가 아니라 뉴런 사이 연결의 세기를 나타냅니다.
     3. **X** — 바깥 신호를 처음 받는 뉴런들의 묶음은 입력층입니다.
-    4. **O** — 앞의 `2`는 두 번째 출력 뉴런, 뒤의 `3`은 세 번째 입력 뉴런을 가리킵니다.
+    4. **O** — 앞의 `2`는 두 번째 출력 뉴런, 뒤의 `1`은 첫 번째 입력 뉴런을 가리킵니다.
     5. **O** — `W`에는 각 출력 뉴런으로 이어지는 연결의 가중치가 모여 있으며, `y = Wx`는 이를 한 번에 계산한 표기입니다.

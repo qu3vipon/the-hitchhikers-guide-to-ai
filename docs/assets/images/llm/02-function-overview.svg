@@ -3,20 +3,21 @@
   <desc id="desc">하나의 입력 묶음 x₁, x₂, …, xₙ이 m개의 함수 f₁, f₂, …, fₘ에 전달된다.</desc>
   <style>
     text { fill: #393630; text-anchor: middle; dominant-baseline: central; }
-    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 29px; }
+    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 29px; dominant-baseline: alphabetic; }
+    .sub { font-size: 20px; dominant-baseline: alphabetic; }
     .word { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; font-size: 22px; font-weight: 500; }
     .input { fill: #2d6e91; }
     .output { fill: #a5533b; }
     .ink { fill: none; stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
     .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; }
   </style>
-  <text class="math" x="171" y="128">f (x<tspan class="input">₁</tspan>, x<tspan class="input">₂</tspan>, …, x<tspan class="input">ₙ</tspan>)</text>
+  <text class="math" x="171" y="138">f (x<tspan class="input sub" dy="8">1</tspan><tspan dy="-8">, x</tspan><tspan class="input sub" dy="8">2</tspan><tspan dy="-8">, …, x</tspan><tspan class="input sub" dy="8">n</tspan><tspan dy="-8">)</tspan></text>
   <text class="word" x="171" y="215"><tspan class="input">n</tspan>개의 입력</text>
   <path class="ink" d="M324 128 Q362 125 399 128 M388 119 L400 128 L388 137"/>
-  <text class="math" x="470" y="55">f<tspan class="output">₁</tspan></text>
-  <text class="math" x="470" y="124">f<tspan class="output">₂</tspan></text>
+  <text class="math" x="470" y="65">f<tspan class="output sub" dy="8">1</tspan></text>
+  <text class="math" x="470" y="134">f<tspan class="output sub" dy="8">2</tspan></text>
   <text class="math" x="470" y="176">⋮</text>
-  <text class="math" x="470" y="230">f<tspan class="output">ₘ</tspan></text>
+  <text class="math" x="470" y="240">f<tspan class="output sub" dy="8">m</tspan></text>
   <path class="ink" d="M541 29 L553 30 Q556 142 553 254 L541 255"/>
   <text class="word" x="649" y="143"><tspan class="output">m</tspan>개의 함수</text>
 </svg>
