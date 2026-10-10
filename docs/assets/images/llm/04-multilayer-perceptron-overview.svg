@@ -2,31 +2,31 @@
   <title id="title">다층 퍼셉트론의 구조</title>
   <desc id="desc">입력층의 값이 은닉층의 여러 퍼셉트론으로 전달되고, 그 결과가 출력층으로 모여 최종 판단을 만든다.</desc>
   <g fill="none" stroke-linejoin="round" stroke-width="2" stroke-dasharray="5 5" opacity="0.65">
-    <rect x="100" y="50" width="310" height="220" rx="16" stroke="#8b989e"/>
-    <rect x="310" y="50" width="300" height="220" rx="16" stroke="#8b989e"/>
+    <path d="M112 50 Q255 48 398 50 Q410 50 410 62 L411 258 Q410 270 398 270 Q255 272 112 270 Q100 270 100 258 L99 62 Q100 50 112 50 Z" stroke="#8b989e" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M322 50 Q460 48 598 50 Q610 50 610 62 L611 258 Q610 270 598 270 Q460 272 322 270 Q310 270 310 258 L309 62 Q310 50 322 50 Z" stroke="#8b989e" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g fill="none" stroke="#3d789d" stroke-linecap="round" stroke-width="2" opacity="0.55">
-    <line x1="190" y1="116" x2="330" y2="92"/><line x1="190" y1="116" x2="330" y2="160"/><line x1="190" y1="116" x2="330" y2="228"/>
-    <line x1="190" y1="204" x2="330" y2="92"/><line x1="190" y1="204" x2="330" y2="160"/><line x1="190" y1="204" x2="330" y2="228"/>
-    <line x1="390" y1="92" x2="530" y2="160"/><line x1="390" y1="160" x2="530" y2="160"/><line x1="390" y1="228" x2="530" y2="160"/>
+    <path d="M190 116 Q260.144 104.84 330 92"  stroke-linecap="round" stroke-linejoin="round"/><path d="M190 116 Q259.736 138.84 330 160"  stroke-linecap="round" stroke-linejoin="round"/><path d="M190 116 Q259.328 172.84 330 228"  stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M190 204 Q260.672 148.84 330 92"  stroke-linecap="round" stroke-linejoin="round"/><path d="M190 204 Q260.264 182.84 330 160"  stroke-linecap="round" stroke-linejoin="round"/><path d="M190 204 Q259.856 216.84 330 228"  stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M390 92 Q459.592 126.84 530 160"  stroke-linecap="round" stroke-linejoin="round"/><path d="M390 160 Q460 160.84 530 160"  stroke-linecap="round" stroke-linejoin="round"/><path d="M390 228 Q460.408 194.84 530 160"  stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g stroke-width="2.5">
-    <circle cx="160" cy="116" r="30" fill="#eef5f8" stroke="#3d789d"/>
-    <circle cx="160" cy="204" r="30" fill="#eef5f8" stroke="#3d789d"/>
-    <circle cx="360" cy="92" r="30" fill="#fff4e9" stroke="#c7834c"/>
-    <circle cx="360" cy="160" r="30" fill="#fff4e9" stroke="#c7834c"/>
-    <circle cx="360" cy="228" r="30" fill="#fff4e9" stroke="#c7834c"/>
-    <circle cx="560" cy="160" r="30" fill="#edf7f2" stroke="#3d8b75"/>
+    <path d="M160 86 C177.1 85 191 98.9 190 116 C191 133.1 177.1 147 160 146 C142.9 147 129 133.1 130 116 C129 98.9 142.9 85 160 86 Z" fill="#e7eef0" stroke="#3d789d" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M160 174 C177.1 173 191 186.9 190 204 C191 221.1 177.1 235 160 234 C142.9 235 129 221.1 130 204 C129 186.9 142.9 173 160 174 Z" fill="#e7eef0" stroke="#3d789d" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M360 62 C377.1 61 391 74.9 390 92 C391 109.1 377.1 123 360 122 C342.9 123 329 109.1 330 92 C329 74.9 342.9 61 360 62 Z" fill="#fbefd5" stroke="#c7834c" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M360 130 C377.1 129 391 142.9 390 160 C391 177.1 377.1 191 360 190 C342.9 191 329 177.1 330 160 C329 142.9 342.9 129 360 130 Z" fill="#fbefd5" stroke="#c7834c" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M360 198 C377.1 197 391 210.9 390 228 C391 245.1 377.1 259 360 258 C342.9 259 329 245.1 330 228 C329 210.9 342.9 197 360 198 Z" fill="#fbefd5" stroke="#c7834c" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M560 130 C577.1 129 591 142.9 590 160 C591 177.1 577.1 191 560 190 C542.9 191 529 177.1 530 160 C529 142.9 542.9 129 560 130 Z" fill="#e7efdf" stroke="#3d8b75" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="160" y="40" font-size="16" font-weight="700">입력층</text>
-    <text x="360" y="40" font-size="16" font-weight="700">은닉층</text>
-    <text x="560" y="40" font-size="16" font-weight="700">출력층</text>
-    <text x="160" y="122" font-size="18" font-weight="700">x₁</text>
-    <text x="160" y="210" font-size="18" font-weight="700">x₂</text>
-    <text x="360" y="98" font-size="15" font-weight="700">h₁</text>
-    <text x="360" y="166" font-size="15" font-weight="700">h₂</text>
-    <text x="360" y="234" font-size="15" font-weight="700">h₃</text>
-    <text x="560" y="166" font-size="18" font-weight="700">y</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="160" y="40" font-size="16" font-weight="400">입력층</text>
+    <text x="360" y="40" font-size="16" font-weight="400">은닉층</text>
+    <text x="560" y="40" font-size="16" font-weight="400">출력층</text>
+    <text x="160" y="122" font-size="18" font-weight="400">x₁</text>
+    <text x="160" y="210" font-size="18" font-weight="400">x₂</text>
+    <text x="360" y="98" font-size="15" font-weight="400">h₁</text>
+    <text x="360" y="166" font-size="15" font-weight="400">h₂</text>
+    <text x="360" y="234" font-size="15" font-weight="400">h₃</text>
+    <text x="560" y="166" font-size="18" font-weight="400">y</text>
   </g>
 </svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="135" viewBox="0 0 760 135" role="img" aria-labelledby="title"><title id="title">가중치에서 손실까지 이어지는 계산 흐름</title><style>text { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:30px; text-anchor:middle; } .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }.label { font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive; font-size:20px; }</style>
+<text x="100" y="65">w<tspan font-size="20" dy="8">1</tspan></text>
+<path class="ink" d="M137 55 Q170 53 203 55 M193 48 L204 55 L193 62"/>
+<text x="240" y="65">z</text>
+<path class="ink" d="M277 55 Q310 53 343 55 M333 48 L344 55 L333 62"/>
+<text x="380" y="65">h</text>
+<path class="ink" d="M417 55 Q450 53 483 55 M473 48 L484 55 L473 62"/>
+<text x="520" y="65">y</text>
+<path class="ink" d="M557 55 Q590 53 623 55 M613 48 L624 55 L613 62"/>
+<text x="660" y="65">L</text>
+<text class="label" x="100" y="102">가중치</text>
+<text class="label" x="240" y="102">가중합</text>
+<text class="label" x="380" y="102">은닉 뉴런의 값</text>
+<text class="label" x="520" y="102">최종 출력</text>
+<text class="label" x="660" y="102">손실</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="155" viewBox="0 0 760 155" role="img" aria-labelledby="title desc"><title id="title">미분의 연쇄 법칙</title><desc id="desc">∂L/∂w₁ = (∂L/∂y) × (∂y/∂h) × (∂h/∂z) × (∂z/∂w₁)</desc><style>text { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:30px; text-anchor:middle; } .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }</style>
+<text x="80" y="53">∂L</text>
+<text x="80" y="117">∂w<tspan font-size="20" dy="8">1</tspan></text>
+<path class="ink" d="M46 73 Q80 72 114 73"/>
+<text x="225" y="53">∂L</text>
+<path d="M199 90 Q225 88 251 90 L252 125 Q225 127 198 125 Z" fill="#dcecf4"/>
+<text x="225" y="117">∂y</text>
+<path class="ink" d="M191 73 Q225 72 259 73"/>
+<path d="M339 26 Q365 24 391 26 L392 61 Q365 63 338 61 Z" fill="#dcecf4"/>
+<text x="365" y="53">∂y</text>
+<path d="M339 90 Q365 88 391 90 L392 125 Q365 127 338 125 Z" fill="#e4eee3"/>
+<text x="365" y="117">∂h</text>
+<path class="ink" d="M331 73 Q365 72 399 73"/>
+<path d="M479 26 Q505 24 531 26 L532 61 Q505 63 478 61 Z" fill="#e4eee3"/>
+<text x="505" y="53">∂h</text>
+<path d="M479 90 Q505 88 531 90 L532 125 Q505 127 478 125 Z" fill="#f3ead7"/>
+<text x="505" y="117">∂z</text>
+<path class="ink" d="M471 73 Q505 72 539 73"/>
+<path d="M619 26 Q645 24 671 26 L672 61 Q645 63 618 61 Z" fill="#f3ead7"/>
+<text x="645" y="53">∂z</text>
+<text x="645" y="117">∂w<tspan font-size="20" dy="8">1</tspan></text>
+<path class="ink" d="M611 73 Q645 72 679 73"/>
+<path class="ink" d="M288 66 L302 80 M302 66 L288 80"/>
+<path class="ink" d="M428 66 L442 80 M442 66 L428 80"/>
+<path class="ink" d="M568 66 L582 80 M582 66 L568 80"/>
+<path class="ink" d="M143 67 Q155 66 167 67 M143 79 Q155 78 167 79"/>
+</svg>

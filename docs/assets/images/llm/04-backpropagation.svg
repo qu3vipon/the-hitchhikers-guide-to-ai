@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="290" viewBox="0 0 760 290" role="img" aria-labelledby="title desc">
+<title id="title">순전파와 역전파</title><desc id="desc">순전파는 가중치에서 손실 방향으로 값을 계산하고, 역전파는 손실에서 거꾸로 각 단계의 미분값을 계산합니다.</desc>
+<style>text{fill:#393630;text-anchor:middle;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:20px}.math{font-size:30px}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.forward{stroke:#3d8b75}.back{stroke:#a65043}</style>
+<text x="380" y="36" style="fill:#3d8b75">순전파 · 예측값과 손실 계산</text>
+<path class="ink forward" d="M100 60 Q380 57 660 60 M649 53 L661 60 L649 67"/>
+<path d="M57 88 Q100 85 143 88 L144 148 Q100 151 56 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
+<text class="math" x="100" y="129">w₁</text>
+<text x="100" y="179">가중치</text>
+<path d="M197 88 Q240 85 283 88 L284 148 Q240 151 196 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
+<text class="math" x="240" y="129">z</text>
+<text x="240" y="179">가중합</text>
+<path d="M337 88 Q380 85 423 88 L424 148 Q380 151 336 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
+<text class="math" x="380" y="129">h</text>
+<text x="380" y="179">은닉값</text>
+<path d="M477 88 Q520 85 563 88 L564 148 Q520 151 476 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
+<text class="math" x="520" y="129">y</text>
+<text x="520" y="179">예측값</text>
+<path d="M617 88 Q660 85 703 88 L704 148 Q660 151 616 148 Z" fill="#f5d5cf" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
+<text class="math" x="660" y="129">L</text>
+<text x="660" y="179">손실</text>
+<path class="ink" d="M148 119 Q170 117 191 119 M183 113 L192 119 L183 125"/>
+<path class="ink" d="M288 119 Q310 117 331 119 M323 113 L332 119 L323 125"/>
+<path class="ink" d="M428 119 Q450 117 471 119 M463 113 L472 119 L463 125"/>
+<path class="ink" d="M568 119 Q590 117 611 119 M603 113 L612 119 L603 125"/>
+<path class="ink back" d="M660 210 Q380 213 100 210 M111 203 L99 210 L111 217"/>
+<text x="380" y="247" style="fill:#a65043">역전파 · 손실의 변화율을 거꾸로 전달하며 계산</text>
+</svg>

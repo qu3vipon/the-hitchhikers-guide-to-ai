@@ -1,36 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="200" viewBox="0 20 660 200" role="img" aria-labelledby="title desc">
-  <title id="title">두 경고 신호의 네 가지 조합과 점검 결과</title>
-  <desc id="desc">x1과 x2 중 하나만 1인 10과 01은 점검하고, 둘 다 0이거나 둘 다 1인 00과 11은 점검하지 않는다.</desc>
-  <g fill="#ffffff" stroke-width="2">
-    <rect x="20" y="32" width="300" height="172" rx="12" stroke="#c7834c"/>
-    <rect x="340" y="32" width="300" height="172" rx="12" stroke="#c8d1d4"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="350" viewBox="0 0 760 350" role="img" aria-labelledby="title desc">
+  <title id="title">단층 신경망에서 방향 선택을 판단하기 위한 가중치와 편향</title>
+  <desc id="desc">두 사람의 방향 선택을 나타내는 입력 x₁과 x₂가 하나의 출력 y로 연결된다. 편향 b ≥ 0과 연결 가중치 w₁ &lt; −b, w₂ &lt; −b를 표시한다.</desc>
+  <style>
+    text { fill:#393630; font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive; text-anchor:middle; font-size:27px; }
+    .sub { font-size:18px; dominant-baseline:alphabetic; }
+    .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+  </style>
+  <path class="ink" d="M180 85 Q370 135 568 167 M557 160 L570 168 L555 173 M180 265 Q371 216 568 183 M555 177 L570 182 L558 190"/>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.5" stroke-linejoin="round">
+<path d="M138 32 C162 31 182 51 181 75 C182 99 162 119 138 118 C114 119 94 99 95 75 C94 51 114 31 138 32 Z"/>
+<path d="M138 232 C162 231 182 251 181 275 C182 299 162 319 138 318 C114 319 94 299 95 275 C94 251 114 231 138 232 Z"/>
+<path d="M610 132 C634 131 654 151 653 175 C654 199 634 219 610 218 C586 219 566 199 567 175 C566 151 586 131 610 132 Z"/>
   </g>
-  <g fill="#536268" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="72" y="61">x₁</text><text x="144" y="61">x₂</text>
-    <text x="392" y="61">x₁</text><text x="464" y="61">x₂</text>
-  </g>
-  <g stroke-width="2">
-    <circle cx="72" cy="100" r="16" fill="#c7834c" stroke="#c7834c"/><circle cx="144" cy="100" r="16" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="392" cy="100" r="16" fill="#ffffff" stroke="#8b989e"/><circle cx="464" cy="100" r="16" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="72" cy="156" r="16" fill="#ffffff" stroke="#8b989e"/><circle cx="144" cy="156" r="16" fill="#c7834c" stroke="#c7834c"/>
-    <circle cx="392" cy="156" r="16" fill="#c7834c" stroke="#c7834c"/><circle cx="464" cy="156" r="16" fill="#c7834c" stroke="#c7834c"/>
-  </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
-    <text x="72" y="106" fill="#ffffff">1</text><text x="144" y="106">0</text>
-    <text x="392" y="106">0</text><text x="464" y="106">0</text>
-    <text x="72" y="162">0</text><text x="144" y="162" fill="#ffffff">1</text>
-    <text x="392" y="162" fill="#ffffff">1</text><text x="464" y="162" fill="#ffffff">1</text>
-  </g>
-  <g fill="#8b989e" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">
-    <text x="208" y="124">→</text><text x="528" y="124">→</text>
-  </g>
-  <g font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">
-    <text x="266" y="124" fill="#c7834c">점검</text>
-    <text x="586" y="124" fill="#536268">점검 안 함</text>
-  </g>
-  <g fill="none" stroke="#c7834c" stroke-linecap="round" stroke-linejoin="round" transform="translate(-9 6) translate(393 136) scale(0.70 0.78) translate(-393 -136)">
-    <path d="M393 136 C374 126 354 128 337 130 C329 126 322 132 323 141 C324 150 334 149 339 141 C344 130 325 125 309 132 C288 141 267 161 244 181" stroke-width="2.25" stroke-dasharray="3 5"/>
-    <path d="M254 163 L244 181 L271 174" stroke-width="2.25" stroke-dasharray="3 5"/>
-  </g>
-  <text x="348" y="174" fill="#c7834c" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">잘못 판단</text>
+  <text x="138" y="83">x<tspan class="sub" dy="8">1</tspan></text>
+  <text x="138" y="283">x<tspan class="sub" dy="8">2</tspan></text>
+  <text x="610" y="184">y</text>
+  <path d="M311 65 Q374 63 437 65 L438 104 Q374 106 310 104 Z" fill="#e7efdf"/>
+  <text x="374" y="91">w<tspan class="sub" dy="8">1</tspan><tspan dy="-8"> &lt; −b</tspan></text>
+  <path d="M311 258 Q374 256 437 258 L438 297 Q374 299 310 297 Z" fill="#e7efdf"/>
+  <text x="374" y="284">w<tspan class="sub" dy="8">2</tspan><tspan dy="-8"> &lt; −b</tspan></text>
+  <path d="M563 44 Q610 42 657 44 L658 81 Q610 83 562 81 Z" fill="#fbefd5"/>
+  <text x="610" y="70">b ≥ 0</text>
+  <path class="ink" d="M610 85 Q608 106 610 125 M602 115 L610 127 L618 115"/>
 </svg>

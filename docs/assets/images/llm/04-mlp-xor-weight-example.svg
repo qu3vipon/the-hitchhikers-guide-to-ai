@@ -1,55 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="280" viewBox="0 35 760 280" role="img" aria-labelledby="title desc">
-  <title id="title">가중치와 편향으로 XOR 규칙을 처리하는 다층 퍼셉트론</title>
-  <desc id="desc">x1과 x2가 모두 1일 때 두 은닉 뉴런과 출력 뉴런이 각각 계산하는 과정을 보인다.</desc>
-  <defs>
-    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-      <path d="M0,0 L6,3 L0,6 Z" fill="context-stroke"/>
-    </marker>
-  </defs>
-  <g fill="none" stroke-linecap="round" marker-end="url(#arrow)">
-    <line x1="180" y1="105" x2="370" y2="105" stroke="#3d789d" stroke-width="2"/>
-    <line x1="180" y1="105" x2="370" y2="245" stroke="#76a7c4" stroke-width="2"/>
-    <line x1="180" y1="245" x2="370" y2="105" stroke="#3d789d" stroke-width="2"/>
-    <line x1="180" y1="245" x2="370" y2="245" stroke="#76a7c4" stroke-width="2"/>
-    <line x1="430" y1="105" x2="590" y2="175" stroke="#3d789d" stroke-width="2"/>
-    <line x1="430" y1="245" x2="590" y2="175" stroke="#76a7c4" stroke-width="2"/>
-    <line x1="400" y1="57" x2="400" y2="75" stroke="#c7834c" stroke-width="2"/>
-    <line x1="400" y1="197" x2="400" y2="215" stroke="#c7834c" stroke-width="2"/>
-    <line x1="620" y1="127" x2="620" y2="145" stroke="#c7834c" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="435" viewBox="0 -35 760 435" role="img" aria-labelledby="title desc">
+  <title id="title">가중치와 편향으로 협동 게임 규칙을 처리하는 다층 퍼셉트론</title>
+  <desc id="desc">x₁과 x₂가 모두 1일 때 은닉층의 평가 점수는 −1.5와 0.5, 활성화 결과는 0과 1이다. 출력층의 평가 점수는 0.5이며 최종 출력은 1이다.</desc>
+  <g transform="translate(-63 0)">
+  <g fill="none" stroke-linecap="round">
+    <path d="M180 105 Q260 106.14 340 105 M332 109 L340 105 L332 101" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M180 105 Q259.16 176.14 340 245 M331.187 243.475 L340 245 L335.932 237.034" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M180 245 Q260.84 176.14 340 105 M335.932 112.966 L340 105 L331.187 106.525" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M180 245 Q260 246.14 340 245 M332 249 L340 245 L332 241" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M474 105 Q533 135 592 165 M582.16 164.49 L592 165 L585.79 157.36" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M474 245 Q533 215 592 185 M585.79 192.64 L592 185 L582.16 185.51" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 57 Q369.892 66 370 75 M366 67 L370 75 L374 67" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 197 Q369.892 206 370 215 M366 207 L370 215 L374 207" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M620 127 Q619.892 136 620 145 M616 137 L620 145 L624 137" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g fill="#3d789d" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="235" y="88">+2</text>
-    <text x="235" y="224">−2</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
+    <text x="250" y="88">w₁₁ = −1</text>
+    <text x="250" y="224">w₁₂ = −1</text>
   </g>
-  <g fill="#76a7c4" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="235" y="132">−2</text>
-    <text x="235" y="270">+2</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
+    <text x="250" y="132">w₂₁ = 1</text>
+    <text x="250" y="270">w₂₂ = 1</text>
   </g>
-  <g fill="#3d789d" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="510" y="125">+1</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
+    <text x="540" y="90">w′₁₁ = 1</text>
   </g>
-  <g fill="#76a7c4" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="510" y="234">+1</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
+    <text x="540" y="285">w′₁₂ = 1</text>
   </g>
-  <g fill="#c7834c" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
-    <text x="440" y="65">b = −1</text>
-    <text x="440" y="205">b = −1</text>
-    <text x="660" y="138">b = 0</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
+    <text x="370" y="48">b = 0.5</text>
+    <text x="370" y="188">b = −1.5</text>
+    <text x="620" y="118">b = −0.5</text>
   </g>
   <g stroke-width="2.5">
-    <circle cx="150" cy="105" r="30" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="150" cy="245" r="30" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="400" cy="105" r="30" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="400" cy="245" r="30" fill="#ffffff" stroke="#8b989e"/>
-    <circle cx="620" cy="175" r="30" fill="#ffffff" stroke="#8b989e"/>
+    <path d="M150 75 C167.1 74 181 87.9 180 105 C181 122.1 167.1 136 150 135 C132.9 136 119 122.1 120 105 C119 87.9 132.9 74 150 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 215 C167.1 214 181 227.9 180 245 C181 262.1 167.1 276 150 275 C132.9 276 119 262.1 120 245 C119 227.9 132.9 214 150 215 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 75 C387.1 74 401 87.9 400 105 C401 122.1 387.1 136 370 135 C352.9 136 339 122.1 340 105 C339 87.9 352.9 74 370 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M370 215 C387.1 214 401 227.9 400 245 C401 262.1 387.1 276 370 275 C352.9 276 339 262.1 340 245 C339 227.9 352.9 214 370 215 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M620 145 C637.1 144 651 157.9 650 175 C651 192.1 637.1 206 620 205 C602.9 206 589 192.1 590 175 C589 157.9 602.9 144 620 145 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <g fill="#26353a" font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="150" y="111" font-size="18" font-weight="700">1</text>
-    <text x="150" y="251" font-size="18" font-weight="700">1</text>
-    <text x="400" y="111" font-size="18" font-weight="700">0</text>
-    <text x="400" y="251" font-size="18" font-weight="700">0</text>
-    <text x="620" y="181" font-size="18" font-weight="700">0</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="150" y="111" font-size="22" font-weight="400">1</text>
+    <text x="150" y="251" font-size="22" font-weight="400">1</text>
+    <text x="370" y="111" font-size="22" font-weight="400">−1.5</text>
+    <text x="370" y="251" font-size="22" font-weight="400">0.5</text>
+    <text x="620" y="181" font-size="22" font-weight="400">0.5</text>
   </g>
-  <text x="400" y="302" fill="#536268" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">ReLU(−1) = 0</text>
-  <text x="620" y="236" fill="#536268" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">ReLU(0) = 0</text>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="22" text-anchor="end">
+    <text x="106" y="111">x₁</text>
+    <text x="106" y="251">x₂</text>
+  </g>
+  <g fill="none" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M401 105 L413 105 M407 101 L413 105 L407 109"/>
+    <path d="M401 245 L413 245 M407 241 L413 245 L407 249"/>
+    <path d="M651 175 L663 175 M657 171 L663 175 L657 179"/>
+  </g>
+  <path d="M415 76 Q444 74 473 76 L474 134 Q444 136 414 134 Z" fill="#e7efdf" stroke="#393630" stroke-width="2" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="17" text-anchor="middle">
+    <text x="444" y="102" font-size="26">φ</text>
+    <text x="444" y="128">0</text>
+  </g>
+  <path d="M415 216 Q444 214 473 216 L474 274 Q444 276 414 274 Z" fill="#e7efdf" stroke="#393630" stroke-width="2" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="17" text-anchor="middle">
+    <text x="444" y="242" font-size="26">φ</text>
+    <text x="444" y="268">1</text>
+  </g>
+  <path d="M665 146 Q694 144 723 146 L724 204 Q694 206 664 204 Z" fill="#e7efdf" stroke="#393630" stroke-width="2" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="17" text-anchor="middle">
+    <text x="694" y="172" font-size="26">φ</text>
+    <text x="694" y="198">1</text>
+  </g>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="20" text-anchor="middle">
+    <text x="444" y="158">h₁</text>
+    <text x="444" y="298">h₂</text>
+    <text x="694" y="228">y</text>
+    <text x="694" y="261" fill="#2c7a64" font-size="18" font-weight="700">승리</text>
+  </g>
+  <g fill="#fbefd5" stroke="#393630" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(150 153)">
+      <path d="M-20 -5 L-12 -5 Q-8 -10 -2 -10 L20 -10 Q26 -10 26 -6 Q26 -2 20 -2 L7 -2 Q12 0 10 4 Q13 7 9 10 Q10 14 5 16 L-4 16 Q-10 16 -13 10 L-20 10 Z"/>
+      <path d="M-12 -5 L-12 10 M2 1 L8 2 M1 7 L8 8 M-1 12 L5 13" fill="none" stroke-width="1.2"/>
+    </g>
+    <g transform="translate(150 293)">
+      <path d="M-20 -5 L-12 -5 Q-8 -10 -2 -10 L20 -10 Q26 -10 26 -6 Q26 -2 20 -2 L7 -2 Q12 0 10 4 Q13 7 9 10 Q10 14 5 16 L-4 16 Q-10 16 -13 10 L-20 10 Z"/>
+      <path d="M-12 -5 L-12 10 M2 1 L8 2 M1 7 L8 8 M-1 12 L5 13" fill="none" stroke-width="1.2"/>
+    </g>
+  </g>
+  <g transform="translate(45 10)">
+  <path d="M387 -8 Q444 -10 501 -8 Q509 -8 509 0 L509 30 Q509 38 501 38 L447 38 L435 47 L435 38 L387 38 Q379 38 379 30 L379 0 Q379 -8 387 -8 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="444" y="11">두 사람 모두</text>
+    <text x="444" y="31">왼쪽인가?</text>
+  </g>
+  </g>
+  <g transform="translate(0 3)">
+  <g transform="translate(45 0)">
+  <path d="M387 315 Q409 314 435 315 L429 306 L447 315 L501 315 Q509 315 509 323 L509 353 Q509 361 501 361 L387 361 Q379 361 379 353 L379 323 Q379 315 387 315 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="444" y="334">두 사람 모두</text>
+    <text x="444" y="354">오른쪽인가?</text>
+  </g>
+  </g>
+  </g>
+  <g transform="translate(45 38)">
+  <path d="M637 34 Q694 32 751 34 Q759 34 759 42 L759 72 Q759 80 751 80 L697 80 L685 89 L685 80 L637 80 Q629 80 629 72 L629 42 Q629 34 637 34 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round"/>
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="694" y="53">둘 중 하나라도</text>
+    <text x="694" y="73">참인가?</text>
+  </g>
+  </g>
+  </g>
 </svg>
