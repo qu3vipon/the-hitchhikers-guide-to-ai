@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-labelledby="title desc">
+  <title id="title">컴퓨터가 2 + 3을 처리하는 과정</title>
+  <desc id="desc">2를 읽어 저장하고, 더하기 명령을 확인한 뒤, 3을 읽어 더하고 결과 5를 화면에 표시한다.</desc>
+  <style>
+    text { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; fill: #393630; text-anchor: middle; }
+    .symbol { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 38px; }
+    .label { font-size: 19px; }
+    .detail { font-size: 16px; fill: #69645c; }
+  </style>
+  <g stroke="#393630" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 43 Q98 40 168 43 Q177 43 176 54 L177 122 Q177 133 166 132 Q98 135 28 132 Q17 131 18 121 L17 54 Q17 43 27 43Z" fill="#faf5e9"/>
+    <path d="M218 43 Q289 41 359 43 Q369 42 368 54 L369 122 Q368 134 358 132 Q288 134 219 132 Q208 132 209 121 L208 54 Q208 44 218 43Z" fill="#faf5e9"/>
+    <path d="M409 43 Q480 40 550 43 Q560 43 559 54 L560 122 Q560 133 549 132 Q479 135 410 132 Q399 131 400 121 L399 54 Q399 43 409 43Z" fill="#faf5e9"/>
+    <path d="M600 43 Q671 41 731 43 Q742 43 741 54 L742 122 Q742 133 731 132 Q666 134 601 132 Q590 131 591 121 L590 54 Q590 43 600 43Z" fill="#faf5e9"/>
+    <g fill="none">
+      <path d="M184 88 Q195 86 202 88 M196 81 L203 88 L196 95"/>
+      <path d="M376 88 Q386 86 393 88 M387 81 L394 88 L387 95"/>
+      <path d="M567 88 Q577 86 584 88 M578 81 L585 88 L578 95"/>
+    </g>
+  </g>
+  <text x="97" y="88" dominant-baseline="central" class="symbol">2</text>
+  <text x="288" y="88" dominant-baseline="central" class="symbol">+</text>
+  <text x="479" y="88" dominant-baseline="central" class="symbol">3</text>
+  <text x="666" y="88" dominant-baseline="central" class="symbol">=</text>
+  <g class="label">
+    <text x="97" y="168">2 읽기</text>
+    <text x="288" y="168">명령 확인</text>
+    <text x="479" y="168">3 읽기</text>
+    <text x="666" y="168">계산 실행</text>
+  </g>
+  <g class="detail">
+    <text x="97" y="196">임시 저장</text>
+    <text x="288" y="196">다음 숫자 기다리기</text>
+    <text x="479" y="196">저장한 2에 3 더하기</text>
+    <text x="666" y="196">결과: 5</text>
+  </g>
+</svg>
