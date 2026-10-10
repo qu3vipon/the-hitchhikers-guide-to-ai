@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 -45 900 430" role="img" aria-labelledby="title desc">
+  <title id="title">학습 데이터를 사용하는 에포크와 신경망의 학습률</title>
+  <desc id="desc">왼쪽 학습 데이터를 위에서 아래로 모두 한 번 사용하면 1에포크다. 오른쪽은 두 입력 뉴런과 출력 뉴런으로 단순화한 신경망이다. 학습률 0.1을 적용해 가중치 하나를 0에서 0.1로 수정하는 예를 보여준다.</desc>
+  <style>
+    .label { font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; fill: #393630; text-anchor: middle; font-size: 20.5px; }
+    .ink { fill: none; stroke: #393630; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <path class="ink" d="M31 0 Q450 -3 868 0 Q880 0 879 14 L880 352 Q879 366 865 365 Q450 368 33 365 Q20 365 21 351 L20 14 Q20 1 31 0 Z"/>
+  <g transform="translate(150 0)">
+  <text class="label" x="156" y="38">학습 데이터</text>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="1.8" stroke-linejoin="round">
+    <path d="M79 65 Q156 63 233 65 L234 108 Q156 110 78 108 Z"/>
+    <path d="M79 122 Q156 120 233 122 L234 165 Q156 167 78 165 Z"/>
+    <path d="M79 179 Q156 177 233 179 L234 222 Q156 224 78 222 Z"/>
+    <path d="M79 270 Q156 268 233 270 L234 313 Q156 315 78 313 Z"/>
+  </g>
+  <g class="label">
+    <text x="156" y="92">첫 번째 메일</text>
+    <text x="156" y="149">두 번째 메일</text>
+    <text x="156" y="206">세 번째 메일</text>
+    <text x="156" y="250">⋮</text>
+    <text x="156" y="297">마지막 메일</text>
+  </g>
+  <path class="ink" d="M65 65 L48 65 Q46 190 48 313 L65 313"/>
+  <g transform="translate(-145 0)">
+    <path d="M29 173 Q105 171 181 173 L182 204 Q105 206 28 204 Z" fill="#e7efdf"/>
+    <text class="label" x="105" y="195">전체 = 1 에포크</text>
+  </g>
+  </g>
+  <path class="ink" d="M409 188 Q450 186 490 188 M480 181 L491 188 L480 195"/>
+  <text class="label" x="450" y="170">하나씩 학습</text>
+  <g transform="translate(97 0)">
+  <g class="ink">
+    <path d="M474 134 Q540 154 606 178"/>
+    <path d="M474 245 Q540 225 606 202"/>
+  </g>
+  <g fill="#e7eef0" stroke="#393630" stroke-width="2.2">
+    <path d="M447 106 C463 105 476 118 475 134 C476 150 463 163 447 162 C431 163 418 150 419 134 C418 118 431 105 447 106 Z"/>
+    <path d="M447 217 C463 216 476 229 475 245 C476 261 463 274 447 273 C431 274 418 261 419 245 C418 229 431 216 447 217 Z"/>
+    <g transform="translate(-45 0)">
+    <path d="M683 157 C702 156 718 171 717 190 C718 209 702 225 683 224 C664 225 648 209 649 190 C648 171 664 156 683 157 Z"/>
+    </g>
+  </g>
+  <path d="M484 111 Q543 109 602 111 L603 147 Q543 149 483 147 Z" fill="#fbefd5"/>
+  <text class="label" x="543" y="135">w → w + α</text>
+  <path d="M490 285 Q543 283 596 285 L597 313 Q543 315 489 313 Z" fill="#fbefd5"/>
+  <text class="label" x="543" y="307">학습률 = α</text>
+  </g>
+  <g class="ink" transform="translate(631 -20)">
+    <path d="M-10 -3 C-8 -13 6 -15 12 -5 M12 -12 L12 -5 L5 -5"/>
+    <path d="M10 3 C8 13 -6 15 -12 5 M-12 12 L-12 5 L-5 5"/>
+  </g>
+  <text class="label" x="870" y="-14" style="text-anchor:end">설정한 에포크 수만큼 반복</text>
+</svg>

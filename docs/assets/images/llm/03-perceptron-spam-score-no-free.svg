@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="215" viewBox="0 45 660 215" role="img" aria-labelledby="title desc">
   <title id="title">무료라는 표현이 없는 스팸 메일의 퍼셉트론 계산</title>
   <desc id="desc">무료라는 표현이 없는 입력 0과 모르는 발신자라는 입력 1이 가중치와 함께 퍼셉트론으로 들어가고, 위쪽에서 편향 -2가 더해져 평가 점수 -1이 만들어진다. 이 점수는 정상으로 판단된다.</desc>
-  <g transform="translate(42 0)">
+  <g transform="translate(17 0)">
   <g fill="none" stroke-linecap="round">
     <path stroke="#393630" stroke-width="2.25" d="M171 82 Q290.135 113.455 410 142 M403.21 136.17 L410 142 L401.27 143.93" stroke-linecap="round" stroke-linejoin="round" />
     <path stroke="#393630" stroke-width="2.25" d="M171 196 Q290.736 178.481 410 158 M401.47 155.31 L410 158 L402.73 163.21" stroke-linecap="round" stroke-linejoin="round" />
@@ -16,7 +16,6 @@
     <text x="141" y="88" font-size="18">0</text>
     <text x="141" y="202" font-size="18">1</text>
     <text x="440" y="156" font-size="18">−1</text>
-    <text x="500" y="156" fill="#2c7a64" font-size="17" font-weight="400">정상</text>
   </g>
   <g stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
     <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#e7efdf"/>
@@ -32,9 +31,17 @@
     <text x="141" y="245" font-size="13" text-anchor="middle">모르는 발신자</text>
   </g>
   <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
-    <text x="276" y="96" fill="#5b9564">w₁ = 2</text>
-    <text x="276" y="169" fill="#5b9564">w₂ = 1</text>
-    <text x="440" y="70" fill="#b28a20">편향 −2</text>
+    <text x="276" y="96" fill="#393630">w₁ = 2</text>
+    <text x="276" y="169" fill="#393630">w₂ = 1</text>
+    <path d="M410 56 Q440 54 470 56 L471 74 Q440 76 409 74 Z" fill="#fbefd5"/>
+    <text x="440" y="70" fill="#393630">편향 −2</text>
+  </g>
+  <g transform="translate(93 -66)" text-anchor="middle">
+    <g stroke="#2c7a64" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M407 193 Q440 191 473 193 L474 238 Q441 240 407 238 Q405 216 407 193 Z" fill="#e7efdf"/>
+      <path d="M408 194 L440 212 L472 194" fill="none"/>
+    </g>
+    <text x="440" y="230" fill="#2c7a64" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">정상</text>
   </g>
   </g>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="215" viewBox="0 45 660 215" role="img" aria-labelledby="title desc">
-  <title id="title">초기값이 모두 0인 퍼셉트론의 예측</title>
-  <desc id="desc">무료라는 표현과 모르는 발신자라는 두 입력이 각각 가중치 0을 거치고 편향 0이 더해져 평가 점수 0이 된다. 퍼셉트론은 스팸이 아니라고 예측했지만 실제 정답은 스팸이다.</desc>
+  <title id="title">정상 메일을 스팸으로 잘못 예측하는 퍼셉트론</title>
+  <desc id="desc">두 입력이 모두 0인 정상 메일에서 가중치는 각각 1, 편향은 1이다. 평가 점수가 1이므로 실제 정상 메일을 스팸으로 잘못 예측한다.</desc>
   <g transform="translate(62 0)">
   <g fill="none" stroke-linecap="round">
     <path stroke="#393630" stroke-width="2.25" d="M216 82 Q312.5 113.5 410 142 M403.21 136.17 L410 142 L401.27 143.93" stroke-linecap="round" stroke-linejoin="round" />
@@ -17,42 +17,42 @@
     <path d="M440 120 C456.8 119 471 133.2 470 150 C471 166.8 456.8 181 440 180 C423.2 181 409 166.8 410 150 C409 133.2 423.2 119 440 120 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
-    <text x="186" y="88" font-size="18">1</text>
-    <text x="186" y="202" font-size="18">1</text>
-    <text x="440" y="156" font-size="18">0</text>
+    <text x="186" y="88" font-size="18">0</text>
+    <text x="186" y="202" font-size="18">0</text>
+    <text x="440" y="156" font-size="18">1</text>
   </g>
   <g transform="translate(45 0)" stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#f5d5cf"/>
-    <text x="76" y="123" dominant-baseline="central" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="13" font-weight="400" fill="#a65043" stroke="none">무료</text>
-    <path d="M75 234 C79 233 82 236 81 239 C81 243 76 244 74 241 C72 238 72 235 75 234 Z" fill="#f5d5cf"/>
-    <path d="M69 252 Q69 244 76 244 Q83 244 84 252 Z" fill="#f5d5cf"/>
-    <path d="M85 234 Q88 231 91 234 Q93 237 89 239 L89 242 M89 245 L89 245.5" fill="none" stroke="#a65043"/>
+    <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#e7efdf"/>
+    <path d="M65 119 Q77 118 87 119 M65 126 Q74 125 83 126" fill="none"/>
+    <path d="M75 234 C79 233 82 236 81 239 C81 243 76 244 74 241 C72 238 72 235 75 234 Z" fill="#e7efdf"/>
+    <path d="M69 252 Q69 244 76 244 Q83 244 84 252 Z" fill="#e7efdf"/>
+    <path d="M85 242 L88 245 L94 237" fill="none" stroke="#5b9564"/>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive">
     <text x="145" y="88" font-size="18" text-anchor="end">x₁</text>
-    <text x="186" y="131" font-size="13" text-anchor="middle">“무료” 포함</text>
+    <text x="186" y="131" font-size="13" text-anchor="middle">“무료” 미포함</text>
     <text x="145" y="202" font-size="18" text-anchor="end">x₂</text>
-    <text x="186" y="245" font-size="13" text-anchor="middle">모르는 발신자</text>
+    <text x="186" y="245" font-size="13" text-anchor="middle">알려진 발신자</text>
   </g>
   <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
-    <text x="307" y="96" fill="#393630">w₁ = 0</text>
-    <text x="307" y="169" fill="#393630">w₂ = 0</text>
-    <text x="440" y="70" fill="#393630">편향 0</text>
+    <text x="307" y="96" fill="#393630">w₁ = 1</text>
+    <text x="307" y="169" fill="#393630">w₂ = 1</text>
+    <text x="440" y="70" fill="#393630">편향 1</text>
   </g>
   <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-weight="400">
     <g text-anchor="middle">
-      <g stroke="#a65043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M7 129 Q40 127 73 129 L74 174 Q41 176 7 174 Q5 152 7 129 Z" fill="#f5d5cf"/>
+      <g stroke="#2c7a64" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7 129 Q40 127 73 129 L74 174 Q41 176 7 174 Q5 152 7 129 Z" fill="#e7efdf"/>
         <path d="M8 130 L40 148 L72 130" fill="none"/>
       </g>
-      <text x="40" y="166" fill="#a65043" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">스팸</text>
+      <text x="40" y="166" fill="#2c7a64" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">정상</text>
     </g>
     <g text-anchor="middle">
-      <g stroke="#2c7a64" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M407 193 Q440 191 473 193 L474 238 Q441 240 407 238 Q405 216 407 193 Z" fill="#e7efdf"/>
+      <g stroke="#a65043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M407 193 Q440 191 473 193 L474 238 Q441 240 407 238 Q405 216 407 193 Z" fill="#f5d5cf"/>
         <path d="M408 194 L440 212 L472 194" fill="none"/>
       </g>
-      <text x="440" y="230" fill="#2c7a64" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">정상</text>
+      <text x="440" y="230" fill="#a65043" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">스팸</text>
     </g>
     <text x="500" y="156" fill="#c35243" font-size="16">오답</text>
   </g>

@@ -11,8 +11,8 @@
   <g fill="#e7eef0" stroke="#393630" stroke-width="2.5">
     <path d="M141 52 C157.8 51 172 65.2 171 82 C172 98.8 157.8 113 141 112 C124.2 113 110 98.8 111 82 C110 65.2 124.2 51 141 52 Z" stroke-linecap="round" stroke-linejoin="round" />
     <path d="M141 166 C157.8 165 172 179.2 171 196 C172 212.8 157.8 227 141 226 C124.2 227 110 212.8 111 196 C110 179.2 124.2 165 141 166 Z" stroke-linecap="round" stroke-linejoin="round" />
-    <path fill="#e7efdf" d="M360 88 C383.5 87 403 106.5 402 130 C403 153.5 383.5 173 360 172 C336.5 173 317 153.5 318 130 C317 106.5 336.5 87 360 88 Z" stroke-linecap="round" stroke-linejoin="round" />
-    <path fill="#fbefd5" d="M462 95 Q495 94 528 95 Q540 95 540 107 L540 153 Q540 165 528 165 Q495 166 462 165 Q450 165 450 153 L450 107 Q450 95 462 95 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#e7eef0" d="M360 88 C383.5 87 403 106.5 402 130 C403 153.5 383.5 173 360 172 C336.5 173 317 153.5 318 130 C317 106.5 336.5 87 360 88 Z" stroke-linecap="round" stroke-linejoin="round" />
+    <path fill="#e7eef0" d="M462 95 Q495 94 528 95 Q540 95 540 107 L540 153 Q540 165 528 165 Q495 166 462 165 Q450 165 450 153 L450 107 Q450 95 462 95 Z" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
     <text x="141" y="88" font-size="18">x₁</text>
@@ -21,11 +21,11 @@
     <text x="360" y="140" font-size="25" dominant-baseline="central">z</text>
     <text x="495" y="120" font-size="13" dominant-baseline="central">활성화 함수</text>
     <text x="495" y="140" font-size="25" dominant-baseline="central">φ</text>
-    <text x="630" y="136" fill="#a5533b" font-size="17" font-weight="400">출력 y</text>
+    <text x="630" y="136" fill="#393630" font-size="17" font-weight="400">출력 y</text>
   </g>
-  <g fill="#5b9564" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
     <text x="250" y="85">w₁</text>
     <text x="250" y="188">w₂</text>
   </g>
-  <text x="360" y="58" fill="#b28a20" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">편향 b</text>
+  <text x="360" y="58" fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">편향 b</text>
 </svg>

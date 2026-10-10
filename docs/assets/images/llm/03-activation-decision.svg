@@ -15,7 +15,7 @@
 
   <path class="ink" d="M380 110 Q377 141 381 170 M373 159 L381 171 L389 158"/>
 
-  <path d="M380 178 L551 267 L380 359 L208 267 Z" fill="#fbefd5"/>
+  <path d="M380 178 L551 267 L380 359 L208 267 Z" fill="#e7eef0"/>
   <path class="ink" d="M379 177 Q463 219 552 267 Q466 312 381 359 Q294 314 207 268 Q291 220 379 177 Z"/>
   <path class="echo" d="M383 180 L548 270 L377 356 L211 264 Z"/>
   <text x="380" y="255">최종 평가 점수가</text>
@@ -26,10 +26,10 @@
   <text class="label" x="181" y="316">예</text>
   <text class="label" x="591" y="316">아니오</text>
 
-  <path d="M63 433 L290 431 L293 505 L61 507 Z" fill="#e7efdf"/>
+  <path d="M63 433 L290 431 L293 505 L61 507 Z" fill="#f5d5cf"/>
   <path class="ink" d="M62 432 Q177 429 291 432 L293 506 Q179 509 61 506 Z"/>
   <path class="echo" d="M65 435 L289 429 L296 503 L64 509 Z"/>
-  <text x="177" y="479">1 → 스팸</text>
+  <text x="177" y="479" style="fill: #a65043;">1 → 스팸</text>
 
   <path d="M469 433 L697 431 L698 506 L467 508 Z" fill="#e7efdf"/>
   <path class="ink" d="M468 432 Q583 429 698 433 L699 506 Q583 509 467 506 Z"/>
