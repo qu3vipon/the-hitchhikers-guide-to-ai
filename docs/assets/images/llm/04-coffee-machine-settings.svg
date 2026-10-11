@@ -14,7 +14,7 @@
 <!-- Bean hopper and rounded machine housing -->
 <path d="M383 45 L380 28 Q410 24 438 28 L435 45 Z" fill="#faf5e9"/>
 <path d="M377 27 Q408 23 442 27" fill="none"/>
-<g fill="#c4a58b" stroke-width="1.1">
+<g fill="#c4a58b" stroke-width="2.2">
 <path d="M386 32 Q390 28 395 32 Q397 37 391 38 Q386 37 386 32 Z"/>
 <path d="M399 31 Q404 27 409 32 Q410 37 404 38 Q399 36 399 31 Z"/>
 <path d="M413 31 Q418 27 422 32 Q423 37 417 38 Q412 36 413 31 Z"/>
@@ -23,19 +23,19 @@
 <path d="M408 39 Q413 34 418 39 Q420 44 414 45 Q408 44 408 39 Z"/>
 <path d="M422 39 Q427 35 432 39 Q433 44 427 45 Q422 43 422 39 Z"/>
 </g>
-<path d="M389 32 L392 35 M402 31 L405 35 M416 31 L419 35 M429 33 L432 36 M396 39 L400 42 M411 39 L415 42 M425 39 L429 42" fill="none" stroke-width="0.8"/>
+<path d="M389 32 L392 35 M402 31 L405 35 M416 31 L419 35 M429 33 L432 36 M396 39 L400 42 M411 39 L415 42 M425 39 L429 42" fill="none" stroke-width="2.2"/>
 <path d="M356 46 Q410 42 463 46 Q474 47 473 60 L474 204 Q474 213 464 213 L356 213 Q346 213 347 203 L347 60 Q346 48 356 46 Z" fill="#e7eef0"/>
 <!-- Display and controls -->
-<path d="M364 63 Q392 61 419 63 L420 87 Q392 89 363 87 Z" fill="#faf5e9" stroke-width="1.6"/>
-<path d="M373 73 L397 73 M373 79 L389 79" fill="none" stroke-width="1.4"/>
-<path d="M439 67 C448 66 453 74 449 81 C445 87 435 84 434 77 C432 72 435 68 439 67 Z" fill="#fbefd5" stroke-width="1.6"/>
+<path d="M364 63 Q392 61 419 63 L420 87 Q392 89 363 87 Z" fill="#faf5e9" stroke-width="2.2"/>
+<path d="M373 73 L397 73 M373 79 L389 79" fill="none" stroke-width="2.2"/>
+<path d="M439 67 C448 66 453 74 449 81 C445 87 435 84 434 77 C432 72 435 68 439 67 Z" fill="#fbefd5" stroke-width="2.2"/>
 <!-- Recessed brewing area and twin spout -->
-<path d="M364 103 Q409 100 455 103 L455 190 Q411 193 364 190 Z" fill="#faf5e9" stroke-width="1.6"/>
-<path d="M393 104 L393 117 Q410 122 427 117 L427 104" fill="#e7eef0" stroke-width="1.8"/>
+<path d="M364 103 Q409 100 455 103 L455 190 Q411 193 364 190 Z" fill="#faf5e9" stroke-width="2.2"/>
+<path d="M393 104 L393 117 Q410 122 427 117 L427 104" fill="#e7eef0" stroke-width="2.2"/>
 <path d="M402 120 L402 132 M418 120 L418 132" fill="none"/>
 <!-- Drip tray -->
-<path d="M360 190 Q410 187 460 190 L459 201 Q410 204 361 201 Z" fill="#e7eef0" stroke-width="1.6"/>
-<path d="M376 195 L386 195 M397 195 L407 195 M418 195 L428 195 M439 195 L449 195" fill="none" stroke-width="1.3"/>
+<path d="M360 190 Q410 187 460 190 L459 201 Q410 204 361 201 Z" fill="#e7eef0" stroke-width="2.2"/>
+<path d="M376 195 L386 195 M397 195 L407 195 M418 195 L428 195 M439 195 L449 195" fill="none" stroke-width="2.2"/>
 </g>
 <path class="ink" d="M486 133 Q526 131 567 133 M557 126 L567 133 L557 140"/>
 <text x="410" y="239">커피 머신</text>
