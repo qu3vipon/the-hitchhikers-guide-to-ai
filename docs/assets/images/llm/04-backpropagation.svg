@@ -4,7 +4,7 @@
 <text x="380" y="36" style="fill:#3d8b75">순전파 · 예측값과 손실 계산</text>
 <path class="ink forward" d="M100 60 Q380 57 660 60 M649 53 L661 60 L649 67"/>
 <path d="M57 88 Q100 85 143 88 L144 148 Q100 151 56 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
-<text class="math" x="100" y="129">w₁</text>
+<text class="math" x="100" y="129">w</text>
 <text x="100" y="179">가중치</text>
 <path d="M197 88 Q240 85 283 88 L284 148 Q240 151 196 148 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/>
 <text class="math" x="240" y="129">z</text>

@@ -1,16 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="135" viewBox="0 0 760 135" role="img" aria-labelledby="title"><title id="title">가중치에서 손실까지 이어지는 계산 흐름</title><style>text { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:30px; text-anchor:middle; } .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }.label { font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive; font-size:20px; }</style>
-<text x="100" y="65">w<tspan font-size="20" dy="8">1</tspan></text>
-<path class="ink" d="M137 55 Q170 53 203 55 M193 48 L204 55 L193 62"/>
-<text x="240" y="65">z</text>
-<path class="ink" d="M277 55 Q310 53 343 55 M333 48 L344 55 L333 62"/>
-<text x="380" y="65">h</text>
-<path class="ink" d="M417 55 Q450 53 483 55 M473 48 L484 55 L473 62"/>
-<text x="520" y="65">y</text>
-<path class="ink" d="M557 55 Q590 53 623 55 M613 48 L624 55 L613 62"/>
-<text x="660" y="65">L</text>
-<text class="label" x="100" y="102">가중치</text>
-<text class="label" x="240" y="102">가중합</text>
-<text class="label" x="380" y="102">은닉 뉴런의 값</text>
-<text class="label" x="520" y="102">최종 출력</text>
-<text class="label" x="660" y="102">손실</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="135" viewBox="0 0 760 135" role="img" aria-labelledby="title desc"><title id="title">여러 은닉층을 거쳐 손실까지 이어지는 계산 경로</title><desc id="desc">가중치 w가 가중합 z와 여러 은닉층의 값 h⁽¹⁾부터 h⁽ᵏ⁾를 거쳐 출력 y와 손실 L에 영향을 주는 한 경로입니다. h의 괄호 안의 위첨자는 은닉층의 순서를 나타냅니다.</desc><style>text { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:30px; text-anchor:middle; } .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }.label { font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive; font-size:20px; }</style>
+<text x="60" y="65">w</text>
+<text x="170" y="65">z</text>
+<text x="280" y="65">h<tspan font-size="18" dy="-13">(1)</tspan></text>
+<text x="380" y="65">…</text>
+<text x="480" y="65">h<tspan font-size="18" dy="-13">(k)</tspan></text>
+<text x="590" y="65">y</text>
+<text x="700" y="65">L</text>
+<path class="ink" d="M90 55 Q115.0 53 140 55 M131 48 L141 55 L131 62"/>
+<path class="ink" d="M200 55 Q225.0 53 250 55 M241 48 L251 55 L241 62"/>
+<path class="ink" d="M310 55 Q330.0 53 350 55 M341 48 L351 55 L341 62"/>
+<path class="ink" d="M410 55 Q430.0 53 450 55 M441 48 L451 55 L441 62"/>
+<path class="ink" d="M510 55 Q535.0 53 560 55 M551 48 L561 55 L551 62"/>
+<path class="ink" d="M620 55 Q645.0 53 670 55 M661 48 L671 55 L661 62"/>
+<text class="label" x="60" y="102">가중치</text>
+<text class="label" x="170" y="102">가중합</text>
+<text class="label" x="380" y="102">여러 은닉층의 값</text>
+<text class="label" x="590" y="102">최종 출력</text>
+<text class="label" x="700" y="102">손실</text>
 </svg>

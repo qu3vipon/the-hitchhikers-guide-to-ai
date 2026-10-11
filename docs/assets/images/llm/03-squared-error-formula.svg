@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="70" viewBox="0 15 760 70" role="img" aria-labelledby="title">
+<title id="title">제곱 오차 손실 함수 L = (y − t)²</title>
+<text x="380" y="60" fill="#393630" text-anchor="middle" font-family="Chalkboard SE, Segoe Print, cursive" font-size="30">L = (y − t)<tspan font-size="20" dy="-13">2</tspan></text>
+</svg>

@@ -1,6 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="435" viewBox="0 -35 760 435" role="img" aria-labelledby="title desc">
   <title id="title">가중치와 편향으로 협동 게임 규칙을 처리하는 다층 퍼셉트론</title>
   <desc id="desc">x₁과 x₂가 모두 1일 때 은닉층의 평가 점수는 −1.5와 0.5, 활성화 결과는 0과 1이다. 출력층의 평가 점수는 0.5이며 최종 출력은 1이다.</desc>
+  <style>
+    g[font-family^="Chalkboard SE"] text {
+      stroke: #393630;
+      stroke-width: 0.4;
+      stroke-linejoin: round;
+      paint-order: stroke fill;
+    }
+    g[font-family^="Chalkboard SE"] text[fill="#2c7a64"] { stroke: #2c7a64; }
+  </style>
   <g transform="translate(-63 0)">
   <g fill="none" stroke-linecap="round">
     <path d="M180 105 Q260 106.14 340 105 M332 109 L340 105 L332 101" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -14,8 +23,8 @@
     <path d="M620 127 Q619.892 136 620 145 M616 137 L620 145 L624 137" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="250" y="88">w₁₁ = −1</text>
-    <text x="250" y="224">w₁₂ = −1</text>
+    <text x="250" y="88">w₁₁ = <tspan stroke="#393630" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
+    <text x="250" y="224">w₁₂ = <tspan stroke="#393630" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
     <text x="250" y="132">w₂₁ = 1</text>
@@ -29,8 +38,8 @@
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
     <text x="370" y="48">b = 0.5</text>
-    <text x="370" y="188">b = −1.5</text>
-    <text x="620" y="118">b = −0.5</text>
+    <text x="370" y="188">b = <tspan stroke="#393630" stroke-width="0.65" stroke-linejoin="round">−</tspan>1.5</text>
+    <text x="620" y="118">b = <tspan stroke="#393630" stroke-width="0.65" stroke-linejoin="round">−</tspan>0.5</text>
   </g>
   <g stroke-width="2.5">
     <path d="M150 75 C167.1 74 181 87.9 180 105 C181 122.1 167.1 136 150 135 C132.9 136 119 122.1 120 105 C119 87.9 132.9 74 150 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round"/>
@@ -42,7 +51,7 @@
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
     <text x="150" y="111" font-size="22" font-weight="400">1</text>
     <text x="150" y="251" font-size="22" font-weight="400">1</text>
-    <text x="370" y="111" font-size="22" font-weight="400">−1.5</text>
+    <text x="370" y="111" font-size="22" font-weight="400"><tspan stroke="#393630" stroke-width="0.65" stroke-linejoin="round">−</tspan>1.5</text>
     <text x="370" y="251" font-size="22" font-weight="400">0.5</text>
     <text x="620" y="181" font-size="22" font-weight="400">0.5</text>
   </g>

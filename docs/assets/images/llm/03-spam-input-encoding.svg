@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-labelledby="title desc">
+<title id="title">스팸 단서를 입력값 1과 0으로 표현하기</title><desc id="desc">x₁은 무료라는 표현이 있으면 1, 없으면 0입니다. x₂는 모르는 발신자이면 1, 아는 발신자이면 0입니다.</desc>
+<style>text{fill:#393630;font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;font-size:20px;text-anchor:middle;dominant-baseline:middle}.math{font-family:'Chalkboard SE','Segoe Print',cursive;font-size:28px}.ink{fill:none;stroke:#393630;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}</style>
+<text class="math" x="66" y="66">x₁</text>
+<text class="math" x="66" y="184">x₂</text>
+<g transform="translate(180 53)" stroke="#393630" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-23 -17 Q0 -20 23 -17 L24 9 Q24 14 18 14 L-5 14 L-15 22 L-15 14 L-23 14 Q-27 14 -26 8 L-26 -10 Q-27 -17 -23 -17 Z" fill="#f5d5cf"/><text y="-2" style="font-size:17px;fill:#a65043" stroke="none">무료</text></g>
+<text x="180" y="99" style="font-size:18px">“무료” 포함</text>
+<path class="ink" d="M235 56 Q262 54 289 56 M280 49 L290 56 L280 63"/>
+<text class="math" x="320" y="56">1</text>
+<g transform="translate(495 53)" stroke="#393630" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-23 -17 Q0 -20 23 -17 L24 9 Q24 14 18 14 L-5 14 L-15 22 L-15 14 L-23 14 Q-27 14 -26 8 L-26 -10 Q-27 -17 -23 -17 Z" fill="#e7efdf"/><path d="M-16 -5 Q0 -7 15 -5 M-16 4 Q-3 2 10 4" fill="none"/></g>
+<text x="495" y="99" style="font-size:18px">“무료” 미포함</text>
+<path class="ink" d="M550 56 Q577 54 604 56 M595 49 L605 56 L595 63"/>
+<text class="math" x="635" y="56">0</text>
+<g transform="translate(180 171)" stroke="#393630" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-8 -20 C2 -22 9 -15 8 -7 C9 2 -3 5 -8 0 C-14 -5 -14 -17 -8 -20 Z M-22 24 Q-22 4 -5 4 Q12 4 13 24 Z" fill="#f5d5cf"/><path d="M16 -18 Q22 -24 28 -18 Q32 -11 23 -6 L23 0 M23 7 L23 8" fill="none" stroke="#a65043"/></g>
+<text x="180" y="217" style="font-size:18px">모르는 발신자</text>
+<path class="ink" d="M235 174 Q262 172 289 174 M280 167 L290 174 L280 181"/>
+<text class="math" x="320" y="174">1</text>
+<g transform="translate(495 171)" stroke="#393630" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M-8 -20 C2 -22 9 -15 8 -7 C9 2 -3 5 -8 0 C-14 -5 -14 -17 -8 -20 Z M-22 24 Q-22 4 -5 4 Q12 4 13 24 Z" fill="#e7efdf"/><path d="M16 -4 L22 2 L32 -11" fill="none" stroke="#2c7a64"/></g>
+<text x="495" y="217" style="font-size:18px">아는 발신자</text>
+<path class="ink" d="M550 174 Q577 172 604 174 M595 167 L605 174 L595 181"/>
+<text class="math" x="635" y="174">0</text>
+</svg>

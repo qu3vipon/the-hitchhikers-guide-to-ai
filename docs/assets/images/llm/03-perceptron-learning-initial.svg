@@ -54,7 +54,7 @@
       </g>
       <text x="440" y="230" fill="#2c7a64" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">정상</text>
     </g>
-    <text x="500" y="156" fill="#c35243" font-size="16">오답</text>
+    <text x="500" y="156" fill="#c35243" font-size="16" font-weight="700">오답</text>
   </g>
   </g>
 </svg>

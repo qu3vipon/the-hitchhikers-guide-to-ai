@@ -2,7 +2,7 @@
 
 ## 뉴런과 가중치 {#neurons-and-weights}
 
-머신러닝에서 컴퓨터는 다양한 예시 데이터를 통해 판단 기준을 스스로 학습한다고 했습니다. 그렇다면 컴퓨터가 이런 판단 기준을 찾아가려면, 입력을 어떤 방식으로 처리해 답을 만들도록 해야 할까요? 연구자들은 이 질문에 답하기 위해 다양한 수학적·통계적 모델을 제안했습니다. 그 가운데 지금의 AI 발전에 가장 큰 영향을 준 모델 중 하나가 **인공 신경망(artificial neural network)**입니다. 인공 신경망은 인간의 뇌를 이루는 **뉴런(neuron)**에서 착안했습니다. 이는 뉴런들이 서로 신호를 주고받으며 복잡한 정보를 처리하는 방식을 컴퓨터 안에서 계산과 연결 구조로 구현하려는 시도였습니다.
+머신러닝에서 컴퓨터는 다양한 예시 데이터를 통해 판단 기준을 스스로 학습한다고 했습니다. 그렇다면 컴퓨터는 어떤 방식으로 데이터를 처리하고, 그 과정에서 판단 기준을 학습할까요? 연구자들은 이 질문에 답하기 위해 다양한 수학적·통계적 모델을 제안했습니다. 그 가운데 지금의 AI 발전에 가장 큰 영향을 준 모델 중 하나가 **인공 신경망(artificial neural network)**입니다. 인공 신경망은 인간의 뇌를 이루는 **뉴런(neuron)**에서 착안했습니다. 이는 뉴런들이 서로 신호를 주고받으며 복잡한 정보를 처리하는 방식을 컴퓨터 안에서 계산과 연결 구조로 구현하려는 시도였습니다.
 
 ![가지돌기, 세포체, 축삭과 축삭 말단을 보여 주는 뉴런의 손그림](../assets/images/llm/02-neuron-anatomy.svg){ .drawing-diagram style="width: min(100%, 30rem);" }
 
@@ -18,11 +18,11 @@
 
     이 과정을 단순화하면 **입력 → 통합 → 전달 → 출력**이라는 구조로 이해할 수 있습니다. 인공 신경망은 이러한 뉴런의 정보 처리 방식에서 아이디어를 얻어 만들어졌습니다.
 
-우리 몸 안에서는 수없이 많은 뉴런들이 서로 신호를 주고받으며, 감각을 느끼고 움직임을 조절하는 등 다양한 정보를 처리합니다. 예를 들어 뜨거운 냄비를 만졌다고 해 봅시다. 손의 피부가 뜨거움을 감지하면, 그 정보는 전기 신호로 변환되어 여러 뉴런을 거쳐 전달됩니다. 이어서 손과 팔의 근육으로 신호가 전달되고, 우리는 즉각적으로 손을 뗍니다.
+우리 몸 안에서는 수없이 많은 뉴런들이 서로 신호를 주고받으며, 감각을 느끼고 움직임을 조절하는 등 다양한 정보를 처리합니다. 예를 들어 뜨거운 냄비를 만졌다고 해 봅시다. 손의 피부가 뜨거움을 감지하면, 그 정보는 전기 신호로 변환되어 여러 뉴런을 거쳐 전달됩니다. 이어서 손과 팔의 근육으로 신호가 전달되면, 근육이 수축하면서 우리는 뜨거운 물체에서 재빨리 손을 떼게 됩니다.
 
 ![신경 신호가 감각 뉴런에서 중간 뉴런들을 거쳐 운동 뉴런으로 전달되는 과정](../assets/images/llm/02-neuron-signal-flow.svg){ .neuron-signal-flow-image }
 
-모든 뉴런이 모든 행동에 똑같이 관여하는 것은 아닙니다. 어떤 뉴런들의 연결은 손을 움직이는 일에 더 많이 관여하고, 다른 연결은 소리나 시각 정보를 처리하는 일에 더 많이 관여합니다. 반복적인 경험을 통해 자주 함께 쓰이는 뉴런 사이의 연결은 더 강해질 수도 있습니다.
+이처럼 뉴런들은 서로 신호를 주고받으며 다양한 기능을 수행합니다. 이 과정에서 중요한 것은 뉴런들이 **서로 어떻게 연결되어 있는가**입니다. 어떤 뉴런들의 연결은 손을 움직이는 일에 더 많이 관여하고, 다른 연결은 소리나 시각 정보를 처리하는 일에 더 많이 관여합니다. 반복적인 경험을 통해 자주 함께 활성화되는 뉴런 사이의 연결은 더 강해질 수도 있습니다.
 
 인공 신경망도 이 아이디어를 빌립니다. 인공 신경망에서는 뉴런 사이 연결이 결과에 미치는 정도를 숫자로 표현하며, 이 숫자를 **가중치(weight)**라고 합니다. 가중치는 특정 뉴런 사이의 연결이 **다음 뉴런에 얼마나 강하게 영향을 주는지**를 나타내는 값이라고 보면 됩니다.
 
@@ -40,17 +40,17 @@
 
 ![원점수 합은 같은 지원자 A와 B가 수학에 가중치 2를 적용하면 각각 320점과 340점이 되는 비교 도식](../assets/images/llm/02-applicant-weighted-sum.svg){ .drawing-diagram style="width: 100%;" }
 
-두 지원자의 원점수 합은 모두 `250`점이지만, 수학 점수에 더 큰 가중치를 적용하면 수학 점수가 더 높은 B의 최종 점수가 더 높습니다.
+두 지원자의 원점수 합은 모두 `250`점이지만, 수학 점수에 더 큰 가중치를 적용하면 수학 점수가 더 높은 B의 최종 점수가 더 높습니다. 즉, 가중합은 **각 입력값의 중요도를 다르게 반영하여 최종 결과를 계산하는 방법**입니다.
 
 ## 함수로 보는 신경망 {#neural-networks-as-functions}
 
-![세 입력 x₁, x₂, x₃이 가중치를 거쳐 출력 y를 만드는 신경망](../assets/images/llm/02-neural-network-3x1-variables.svg){ .neural-network-image }
-
-이러한 뉴런 사이의 관계도 [함수](01-machine-learning.md#functions-turn-inputs-into-outputs)로 볼 수 있습니다. 1장에서 함수는 입력과 출력이 규칙으로 연결되는 관계라고 배웠습니다. 앞쪽에서 신호를 전달하는 뉴런을 입력, 신호를 받는 뉴런을 출력으로 보고, 가중치를 적용해 신호를 계산하는 과정을 이들을 연결하는 규칙으로 보면 뉴런 간의 관계 역시 하나의 함수 구조를 따릅니다.
+이러한 뉴런 사이의 관계도 [함수](01-machine-learning.md#functions-turn-inputs-into-outputs)로 볼 수 있습니다. 1장에서 함수는 입력과 출력이 일정한 규칙에 따라 연결되는 관계라고 배웠습니다. 여기서 신호를 전달하는 뉴런의 값을 입력 `x`, 신호를 받는 뉴런의 값을 출력 `y`라고 하면, 가중치를 적용해 입력 신호를 계산하는 과정은 이 둘을 연결하는 함수 `f`로 표현할 수 있습니다.
 
 그래서 위와 같이 세 개의 입력으로 하나의 출력을 만들어 내는 연결 관계를 함수 표기법에 따라 수식으로 나타내면 `y = f(x₁, x₂, x₃)`입니다. 이를 해석하면, 입력 `x₁`, `x₂`, `x₃`을 관계식 `f`에 넣어 출력값 `y`를 계산한다는 뜻입니다.
 
-여기서 함수 `f(x₁, x₂, x₃)` 안에는 각 입력이 출력에 얼마나 영향을 미칠지 나타내는 가중치가 곱해집니다. 따라서 위 신경망은 다음과 같이 나타낼 수 있습니다.
+![세 입력 x₁, x₂, x₃이 가중치를 거쳐 출력 y를 만드는 신경망](../assets/images/llm/02-neural-network-3x1-variables.svg){ .neural-network-image }
+
+이때 함수 `f(x₁, x₂, x₃)` 안에는 각 입력이 출력에 얼마나 영향을 미칠지 나타내는 가중치가 곱해집니다. 따라서 위 신경망은 다음과 같이 나타낼 수 있습니다.
 
 ⇒ <code>f(x₁, x₂, x₃) = (<span class="weight-value">0.8</span>x₁) + (<span class="weight-value">0.4</span>x₂) + (<span class="weight-value">0.2</span>x₃)</code>
 
@@ -67,11 +67,7 @@
 
 예를 들어 다음과 같이 세 함수를 정의할 수 있습니다.
 
-<div class="function-formulas">
-  <div><code>y₁ = f₁(x₁, x₂, x₃) = (<span class="weight-value">0.4</span>x₁) + (<span class="weight-value">0.8</span>x₂) + (<span class="weight-value">0.1</span>x₃)</code></div>
-  <div><code>y₂ = f₂(x₁, x₂, x₃) = (<span class="weight-value">0.9</span>x₁) + (<span class="weight-value">0.3</span>x₂) + (<span class="weight-value">0.7</span>x₃)</code></div>
-  <div><code>y₃ = f₃(x₁, x₂, x₃) = (<span class="weight-value">0.8</span>x₁) + (<span class="weight-value">0.4</span>x₂) + (<span class="weight-value">0.2</span>x₃)</code></div>
-</div>
+![세 입력에 서로 다른 가중치를 적용해 출력값을 계산하는 세 함수의 손그림 수식](../assets/images/llm/02-three-function-formulas.svg){ .drawing-diagram }
 
 ## 신경망의 확장 {#expanding-neural-networks}
 
@@ -83,14 +79,9 @@
 
 ![n개의 입력 x와 m개의 출력 y를 가진 신경망](../assets/images/llm/02-neural-network-nxm.svg){ .neural-network-image }
 
-많은 뉴런과 연결이 얽힌 관계를 함수로 표현할 수 있습니다. 이때 입력값은 `x`, 각 뉴런 사이의 연결 강도를 나타내는 가중치는 `w`로 표시합니다.
+많은 뉴런과 연결이 얽힌 관계도 함수로 표현할 수 있습니다. 이때 입력값은 `x`, 각 뉴런 사이의 연결 강도를 나타내는 가중치는 `w`로 표시합니다.
 
-<div class="function-formulas">
-  <div><code>f<span class="weight-output-index">₁</span>(x<span class="weight-input-index">₁</span>, x<span class="weight-input-index">₂</span>, …, x<span class="weight-input-index">ₙ</span>) = (w<span class="weight-output-index">₁</span><span class="weight-input-index">₁</span> × x<span class="weight-input-index">₁</span>) + (w<span class="weight-output-index">₁</span><span class="weight-input-index">₂</span> × x<span class="weight-input-index">₂</span>) + … + (w<span class="weight-output-index">₁</span><span class="weight-input-index">ₙ</span> × x<span class="weight-input-index">ₙ</span>)</code></div>
-  <div><code>f<span class="weight-output-index">₂</span>(x<span class="weight-input-index">₁</span>, x<span class="weight-input-index">₂</span>, …, x<span class="weight-input-index">ₙ</span>) = (w<span class="weight-output-index">₂</span><span class="weight-input-index">₁</span> × x<span class="weight-input-index">₁</span>) + (w<span class="weight-output-index">₂</span><span class="weight-input-index">₂</span> × x<span class="weight-input-index">₂</span>) + … + (w<span class="weight-output-index">₂</span><span class="weight-input-index">ₙ</span> × x<span class="weight-input-index">ₙ</span>)</code></div>
-  <div class="function-formulas__ellipsis">⋮</div>
-  <div><code>f<span class="weight-output-index">ₘ</span>(x<span class="weight-input-index">₁</span>, x<span class="weight-input-index">₂</span>, …, x<span class="weight-input-index">ₙ</span>) = (w<span class="weight-output-index">ₘ</span><span class="weight-input-index">₁</span> × x<span class="weight-input-index">₁</span>) + (w<span class="weight-output-index">ₘ</span><span class="weight-input-index">₂</span> × x<span class="weight-input-index">₂</span>) + … + (w<span class="weight-output-index">ₘ</span><span class="weight-input-index">ₙ</span> × x<span class="weight-input-index">ₙ</span>)</code></div>
-</div>
+![n개의 입력과 m개의 함수에 대한 일반화한 가중합 수식](../assets/images/llm/02-generalized-function-formulas.svg){ .drawing-diagram }
 
 이처럼 일반화한 신경망은 다음과 같은 특징을 갖습니다. 입력 뉴런이 <code><span class="weight-input-index">n</span></code>개라면 각 출력 뉴런은 <code><span class="weight-input-index">n</span></code>개의 입력값을 받아 계산하고, 출력 뉴런이 <code><span class="weight-output-index">m</span></code>개라면 각각의 출력을 계산하는 <code><span class="weight-output-index">m</span></code>개의 함수로 표현할 수 있습니다.
 
@@ -105,9 +96,7 @@
 
 그런데 <code><span class="weight-input-index">n</span></code>개의 입력을 받는 <code><span class="weight-output-index">m</span></code>개의 함수를 모두 풀어 쓰려면 식이 너무 길어집니다. 이를 간단하게 표현하기 위해 먼저 하나의 함수를 다음과 같이 줄여서 나타내 보겠습니다.
 
-<div class="function-formulas">
-  <div><code>f(x) = w · x</code></div>
-</div>
+![가중합을 간단히 표현한 손그림 수식 f(x) = w · x](../assets/images/llm/02-weighted-sum-formula.svg){ .drawing-diagram }
 
 여기서 <code>x</code>는 <code>x₁</code>, <code>x₂</code>, …, <code>xₙ</code>을 묶어 부르는 입력값이고, <code>w</code>는 각 입력에 곱하는 가중치를 묶어 부르는 표기입니다. 가운데 점 <code>·</code>은 각 입력과 가중치를 곱한 뒤 모두 더한다는 뜻입니다. 따라서 `f(x) = w · x`는 **하나의 출력 뉴런에 대한 가중합**을 간단하게 표현한 것으로, 수식이 짧아졌을 뿐 계산 방식은 동일합니다.
 
