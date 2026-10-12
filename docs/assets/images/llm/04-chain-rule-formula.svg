@@ -3,27 +3,21 @@
 <style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print',cursive;font-size:30px;text-anchor:middle}.ink{fill:none;stroke:#393630;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}</style>
 <text x="80" y="53">∂L</text>
 <text x="80" y="117">∂w</text>
-<path class="ink" d="M46 73 Q80 72 114 73"/>
-<path d="M199 26 Q225 24 251 26 L252 61 Q225 63 198 61 Z" fill="#f3ead7"/>
-<text x="225" y="53">∂z</text>
+<path class="ink" d="M46 73 Q80 72 114 73" />
+<g fill="none" stroke="#f3ead7" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M205.80 32.58 Q225.00 31.28 244.20 32.08" /><path d="M206.80 43.50 Q225.50 42.20 244.20 44.00" /><path d="M205.80 54.42 Q224.50 53.12 243.20 53.92" /></g><text x="225" y="53">∂z</text>
 <text x="225" y="117">∂w</text>
-<path class="ink" d="M191 73 Q225 72 259 73"/>
-<path d="M339 26 Q365 24 391 26 L392 61 Q365 63 338 61 Z" fill="#e4eee3"/>
-<text x="365" y="53">∂h</text>
-<path d="M339 90 Q365 88 391 90 L392 125 Q365 127 338 125 Z" fill="#f3ead7"/>
-<text x="365" y="117">∂z</text>
-<path class="ink" d="M331 73 Q365 72 399 73"/>
-<path d="M479 26 Q505 24 531 26 L532 61 Q505 63 478 61 Z" fill="#dcecf4"/>
-<text x="505" y="53">∂y</text>
-<path d="M479 90 Q505 88 531 90 L532 125 Q505 127 478 125 Z" fill="#e4eee3"/>
-<text x="505" y="117">∂h</text>
-<path class="ink" d="M471 73 Q505 72 539 73"/>
+<path class="ink" d="M191 73 Q225 72 259 73" />
+<g fill="none" stroke="#e4eee3" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M345.80 32.58 Q365.00 31.28 384.20 32.08" /><path d="M346.80 43.50 Q365.50 42.20 384.20 44.00" /><path d="M345.80 54.42 Q364.50 53.12 383.20 53.92" /></g><text x="365" y="53">∂h</text>
+<g fill="none" stroke="#f3ead7" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M345.80 96.58 Q365.00 95.28 384.20 96.08" /><path d="M346.80 107.50 Q365.50 106.20 384.20 108.00" /><path d="M345.80 118.42 Q364.50 117.12 383.20 117.92" /></g><text x="365" y="117">∂z</text>
+<path class="ink" d="M331 73 Q365 72 399 73" />
+<g fill="none" stroke="#dcecf4" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M485.80 32.58 Q505.00 31.28 524.20 32.08" /><path d="M486.80 43.50 Q505.50 42.20 524.20 44.00" /><path d="M485.80 54.42 Q504.50 53.12 523.20 53.92" /></g><text x="505" y="53">∂y</text>
+<g fill="none" stroke="#e4eee3" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M485.80 96.58 Q505.00 95.28 524.20 96.08" /><path d="M486.80 107.50 Q505.50 106.20 524.20 108.00" /><path d="M485.80 118.42 Q504.50 117.12 523.20 117.92" /></g><text x="505" y="117">∂h</text>
+<path class="ink" d="M471 73 Q505 72 539 73" />
 <text x="645" y="53">∂L</text>
-<path d="M619 90 Q645 88 671 90 L672 125 Q645 127 618 125 Z" fill="#dcecf4"/>
-<text x="645" y="117">∂y</text>
-<path class="ink" d="M611 73 Q645 72 679 73"/>
-<path class="ink" d="M288 66 L302 80 M302 66 L288 80"/>
-<path class="ink" d="M428 66 L442 80 M442 66 L428 80"/>
-<path class="ink" d="M568 66 L582 80 M582 66 L568 80"/>
-<path class="ink" d="M143 67 Q155 66 167 67 M143 79 Q155 78 167 79"/>
+<g fill="none" stroke="#dcecf4" stroke-width="15.60" stroke-linecap="butt" stroke-linejoin="round"><path d="M625.80 96.58 Q645.00 95.28 664.20 96.08" /><path d="M626.80 107.50 Q645.50 106.20 664.20 108.00" /><path d="M625.80 118.42 Q644.50 117.12 663.20 117.92" /></g><text x="645" y="117">∂y</text>
+<path class="ink" d="M611 73 Q645 72 679 73" />
+<path class="ink" d="M288 66 L302 80 M302 66 L288 80" />
+<path class="ink" d="M428 66 L442 80 M442 66 L428 80" />
+<path class="ink" d="M568 66 L582 80 M582 66 L568 80" />
+<path class="ink" d="M143 67 Q155 66 167 67 M143 79 Q155 78 167 79" />
 </svg>

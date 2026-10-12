@@ -6,20 +6,22 @@
     .sub { font-size:18px; dominant-baseline:alphabetic; }
     .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
   </style>
-  <path class="ink" d="M180 85 Q370 135 568 167 M557 160 L570 168 L555 173 M180 265 Q371 216 568 183 M555 177 L570 182 L558 190"/>
+  <path class="ink" d="M180 85 Q370 135 568 167 M557 160 L570 168 L555 173 M180 265 Q371 216 568 183 M555 177 L570 182 L558 190" />
   <g fill="#e7eef0" stroke="#393630" stroke-width="2.5" stroke-linejoin="round">
-<path d="M138 32 C162 31 182 51 181 75 C182 99 162 119 138 118 C114 119 94 99 95 75 C94 51 114 31 138 32 Z"/>
-<path d="M138 232 C162 231 182 251 181 275 C182 299 162 319 138 318 C114 319 94 299 95 275 C94 251 114 231 138 232 Z"/>
-<path d="M610 132 C634 131 654 151 653 175 C654 199 634 219 610 218 C586 219 566 199 567 175 C566 151 586 131 610 132 Z"/>
+<path d="M138 32 C162 31 182 51 181 75 C182 99 162 119 138 118 C114 119 94 99 95 75 C94 51 114 31 138 32 Z" />
+<path d="M138 232 C162 231 182 251 181 275 C182 299 162 319 138 318 C114 319 94 299 95 275 C94 251 114 231 138 232 Z" />
+<path d="M610 132 C634 131 654 151 653 175 C654 199 634 219 610 218 C586 219 566 199 567 175 C566 151 586 131 610 132 Z" />
   </g>
   <text x="138" y="83">x<tspan class="sub" dy="8">1</tspan></text>
   <text x="138" y="283">x<tspan class="sub" dy="8">2</tspan></text>
   <text x="610" y="184">y</text>
-  <path d="M311 65 Q374 63 437 65 L438 104 Q374 106 310 104 Z" fill="#e7efdf"/>
-  <text x="374" y="91">w<tspan class="sub" dy="8">1</tspan><tspan dy="-8"> &lt; −b</tspan></text>
-  <path d="M311 258 Q374 256 437 258 L438 297 Q374 299 310 297 Z" fill="#e7efdf"/>
-  <text x="374" y="284">w<tspan class="sub" dy="8">2</tspan><tspan dy="-8"> &lt; −b</tspan></text>
-  <path d="M563 44 Q610 42 657 44 L658 81 Q610 83 562 81 Z" fill="#fbefd5"/>
-  <text x="610" y="70">b ≥ 0</text>
-  <path class="ink" d="M610 85 Q608 106 610 125 M602 115 L610 127 L618 115"/>
+  <g fill="none" stroke="#e7efdf" stroke-width="17.20" stroke-linecap="butt" stroke-linejoin="round"><path d="M287.60 72.46 Q374.00 71.16 429.40 71.96" /><path d="M288.60 84.50 Q374.50 83.20 429.40 85.00" /><path d="M287.60 96.54 Q373.50 95.24 428.40 96.04" /></g><text x="374" y="91">w<tspan class="sub" dy="8">1</tspan><tspan dy="-8"> &lt; −b</tspan></text>
+  <g fill="none" stroke="#e7efdf" stroke-width="17.20" stroke-linecap="butt" stroke-linejoin="round"><path d="M287.60 265.46 Q374.00 264.16 429.40 264.96" /><path d="M288.60 277.50 Q374.50 276.20 429.40 278.00" /><path d="M287.60 289.54 Q373.50 288.24 428.40 289.04" /></g><text x="374" y="284">w<tspan class="sub" dy="8">2</tspan><tspan dy="-8"> &lt; −b</tspan></text>
+  <g fill="none" stroke="#fbefd5" stroke-width="16.40" stroke-linecap="butt" stroke-linejoin="round"><path d="M542.20 51.02 Q610.00 49.72 649.80 50.52" /><path d="M543.20 62.50 Q610.50 61.20 649.80 63.00" /><path d="M542.20 73.98 Q609.50 72.68 648.80 73.48" /></g><text x="610" y="70">b ≥ 0</text>
+  <path class="ink" d="M610 85 Q608 106 610 125 M602 115 L610 127 L618 115" />
+<g font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="22" fill="#393630" text-anchor="middle">
+<text x="557" y="70" style="font-size:22px;dominant-baseline:alphabetic">①</text>
+<text x="306" y="91" style="font-size:22px;dominant-baseline:alphabetic">②</text>
+<text x="306" y="284" style="font-size:22px;dominant-baseline:alphabetic">②</text>
+</g>
 </svg>

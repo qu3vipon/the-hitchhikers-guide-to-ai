@@ -10,10 +10,7 @@
   </style>
   <text class="math" x="64" y="-12" style="text-anchor:start">y = Wx</text>
   <g fill="#e7efdf">
-    <path d="M74 93 Q96 91 118 93 L119 132 Q96 134 73 132 Z"/>
-    <path d="M267 93 Q419 91 571 93 L572 132 Q419 134 266 132 Z"/>
-    <path d="M646 43 Q668 41 690 43 L691 232 Q668 234 645 232 Z"/>
-  </g>
+    <g fill="none" stroke="#e7efdf" stroke-width="17.20" stroke-linecap="butt" stroke-linejoin="round"><path d="M81.60 100.46 Q96.00 99.16 110.40 100.96" /><path d="M82.60 112.50 Q96.50 111.20 110.40 113.00" /><path d="M81.60 124.54 Q95.50 123.24 109.40 125.04" /></g><g fill="none" stroke="#e7efdf" stroke-width="17.20" stroke-linecap="butt" stroke-linejoin="round"><path d="M274.60 100.46 Q419.00 99.16 563.40 100.96" /><path d="M275.60 112.50 Q419.50 111.20 563.40 113.00" /><path d="M274.60 124.54 Q418.50 123.24 562.40 125.04" /></g><g fill="none" stroke="#e7efdf" stroke-width="18.40" stroke-linecap="butt" stroke-linejoin="round"><path d="M655.12 50.20 Q653.82 137.50 655.62 224.80" /><path d="M668.00 51.20 Q666.70 138.00 668.50 224.80" /><path d="M680.88 50.20 Q679.58 137.00 681.38 223.80" /></g></g>
 <text class="math" x="96" y="68">y<tspan class="sub out" dy="8">1</tspan></text>
 <text class="math" x="96" y="118">y<tspan class="sub out" dy="8">2</tspan></text>
 <text class="math" x="96" y="218">y<tspan class="sub out" dy="8">m</tspan></text>
@@ -38,10 +35,10 @@
 <text class="math" x="390" y="168">⋮</text>
 <text class="math" x="465" y="168">⋱</text>
 <text class="math" x="540" y="168">⋮</text>
-<path class="ink" d="M76 38 L64 38 Q62 135 64 238 L76 238 M116 38 L128 38 Q130 135 128 238 L116 238"/>
-<path class="ink" d="M266 38 L254 38 Q252 135 254 238 L266 238 M572 38 L584 38 Q586 135 584 238 L572 238"/>
-<path class="ink" d="M648 38 L636 38 Q634 135 636 238 L648 238 M688 38 L700 38 Q702 135 700 238 L688 238"/>
-<path class="ink" d="M178 129 Q192 128 206 129 M178 141 Q192 140 206 141"/>
+<path class="ink" d="M76 38 L64 38 Q62 135 64 238 L76 238 M116 38 L128 38 Q130 135 128 238 L116 238" />
+<path class="ink" d="M266 38 L254 38 Q252 135 254 238 L266 238 M572 38 L584 38 Q586 135 584 238 L572 238" />
+<path class="ink" d="M648 38 L636 38 Q634 135 636 238 L648 238 M688 38 L700 38 Q702 135 700 238 L688 238" />
+<path class="ink" d="M178 129 Q192 128 206 129 M178 141 Q192 140 206 141" />
 <text class="math" x="610" y="145">×</text>
 <text class="label" x="96" y="281">출력 y</text>
 <text class="label" x="419" y="281">가중치 행렬 W (m × n)</text>

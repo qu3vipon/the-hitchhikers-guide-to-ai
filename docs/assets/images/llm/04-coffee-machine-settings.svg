@@ -2,47 +2,51 @@
 <title id="title">커피 맛에 영향을 주는 여러 설정</title><desc id="desc">원두 분쇄도, 물 온도, 추출 시간, 물의 양이 커피 머신을 거쳐 최종 맛에 영향을 줍니다. 너무 쓰다는 결과만으로는 어떤 설정을 얼마나 바꿔야 할지 바로 알기 어렵습니다.</desc>
 <style>text{fill:#393630;font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;font-size:21px;text-anchor:middle;dominant-baseline:middle}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
 <g transform="translate(10 0)">
-<path d="M58 29 Q139 27 220 29 L221 69 Q140 71 57 69 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="139" y="49">원두 분쇄도 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
-<path class="ink" d="M233 49 Q278 49 335 83 M323.85 82.17 L335 83 L328.97 73.58"/>
-<path d="M58 85 Q139 83 220 85 L221 125 Q140 127 57 125 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="139" y="105">물 온도 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
-<path class="ink" d="M233 105 Q278 105 335 116 M324.23 119.01 L335 116 L326.13 109.20"/>
-<path d="M58 141 Q139 139 220 141 L221 181 Q140 183 57 181 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="139" y="161">추출 시간 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
-<path class="ink" d="M233 161 Q278 161 335 150 M326.13 156.80 L335 150 L324.23 146.99"/>
-<path d="M58 197 Q139 195 220 197 L221 237 Q140 239 57 237 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="139" y="217">물의 양 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
-<path class="ink" d="M233 217 Q278 217 335 183 M328.97 192.42 L335 183 L323.85 183.83"/>
+<path d="M58 29 Q139 27 220 29 L221 69 Q140 71 57 69 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round" /><text x="139" y="49">원두 분쇄도 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
+<path class="ink" d="M233 49 Q278 49 335 83 M323.85 82.17 L335 83 L328.97 73.58" />
+<path d="M58 85 Q139 83 220 85 L221 125 Q140 127 57 125 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round" /><text x="139" y="105">물 온도 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
+<path class="ink" d="M233 105 Q278 105 335 116 M324.23 119.01 L335 116 L326.13 109.20" />
+<path d="M58 141 Q139 139 220 141 L221 181 Q140 183 57 181 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round" /><text x="139" y="161">추출 시간 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
+<path class="ink" d="M233 161 Q278 161 335 150 M326.13 156.80 L335 150 L324.23 146.99" />
+<path d="M58 197 Q139 195 220 197 L221 237 Q140 239 57 237 Z" fill="#f4f1eb" stroke="#393630" stroke-width="1.8" stroke-linejoin="round" /><text x="139" y="217">물의 양 <tspan font-size="18" font-weight="700" stroke="#393630" stroke-width="0.25" paint-order="stroke fill">↑↓<tspan dx="5">?</tspan></tspan></text>
+<path class="ink" d="M233 217 Q278 217 335 183 M328.97 192.42 L335 183 L323.85 183.83" />
 <g stroke="#393630" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-<!-- Bean hopper and rounded machine housing -->
-<path d="M383 45 L380 28 Q410 24 438 28 L435 45 Z" fill="#faf5e9"/>
-<path d="M377 27 Q408 23 442 27" fill="none"/>
+
+<path d="M383 45 L380 28 Q410 24 438 28 L435 45 Z" fill="#faf5e9" />
+<path d="M377 27 Q408 23 442 27" fill="none" />
 <g fill="#c4a58b" stroke-width="2.2">
-<path d="M386 32 Q390 28 395 32 Q397 37 391 38 Q386 37 386 32 Z"/>
-<path d="M399 31 Q404 27 409 32 Q410 37 404 38 Q399 36 399 31 Z"/>
-<path d="M413 31 Q418 27 422 32 Q423 37 417 38 Q412 36 413 31 Z"/>
-<path d="M426 32 Q431 29 435 33 Q436 38 430 39 Q426 37 426 32 Z"/>
-<path d="M393 39 Q398 34 403 39 Q404 44 398 45 Q393 44 393 39 Z"/>
-<path d="M408 39 Q413 34 418 39 Q420 44 414 45 Q408 44 408 39 Z"/>
-<path d="M422 39 Q427 35 432 39 Q433 44 427 45 Q422 43 422 39 Z"/>
+<path d="M386 32 Q390 28 395 32 Q397 37 391 38 Q386 37 386 32 Z" />
+<path d="M399 31 Q404 27 409 32 Q410 37 404 38 Q399 36 399 31 Z" />
+<path d="M413 31 Q418 27 422 32 Q423 37 417 38 Q412 36 413 31 Z" />
+<path d="M426 32 Q431 29 435 33 Q436 38 430 39 Q426 37 426 32 Z" />
+<path d="M393 39 Q398 34 403 39 Q404 44 398 45 Q393 44 393 39 Z" />
+<path d="M408 39 Q413 34 418 39 Q420 44 414 45 Q408 44 408 39 Z" />
+<path d="M422 39 Q427 35 432 39 Q433 44 427 45 Q422 43 422 39 Z" />
 </g>
-<path d="M389 32 L392 35 M402 31 L405 35 M416 31 L419 35 M429 33 L432 36 M396 39 L400 42 M411 39 L415 42 M425 39 L429 42" fill="none" stroke-width="2.2"/>
-<path d="M356 46 Q410 42 463 46 Q474 47 473 60 L474 204 Q474 213 464 213 L356 213 Q346 213 347 203 L347 60 Q346 48 356 46 Z" fill="#e7eef0"/>
-<!-- Display and controls -->
-<path d="M364 63 Q392 61 419 63 L420 87 Q392 89 363 87 Z" fill="#faf5e9" stroke-width="2.2"/>
-<path d="M373 73 L397 73 M373 79 L389 79" fill="none" stroke-width="2.2"/>
-<path d="M439 67 C448 66 453 74 449 81 C445 87 435 84 434 77 C432 72 435 68 439 67 Z" fill="#fbefd5" stroke-width="2.2"/>
-<!-- Recessed brewing area and twin spout -->
-<path d="M364 103 Q409 100 455 103 L455 190 Q411 193 364 190 Z" fill="#faf5e9" stroke-width="2.2"/>
-<path d="M393 104 L393 117 Q410 122 427 117 L427 104" fill="#e7eef0" stroke-width="2.2"/>
-<path d="M402 120 L402 132 M418 120 L418 132" fill="none"/>
-<!-- Drip tray -->
-<path d="M360 190 Q410 187 460 190 L459 201 Q410 204 361 201 Z" fill="#e7eef0" stroke-width="2.2"/>
-<path d="M376 195 L386 195 M397 195 L407 195 M418 195 L428 195 M439 195 L449 195" fill="none" stroke-width="2.2"/>
+<path d="M389 32 L392 35 M402 31 L405 35 M416 31 L419 35 M429 33 L432 36 M396 39 L400 42 M411 39 L415 42 M425 39 L429 42" fill="none" stroke-width="2.2" />
+<path d="M356 46 Q410 42 463 46 Q474 47 473 60 L474 204 Q474 213 464 213 L356 213 Q346 213 347 203 L347 60 Q346 48 356 46 Z" fill="#e7eef0" />
+
+<path d="M364 63 Q392 61 419 63 L420 87 Q392 89 363 87 Z" fill="#faf5e9" stroke-width="2.2" />
+<path d="M373 73 L397 73 M373 79 L389 79" fill="none" stroke-width="2.2" />
+<path d="M439 67 C448 66 453 74 449 81 C445 87 435 84 434 77 C432 72 435 68 439 67 Z" fill="#fbefd5" stroke-width="2.2" />
+
+<path d="M364 103 Q409 100 455 103 L455 190 Q411 193 364 190 Z" fill="#faf5e9" stroke-width="2.2" />
+<path d="M389 104 Q391 116 396 126 Q410 131 424 126 Q429 116 431 104" fill="#e7eef0" stroke-width="2.2" />
+<path d="M402 129 L402 134 Q410 140 418 134 L418 129" fill="none" />
+
+<path d="M360 190 Q410 187 460 190 L459 201 Q410 204 361 201 Z" fill="#e7eef0" stroke-width="2.2" />
+<path d="M376 195 L386 195 M397 195 L407 195 M418 195 L428 195 M439 195 L449 195" fill="none" stroke-width="2.2" />
 </g>
-<path class="ink" d="M486 133 Q526 131 567 133 M557 126 L567 133 L557 140"/>
+<path class="ink" d="M486 133 Q526 131 567 133 M557 126 L567 133 L557 140" />
 <text x="410" y="239">커피 머신</text>
-<path d="M579 111 Q617 108 654 111 L650 163 Q619 179 585 164 Z" fill="#f5d5cf" stroke="#393630" stroke-width="2.2" stroke-linejoin="round"/>
-<path d="M654 118 Q686 114 684 136 Q682 157 652 153 L653 144 Q674 148 675 134 Q677 124 654 127 Z" fill="#f5d5cf" stroke="#393630" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-<path class="ink" d="M598 93 Q589 83 599 73 M619 91 Q610 81 620 71 M639 93 Q630 83 640 73"/>
-<path d="M567 188 Q619 185 671 188 L672 218 Q620 221 566 218 Z" fill="#f5d5cf"/>
+<path d="M579 111 Q617 108 654 111 L650 163 Q619 179 585 164 Z" fill="#f5d5cf" stroke="#393630" stroke-width="2.2" stroke-linejoin="round" />
+<path d="M654 118 Q686 114 684 136 Q682 157 652 153 L653 144 Q674 148 675 134 Q677 124 654 127 Z" fill="#f5d5cf" stroke="#393630" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<path class="ink" d="M598 93 Q589 83 599 73 M619 91 Q610 81 620 71 M639 93 Q630 83 640 73" />
+<g fill="none" stroke="#f5d5cf" stroke-width="13" stroke-linecap="butt" stroke-linejoin="round">
+<path d="M573 194 Q600 192 625 194 T665 193" />
+<path d="M667 203 Q643 201 614 204 T571 203" />
+<path d="M574 213 Q600 211 628 214 T664 212" />
+</g>
 <text x="619" y="203" style="fill:#a65043">너무 쓰다!</text>
 </g>
 </svg>

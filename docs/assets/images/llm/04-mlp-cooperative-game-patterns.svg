@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="435" viewBox="0 -35 760 435" role="img" aria-labelledby="title desc">
+  <title id="title">은닉층에서 패턴을 나누어 협동 게임을 판단하는 구조</title>
+  <desc id="desc">두 입력을 받아 h₁은 두 사람 모두 왼쪽인지, h₂는 모두 오른쪽인지 판단합니다. 출력 뉴런은 두 결과 중 하나라도 참인지 판단합니다.</desc>
+  <style>
+    g[font-family^="Chalkboard SE"] text {
+      stroke: #393630;
+      stroke-width: 0.4;
+      stroke-linejoin: round;
+      paint-order: stroke fill;
+    }
+    g[font-family^="Chalkboard SE"] text[fill="#2c7a64"] { stroke: #2c7a64; }
+  </style>
+  <g transform="translate(-104 0)">
+  <g fill="none" stroke-linecap="round">
+    <path d="M224 105 Q319 106 414 105 M406 101 L414 105 L406 109" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M224 105 Q319 175 414 245 M405 244 L414 245 L409 237" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M224 245 Q319 175 414 105 M409 113 L414 105 L405 106" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M224 245 Q319 246 414 245 M406 241 L414 245 L406 249" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M474 105 Q570 134 666 165 M657 158 L666 165 L655 169" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /><path d="M474 245 Q570 216 666 185 M655 181 L666 185 L657 192" stroke="#393630" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
+  <g stroke-width="2.5">
+    <path d="M150 75 C167.1 74 181 87.9 180 105 C181 122.1 167.1 136 150 135 C132.9 136 119 122.1 120 105 C119 87.9 132.9 74 150 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" transform="translate(44 0)" />
+    <path d="M150 215 C167.1 214 181 227.9 180 245 C181 262.1 167.1 276 150 275 C132.9 276 119 262.1 120 245 C119 227.9 132.9 214 150 215 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" transform="translate(44 0)" />
+    <path d="M370 75 C387.1 74 401 87.9 400 105 C401 122.1 387.1 136 370 135 C352.9 136 339 122.1 340 105 C339 87.9 352.9 74 370 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" transform="translate(74 0)" />
+    <path d="M370 215 C387.1 214 401 227.9 400 245 C401 262.1 387.1 276 370 275 C352.9 276 339 262.1 340 245 C339 227.9 352.9 214 370 215 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" transform="translate(74 0)" />
+    <path d="M620 145 C637.1 144 651 157.9 650 175 C651 192.1 637.1 206 620 205 C602.9 206 589 192.1 590 175 C589 157.9 602.9 144 620 145 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" transform="translate(74 0)" />
+  </g>
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="194" y="111" font-size="22" font-weight="400">x₁</text>
+    <text x="194" y="251" font-size="22" font-weight="400">x₂</text>
+    <text x="444" y="111" font-size="22" font-weight="400">h₁</text>
+    <text x="444" y="251" font-size="22" font-weight="400">h₂</text>
+    <text x="694" y="181" font-size="22" font-weight="400">y</text>
+  </g>
+  <g transform="translate(45 10)">
+  <path d="M387 -8 Q444 -10 501 -8 Q509 -8 509 0 L509 30 Q509 38 501 38 L447 38 L435 47 L435 38 L387 38 Q379 38 379 30 L379 0 Q379 -8 387 -8 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round" />
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="444" y="11">두 사람 모두</text>
+    <text x="444" y="31">왼쪽인가?</text>
+  </g>
+  </g>
+  <g transform="translate(0 -7)">
+  <g transform="translate(45 0)">
+  <path d="M387 315 Q409 314 435 315 L429 306 L447 315 L501 315 Q509 315 509 323 L509 353 Q509 361 501 361 L387 361 Q379 361 379 353 L379 323 Q379 315 387 315 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round" />
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="444" y="334">두 사람 모두</text>
+    <text x="444" y="354">오른쪽인가?</text>
+  </g>
+  </g>
+  </g>
+  <g transform="translate(45 38)">
+  <path d="M637 34 Q694 32 751 34 Q759 34 759 42 L759 72 Q759 80 751 80 L697 80 L685 89 L685 80 L637 80 Q629 80 629 72 L629 42 Q629 34 637 34 Z" fill="#faf5e9" stroke="#393630" stroke-width="1.5" stroke-linejoin="round" />
+  <g fill="#393630" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="16" text-anchor="middle">
+    <text x="694" y="53">둘 중 하나라도</text>
+    <text x="694" y="73">참인가?</text>
+  </g>
+  </g>
+  </g>
+</svg>

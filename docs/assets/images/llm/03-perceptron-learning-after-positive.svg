@@ -22,11 +22,11 @@
     <text x="440" y="156" font-size="18">3</text>
   </g>
   <g transform="translate(45 0)" stroke="#393630" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#f5d5cf"/>
+    <path d="M61 111 Q77 109 92 112 L94 130 Q94 134 89 134 L72 134 L65 140 L65 134 L61 134 Q58 134 58 130 L58 116 Q58 111 61 111 Z" fill="#f5d5cf" />
     <text x="76" y="123" dominant-baseline="central" text-anchor="middle" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="13" font-weight="400" fill="#a65043" stroke="none">무료</text>
-    <path d="M75 234 C79 233 82 236 81 239 C81 243 76 244 74 241 C72 238 72 235 75 234 Z" fill="#f5d5cf"/>
-    <path d="M69 252 Q69 244 76 244 Q83 244 84 252 Z" fill="#f5d5cf"/>
-    <path d="M85 234 Q88 231 91 234 Q93 237 89 239 L89 242 M89 245 L89 245.5" fill="none" stroke="#a65043"/>
+    <path d="M75 234 C79 233 82 236 81 239 C81 243 76 244 74 241 C72 238 72 235 75 234 Z" fill="#f5d5cf" />
+    <path d="M69 252 Q69 244 76 244 Q83 244 84 252 Z" fill="#f5d5cf" />
+    <path d="M85 234 Q88 231 91 234 Q93 237 89 239 L89 242 M89 245 L89 245.5" fill="none" stroke="#a65043" />
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive">
     <text x="145" y="88" font-size="18" text-anchor="end">x₁</text>
@@ -35,11 +35,8 @@
     <text x="186" y="245" font-size="13" text-anchor="middle">모르는 발신자</text>
   </g>
   <g fill="#e7eef0">
-    <path d="M295 82 Q321 80 347 82 L348 100 Q321 102 295 100 Z"/>
-    <path d="M295 155 Q321 153 347 155 L348 173 Q321 175 295 173 Z"/>
-  </g>
-  <path d="M436 56 Q462 54 488 56 L489 74 Q462 76 436 74 Z" fill="#fbefd5"/>
-  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
+    <g fill="none" stroke="#e7eef0" stroke-width="8.80" stroke-linecap="butt" stroke-linejoin="round"><path d="M299.40 84.84 Q321.50 83.54 343.60 84.34" /><path d="M300.40 91.00 Q322.00 89.70 343.60 91.50" /><path d="M299.40 97.16 Q321.00 95.86 342.60 96.66" /></g><g fill="none" stroke="#e7eef0" stroke-width="8.80" stroke-linecap="butt" stroke-linejoin="round"><path d="M299.40 157.84 Q321.50 156.54 343.60 157.34" /><path d="M300.40 164.00 Q322.00 162.70 343.60 164.50" /><path d="M299.40 170.16 Q321.00 168.86 342.60 169.66" /></g></g>
+  <g fill="none" stroke="#fbefd5" stroke-width="8.80" stroke-linecap="butt" stroke-linejoin="round"><path d="M440.40 58.84 Q462.50 57.54 484.60 58.34" /><path d="M441.40 65.00 Q463.00 63.70 484.60 65.50" /><path d="M440.40 71.16 Q462.00 69.86 483.60 70.66" /></g><g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="15" font-weight="400" text-anchor="middle">
     <text x="307" y="96" fill="#393630">w₁: <tspan>0 → 1</tspan></text>
     <text x="307" y="169" fill="#393630">w₂: <tspan>0 → 1</tspan></text>
     <text x="440" y="70" fill="#393630">편향: <tspan>0 → 1</tspan></text>
@@ -47,15 +44,15 @@
   <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-weight="400">
     <g text-anchor="middle">
       <g stroke="#a65043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M7 129 Q40 127 73 129 L74 174 Q41 176 7 174 Q5 152 7 129 Z" fill="#f5d5cf"/>
-        <path d="M8 130 L40 148 L72 130" fill="none"/>
+        <path d="M7 129 Q40 127 73 129 L74 174 Q41 176 7 174 Q5 152 7 129 Z" fill="#f5d5cf" />
+        <path d="M8 130 L40 148 L72 130" fill="none" />
       </g>
       <text x="40" y="166" fill="#a65043" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">스팸</text>
     </g>
     <g text-anchor="middle">
       <g stroke="#a65043" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M407 193 Q440 191 473 193 L474 238 Q441 240 407 238 Q405 216 407 193 Z" fill="#f5d5cf"/>
-        <path d="M408 194 L440 212 L472 194" fill="none"/>
+        <path d="M407 193 Q440 191 473 193 L474 238 Q441 240 407 238 Q405 216 407 193 Z" fill="#f5d5cf" />
+        <path d="M408 194 L440 212 L472 194" fill="none" />
       </g>
       <text x="440" y="230" fill="#a65043" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="14">스팸</text>
     </g>
