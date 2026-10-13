@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="278" viewBox="0 57 800 278" role="img" aria-labelledby="title desc">
+<title id="title">경사면을 구르는 공과 관성</title>
+<desc id="desc">왼쪽 경사면에서 속도가 붙은 공이 얕은 골짜기를 지나, 관성으로 오른쪽의 완만한 오르막을 넘어가는 모습을 보여줍니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:22px}.ink{fill:none;stroke:#393630;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.motion{fill:none;stroke:#3d8b75;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+<path d="M60 90 C120 110 145 210 240 249 C320 281 365 258 421 232 C481 203 509 203 551 225 C615 261 669 278 742 281 L742 306 Q405 311 60 306 Z" fill="#f1ebdd"/>
+<path class="ink" d="M60 90 C120 110 145 210 240 249 C320 281 365 258 421 232 C481 203 509 203 551 225 C615 261 669 278 742 281"/>
+<path d="M61 94 C123 114 146 214 239 252 C319 285 367 261 422 235 C482 207 508 207 550 228 C615 264 670 281 741 284" fill="none" stroke="#393630" stroke-width="1"/>
+<path d="M136 127 C145 116 164 120 171 132 C178 145 171 161 158 165 C144 169 132 157 131 145 Q130 135 136 127 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-dasharray="5 6"/>
+<path d="M398 183 C410 172 428 176 435 190 C442 204 433 222 418 224 C403 226 390 213 391 198 Q390 189 398 183 Z" fill="#c7ddeb" stroke="#3d789d" stroke-width="3" stroke-linejoin="round"/>
+<path d="M404 183 Q395 198 404 214 M410 218 Q424 224 433 209" fill="none" stroke="#3d789d" stroke-width="1.7" stroke-linecap="round"/>
+<path class="motion" d="M184 152 Q212 197 261 213 M251 202 L261 213 L246 216"/>
+<path class="motion" d="M445 182 Q475 162 515 166 M503 158 L515 166 L502 174"/>
+<path class="motion" d="M358 206 L378 199 M354 219 L377 210"/>
+<text x="180" y="100" text-anchor="middle">내리막에서 가속</text>
+<text x="549" y="100" text-anchor="middle" style="fill:#3d8b75">관성으로 완만한 오르막 통과</text>
+</svg>

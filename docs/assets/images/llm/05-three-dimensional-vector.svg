@@ -1,26 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 45 640 240" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">3차원 공간의 벡터</title>
-  <desc id="desc">x, y, z 축으로 이루어진 3차원 공간에서 원점으로부터 한 점을 가리키는 벡터</desc>
-  <defs>
-    <marker id="arrow-axis" markerWidth="8" markerHeight="8" refX="6" refY="3.5" orient="auto">
-      <path d="M0 0L7 3.5L0 7Z" fill="#7d8a90"/>
-    </marker>
-    <marker id="arrow-vector" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-      <path d="M0 0L7 3.5L0 7Z" fill="#c7834c"/>
-    </marker>
-  </defs>
-
-  <g transform="translate(35 0)">
-  <path d="M285 238L105 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
-  <path d="M285 238L465 268" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
-  <path d="M285 238L285 55" stroke="#7d8a90" stroke-width="1.6" marker-end="url(#arrow-axis)"/>
-  <text x="90" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">y</text>
-  <text x="475" y="275" fill="#536268" font-family="system-ui, sans-serif" font-size="15">x</text>
-  <text x="296" y="55" fill="#536268" font-family="system-ui, sans-serif" font-size="15">z</text>
-
-  <path d="M285 238L357 190" stroke="#c7834c" stroke-width="2.5" marker-end="url(#arrow-vector)"/>
-  <circle cx="285" cy="238" r="4" fill="#536268"/>
-  <text x="371" y="186" fill="#a65f32" font-family="system-ui, sans-serif" font-size="16" font-weight="600">v = (3, 1, 2)</text>
-  <text x="272" y="258" fill="#536268" font-family="system-ui, sans-serif" font-size="13">원점</text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 35 640 260" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">3차원 공간의 벡터</title><desc id="desc">x, y, z 축으로 이루어진 3차원 공간에서 원점으로부터 한 점을 가리키는 벡터</desc>
+<style>.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:22px}</style>
+<g transform="translate(35 0)">
+<path class="ink" d="M285 238 Q195 251 105 268 M116 260 L105 268 L118 271 M285 238 Q375 251 465 268 M452 271 L465 268 L454 260 M285 238 Q283 146 285 55 M278 66 L285 55 L292 66"/>
+<text x="77" y="281">y</text><text x="478" y="281">x</text><text x="298" y="59">z</text>
+<path d="M285 238 Q320 212 357 190 M345 193 L357 190 L351 201" stroke="#3d789d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="285" cy="238" r="4" fill="#393630"/>
+<text x="371" y="183" style="fill:#3d789d;font-size:23px">v = (3, 1, 2)</text>
+<text x="266" y="266" style="font-size:17px">원점</text>
+</g></svg>

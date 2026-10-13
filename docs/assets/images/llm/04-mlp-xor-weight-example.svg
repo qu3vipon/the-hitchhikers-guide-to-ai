@@ -23,23 +23,23 @@
     <path d="M620 127 Q619.892 136 620 145 M616 137 L620 145 L624 137" stroke="#a65043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="250" y="88" style="fill:#3d789d;stroke:#3d789d">w₁₁ = <tspan stroke="#3d789d" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
-    <text x="250" y="224" style="fill:#3d789d;stroke:#3d789d">w₁₂ = <tspan stroke="#3d789d" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M207.0 74.0 Q250.0 73.0 293.0 74.5" /><path d="M208.0 81.0 Q250.0 80.0 293.0 81.5" /><path d="M207.0 88.0 Q250.0 87.0 292.0 88.5" /></g><text x="250" y="88" style="fill:#3d789d;stroke:#3d789d">w₁₁ = <tspan stroke="#3d789d" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M207.0 210.0 Q250.0 209.0 293.0 210.5" /><path d="M208.0 217.0 Q250.0 216.0 293.0 217.5" /><path d="M207.0 224.0 Q250.0 223.0 292.0 224.5" /></g><text x="250" y="224" style="fill:#3d789d;stroke:#3d789d">w₁₂ = <tspan stroke="#3d789d" stroke-width="0.65" stroke-linejoin="round">−</tspan>1</text>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="250" y="132" style="fill:#3d8b75;stroke:#3d8b75">w₂₁ = 1</text>
-    <text x="250" y="270" style="fill:#3d8b75;stroke:#3d8b75">w₂₂ = 1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M207.0 118.0 Q250.0 117.0 293.0 118.5" /><path d="M208.0 125.0 Q250.0 124.0 293.0 125.5" /><path d="M207.0 132.0 Q250.0 131.0 292.0 132.5" /></g><text x="250" y="132" style="fill:#3d8b75;stroke:#3d8b75">w₂₁ = 1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M207.0 256.0 Q250.0 255.0 293.0 256.5" /><path d="M208.0 263.0 Q250.0 262.0 293.0 263.5" /><path d="M207.0 270.0 Q250.0 269.0 292.0 270.5" /></g><text x="250" y="270" style="fill:#3d8b75;stroke:#3d8b75">w₂₂ = 1</text>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="540" y="90" style="fill:#a65043;stroke:#a65043">w′₁₁ = 1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M497.0 76.0 Q540.0 75.0 583.0 76.5" /><path d="M498.0 83.0 Q540.0 82.0 583.0 83.5" /><path d="M497.0 90.0 Q540.0 89.0 582.0 90.5" /></g><text x="540" y="90" style="fill:#a65043;stroke:#a65043">w′₁₁ = 1</text>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="540" y="285" style="fill:#a65043;stroke:#a65043">w′₁₂ = 1</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M497.0 271.0 Q540.0 270.0 583.0 271.5" /><path d="M498.0 278.0 Q540.0 277.0 583.0 278.5" /><path d="M497.0 285.0 Q540.0 284.0 582.0 285.5" /></g><text x="540" y="285" style="fill:#a65043;stroke:#a65043">w′₁₂ = 1</text>
   </g>
   <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="18" font-weight="400" text-anchor="middle">
-    <text x="370" y="48" style="fill:#3d789d;stroke:#3d789d">b = 0.5</text>
-    <text x="370" y="188" style="fill:#3d8b75;stroke:#3d8b75">b = <tspan stroke="#3d8b75" stroke-width="0.65" stroke-linejoin="round">−</tspan>1.5</text>
-    <text x="620" y="118" style="fill:#a65043;stroke:#a65043">b = <tspan stroke="#a65043" stroke-width="0.65" stroke-linejoin="round">−</tspan>0.5</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M331.0 34.0 Q370.0 33.0 409.0 34.5" /><path d="M332.0 41.0 Q370.0 40.0 409.0 41.5" /><path d="M331.0 48.0 Q370.0 47.0 408.0 48.5" /></g><text x="370" y="48" style="fill:#3d789d;stroke:#3d789d">b = 0.5</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M331.0 174.0 Q370.0 173.0 409.0 174.5" /><path d="M332.0 181.0 Q370.0 180.0 409.0 181.5" /><path d="M331.0 188.0 Q370.0 187.0 408.0 188.5" /></g><text x="370" y="188" style="fill:#3d8b75;stroke:#3d8b75">b = <tspan stroke="#3d8b75" stroke-width="0.65" stroke-linejoin="round">−</tspan>1.5</text>
+    <g fill="none" stroke="#f1ebdd" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round"><path d="M581.0 104.0 Q620.0 103.0 659.0 104.5" /><path d="M582.0 111.0 Q620.0 110.0 659.0 111.5" /><path d="M581.0 118.0 Q620.0 117.0 658.0 118.5" /></g><text x="620" y="118" style="fill:#a65043;stroke:#a65043">b = <tspan stroke="#a65043" stroke-width="0.65" stroke-linejoin="round">−</tspan>0.5</text>
   </g>
   <g stroke-width="2.5">
     <path d="M150 75 C167.1 74 181 87.9 180 105 C181 122.1 167.1 136 150 135 C132.9 136 119 122.1 120 105 C119 87.9 132.9 74 150 75 Z" fill="#e7eef0" stroke="#393630" stroke-linecap="round" stroke-linejoin="round" />

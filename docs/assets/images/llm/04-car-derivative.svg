@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="410" viewBox="0 20 760 410" role="img" aria-labelledby="title desc">
+<title id="title">위치의 시간에 대한 변화율은 순간 속도</title><desc id="desc">자동차의 아주 작은 위치 변화와 시계 바늘의 아주 짧은 시간 변화를 보여줍니다. 시간 간격을 한없이 줄이면 위치의 시간에 대한 변화율 dx/dt가 순간 속도가 됩니다.</desc>
+<style>text{fill:#393630;font-family:'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;font-size:20px;text-anchor:middle;dominant-baseline:middle}.math{font-family:'Chalkboard SE','Segoe Print',cursive;font-size:27px}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<path class="ink" d="M90 150 Q190 148 290 150" />
+<g transform="translate(170 124) scale(-0.85 0.85)" opacity="0.3"><path d="M-63 8 L-55 -10 L-29 -14 L-13 -35 Q13 -39 37 -32 L51 -13 L66 -5 L67 14 L-63 14 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.2" stroke-linejoin="round" />
+<path class="ink" d="M-22 -14 L-8 -29 Q10 -32 30 -27 L40 -13 Z M9 -29 L9 -14 M-54 -2 L-43 -2 M53 -2 L62 -2" />
+<circle cx="-36" cy="14" r="12" fill="#faf5e9" stroke="#393630" stroke-width="2.2" /><circle cx="42" cy="14" r="12" fill="#faf5e9" stroke="#393630" stroke-width="2.2" />
+<circle cx="-36" cy="14" r="4" fill="#393630" /><circle cx="42" cy="14" r="4" fill="#393630" /></g>
+<g transform="translate(210 124) scale(-0.85 0.85)"><path d="M-63 8 L-55 -10 L-29 -14 L-13 -35 Q13 -39 37 -32 L51 -13 L66 -5 L67 14 L-63 14 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.2" stroke-linejoin="round" />
+<path class="ink" d="M-22 -14 L-8 -29 Q10 -32 30 -27 L40 -13 Z M9 -29 L9 -14 M-54 -2 L-43 -2 M53 -2 L62 -2" />
+<circle cx="-36" cy="14" r="12" fill="#faf5e9" stroke="#393630" stroke-width="2.2" /><circle cx="42" cy="14" r="12" fill="#faf5e9" stroke="#393630" stroke-width="2.2" />
+<circle cx="-36" cy="14" r="4" fill="#393630" /><circle cx="42" cy="14" r="4" fill="#393630" /></g>
+<path class="ink" d="M170 184 Q190 182 210 184 M203 178 L212 184 L203 190" />
+<text class="math" x="190" y="218">dx = <tspan font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="18">아주 작은 위치 변화</tspan></text>
+<g transform="translate(570 116) scale(1.2)">
+<path d="M0 -61 C34 -63 63 -33 61 0 C64 34 34 63 0 61 C-35 63 -63 33 -61 0 C-63 -34 -34 -63 0 -61 Z" fill="#faf5e9" stroke="#393630" stroke-width="2.2" />
+<path class="ink" d="M0 -51 L0 -44 M51 0 L44 0 M0 51 L0 44 M-51 0 L-44 0" />
+<path d="M0 0 L0 -39" fill="none" stroke="#8b989e" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round" />
+<path class="ink" d="M-23 -13 L0 0 L7 -38" />
+<path d="M0 -30 A30 30 0 0 1 6 -29 M2 -33 L7 -29 L3 -25" fill="none" stroke="#3d789d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<circle r="3.5" fill="#393630" />
+</g>
+<text class="math" x="570" y="218">dt = <tspan font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="18">아주 짧은 시간</tspan></text>
+<text x="380" y="282" style="fill:#3d789d;font-size:20px;font-weight:700">아주 짧은 시간 동안의 위치 변화를 시간으로 나누면</text><g transform="translate(23 0)"><g transform="translate(260 365) scale(0.7)">
+<path d="M-72 12 C-74 -32 -43 -65 0 -65 C43 -66 75 -32 72 12 Q0 17 -72 12 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.2" stroke-linejoin="round" />
+<path class="ink" d="M-57 -2 L-48 -2 M-49 -29 L-42 -24 M-28 -47 L-23 -38 M0 -52 L0 -42 M28 -47 L23 -38 M49 -29 L42 -24 M57 -2 L48 -2" />
+<path d="M0 1 L35 -31" fill="none" stroke="#a65043" stroke-width="3" stroke-linecap="round" />
+<circle cx="0" cy="1" r="5" fill="#a65043" />
+</g>
+<text x="371" y="365" style="font-weight:600">순간 속도</text>
+<text class="math" x="426" y="365">=</text>
+<text class="math" x="472" y="347" style="font-size:24px">dx</text>
+<path class="ink" d="M449 365 Q472 364 495 365" />
+<text class="math" x="472" y="385" style="font-size:24px">dt</text>
+</g></svg>
