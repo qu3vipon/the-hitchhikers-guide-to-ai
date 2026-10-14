@@ -20,7 +20,7 @@
 
   <path d="M285 238L357 190" stroke="#c7834c" stroke-width="2.5" marker-end="url(#arrow-vector)"/>
   <circle cx="285" cy="238" r="4" fill="#7d8a90"/>
-  <text x="371" y="186" fill="#a65f32" font-family="system-ui, sans-serif" font-size="16" font-weight="600">v = (3, 1, 2)</text>
+  <text x="371" y="186" fill="#a65f32" font-family="system-ui, sans-serif" font-size="16" font-weight="600">v = [3, 1, 2]</text>
   <text x="272" y="258" fill="#536268" font-family="system-ui, sans-serif" font-size="13">원점</text>
   </g>
 </svg>
