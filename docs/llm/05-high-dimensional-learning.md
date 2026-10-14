@@ -39,7 +39,7 @@
 
 실제 신경망에는 수많은 파라미터가 있기 때문에 이 공간은 훨씬 높은 차원을 가집니다. 하지만 고차원 공간은 직접 그릴 수 없기 때문에, 여기서는 이해를 돕기 위해 파라미터가 두 개라고 가정하고 손실을 높이로 나타낸 3차원 공간으로 단순화해 살펴보겠습니다.
 
-![파라미터의 위치에 따라 높이가 달라지는 손실 지형](../assets/images/llm/05-loss-landscape-drawing.png){ .neural-network-image .loss-landscape-image }
+![파라미터의 위치에 따라 높이가 달라지는 손실 지형](../assets/images/llm/05-loss-landscape-standard-axes.svg){ .neural-network-image .loss-landscape-image }
 
 신경망을 학습시키는 일은 단순히 손실 함수를 계산하는 데서 끝나지 않습니다. 현재 파라미터에서 손실을 계산하고, 손실이 더 작아지는 방향으로 파라미터를 조정하는 과정이 필요합니다. 이처럼 손실이 가장 낮은 지점, 또는 충분히 낮은 지점을 찾는 과정을 **최적화(optimization)**라고 합니다.
 

@@ -6,11 +6,10 @@
       <path d="M0 0L12 6L0 12Z" fill="#2171c5"/>
     </marker>
   </defs>
-  <rect x="0.75" y="0.75" width="638.5" height="148.5" rx="18" fill="#f7fafb" stroke="#c6d9df" stroke-width="1.5"/>
   <g transform="translate(38 -58)">
   <text x="134" y="157" fill="#202124" font-family="system-ui, sans-serif" font-size="32" font-weight="700">아침마다</text>
   <path d="M263 157H331" stroke="#202124" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 7"/>
-  <text x="297" y="149" fill="#2171c5" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">?</text>
+  <text x="297" y="149" fill="#2171c5" font-family="Chalkboard SE, Segoe Print, cursive" font-size="36" font-weight="400" text-anchor="middle">?</text>
   <text x="348" y="157" fill="#202124" font-family="system-ui, sans-serif" font-size="32" font-weight="700">마신다</text>
   <path d="M190 116C188 95 229 82 248 103" stroke="#2171c5" stroke-width="7" stroke-linecap="round" fill="none"/>
   <path d="M240 82L248 103L228 106" stroke="#2171c5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
