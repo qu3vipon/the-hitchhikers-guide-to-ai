@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="226" viewBox="0 0 720 226" role="img" aria-labelledby="title desc">
+<title id="title">여러 표현에서 토큰 조각 공유하기</title><desc id="desc">마신다, 마셨다, 마시겠지만을 작은 조각으로 나누어 반복되는 마와 다를 같은 색으로 표시한 개념 예시입니다. 실제 토큰 분할은 토큰화 방법에 따라 달라집니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.ink{fill:none;stroke:#393630;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="70" y="50" dominant-baseline="middle">마신다</text><path class="ink" d="M220 50 Q241 49 262 50 M253 44 L262 50 L253 56"/>
+<path d="M286 29 Q315.0 27 344 29 L345 70 Q315.0 72 286 70 Z" fill="#e5eef5" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="315.0" y="50" text-anchor="middle" dominant-baseline="middle">마</text>
+<path d="M356 29 Q385.0 27 414 29 L415 70 Q385.0 72 356 70 Z" fill="#faf8f4" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="385.0" y="50" text-anchor="middle" dominant-baseline="middle">신</text>
+<path d="M426 29 Q455.0 27 484 29 L485 70 Q455.0 72 426 70 Z" fill="#edf7f2" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="455.0" y="50" text-anchor="middle" dominant-baseline="middle">다</text>
+<text x="70" y="112" dominant-baseline="middle">마셨다</text><path class="ink" d="M220 112 Q241 111 262 112 M253 106 L262 112 L253 118"/>
+<path d="M286 91 Q315.0 89 344 91 L345 132 Q315.0 134 286 132 Z" fill="#e5eef5" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="315.0" y="112" text-anchor="middle" dominant-baseline="middle">마</text>
+<path d="M356 91 Q385.0 89 414 91 L415 132 Q385.0 134 356 132 Z" fill="#faf8f4" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="385.0" y="112" text-anchor="middle" dominant-baseline="middle">셨</text>
+<path d="M426 91 Q455.0 89 484 91 L485 132 Q455.0 134 426 132 Z" fill="#edf7f2" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="455.0" y="112" text-anchor="middle" dominant-baseline="middle">다</text>
+<text x="70" y="174" dominant-baseline="middle">마시겠지만</text><path class="ink" d="M220 174 Q241 173 262 174 M253 168 L262 174 L253 180"/>
+<path d="M286 153 Q315.0 151 344 153 L345 194 Q315.0 196 286 194 Z" fill="#e5eef5" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="315.0" y="174" text-anchor="middle" dominant-baseline="middle">마</text>
+<path d="M356 153 Q385.0 151 414 153 L415 194 Q385.0 196 356 194 Z" fill="#faf8f4" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="385.0" y="174" text-anchor="middle" dominant-baseline="middle">시</text>
+<path d="M426 153 Q455.0 151 484 153 L485 194 Q455.0 196 426 194 Z" fill="#faf8f4" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="455.0" y="174" text-anchor="middle" dominant-baseline="middle">겠</text>
+<path d="M496 153 Q536.0 151 576 153 L577 194 Q536.0 196 496 194 Z" fill="#faf8f4" stroke="#393630" stroke-width="1.8" stroke-linejoin="round"/><text x="536.0" y="174" text-anchor="middle" dominant-baseline="middle">지만</text>
+<g fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 7">
+<path d="M315 19 C345 17 353 57 352 112 C354 169 343 207 314 205 C284 207 278 165 279 111 C277 56 286 20 315 19 Z" stroke="#3d789d"/>
+<path d="M455 19 C485 18 493 43 492 81 C493 117 484 145 454 144 C425 145 417 117 418 81 C416 44 426 21 455 19 Z" stroke="#3d8b75"/>
+</g>
+</svg>

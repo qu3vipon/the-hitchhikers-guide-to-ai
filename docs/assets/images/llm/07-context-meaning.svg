@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="270" viewBox="0 0 720 270" role="img" aria-labelledby="title desc">
+<title id="title">문맥에 따라 달라지는 배의 의미</title><desc id="desc">같은 단어 배가 배가 아프다에서는 몸의 부위를, 배가 항구를 떠난다에서는 탈것을 의미합니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.ink{fill:none;stroke:#393630;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:none;stroke:#393630;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<g transform="translate(-85 0)">
+<g fill="none" stroke="#f1dfaa" stroke-width="11" stroke-linecap="butt" stroke-linejoin="round"><path d="M242 67 Q254 66 268 67"/><path d="M243 74 Q255 73 268 74.5"/><path d="M242 81 Q254 80 267 81"/></g>
+<text x="245" y="82">배가 아프다</text>
+<g fill="none" stroke="#f1dfaa" stroke-width="11" stroke-linecap="butt" stroke-linejoin="round"><path d="M242 195 Q254 194 268 195"/><path d="M243 202 Q255 201 268 202.5"/><path d="M242 209 Q254 208 267 209"/></g>
+<text x="245" y="210">배가 항구를 떠난다</text>
+<g transform="translate(566 26)" class="ink">
+<path d="M21 21 C16 8 24 1 33 2 C45 2 48 13 44 22 Q34 32 21 21 Z" fill="#e5eef5"/>
+<path d="M10 65 Q9 42 23 35 Q32 31 41 35 Q54 41 56 57 Q58 69 43 70 L27 66 M19 44 L19 57 L36 62 M10 65 L15 92 L43 92 L46 72"/>
+<path d="M25 56 Q35 53 40 60 Q44 67 35 73 Q25 73 22 66 Z" fill="#f2d6d3" stroke="#b85c5c"/>
+<path d="M19 57 L36 62 M56 57 Q58 69 43 70 L27 66"/>
+</g>
+<g transform="translate(548 158)" class="ink">
+<path d="M5 43 L100 43 L82 69 Q49 77 23 67 Z" fill="#e5eef5"/>
+<path d="M26 43 L26 26 L70 26 L70 43 M38 26 L38 13 L59 13 L59 26 M44 33 L51 33 M59 33 L65 33 M12 82 Q24 74 36 82 Q48 90 60 82 Q72 74 84 82 Q96 89 108 81"/>
+</g>
+</g>
+</svg>

@@ -38,10 +38,12 @@
     <circle cx="390" cy="56" r="21"/><circle cx="390" cy="103" r="21"/><circle cx="390" cy="150" r="21"/><circle cx="390" cy="197" r="21"/><circle cx="390" cy="244" r="21"/>
   </g>
   <g transform="translate(0 8)" fill="#26353a" font-family="sans-serif" font-size="12" font-weight="600" text-anchor="middle">
-    <text x="390" y="60">커피</text><text x="390" y="107">물</text><text x="390" y="154">우유</text><text x="390" y="201" font-size="10">자동차</text><text x="390" y="248">…</text>
+    <g fill="none" stroke="#f1dfaa" stroke-width="10" stroke-linecap="butt" stroke-linejoin="round"><path d="M376 48 Q390 47 404 48"/><path d="M377 55 Q390 54 404 55.5"/><path d="M376 62 Q390 61 403 62"/></g>
+    <text x="390" y="60" font-weight="400">커피</text><text x="390" y="107">물</text><text x="390" y="154">우유</text><text x="390" y="201" font-size="10">자동차</text><text x="390" y="248">…</text>
   </g>
   <g transform="translate(0 8)" fill="#52636b" font-family="sans-serif" font-size="13" text-anchor="end">
-    <text x="438" y="60">2.4</text><text x="438" y="107">1.1</text><text x="438" y="154">0.3</text><text x="438" y="201">−1.2</text><text x="438" y="248">…</text>
+    <g fill="none" stroke="#f1dfaa" stroke-width="10" stroke-linecap="butt" stroke-linejoin="round"><path d="M417 48 Q429 47 441 48"/><path d="M418 55 Q430 54 441 55.5"/><path d="M417 62 Q429 61 440 62"/></g>
+    <text x="438" y="60" font-weight="400">2.4</text><text x="438" y="107">1.1</text><text x="438" y="154">0.3</text><text x="438" y="201">−1.2</text><text x="438" y="248">…</text>
   </g>
 
   <path d="M470 158H534" stroke="#71828a" stroke-width="1.5" marker-end="url(#arrow)"/>
@@ -54,7 +56,8 @@
     <text x="530" y="138" font-size="25" font-weight="200">)</text>
   </g>
   <g transform="translate(0 8)" fill="#3d8b75" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="end">
-    <text x="590" y="60">0.68</text><text x="590" y="107">0.19</text><text x="590" y="154">0.08</text><text x="590" y="201">0.02</text><text x="590" y="248">0.03</text>
+    <g fill="none" stroke="#f1dfaa" stroke-width="10" stroke-linecap="butt" stroke-linejoin="round"><path d="M560 48 Q578 47 596 48"/><path d="M561 55 Q578 54 596 55.5"/><path d="M560 62 Q578 61 595 62"/></g>
+    <text x="590" y="60" font-weight="400">0.68</text><text x="590" y="107">0.19</text><text x="590" y="154">0.08</text><text x="590" y="201">0.02</text><text x="590" y="248">0.03</text>
   </g>
   </g>
 </svg>
