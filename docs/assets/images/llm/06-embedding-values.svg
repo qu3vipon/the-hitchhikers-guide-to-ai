@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310" role="img" aria-labelledby="title desc">
+<title id="title">단어별 임베딩 벡터</title><desc id="desc">고양이, 강아지, 자동차, 사과, 책을 각각 세 개의 숫자로 이루어진 임베딩 벡터로 표현한 예시입니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px;fill:#393630}.value{fill:#3d789d}</style>
+<text x="92" y="32" text-anchor="middle" style="font-size:20px">단어</text><text x="374" y="32" text-anchor="middle" style="font-size:20px">임베딩 벡터</text>
+<path d="M40 48 H584" fill="none" stroke="#c6cdcf" stroke-width="1"/>
+<text x="92" y="73" text-anchor="middle" dominant-baseline="middle">고양이</text>
+<text x="254" y="73" text-anchor="middle" dominant-baseline="middle" class="value">0.8</text>
+<text x="374" y="73" text-anchor="middle" dominant-baseline="middle" class="value">0.3</text>
+<text x="494" y="73" text-anchor="middle" dominant-baseline="middle" class="value">−0.1</text>
+<text x="92" y="121" text-anchor="middle" dominant-baseline="middle">강아지</text>
+<text x="254" y="121" text-anchor="middle" dominant-baseline="middle" class="value">0.7</text>
+<text x="374" y="121" text-anchor="middle" dominant-baseline="middle" class="value">0.4</text>
+<text x="494" y="121" text-anchor="middle" dominant-baseline="middle" class="value">−0.2</text>
+<text x="92" y="169" text-anchor="middle" dominant-baseline="middle">자동차</text>
+<text x="254" y="169" text-anchor="middle" dominant-baseline="middle" class="value">−0.3</text>
+<text x="374" y="169" text-anchor="middle" dominant-baseline="middle" class="value">0.1</text>
+<text x="494" y="169" text-anchor="middle" dominant-baseline="middle" class="value">0.9</text>
+<text x="92" y="217" text-anchor="middle" dominant-baseline="middle">사과</text>
+<text x="254" y="217" text-anchor="middle" dominant-baseline="middle" class="value">0.1</text>
+<text x="374" y="217" text-anchor="middle" dominant-baseline="middle" class="value">−0.8</text>
+<text x="494" y="217" text-anchor="middle" dominant-baseline="middle" class="value">0.3</text>
+<text x="92" y="265" text-anchor="middle" dominant-baseline="middle">책</text>
+<text x="254" y="265" text-anchor="middle" dominant-baseline="middle" class="value">−0.5</text>
+<text x="374" y="265" text-anchor="middle" dominant-baseline="middle" class="value">0.6</text>
+<text x="494" y="265" text-anchor="middle" dominant-baseline="middle" class="value">0.2</text>
+<path d="M204 56 H197 V90 H204 M545 56 H552 V90 H545" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 104 H197 V138 H204 M545 104 H552 V138 H545" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 152 H197 V186 H204 M545 152 H552 V186 H545" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 200 H197 V234 H204 M545 200 H552 V234 H545" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M204 248 H197 V282 H204 M545 248 H552 V282 H545" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

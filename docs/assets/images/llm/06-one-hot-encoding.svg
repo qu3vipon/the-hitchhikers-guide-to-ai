@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="310" viewBox="0 0 640 310" role="img" aria-labelledby="title desc">
+<title id="title">단어별 원-핫 벡터</title><desc id="desc">고양이, 강아지, 자동차, 사과, 책의 원-핫 벡터에서 해당 위치의 1만 파란색으로 강조합니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px;fill:#393630}.zero{fill:#929b9e}.one{fill:#3d789d}</style>
+<text x="92" y="32" text-anchor="middle" style="font-size:20px">단어</text><text x="374" y="32" text-anchor="middle" style="font-size:20px">원-핫 벡터</text>
+<path d="M40 48 H584" fill="none" stroke="#c6cdcf" stroke-width="1"/>
+<text x="92" y="73" text-anchor="middle" dominant-baseline="middle">고양이</text>
+<path d="M189 54 Q214 52 239 55 L240 91 Q214 94 188 91 Z" fill="#e5eef5"/>
+<text x="214" y="73" text-anchor="middle" dominant-baseline="middle" class="one">1</text>
+<text x="294" y="73" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="374" y="73" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="454" y="73" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="534" y="73" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="92" y="121" text-anchor="middle" dominant-baseline="middle">강아지</text>
+<text x="214" y="121" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<path d="M269 102 Q294 100 319 103 L320 139 Q294 142 268 139 Z" fill="#e5eef5"/>
+<text x="294" y="121" text-anchor="middle" dominant-baseline="middle" class="one">1</text>
+<text x="374" y="121" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="454" y="121" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="534" y="121" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="92" y="169" text-anchor="middle" dominant-baseline="middle">자동차</text>
+<text x="214" y="169" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="294" y="169" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<path d="M349 150 Q374 148 399 151 L400 187 Q374 190 348 187 Z" fill="#e5eef5"/>
+<text x="374" y="169" text-anchor="middle" dominant-baseline="middle" class="one">1</text>
+<text x="454" y="169" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="534" y="169" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="92" y="217" text-anchor="middle" dominant-baseline="middle">사과</text>
+<text x="214" y="217" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="294" y="217" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="374" y="217" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<path d="M429 198 Q454 196 479 199 L480 235 Q454 238 428 235 Z" fill="#e5eef5"/>
+<text x="454" y="217" text-anchor="middle" dominant-baseline="middle" class="one">1</text>
+<text x="534" y="217" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="92" y="265" text-anchor="middle" dominant-baseline="middle">책</text>
+<text x="214" y="265" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="294" y="265" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="374" y="265" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<text x="454" y="265" text-anchor="middle" dominant-baseline="middle" class="zero">0</text>
+<path d="M509 246 Q534 244 559 247 L560 283 Q534 286 508 283 Z" fill="#e5eef5"/>
+<text x="534" y="265" text-anchor="middle" dominant-baseline="middle" class="one">1</text>
+<path d="M185 56 H178 V90 H185 M563 56 H570 V90 H563" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 104 H178 V138 H185 M563 104 H570 V138 H563" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 152 H178 V186 H185 M563 152 H570 V186 H563" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 200 H178 V234 H185 M563 200 H570 V234 H563" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 248 H178 V282 H185 M563 248 H570 V282 H563" fill="none" stroke="#536268" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

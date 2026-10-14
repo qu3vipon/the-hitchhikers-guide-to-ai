@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-labelledby="title desc">
+<title id="title">단어마다 고유한 번호 붙이기</title>
+<desc id="desc">정수 인코딩의 예시로 고양이를 1, 강아지를 2, 자동차를 3에 대응시킵니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.arrow{fill:none;stroke:#393630;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}</style>
+<g transform="translate(20 0)">
+<text x="205" y="35" text-anchor="middle" style="font-size:20px">단어</text>
+<text x="420" y="35" text-anchor="middle" style="font-size:20px">변환된 숫자</text>
+<path d="M123 51 Q205 48 287 52 L288 94 Q205 97 122 93 Z M123 111 Q205 108 287 112 L288 154 Q205 157 122 153 Z M123 171 Q205 168 287 172 L288 214 Q205 217 122 213 Z" fill="#e5eef5" class="ink"/>
+<g class="ink" stroke-width="1.8">
+<path d="M142 67 L142 57 L151 63 Q158 59 165 63 L174 57 L174 69 Q180 84 160 87 Q140 86 142 67 Z M152 72 L152 74 M165 72 L165 74 M157 78 L161 78 L159 81 M140 77 L147 79 M140 83 L147 82 M170 79 L178 77 M170 82 L178 84"/>
+<path d="M146 125 Q158 118 170 125 M146 125 Q136 123 135 135 Q134 144 140 144 Q145 142 147 132 M170 125 Q180 123 182 135 Q184 144 178 144 Q173 142 170 132 M145 140 Q148 149 158 149 Q168 149 173 140 M151 131 L151 133 M165 131 L165 133"/>
+<path d="M151 139 Q158 134 165 139 Q168 145 158 148 Q149 146 151 139 Z M155 138 Q158 136 161 138 L158 141 Z M158 141 L158 145 M158 145 Q154 147 152 144 M158 145 Q162 147 164 144"/>
+<path d="M139 193 L145 181 Q157 178 170 182 L177 193 L179 203 L137 203 Z M145 192 L171 192 M157 181 L157 192"/>
+<circle cx="146" cy="203" r="4" fill="#393630"/><circle cx="171" cy="203" r="4" fill="#393630"/>
+</g>
+<text x="230" y="74" text-anchor="middle" dominant-baseline="middle">고양이</text>
+<text x="230" y="134" text-anchor="middle" dominant-baseline="middle">강아지</text>
+<text x="230" y="194" text-anchor="middle" dominant-baseline="middle">자동차</text>
+<path class="arrow" d="M310 73 Q339 72 367 73 M357 66 L367 73 L357 80 M310 133 Q339 132 367 133 M357 126 L367 133 L357 140 M310 193 Q339 192 367 193 M357 186 L367 193 L357 200"/>
+<path d="M394 53 Q420 50 446 54 L447 93 Q420 96 393 92 Z M394 113 Q420 110 446 114 L447 153 Q420 156 393 152 Z M394 173 Q420 170 446 174 L447 213 Q420 216 393 212 Z" fill="#f1ebdd" class="ink"/>
+<text x="420" y="74" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="420" y="134" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="420" y="194" text-anchor="middle" dominant-baseline="middle">3</text>
+</g>
+<text x="320" y="268" text-anchor="middle" style="fill:#b85c5c">고양이 &lt; 강아지 &lt; 자동차<tspan dx="12">?</tspan></text>
+</svg>
