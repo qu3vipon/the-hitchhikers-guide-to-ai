@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="219" viewBox="0 4 800 219" role="img" aria-labelledby="title desc">
+<title id="title">문맥에 따라 달라지는 은행의 의미</title><desc id="desc">은행에서 돈을 찾았다의 은행은 금융기관이며, 은행을 구워 먹었다의 은행은 나무의 열매입니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<g transform="translate(-5 0)">
+<g fill="none" stroke="#f1dfaa" stroke-width="11" stroke-linecap="butt"><path d="M64 54 Q88 53 112 54"/><path d="M65 62 Q89 61 112 62.5"/><path d="M64 70 Q88 69 111 70"/></g><text x="67" y="70">은행에서 <tspan fill="#3d789d">돈</tspan>을 찾았다</text><path class="ink" d="M385 62 Q414 61 443 62 M433 55 L443 62 L433 69"/><text x="581" y="70" text-anchor="middle">금융기관</text><g fill="none" stroke="#f1dfaa" stroke-width="11" stroke-linecap="butt"><path d="M64 164 Q88 163 112 164"/><path d="M65 172 Q89 171 112 172.5"/><path d="M64 180 Q88 179 111 180"/></g><text x="67" y="180">은행을 <tspan fill="#3d8b75">구워 먹었다</tspan></text><path class="ink" d="M385 172 Q414 171 443 172 M433 165 L443 172 L433 179"/><text x="581" y="180" text-anchor="middle">나무의 열매</text><g class="ink" transform="translate(680 34)">
+<path d="M0 18 L32 1 L64 18 Z" fill="#e5eef5"/><path d="M5 23 H59 M8 51 H56 M3 54 H61 V60 H3 Z M12 24 V49 M25 24 V49 M39 24 V49 M52 24 V49"/>
+</g>
+<g class="ink" transform="translate(684 150)">
+<path d="M14 3 C-2 8 -5 37 9 45 C27 55 36 33 30 17 Q25 5 14 3 Z" fill="#fbefd5"/><path d="M44 8 C29 14 26 40 40 47 C56 53 65 34 59 21 Q54 10 44 8 Z" fill="#fbefd5"/><path d="M13 12 Q6 25 13 35 M45 17 Q37 28 44 38" stroke-width="1.4"/>
+</g><g fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M173 42 C154 25 119 23 94 42 M98 33 L94 42 L104 41" stroke="#3d789d"/>
+<path d="M181 152 C158 129 122 133 94 152 M100 143 L94 152 L105 152" stroke="#3d8b75"/>
+</g></g>
+</svg>

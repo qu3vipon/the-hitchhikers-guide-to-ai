@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="288" viewBox="0 0 760 288" role="img" aria-labelledby="title desc">
+<title id="title">어텐션 가중치로 문맥 벡터 만들기</title><desc id="desc">나는, 커피를, 마신다의 은닉 상태에 각각 0.1, 0.7, 0.2를 곱해 모두 더하면 문맥 벡터가 됩니다. 커피를의 정보가 가장 크게 반영됩니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<g transform="translate(8.5 7)">
+<text x="113" y="32" text-anchor="middle" style="font-size:18px">은닉 상태</text>
+<text x="270" y="32" text-anchor="middle" style="font-size:18px">어텐션 가중치</text>
+<text x="440" y="27" text-anchor="middle" style="font-size:18px">가중합</text>
+
+<g transform="translate(0 35)">
+<path d="M38 25 Q113 23 188 26 L189 74 Q113 77 37 74 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/><text x="113" y="41" text-anchor="middle" dominant-baseline="middle">h¹</text><text x="113" y="64" text-anchor="middle" dominant-baseline="middle" style="font-size:18px">나는</text><text x="242" y="50" text-anchor="end" dominant-baseline="middle">×</text><text x="270" y="50" text-anchor="middle" dominant-baseline="middle">0.1</text><path class="ink" d="M310 50 L350 50 Q365 50 365 66 L365 95 Q365 109 390 109 M380 103 L390 109 L380 115"/><path d="M38 100 Q113 98 188 101 L189 149 Q113 152 37 149 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/><text x="113" y="116" text-anchor="middle" dominant-baseline="middle">h²</text><g fill="none" stroke="#e3d8ef" stroke-width="8" stroke-linecap="butt" stroke-linejoin="round"><path d="M87 133 Q113 132 139 133"/><path d="M88 139 Q114 138 139 139.5"/><path d="M87 145 Q113 144 138 145"/></g><text x="113" y="139" text-anchor="middle" dominant-baseline="middle" style="font-size:18px">커피를</text><g fill="none" stroke="#e3d8ef" stroke-width="12" stroke-linecap="butt"><path d="M249 116 Q270 115 291 116"/><path d="M250 124 Q271 123 291 124"/><path d="M249 132 Q270 131 290 132"/></g><text x="242" y="125" text-anchor="end" dominant-baseline="middle">×</text><text x="270" y="125" text-anchor="middle" dominant-baseline="middle">0.7</text><path class="ink" d="M310 125 Q350 124 390 125 M380 119 L390 125 L380 131"/><path d="M38 175 Q113 173 188 176 L189 224 Q113 227 37 224 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/><text x="113" y="191" text-anchor="middle" dominant-baseline="middle">h³</text><text x="113" y="214" text-anchor="middle" dominant-baseline="middle" style="font-size:18px">마신다</text><text x="242" y="200" text-anchor="end" dominant-baseline="middle">×</text><text x="270" y="200" text-anchor="middle" dominant-baseline="middle">0.2</text><path class="ink" d="M310 200 L350 200 Q365 200 365 184 L365 155 Q365 141 390 141 M380 135 L390 141 L380 147"/>
+<path d="M440 89 C462 88 477 103 476 125 C476 146 461 162 440 161 C419 161 404 146 405 125 C404 104 419 89 440 89 Z" fill="#faf8f4" stroke="#393630" stroke-width="2.2"/>
+<text x="440" y="125" text-anchor="middle" dominant-baseline="middle" style="font-size:30px">+</text>
+<path class="ink" d="M490 125 Q511 124 532 125 M522 118 L532 125 L522 132"/>
+<path d="M548 91 Q627 89 705 92 L706 158 Q627 161 547 157 Z" fill="#eee7f4" stroke="#806aa8" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="627" y="125" text-anchor="middle" dominant-baseline="middle">문맥 벡터</text>
+</g>
+</g>
+</svg>

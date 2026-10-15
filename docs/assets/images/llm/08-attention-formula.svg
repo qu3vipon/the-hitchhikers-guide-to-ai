@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="110" viewBox="0 0 760 110" role="img" aria-labelledby="title desc">
+<title id="title">스케일드 닷 프로덕트 어텐션 수식</title><desc id="desc">Attention(Q, K, V)는 QK 전치를 키 차원의 제곱근으로 나눈 값에 소프트맥스를 적용한 뒤 V를 곱한 결과입니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:27px}</style>
+<g transform="translate(137.03 0)">
+<text x="0.00" y="61">Attention</text>
+<text x="118.97" y="61">(Q, K, V)</text>
+<text x="234.94" y="61">=</text>
+<text x="257.94" y="61">softmax</text>
+<path d="M 365.44 26.00 Q 354.44 54.00 365.44 83.00 M 459.44 26.00 Q 470.44 54.00 459.44 83.00" fill="none" stroke="#393630" stroke-width="2.2" stroke-linecap="round" />
+<text x="412.44" y="41" text-anchor="middle">QK<tspan dy="-10" font-size="15">T</tspan></text>
+<path d="M 377.44 53.00 Q 412.44 52.00 447.44 53.00" fill="none" stroke="#393630" stroke-width="2" stroke-linecap="round" />
+<text x="412.44" y="82" text-anchor="middle">√dₖ</text>
+<text x="468.94" y="61">V</text>
+</g></svg>

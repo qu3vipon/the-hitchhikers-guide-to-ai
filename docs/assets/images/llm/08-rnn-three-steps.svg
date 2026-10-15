@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img" aria-labelledby="title desc">
+<title id="title">세 단어를 순서대로 읽는 RNN</title><desc id="desc">초기 상태 h⁰에서 시작해 나는, 커피를, 마신다를 순서대로 읽고 은닉 상태 h¹, h², h³을 다음 단계에 전달합니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:24px}.arrow{fill:none;stroke:#393630;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}</style>
+<text x="58" y="30" text-anchor="middle" style="font-size:20px">t = 0</text><text x="236" y="30" text-anchor="middle" style="font-size:20px">t = 1</text><text x="436" y="30" text-anchor="middle" style="font-size:20px">t = 2</text><text x="636" y="30" text-anchor="middle" style="font-size:20px">t = 3</text>
+<path d="M24 87 Q58 85 92 88 L93 143 Q58 146 23 143 Z" fill="#f4f5f5" stroke="#7d8a90" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="58" y="76" text-anchor="middle" style="font-size:18px">초기 상태</text><text x="58" y="114" text-anchor="middle" dominant-baseline="middle">h⁰</text>
+<path class="arrow" d="M103 114 Q139 113 176 114 M166 107 L176 114 L166 121 M296 114 Q336 113 376 114 M366 107 L376 114 L366 121 M496 114 Q536 113 576 114 M566 107 L576 114 L566 121"/>
+<path d="M185 87 Q236 85 287 88 L288 143 Q236 146 184 143 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="236" y="76" text-anchor="middle" style="font-size:18px">h⁰ → h¹</text><text x="236" y="114" text-anchor="middle" dominant-baseline="middle">h¹</text>
+<path class="arrow" d="M236 184 Q235 174 236 163 M230 171 L236 163 L242 171"/>
+<text x="236" y="216" text-anchor="middle" style="fill:#3d789d">나는</text>
+<path d="M385 87 Q436 85 487 88 L488 143 Q436 146 384 143 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="436" y="76" text-anchor="middle" style="font-size:18px">h¹ → h²</text><text x="436" y="114" text-anchor="middle" dominant-baseline="middle">h²</text>
+<path class="arrow" d="M436 184 Q435 174 436 163 M430 171 L436 163 L442 171"/>
+<text x="436" y="216" text-anchor="middle" style="fill:#3d789d">커피를</text>
+<path d="M585 87 Q636 85 687 88 L688 143 Q636 146 584 143 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2.2" stroke-linejoin="round"/>
+<text x="636" y="76" text-anchor="middle" style="font-size:18px">h² → h³</text><text x="636" y="114" text-anchor="middle" dominant-baseline="middle">h³</text>
+<path class="arrow" d="M636 184 Q635 174 636 163 M630 171 L636 163 L642 171"/>
+<text x="636" y="216" text-anchor="middle" style="fill:#3d789d">마신다</text>
+</svg>
