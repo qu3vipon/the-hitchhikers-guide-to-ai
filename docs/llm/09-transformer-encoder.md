@@ -6,9 +6,9 @@
 
 ![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/llm/09-transformer-architecture-overview.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 22rem);" }
 
-<p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., “Attention Is All You Need” (2017), Figure 1</a></em></p>
+<p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., *Attention Is All You Need* (2017), Figure 1</a></em></p>
 
-이 그림은 “Attention Is All You Need” 논문에 제시된 트랜스포머의 전체 구조입니다.
+이 그림은 *Attention Is All You Need* 논문에 제시된 트랜스포머의 전체 구조입니다.
 
 트랜스포머는 크게 인코더(encoder)와 디코더(decoder)로 구성됩니다. 왼쪽의 인코더는 입력 토큰 사이의 관계를 파악해 문맥이 반영된 표현을 만들고, 오른쪽의 디코더는 이 표현과 앞서 생성한 토큰을 바탕으로 다음 토큰을 예측합니다.
 

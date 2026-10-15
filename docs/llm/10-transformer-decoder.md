@@ -4,7 +4,7 @@
 
 ![Attention Is All You Need 논문의 트랜스포머 모델 구조 Figure 1](../assets/images/llm/10-transformer-architecture-overview.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 22rem);" }
 
-<p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., “Attention Is All You Need” (2017), Figure 1</a></em></p>
+<p style="text-align: center;"><em><a href="https://arxiv.org/html/1706.03762v7">Vaswani et al., *Attention Is All You Need* (2017), Figure 1</a></em></p>
 
 ## 출력 임베딩 {#output-embedding}
 
@@ -65,7 +65,7 @@
 
 ## 트랜스포머의 범용성 {#transformer-versatility}
 
-테슬라 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 [스탠퍼드 CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E)에서 논문의 제목인 “Attention Is All You Need”보다 “Transformer: A general-purpose, efficient, optimizable computer” (범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 더 어울리는 제목이었을 것이라고 말했습니다.
+테슬라 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 [스탠퍼드 CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E)에서 논문의 제목인 *Attention Is All You Need*보다 “Transformer: A general-purpose, efficient, optimizable computer” (범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 더 어울리는 제목이었을 것이라고 말했습니다.
 
 그만큼 트랜스포머는 특정 분야에 한정되지 않고 **다양한 종류의 데이터를 처리할 수 있는 범용적인 구조**입니다. 처음에는 기계 번역과 같은 자연어 처리에 활용되었지만, 이후 이미지, 음성, 영상, 로보틱스 등 다양한 분야로 활용 범위가 확장되었습니다. 텍스트가 아니더라도 이미지를 작은 조각으로 나누거나 음성과 영상을 일정한 단위의 시퀀스로 표현하면, 트랜스포머의 구조를 그대로 활용할 수 있기 때문입니다.
 

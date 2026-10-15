@@ -82,7 +82,7 @@ Word2Vec은 주변 단어를 예측하는 학습을 반복하면서, 예측에 �
 
 ![이미지 분류 모델의 층이 깊어질수록 단순한 가장자리에서 물체의 부분으로 더 복잡한 표현을 학습하는 모습](https://oi.readthedocs.io/en/latest/_images/feature_train_time.png){ .neural-network-image }
 
-<p class="cnn-visualization-credit"><em><a href="https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf">Zeiler & Fergus (2014), “Visualizing and Understanding Convolutional Networks”</a></em></p>
+<p class="cnn-visualization-credit"><em><a href="https://cs.nyu.edu/~fergus/papers/zeilerECCV2014.pdf">Zeiler & Fergus (2014), Visualizing and Understanding Convolutional Networks</a></em></p>
 
 다만 표현 학습이 Word2Vec에서 처음 등장한 것은 아닙니다. 이미 1980년대 신경망 연구에서도 은닉층이 문제 해결에 유용한 특징을 스스로 학습할 수 있다는 점이 연구되었습니다. Word2Vec은 이러한 원리가 단어의 의미와 관계를 표현하는 데에도 활용될 수 있음을 보여 준 대표적인 사례입니다.
 
