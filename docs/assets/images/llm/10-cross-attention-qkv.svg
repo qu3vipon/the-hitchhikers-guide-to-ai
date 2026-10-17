@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="371" viewBox="0 0 800 371" role="img" aria-labelledby="title desc">
+<title id="title">인코더와 디코더의 표현을 Q K V로 변환</title><desc id="desc">위쪽 왼쪽 인코더의 표현은 아래쪽 V와 K로, 위쪽 오른쪽 디코더의 표현은 아래쪽 Q로 변환됩니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:22px}.ink{fill:none;stroke:#536268;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+<g transform="translate(11 0)"><path d="M66 25 Q206 22 346 26 L347 106 Q206 109 65 105 Z M456 25 Q596 22 736 26 L737 106 Q596 109 455 105 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round" />
+<text x="206" y="55" text-anchor="middle">인코더</text><text x="206" y="87" text-anchor="middle" style="font-size:18px">원문에서 파악한 정보</text>
+<text x="596" y="55" text-anchor="middle">디코더</text><text x="596" y="87" text-anchor="middle" style="font-size:18px">지금까지 번역한 내용</text>
+<path class="ink" d="M206 120 L206 159 M110 159 L302 159 M110 159 L110 211 M104 202 L110 211 L116 202 M302 159 L302 211 M296 202 L302 211 L308 202 M596 120 L596 211 M590 202 L596 211 L602 202" />
+<text x="131" y="189" style="font-size:17px">W<tspan baseline-shift="sub" font-size="12">V</tspan></text><text x="323" y="189" style="font-size:17px">W<tspan baseline-shift="sub" font-size="12">K</tspan></text><text x="617" y="171" style="font-size:17px">W<tspan baseline-shift="sub" font-size="12">Q</tspan></text>
+<path d="M42 225 Q110 222 178 226 L179 275 Q110 278 41 274 Z" fill="#f2dedb" stroke="#b85c5c" stroke-width="2" stroke-linejoin="round" /><text x="110" y="251" text-anchor="middle" dominant-baseline="middle" style="fill:#b85c5c">V (Value)</text><path d="M234 225 Q302 222 370 226 L371 275 Q302 278 233 274 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round" /><text x="302" y="251" text-anchor="middle" dominant-baseline="middle" style="fill:#3d8b75">K (Key)</text><path d="M528 225 Q596 222 664 226 L665 275 Q596 278 527 274 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round" /><text x="596" y="251" text-anchor="middle" dominant-baseline="middle" style="fill:#3d789d">Q (Query)</text><path class="ink" d="M596 289 Q454 353 314 289" stroke-dasharray="4 6" /><path class="ink" d="M322 299 L314 289 L327 289" />
+<text x="550" y="349" text-anchor="middle" style="font-size:18px">관련성 계산</text>
+<path class="ink" d="M290 289 Q200 349 110 289" stroke-dasharray="4 6" /><path class="ink" d="M117 300 L110 289 L123 289" />
+<text x="206" y="349" text-anchor="middle" style="font-size:18px">관련성에 따라 정보 선택</text>
+</g></svg>
