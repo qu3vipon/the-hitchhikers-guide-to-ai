@@ -28,6 +28,7 @@
   <path d="M340 136.5 V108.5" class="flow"/>
   <path d="M445 357.25 H510 V68 H373.5" class="residual"/>
   <path d="M373.5 82 H492 V341.75 H448.5" class="backprop"/>
+  <path d="M477 392 V341.75" fill="none" stroke="#9ca3af" stroke-width="1.2"/>
   <text x="510" y="55" class="small" style="fill:#6b7280;text-anchor:end">잔차 연결</text>
   <circle cx="340" cy="75" r="27" fill="#fff" stroke="#303038" stroke-width="3"/>
   <path d="M330 75 H350 M340 65 V85" fill="none" stroke="#202027" stroke-width="4" stroke-linecap="round"/>

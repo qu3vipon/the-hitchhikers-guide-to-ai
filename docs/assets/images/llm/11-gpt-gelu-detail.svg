@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="815" height="254" viewBox="0 0 815 254" role="img" aria-labelledby="title desc">
+  <title id="title">GPT 원본 구조의 GELU</title>
+  <desc id="desc">GPT 트랜스포머 블록의 노란색 GELU 상자와 아래에서 들어와 위로 나가는 화살표를 발췌했습니다.</desc>
+  <rect x="16" y="16" width="783" height="222" rx="22" fill="none" stroke="#d9e0e3" stroke-width="2" />
+  <rect x="64" y="64" width="687" height="126" fill="#ffe6cc" />
+  <g transform="translate(407.5 127) scale(3) translate(-349.35 -146.484)">
+    <path d="m248.95 137.39h200.8c1.5768 0 2.8462 1.2694 2.8462 2.8462v12.496c0 1.5768-1.2694 2.8462-2.8462 2.8462h-200.8c-1.5768 0-2.8462-1.2694-2.8462-2.8462v-12.496c0-1.5768 1.2694-2.8462 2.8462-2.8462z" fill="#ffc" stroke="#000" stroke-width="2" />
+    <path d="m349.35 156.59-2.8216 7.7614c0.59239-0.50636 1.2743-0.83084 1.9817-0.97379v4.1469h1.6799v-4.1469c0.70829 0.14249 1.3906 0.46638 1.9817 0.97379z" fill="#000" />
+    <path d="m349.35 126.46-2.8216 7.7614c0.59239-0.50636 1.2743-0.83084 1.9817-0.9738v4.1469h1.6799v-4.1469c0.70829 0.1425 1.3906 0.46639 1.9817 0.9738z" fill="#000" />
+    <text x="350" y="150" font-family="DejaVu Sans" font-weight="bold" font-size="9" text-anchor="middle">Gelu</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="398" height="251" viewBox="0 0 398 251" role="img" aria-labelledby="title desc">
+  <title id="title">GPT 원본 구조의 가운데 MatMul</title>
+  <desc id="desc">원본의 가운데 노란색 Matmul 상자와 아래에서 들어와 위로 나가는 화살표를 연한 주황색 배경에 표시했습니다.</desc>
+  <rect x="16" y="16" width="366" height="219" rx="22" fill="none" stroke="#d9e0e3" stroke-width="2" />
+  <rect x="64" y="64" width="270" height="123" fill="#ffe6cc" />
+  <g transform="translate(199 125.5) scale(3) translate(-349.355 -346.239)">
+    <path d="m317.08 337.83h64.552c1.5768 0 2.8462 1.2694 2.8462 2.8462v11.126c0 1.5768-1.2694 2.8462-2.8462 2.8462h-64.552c-1.5768 0-2.8462-1.2694-2.8462-2.8462v-11.126c0-1.5768 1.2694-2.8462 2.8462-2.8462z" fill="#ffc" stroke="#000" stroke-width="2" />
+    <text x="350" y="350" font-family="DejaVu Sans" font-weight="bold" font-size="9" text-anchor="middle">Matmul</text>
+    <path d="m349.35 326.9-2.8216 7.7614c0.59239-0.50635 1.2743-0.83083 1.9817-0.97379v4.1469h1.6799v-4.1469c0.70829 0.14249 1.3906 0.46638 1.9817 0.97379z" fill="#000" />
+    <path d="m344.72 355.66-2.8216 7.7614c0.59238-0.50635 1.2742-0.83083 1.9817-0.97379v4.1469h1.6798v-4.1469c0.7083 0.14249 1.3906 0.46638 1.9817 0.97379z" fill="#000" />
+  </g>
+</svg>
