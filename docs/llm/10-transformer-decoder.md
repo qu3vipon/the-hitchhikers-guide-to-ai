@@ -66,7 +66,7 @@
 
 ## 트랜스포머의 범용성 {#transformer-versatility}
 
-테슬라 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 [스탠퍼드 CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E)에서 논문의 제목인 *Attention Is All You Need* 보다 *Transformer: A General-Purpose, Efficient, Optimizable Computer*(범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 더 어울리는 제목이었을 것이라고 말했습니다.
+테슬라의 AI 조직을 이끌었던 안드레 카파시(Andrej Karpathy)는 뛰어난 AI 연구자이자 복잡한 기술을 쉽게 설명하는 교육자로도 잘 알려져 있습니다. 그는 스탠퍼드 대학교의 [CS25 강의](https://www.youtube.com/watch?v=XfpMkf4rD6E) 트랜스포머에 관한 강연을 하기도 했습니다. 이 강연에서 그는 논문의 제목인 *Attention Is All You Need*보다 *Transformer: A General-Purpose, Efficient, Optimizable Computer*(범용적이고 효율적이며 최적화하기 좋은 컴퓨터)가 이 논문에 더 어울리는 제목이었을 것이라는 의견을 내놓기도 했습니다.
 
 그만큼 트랜스포머는 특정 분야에 한정되지 않고 **다양한 종류의 데이터를 처리할 수 있는 범용적인 구조**입니다. 처음에는 기계 번역과 같은 자연어 처리에 활용되었지만, 이후 이미지, 음성, 영상, 로보틱스 등 다양한 분야로 활용 범위가 확장되었습니다. 이미지나 음성, 영상도 일정한 단위의 시퀀스로 표현하면 트랜스포머의 핵심 원리를 적용할 수 있기 때문입니다.
 

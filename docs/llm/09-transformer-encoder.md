@@ -28,7 +28,7 @@
 
 예를 들어 apple이라는 토큰도 512개의 숫자로 이루어진 벡터로 표현됩니다.
 
-`apple → [0.21, -0.53, 0.14, ..., 0.72]` (총 512개)
+![apple을 512개 성분의 임베딩 벡터로 표현한 예시](../assets/images/llm/09-apple-embedding-vector.svg){ .neural-network-image .transformer-encoder-image }
 
 이렇게 각 토큰을 표현한 벡터를 **[임베딩 벡터(embedding vector)](06-word-embeddings.md#meaningful-vectors)**라고 합니다. 트랜스포머에서는 입력 토큰을 이러한 임베딩 벡터로 변환하는 과정을 **입력 임베딩(input embedding)**이라고 합니다.
 

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="110" viewBox="0 0 760 110" role="img" aria-labelledby="title desc">
+<title id="title">apple의 512차원 임베딩 벡터</title><desc id="desc">apple을 0.21, 마이너스 0.53, 0.14 등 총 512개 성분으로 이루어진 벡터로 표현한 예시입니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;font-size:26px}</style>
+<text x="69" y="53">apple</text>
+<path d="M151 45 Q175 44 199 45 M189 38 L199 45 L189 52" fill="none" stroke="#393630" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="222" y="53" style="fill:#3d789d">[0.21, −0.53, 0.14, …, 0.72]</text>
+<path d="M222 66 L222 74 Q381.93 76 541.86 74 L541.86 66" fill="none" stroke="#7d8a90" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="381.93" y="99" text-anchor="middle" style="font-size:18px">총 512개 성분</text>
+</svg>
