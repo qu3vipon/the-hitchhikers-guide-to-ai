@@ -1,43 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 20 720 220" fill="none" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="242" viewBox="0 6 720 242" fill="none" role="img" aria-labelledby="title desc">
   <title id="title">어휘집의 토큰 ID가 임베딩 테이블의 벡터를 찾는 과정</title>
-  <desc id="desc">주머니 모양의 어휘집에 153 apple과 287 banana 토큰이 들어 있다. 153번 토큰 ID가 임베딩 테이블의 153번 행에 있는 벡터 값과 연결된다.</desc>
+  <desc id="desc">어휘집 표에 153 apple과 287 banana 토큰이 들어 있다. 153번 토큰 ID가 임베딩 테이블의 153번 행에 있는 벡터 값과 연결된다.</desc>
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="3.5" orient="auto">
-      <path d="M0 0L7 3.5L0 7Z" fill="#2d6e91"/>
+      <path d="M1 1L6 3.5L1 6" fill="none" stroke="#3d8b75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
     </marker>
   </defs>
 
-  <g fill="#000" font-family="system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
-    <text x="140" y="52">어휘집</text>
-    <text x="560" y="52">임베딩 테이블</text>
+  <g transform="translate(-3 0)"><g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="17" font-weight="400" text-anchor="middle">
+    <text x="140" y="32">어휘집</text>
+    <text x="560" y="32">임베딩 테이블</text>
   </g>
 
-  <rect x="56" y="66" width="168" height="154" rx="10" fill="#eef5f8" stroke="#3d789d" stroke-width="2.5"/>
+  <path d="M84 60 Q79 47 85 46 Q140 53 195 46 Q202 47 196 60 C207 81 232 119 234 161 Q240 217 207 226 Q140 238 73 226 Q41 218 46 164 C48 123 74 83 84 60 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M83 60 Q140 66 197 60 M92 49 L98 59 M115 51 L119 61 M163 51 L159 61 M186 49 L179 60 M197 61 Q213 58 214 69 Q214 78 198 67 M197 62 Q207 78 218 82" fill="none" stroke="#3d8b75" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
 
-  <g font-family="system-ui, sans-serif" text-anchor="middle">
-    <text x="108" y="104" fill="#000" font-size="14" font-weight="700">토큰 ID</text>
-    <text x="172" y="104" fill="#000" font-size="14" font-weight="700">토큰</text>
-    <line x1="76" y1="116" x2="204" y2="116" stroke="#000" stroke-width="1.5"/>
-    <text x="108" y="146" fill="#2d6e91" font-size="18" font-weight="700">153</text>
-    <text x="172" y="146" fill="#2d6e91" font-size="17" font-weight="700">apple</text>
-    <line x1="76" y1="161" x2="204" y2="161" stroke="#000" stroke-width="1.5"/>
-    <text x="108" y="191" fill="#000" font-size="18" font-weight="700">287</text>
-    <text x="172" y="191" fill="#000" font-size="17" font-weight="700">banana</text>
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" text-anchor="middle">
+    <text x="108" y="104" fill="#393630" font-size="14" font-weight="400">토큰 ID</text>
+    <text x="172" y="104" fill="#393630" font-size="14" font-weight="400">토큰</text>
+    <path d="M76 116 Q140 114 204 116" stroke="#393630" stroke-width="1.5" />
+    <text x="108" y="146" fill="#3d8b75" font-size="18" font-weight="400">153</text>
+    <text x="172" y="146" fill="#3d8b75" font-size="17" font-weight="400">apple</text>
+    <path d="M76 161 Q140 163 204 161" stroke="#393630" stroke-width="1.5" />
+    <text x="108" y="191" fill="#393630" font-size="18" font-weight="400">287</text>
+    <text x="172" y="191" fill="#393630" font-size="17" font-weight="400">banana</text>
   </g>
 
-  <path d="M224 139H438" stroke="#2d6e91" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/>
-  <text x="331" y="132" fill="#2d6e91" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">벡터 조회</text>
+  <path d="M242 139 Q336 137 430 139" stroke="#3d8b75" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)" />
+  <text x="331" y="132" fill="#3d8b75" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="14" font-weight="400" text-anchor="middle">벡터 조회</text>
 
-  <rect x="440" y="66" width="240" height="154" rx="10" fill="#fff4e9" stroke="#c7834c" stroke-width="2"/>
-  <path d="M503 66V220M440 112H680M440 166H680" stroke="#c7834c" stroke-width="1.5"/>
-  <g fill="#000" font-family="system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+  <path d="M449 66 Q560 63 671 67 Q681 68 680 79 L681 208 Q679 221 667 220 Q560 223 452 219 Q439 218 440 206 L439 79 Q439 68 449 66 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2.2" stroke-linejoin="round" />
+  <path d="M503 66 Q501 144 503 220 M440 112 Q560 110 680 112 M440 166 Q560 168 680 166" stroke="#3d789d" stroke-width="1.5" />
+  <g fill="#393630" font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="14" font-weight="400" text-anchor="middle">
     <text x="472" y="95">ID</text>
     <text x="592" y="95">임베딩 벡터</text>
-    <text x="472" y="145" fill="#2d6e91" font-size="18">153</text>
-    <text x="472" y="199" fill="#000" font-size="18">287</text>
+    <text x="472" y="145" fill="#3d8b75" font-size="18">153</text>
+    <text x="472" y="199" fill="#393630" font-size="18">287</text>
   </g>
-  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="600" text-anchor="middle">
-    <text x="592" y="145" fill="#2d6e91">[0.12, -0.31, 0.87, …]</text>
-    <text x="592" y="199" fill="#000">[-0.45, 0.26, 0.09, …]</text>
+  <g font-family="Chalkboard SE, Segoe Print, Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, cursive" font-size="13" font-weight="400" text-anchor="middle">
+    <text x="592" y="145" fill="#3d8b75">[0.12, -0.31, 0.87, …]</text>
+    <text x="592" y="199" fill="#393630">[-0.45, 0.26, 0.09, …]</text>
   </g>
-</svg>
+</g></svg>
