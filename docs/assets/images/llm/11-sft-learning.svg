@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="218" viewBox="0 0 760 218" role="img" aria-labelledby="title desc">
+<title id="title">SFT：모범 답변으로 학습</title><desc id="desc">사람이 작성한 질문과 모범 답변을 예시로 모델을 학습합니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;text-anchor:middle}.small{font-size:19px;fill:#69757b}.line{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#393630" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="84" y="103" style="fill:#3d789d">SFT</text>
+<text x="84" y="132" class="small">지도 미세조정</text>
+<path d="M166 22 Q330 20 494 22 L495 88 Q330 90 166 88 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="330" y="46" class="small">질문</text>
+<text x="330" y="75">프랑스의 수도는?</text>
+<path d="M166 112 Q330 110 494 112 L495 192 Q330 194 166 192 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/>
+<text x="330" y="140" class="small">사람이 작성한 모범 답변</text>
+<text x="330" y="174" style="font-size:21px">“프랑스의 수도는 파리입니다.”</text>
+<path d="M515 107 Q540 106 565 107" class="line" marker-end="url(#arrow)"/>
+<text x="657" y="115">모범 답변을 학습</text>
+</svg>

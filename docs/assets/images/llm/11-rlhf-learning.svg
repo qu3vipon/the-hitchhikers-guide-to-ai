@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="184" viewBox="0 192 760 184" role="img" aria-labelledby="title desc">
+<title id="title">RLHF：사람의 선호를 반영한 학습</title><desc id="desc">사람이 답변 A보다 B를 선호한다는 비교 결과를 보상 모델에 반영하고 그 보상으로 학습합니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;text-anchor:middle}.small{font-size:19px;fill:#69757b}.line{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#393630" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="84" y="264" style="fill:#3d8b75">RLHF</text>
+<text x="84" y="294" class="small">인간 피드백을</text>
+<text x="84" y="320" class="small">통한 강화학습</text>
+<path d="M166 212 Q330 209 494 212 L495 356 Q330 359 166 356 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round"/>
+<text x="330" y="244" class="small">같은 질문에 대한 두 답변</text>
+<path d="M188 262 Q251 260 314 262 L314 309 Q251 311 188 309 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="1.6"/>
+<path d="M346 262 Q409 260 472 262 L472 309 Q409 311 346 309 Z" fill="#d4e9df" stroke="#3d8b75" stroke-width="1.8"/>
+<text x="251" y="294">답변 A</text><text x="330" y="294">&lt;</text><text x="409" y="294">답변 B</text>
+<text x="330" y="339" class="small">사람이 B를 더 선호</text>
+<path d="M515 282 Q540 281 565 282" class="line" marker-end="url(#arrow)"/>
+<text x="657" y="253">보상 모델의</text>
+<text x="657" y="283">점수를 바탕으로</text>
+<text x="657" y="313">강화학습</text>
+</svg>
