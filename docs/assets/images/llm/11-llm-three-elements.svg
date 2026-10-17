@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="442" viewBox="0 0 760 442" role="img" aria-labelledby="title desc">
+  <title id="title">데이터, 모델, 학습 방법이 결합해 발전한 LLM</title>
+  <desc id="desc">방대한 텍스트 데이터, 트랜스포머 모델, 사전학습과 미세조정 등의 학습 방법이 가운데 LLM으로 모입니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:25px;text-anchor:middle}.small{font-size:20px;fill:#69757b}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <path d="M250 24 Q380 21 510 24 L511 127 Q380 130 250 127 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round" transform="translate(0 6)" />
+  <text x="380" y="67" style="fill:#3d789d" transform="translate(0 6)">데이터</text>
+  <text x="380" y="101" class="small" transform="translate(0 6)">방대한 텍스트 데이터</text>
+  <path d="M70 312.03 Q200 309.03 330 312.03 L331 415.03 Q200 418.03 70 415.03 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round" />
+  <text x="200" y="355.03" style="fill:#3d8b75">모델</text>
+  <text x="200" y="389.03" class="small">트랜스포머</text>
+  <path d="M430 312.03 Q560 309.03 690 312.03 L691 415.03 Q560 418.03 430 415.03 Z" fill="#faeadf" stroke="#b8784e" stroke-width="2" stroke-linejoin="round" />
+  <text x="560" y="355.03" style="fill:#b8784e">학습 방법</text>
+  <text x="560" y="389.03" class="small">사전학습 · 미세조정 등</text>
+  <path d="M380 142.5 V178.5" class="flow" />
+  <path d="M308.07 302.93 L333.53 277.47" class="flow" />
+  <path d="M451.93 302.93 L426.47 277.47" class="flow" />
+  <path d="M380 190 C489 186 489 275 380 272 C271 276 271 186 380 190 Z" fill="#f0f2f3" stroke="#505a60" stroke-width="2.3" />
+  <text x="380" y="240" style="font-size:34px;font-weight:700">LLM</text>
+</svg>

@@ -115,6 +115,8 @@ RLHF에서는 먼저 하나의 질문에 대해 모델이 여러 답변을 생�
 
 결국 오늘날의 LLM은 데이터, 모델, 학습 방법이라는 세 요소가 서로 맞물려 발전해 온 결과물이라고 볼 수 있습니다.
 
+![데이터, 모델, 학습 방법이 결합해 발전한 LLM](../assets/images/llm/11-llm-three-elements.svg){ .neural-network-image .chatgpt-image }
+
 ## :material-pencil: 실습 과제 {#exercises}
 
 다음 문장이 맞으면 O, 틀리면 X를 선택하세요.
