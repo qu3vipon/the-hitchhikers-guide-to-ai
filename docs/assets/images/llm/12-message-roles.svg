@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="256" viewBox="0 0 760 256" role="img" aria-labelledby="title desc">
+<title id="title">대화 메시지의 세 가지 역할</title>
+<desc id="desc">톱니바퀴는 시스템의 설정과 원칙, 사람은 사용자의 질문과 요청, 말풍선은 어시스턴트의 답변을 나타냅니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.detail{font-size:20px;fill:#69757b}.icon{fill:none;stroke:#393630;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}</style>
+<path d="M20 20 Q128 18 236 20 L236 236 Q128 238 20 236 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="128" y="120" style="fill:#b8784e">System</text><text x="128" y="149">시스템</text><text x="128" y="187" class="detail">모델의 역할과</text><text x="128" y="215" class="detail">행동 원칙</text>
+<path d="M128.00 46.00 L132.68 41.46 L137.18 42.83 L138.56 49.20 L141.44 51.56 L147.96 51.67 L150.17 55.82 L146.63 61.29 L147.00 65.00 L151.54 69.68 L150.17 74.18 L143.80 75.56 L141.44 78.44 L141.33 84.96 L137.18 87.17 L131.71 83.63 L128.00 84.00 L123.32 88.54 L118.82 87.17 L117.44 80.80 L114.56 78.44 L108.04 78.33 L105.83 74.18 L109.37 68.71 L109.00 65.00 L104.46 60.32 L105.83 55.82 L112.20 54.44 L114.56 51.56 L114.67 45.04 L118.82 42.83 L124.29 46.37 Z" class="icon"/>
+<path d="M128 57 C139 56 139 74 128 73 C117 74 117 56 128 57 Z" class="icon"/>
+<path d="M272 20 Q380 18 488 20 L488 236 Q380 238 272 236 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="380" y="120" style="fill:#3d789d">User</text><text x="380" y="149">사용자</text><text x="380" y="187" class="detail">사용자의</text><text x="380" y="215" class="detail">질문과 요청</text>
+<path d="M380 42 C396 41 397 66 380 66 C364 67 364 42 380 42 Z M355 88 Q356 72 369 71 Q380 76 391 71 Q405 73 405 88 Q380 91 355 88 Z" class="icon"/>
+<path d="M524 20 Q632 18 740 20 L740 236 Q632 238 524 236 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="632" y="120" style="fill:#3d8b75">Assistant</text><text x="632" y="149">어시스턴트</text><text x="632" y="187" class="detail">모델이 생성한</text><text x="632" y="215" class="detail">답변</text>
+<path d="M606 44 Q632 41 657 44 Q661 60 657 77 Q644 80 630 78 L616 89 L618 78 L606 77 Q602 61 606 44 Z M616 57 Q632 56 648 57 M616 66 Q628 65 640 66" class="icon"/>
+</svg>

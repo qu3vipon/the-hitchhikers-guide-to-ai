@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="160" viewBox="0 42 760 160" role="img" aria-labelledby="title desc">
+<title id="title">프롬프트를 바탕으로 다음 토큰을 예측하는 LLM</title>
+<desc id="desc">프롬프트가 LLM에 전달되면 모델은 입력된 프롬프트를 바탕으로 다음 토큰을 예측합니다. 오늘 날씨가 다음에 좋다가 이어지는 예시입니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:24px;font-weight:400;text-anchor:middle}.detail{font-size:19px;fill:#69757b}.arrow{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#393630" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<path d="M40 59 Q137 57 234 59 L234 151 Q137 153 40 151 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/>
+<text x="137" y="96">프롬프트</text>
+<text x="137" y="130" class="detail">“오늘 날씨가”</text>
+<path d="M252 105 Q286 104 320 105" class="arrow"/>
+<path d="M380 59 C442 57 441 153 380 151 C318 153 319 57 380 59 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<text x="380" y="113">LLM</text>
+<text x="380" y="184" class="detail">다음 토큰 예측</text>
+<path d="M440 105 Q474 104 508 105" class="arrow"/>
+<path d="M526 59 Q623 57 720 59 L720 151 Q623 153 526 151 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round"/>
+<text x="623" y="96">다음 토큰</text>
+<text x="623" y="130" class="detail">“좋다”</text>
+</svg>
