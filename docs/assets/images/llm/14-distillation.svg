@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+<title id="title">큰 모델이 생성한 데이터로 작은 모델을 학습하는 증류</title>
+<desc id="desc">큰 모델이 만든 추론 과정과 최종 답변을 학습 데이터로 사용하여 작은 모델을 학습시킵니다. 큰 모델의 가중치를 그대로 복사하는 과정은 아닙니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:18px;fill:#69757b}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<path d="M77 40 L117 32" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 40 L117 64" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 40 L117 96" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 40 L117 128" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 80 L117 32" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 80 L117 64" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 80 L117 96" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 80 L117 128" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 120 L117 32" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 120 L117 64" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 120 L117 96" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M77 120 L117 128" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 32 L157 48" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 32 L157 80" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 32 L157 112" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 64 L157 48" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 64 L157 80" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 64 L157 112" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 96 L157 48" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 96 L157 80" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 96 L157 112" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 128 L157 48" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 128 L157 80" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<path d="M117 128 L157 112" fill="none" stroke="#7d8a90" stroke-width="1.5"/>
+<circle cx="77" cy="40" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="77" cy="80" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="77" cy="120" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="117" cy="32" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="117" cy="64" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="117" cy="96" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="117" cy="128" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="157" cy="48" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="157" cy="80" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<circle cx="157" cy="112" r="8" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<path d="M613 58 L643 58" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<path d="M613 58 L643 102" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<path d="M613 102 L643 58" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<path d="M613 102 L643 102" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<path d="M643 58 L673 80" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<path d="M643 102 L673 80" fill="none" stroke="#3d8b75" stroke-width="1.5"/>
+<circle cx="613" cy="58" r="8" fill="#edf7f2" stroke="#3d8b75" stroke-width="2"/>
+<circle cx="613" cy="102" r="8" fill="#edf7f2" stroke="#3d8b75" stroke-width="2"/>
+<circle cx="643" cy="58" r="8" fill="#edf7f2" stroke="#3d8b75" stroke-width="2"/>
+<circle cx="643" cy="102" r="8" fill="#edf7f2" stroke="#3d8b75" stroke-width="2"/>
+<circle cx="673" cy="80" r="8" fill="#edf7f2" stroke="#3d8b75" stroke-width="2"/>
+<path d="M205 81 H296" class="flow"/><text x="250" y="58" class="small">생성</text>
+<path d="M464 81 H555" class="flow"/><text x="510" y="58" class="small">학습</text>
+<path d="M343 25 Q373 23 402 25 L421 44 L420 137 Q380 140 343 137 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/>
+<path d="M402 25 V44 H421 M355 58 H405 M355 73 H396 M355 88 H405 M355 109 H393 M355 123 H405" fill="none" stroke="#3d789d" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="117" y="179">큰 모델</text><text x="117" y="207" class="small">DeepSeek-R1</text>
+<text x="380" y="179">학습 데이터</text><text x="380" y="207" class="small">추론 과정 + 최종 답변</text>
+<text x="643" y="179">작은 모델</text><text x="643" y="207" class="small">추론 패턴 학습</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250" role="img" aria-labelledby="title desc">
+  <title id="title">고양이 그림과 질문을 함께 이해하는 멀티모달 LLM</title>
+  <desc id="desc">고양이 그림과 이 동물은 무엇이냐는 텍스트 질문을 함께 멀티모달 LLM에 전달하면 고양이입니다라는 답변을 생성합니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:24px;font-weight:400;text-anchor:middle}.small{font-size:20px;fill:#69757b}.ink{fill:none;stroke:#393630;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <g transform="translate(17.25 0)">
+    <g transform="translate(-31.4 13) scale(0.7)">
+      <path d="M244 183 Q287 189 281 158 Q279 147 270 152 Q264 155 270 165 Q273 179 248 173" fill="none" stroke="#393630" stroke-width="3" stroke-linecap="round" />
+      <path d="M187 118 Q173 146 175 184 Q212 194 249 184 Q251 148 236 118" fill="#faeadf" stroke="#393630" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M176 83 L176 48 L199 64 Q212 60 226 64 L249 48 L249 83 Q257 114 234 125 Q212 135 190 125 Q168 114 176 83 Z" fill="#faeadf" stroke="#393630" stroke-width="2.5" stroke-linejoin="round" />
+      <circle cx="197" cy="93" r="3" fill="#393630" />
+      <circle cx="228" cy="93" r="3" fill="#393630" />
+      <path d="M209 104 L216 104 L212.5 108 Z" fill="#393630" />
+      <path d="M212.5 109 Q207 116 202 111 M212.5 109 Q218 116 223 111 M188 105 L170 102 M237 105 L255 102 M200 151 V183 M225 151 V183" class="ink" />
+    </g>
+    <text x="22" y="30" class="small" style="text-anchor:start">이미지</text>
+    <text x="117" y="232" style="font-size:21px">“이 동물은 뭐야?”</text>
+    <path d="M238 137 H300" class="flow" />
+    <path d="M321 92 Q426 90 531 92 L531 182 Q426 184 321 182 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round" />
+    <text x="426" y="145">멀티모달 LLM</text>
+    <path d="M552 137 H614" class="flow" />
+    <text x="720" y="145">“고양이입니다.”</text>
+    <text x="22" y="199" class="small" style="text-anchor:start">텍스트</text>
+  </g>
+</svg>

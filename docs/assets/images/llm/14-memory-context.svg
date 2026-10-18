@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
+<title id="title">저장된 메모리를 새 질문과 함께 모델에 전달하는 구조</title>
+<desc id="desc">서비스가 별도로 저장한 채식 선호 정보를 찾아 새 질문인 저녁 메뉴 추천 요청과 함께 프롬프트에 포함해 LLM에 전달합니다.</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:18px;fill:#69757b}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<path d="M27 54 V123 C27 146 224 146 224 123 V54" fill="#faeadf" stroke="#b8784e" stroke-width="2"/>
+<ellipse cx="125.5" cy="54" rx="98.5" ry="18" fill="#faeadf" stroke="#b8784e" stroke-width="2"/>
+<text x="126" y="100">메모리</text>
+<text x="126" y="129" class="small">사용자는 채식을 선호함</text>
+<path d="M27 213 Q126 211 224 213 L224 293 Q126 295 27 293 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/>
+<text x="126" y="244">새 질문</text><text x="126" y="275" class="small">“저녁 메뉴 추천해 줘”</text>
+<path d="M242 92 H264 Q277 92 277 105 V144 H300" class="flow"/>
+<path d="M242 253 H264 Q277 253 277 240 V209 H300" class="flow"/>
+<path d="M319 92 Q443 90 567 92 L567 255 Q443 257 319 255 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="443" y="125">프롬프트</text>
+<text x="443" y="163" class="small">사용자는 채식을 선호합니다.</text>
+<text x="443" y="192" class="small">이 정보를 참고해 답하세요.</text>
+<text x="443" y="221" class="small">질문: 저녁 메뉴 추천해 줘.</text>
+<path d="M586 174 H623" class="flow"/>
+<path d="M691 127 C752 125 752 224 691 222 C630 224 630 125 691 127 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<text x="691" y="182">LLM</text>
+</svg>

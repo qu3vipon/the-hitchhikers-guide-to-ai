@@ -992,14 +992,16 @@
   }
 }
 
-.md-typeset h2#prompting-techniques ~ blockquote {
+.md-typeset h2#prompting-techniques ~ blockquote,
+.md-typeset h2#chain-of-thought ~ blockquote:not(h2#deepseek-shock ~ blockquote) {
   border-left-color: #7d8a90;
   background-color: #f0f2f3;
   color: #30363d;
   line-height: 1.75;
 }
 
-[data-md-color-scheme="slate"] .md-typeset h2#prompting-techniques ~ blockquote {
+[data-md-color-scheme="slate"] .md-typeset h2#prompting-techniques ~ blockquote,
+[data-md-color-scheme="slate"] .md-typeset h2#chain-of-thought ~ blockquote:not(h2#deepseek-shock ~ blockquote) {
   border-left-color: #7d8a90;
   background-color: #2c3035;
   color: #e8e7e2;
