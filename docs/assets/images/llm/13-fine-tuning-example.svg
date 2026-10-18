@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="190" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+  <title id="title">계약서 검토 예시로 LLM을 파인튜닝하기</title>
+  <desc id="desc">사전 학습된 모델을 신경망 아이콘으로, 검토 예시를 표시한 계약서를 문서 그림으로 나타냈습니다. 계약서 검토 예시를 추가 학습하여 같은 모델을 계약서 분석에 맞게 조정합니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:19px;fill:#69757b}.ink{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;marker-end:url(#arrow)}</style>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+    <marker id="arrow-green" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#3d8b75" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <g transform="translate(-15.75 0)">
+    <path d="M78 48 Q98.5 41.0 117 34" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 48 Q98.5 61.0 117 74" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 48 Q98.5 81.0 117 114" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 100 Q98.5 67.0 117 34" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 100 Q98.5 87.0 117 74" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 100 Q98.5 107.0 117 114" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 34 Q137.5 41.0 156 48" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 34 Q137.5 67.0 156 100" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 74 Q137.5 61.0 156 48" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 74 Q137.5 87.0 156 100" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 114 Q137.5 81.0 156 48" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M117 114 Q137.5 107.0 156 100" fill="none" stroke="#7d8a90" stroke-width="1.6" />
+    <path d="M78 40 C89 39 89 57 78 56 C67 57 67 39 78 40 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M78 92 C89 91 89 109 78 108 C67 109 67 91 78 92 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M117 26 C128 25 128 43 117 42 C106 43 106 25 117 26 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M117 66 C128 65 128 83 117 82 C106 83 106 65 117 66 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M117 106 C128 105 128 123 117 122 C106 123 106 105 117 106 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M156 40 C167 39 167 57 156 56 C145 57 145 39 156 40 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M156 92 C167 91 167 109 156 108 C145 109 145 91 156 92 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <path d="M604 48 Q624.5 41.0 643 34" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 48 Q624.5 61.0 643 74" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 48 Q624.5 81.0 643 114" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 100 Q624.5 67.0 643 34" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 100 Q624.5 87.0 643 74" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 100 Q624.5 107.0 643 114" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 34 Q663.5 41.0 682 48" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 34 Q663.5 67.0 682 100" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 74 Q663.5 61.0 682 48" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 74 Q663.5 87.0 682 100" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 114 Q663.5 81.0 682 48" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M643 114 Q663.5 107.0 682 100" fill="none" stroke="#3d8b75" stroke-width="1.6" />
+    <path d="M604 40 C615 39 615 57 604 56 C593 57 593 39 604 40 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M604 92 C615 91 615 109 604 108 C593 109 593 91 604 92 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M643 26 C654 25 654 43 643 42 C632 43 632 25 643 26 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M643 66 C654 65 654 83 643 82 C632 83 632 65 643 66 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M643 106 C654 105 654 123 643 122 C632 123 632 105 643 106 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M682 40 C693 39 693 57 682 56 C671 57 671 39 682 40 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M682 92 C693 91 693 109 682 108 C671 109 671 91 682 92 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" />
+    <path d="M214 75 H284" class="flow" />
+    <path d="M476 75 H546" class="flow" style="stroke:#3d8b75;marker-end:url(#arrow-green)" />
+    <text x="511" y="52" class="small" style="fill:#3d8b75">파인튜닝</text>
+    <path d="M342 22 Q373 20 401 22 L419 40 L418 127 Q380 130 342 127 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round" />
+    <path d="M401 22 V40 H419 M355 54 Q380 53 405 54 M355 69 H391 M355 86 H380 M355 103 H383" class="ink" />
+    <path d="M388 96 L395 103 L408 86" fill="none" stroke="#3d8b75" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="117" y="163">범용 LLM</text>
+    <text x="380" y="163">계약서 검토 데이터</text>
+    <text x="643" y="163">계약서 분석 LLM</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="300" viewBox="0 -25 780 300" role="img" aria-labelledby="title desc">
+  <title id="title">학습된 모델을 컴퓨터에 불러와 사용하는 과정</title>
+  <desc id="desc">숫자가 저장된 모델 파일을 컴퓨터에 불러옵니다. 컴퓨터에 질문을 입력하면 불러온 모델이 답변을 생성합니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:22px;font-weight:400;text-anchor:middle}.small{font-size:17px;fill:#69757b}.ink{fill:none;stroke:#393630;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;marker-end:url(#arrow)}</style>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <g transform="translate(3.75 0)">
+    <rect fill="none" stroke="#7d8a90" stroke-width="1.6" stroke-dasharray="5 6" x="547" y="28" width="206" height="222" rx="14" />
+    <path d="M60 39 Q96 37 130 39 L156 66 L155 158 Q108 161 60 158 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2.3" stroke-linejoin="round" />
+    <path d="M130 39 V66 H156" class="ink" />
+    <text x="107" y="91" class="small">0.2 −0.5</text>
+    <text x="107" y="117" class="small">0.8  0.1</text>
+    <text x="107" y="143" class="small">⋯</text>
+    <path d="M176 104 H264.5" class="flow" />
+    <path d="M462.5 104 H529" class="flow" />
+    <path d="M271 46 Q350 44 429 46 L429 151 Q350 153 271 151 Z" fill="#f7f8fa" stroke="#393630" stroke-width="2.3" stroke-linejoin="round" transform="translate(13.5 0)" />
+    <path d="M340 154 V171 H310 M360 154 V171 H390 M310 171 Q350 173 390 171" class="ink" transform="translate(13.5 0)" />
+    <path d="M571 46 Q650 44 729 46 L729 151 Q650 153 571 151 Z" fill="#f7f8fa" stroke="#393630" stroke-width="2.3" stroke-linejoin="round" />
+    <path d="M640 154 V171 H610 M660 154 V171 H690 M610 171 Q650 173 690 171" class="ink" />
+    <path d="M311 79 L350 69" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M311 79 L350 100" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M311 79 L350 131" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M311 121 L350 69" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M311 121 L350 100" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M311 121 L350 131" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 69 L389 79" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 69 L389 121" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 100 L389 79" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 100 L389 121" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 131 L389 79" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <path d="M350 131 L389 121" fill="none" stroke="#7d8a90" stroke-width="1.5" transform="translate(13.5 0)" />
+    <circle cx="311" cy="79" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="311" cy="121" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="350" cy="69" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="350" cy="100" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="350" cy="131" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="389" cy="79" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <circle cx="389" cy="121" r="7" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" transform="translate(13.5 0)" />
+    <path d="M632 62 H713 V93 H697 L689 101 V93 H632 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" stroke-linejoin="round" />
+    <text x="673" y="83" style="font-size:17px">안녕?</text>
+    <path d="M586 108 H705 V140 H609 L600 147 V140 H586 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.8" stroke-linejoin="round" />
+    <text x="645" y="130" style="font-size:17px">안녕하세요!</text>
+    <text x="107" y="213">학습된 모델 파일</text>
+    <text x="363.5" y="213">모델 불러오기</text>
+    <text x="650" y="204">프롬프트 입력 및</text>
+    <text x="650" y="234">답변 생성</text>
+    <text x="650" y="10" class="small" style="font-size:23px">추론(Inference)</text>
+  </g>
+</svg>

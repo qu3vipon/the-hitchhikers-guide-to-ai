@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="558" viewBox="0 0 1200 558" role="img" aria-labelledby="title desc">
   <title id="title">RAG의 검색 증강 생성 흐름</title>
   <desc id="desc">사용자 질문을 검색 단계로 보내고, 데이터베이스에서 찾은 관련 정보를 질문과 함께 LLM에 전달하여 답변을 생성하는 흐름.</desc>
   <defs>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="350" viewBox="0 0 760 350" role="img" aria-labelledby="title desc">
+  <title id="title">전체 변화량과 LoRA의 학습 파라미터 수 비교</title>
+  <desc id="desc">1000 곱하기 1000 변화량 행렬 전체는 백만 개의 값을 학습합니다. LoRA에서는 1000 곱하기 8과 8 곱하기 1000 두 행렬의 총 만 육천 개 값만 학습합니다. 행렬 그림은 실제 비율을 단순화했습니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:19px;fill:#69757b}.dim{font-size:18px;fill:#69757b}</style>
+  <g transform="translate(3.5 0)">
+    <text x="183" y="35">풀 파인튜닝</text>
+    <text x="570" y="35">LoRA</text>
+    <path d="M73 70 Q183 68 293 70 L293 290 Q183 292 73 290 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round" />
+    <text x="183" y="186">1000 × 1000</text>
+    <text x="183" y="330">1,000,000개</text>
+    <path d="M460 70 Q570 68 680 70 L614 140 Q570 142 526 140 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round" transform="translate(0 15)" />
+    <text x="570" y="112" style="font-size:21px">B</text>
+    <text x="570" y="139" class="dim">1000 × 8</text>
+    <path d="M526 220 Q570 218 614 220 L680 290 Q570 292 460 290 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round" transform="translate(0 -15)" />
+    <text x="570" y="234" style="font-size:21px">A</text>
+    <text x="570" y="262" class="dim">8 × 1000</text>
+    <text x="570" y="330" style="fill:#3d8b75">8,000 + 8,000 = 16,000개</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" role="img" aria-labelledby="title desc">
+  <title id="title">하나의 기본 모델에 작업별 LoRA 적용하기</title>
+  <desc id="desc">기본 모델은 그대로 유지하고 계약서 분석, 고객 상담, 문서 요약용 LoRA 가중치 중 필요한 하나를 선택해 적용합니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:19px;fill:#69757b}.ink{fill:none;stroke:#7d8a90;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <g transform="translate(-32 0)">
+    <path d="M174 77 C272 74 273 225 174 222 C76 225 75 74 174 77 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" />
+    <text x="174" y="143">기본 모델</text>
+    <text x="174" y="177" class="small">가중치 고정</text>
+    <path d="M404 150 H269" fill="none" stroke="#7d8a90" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)" />
+    <text x="337" y="119" class="small">작업에 따라 선택</text>
+    <path d="M433 36 H420 V264 H433" class="ink" />
+    <path d="M456 20 Q590 18 724 20 L724 90 Q590 92 456 90 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.8" />
+    <path d="M473 35 H493 L502 44 V75 H473 Z M493 35 V44 H502 M480 54 H495 M480 63 H492" fill="none" stroke="#3d8b75" stroke-width="1.8" stroke-linejoin="round" />
+    <text x="612" y="63" style="font-size:21px">계약서 분석용 LoRA</text>
+    <path d="M456 115 Q590 113 724 115 L724 185 Q590 187 456 185 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" />
+    <path d="M473 130 H493 L502 139 V170 H473 Z M493 130 V139 H502 M480 149 H495 M480 158 H492" fill="none" stroke="#3d789d" stroke-width="1.8" stroke-linejoin="round" />
+    <text x="612" y="158" style="font-size:21px">고객 상담용 LoRA</text>
+    <path d="M456 210 Q590 208 724 210 L724 280 Q590 282 456 280 Z" fill="#faeadf" stroke="#b8784e" stroke-width="1.8" />
+    <path d="M473 225 H493 L502 234 V265 H473 Z M493 225 V234 H502 M480 244 H495 M480 253 H492" fill="none" stroke="#b8784e" stroke-width="1.8" stroke-linejoin="round" />
+    <text x="612" y="253" style="font-size:21px">문서 요약용 LoRA</text>
+  </g>
+</svg>
