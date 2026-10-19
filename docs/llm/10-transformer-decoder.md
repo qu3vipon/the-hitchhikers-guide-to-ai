@@ -56,7 +56,7 @@ description: 트랜스포머 디코더의 출력 임베딩과 Shifted Right를 �
 
 ## 다음 토큰 예측 {#next-token}
 
-![디코더의 Linear와 Softmax가 다음 토큰의 확률을 계산하는 부분을 강조한 트랜스포머 구조](../assets/images/llm/10-transformer-decoder-prediction-detail.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 18rem);" }
+![디코더의 Linear와 Softmax가 다음 토큰의 확률을 계산하는 부분을 강조한 트랜스포머 구조](../assets/images/llm/10-transformer-decoder-prediction-detail.png){ .neural-network-image .transformer-decoder-image style="width: min(100%, 15rem);" }
 
 크로스 어텐션과 피드 포워드 신경망을 거친 디코더의 최종 출력은 각 위치에서 다음에 올 토큰을 예측하는 데 사용됩니다.
 

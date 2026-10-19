@@ -38,7 +38,7 @@ description: 트랜스포머 인코더의 입력 임베딩, 위치 인코딩, �
 
 ## 입력 표현 {#input-representation}
 
-![입력 임베딩에 위치 인코딩을 더하는 과정](../assets/images/llm/09-transformer-input-embedding-detail.png){ .neural-network-image .transformer-encoder-image style="width: min(100%, 18rem);" }
+![입력 임베딩에 위치 인코딩을 더하는 과정](../assets/images/llm/09-transformer-input-embedding-balanced.svg){ .neural-network-image .transformer-encoder-image style="width: min(100%, 18rem);" }
 
 앞에서 각 토큰을 임베딩 벡터로 표현했습니다. 하지만 임베딩 벡터만으로는 해당 토큰이 문장의 어느 위치에 놓여 있는지 알 수 없습니다. 셀프 어텐션 자체에는 토큰의 순서를 구분하는 기능이 없기 때문에, 위치 정보를 별도로 알려 주어야 합니다.
 
