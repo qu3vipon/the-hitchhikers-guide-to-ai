@@ -1,3 +1,7 @@
+---
+robots: noindex, follow
+---
+
 # LangChain & LangGraph
 
 <div class="wip-page">

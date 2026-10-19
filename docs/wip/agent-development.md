@@ -1,3 +1,7 @@
+---
+robots: noindex, follow
+---
+
 # AI Agent 개발
 
 <div class="wip-page">

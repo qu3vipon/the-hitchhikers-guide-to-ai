@@ -1,3 +1,7 @@
+---
+robots: noindex, follow
+---
+
 # AI 모델 서빙
 
 <div class="wip-page">

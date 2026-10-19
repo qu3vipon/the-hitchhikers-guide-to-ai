@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  {% if page and page.meta.robots %}
+    <meta name="robots" content="{{ page.meta.robots | e }}">
+  {% endif %}
+{% endblock %}

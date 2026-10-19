@@ -1,3 +1,7 @@
+---
+robots: noindex, follow
+---
+
 # FastAPI 기초
 
 <div class="wip-page">
