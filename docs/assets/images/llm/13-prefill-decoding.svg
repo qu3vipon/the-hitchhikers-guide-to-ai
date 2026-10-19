@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280" role="img" aria-labelledby="title desc">
+  <title id="title">프리필의 병렬 계산과 디코딩의 순차 생성</title>
+  <desc id="desc">프리필에서는 LLM 내부에서 토큰 1, 2, 3을 병렬로 계산합니다. 디코딩은 첫 단계에서 LLM이 출력 1을, 다음 단계에서 출력 2를, 마지막 단계에서 출력 3을 생성하는 순서로 진행됩니다.</desc>
+  <style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:18px;fill:#69757b}.flow{fill:none;stroke:#7d8a90;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="12" markerHeight="12" orient="auto">
+      <path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+    </marker>
+  </defs>
+  <text x="610" y="34">디코딩(Decoding)</text>
+  <text x="610" y="65" class="small">출력 토큰을 순차적으로 생성</text>
+  <path d="M480.00 91 Q518 89 556.00 91 L556.00 140 Q518 142 480.00 140 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.8" transform="translate(-14 0)" />
+  <text x="504" y="122" class="small" style="fill:#393630">수도는</text>
+  <path d="M580.00 161 Q610 159 640.00 161 L640.00 210 Q610 212 580.00 210 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.8" transform="translate(0 -12)" />
+  <text x="610" y="180" class="small" style="fill:#393630">서울</text>
+  <path d="M664.00 231 Q702 229 740.00 231 L740.00 280 Q702 282 664.00 280 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="1.8" transform="translate(14 -24)" />
+  <text x="716" y="238" class="small" style="fill:#393630">입니다</text>
+  <path d="M334 218.5 H400 V115 H466" class="flow" />
+  <path d="M542 116 H610 V148" class="flow" />
+  <path d="M640 174 H716 V206" class="flow" />
+  <g transform="translate(-156 0)">
+    <text x="346.00" y="34">프리필(Prefill)</text>
+    <text x="346.00" y="65" class="small">입력 토큰을 동시에 처리</text>
+    <path d="M202 181 Q346 179 490 181 L490 256 Q346 258 202 256 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round" />
+    <text x="346.00" y="218.5" dominant-baseline="middle">LLM</text>
+    <path d="M202.00 91 Q256.00 89 310.00 91 L310.00 138 Q256.00 140 202.00 138 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" />
+    <text x="256.00" y="120" class="small" style="fill:#393630">대한민국의</text>
+    <path d="M256.00 147 V172" class="flow" />
+    <path d="M320.00 91 Q358.00 89 396.00 91 L396.00 138 Q358.00 140 320.00 138 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" />
+    <text x="358.00" y="120" class="small" style="fill:#393630">수도는</text>
+    <path d="M358.00 147 V172" class="flow" />
+    <path d="M406.00 91 Q448.00 89 490.00 91 L490.00 138 Q448.00 140 406.00 138 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="1.8" />
+    <text x="448.00" y="120" class="small" style="fill:#393630">어디야?</text>
+    <path d="M448.00 147 V172" class="flow" />
+  </g>
+</svg>
