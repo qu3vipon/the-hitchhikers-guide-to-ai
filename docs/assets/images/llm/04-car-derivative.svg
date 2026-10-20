@@ -17,11 +17,10 @@
 <path class="ink" d="M0 -51 L0 -44 M51 0 L44 0 M0 51 L0 44 M-51 0 L-44 0" />
 <path d="M0 0 L0 -39" fill="none" stroke="#8b989e" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round" />
 <path class="ink" d="M-23 -13 L0 0 L7 -38" />
-<path d="M0 -30 A30 30 0 0 1 6 -29 M2 -33 L7 -29 L3 -25" fill="none" stroke="#3d789d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
 <circle r="3.5" fill="#393630" />
 </g>
 <text class="math" x="570" y="218">dt = <tspan font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="18">아주 짧은 시간</tspan></text>
-<text x="380" y="282" style="fill:#3d789d;font-size:20px;font-weight:700">아주 짧은 시간 동안의 위치 변화를 시간으로 나누면</text><g transform="translate(23 0)"><g transform="translate(260 365) scale(0.7)">
+<text x="380" y="282" style="fill:#3d789d;font-size:20px;font-weight:700">아주 짧은 시간 동안의 위치 변화를 시간으로 나누면</text><g transform="translate(23 0)"><g transform="translate(260 382) scale(0.7)">
 <path d="M-72 12 C-74 -32 -43 -65 0 -65 C43 -66 75 -32 72 12 Q0 17 -72 12 Z" fill="#e7eef0" stroke="#393630" stroke-width="2.2" stroke-linejoin="round" />
 <path class="ink" d="M-57 -2 L-48 -2 M-49 -29 L-42 -24 M-28 -47 L-23 -38 M0 -52 L0 -42 M28 -47 L23 -38 M49 -29 L42 -24 M57 -2 L48 -2" />
 <path d="M0 1 L35 -31" fill="none" stroke="#a65043" stroke-width="3" stroke-linecap="round" />
