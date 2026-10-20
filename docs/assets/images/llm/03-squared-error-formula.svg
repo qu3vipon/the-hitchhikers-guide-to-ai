@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="70" viewBox="0 15 760 70" role="img" aria-labelledby="title">
-<title id="title">제곱 오차 손실 함수 L = (y − t)²</title>
-<text x="380" y="60" fill="#393630" text-anchor="middle" font-family="Chalkboard SE, Segoe Print, cursive" font-size="30">L = (y − t)<tspan font-size="20" dy="-13">2</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="70" viewBox="0 15 760 70" role="img" aria-labelledby="title desc">
+<title id="title">제곱 오차 손실 함수 L = (y − ŷ)²</title>
+<desc id="desc">정답 y에서 예측값 ŷ를 뺀 차이를 제곱합니다. 한글 풀이를 수식 오른쪽에 표시했습니다.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;text-anchor:middle}</style>
+<text x="280.13" y="60" font-size="30">L = (y − ŷ)<tspan font-size="20" dy="-13">2</tspan></text>
+<text x="491.87" y="60" font-size="25" fill="#69757b" style="fill:#69757b">(정답 − 예측값)<tspan font-size="17" dy="-11">2</tspan></text>
 </svg>
