@@ -16,11 +16,11 @@ description: 단어를 숫자로 표현하는 정수 인코딩, 원핫 인코딩
 
 그런데 이 방식은 숫자의 크기와 차이가 단어 사이에 원래 없던 관계를 만들어 낼 수 있다는 문제가 있습니다. `2`가 `1`보다 크다고 해서 “강아지”와 “고양이” 사이에 크기나 순서의 관계가 있는 것은 아닙니다. 이 숫자는 단어를 구분하기 위해 임의로 붙인 이름표일 뿐이지만, 그대로 신경망에 입력하면 숫자의 크기와 차이까지 계산에 반영될 수 있습니다.
 
-![고양이, 강아지, 자동차에 각각 고유한 번호 1, 2, 3을 붙이는 정수 인코딩](../assets/images/llm/06-integer-encoding.svg){ .neural-network-image }
+![고양이, 강아지, 자동차에 각각 고유한 번호 1, 2, 3을 붙이는 정수 인코딩](../assets/images/llm/06-integer-encoding.svg){ .neural-network-image .word-embedding-image }
 
 이러한 문제를 피하는 방법 중 하나가 **원-핫 인코딩(one-hot encoding)**입니다. 원-핫 인코딩은 전체 단어 목록에서 해당 단어의 위치만 `1`로 표시하고, 나머지는 모두 `0`으로 만드는 방식입니다. 단어 목록이 다음과 같다고 해 봅시다.
 
-![각 단어에 해당하는 위치의 1만 강조한 원-핫 벡터](../assets/images/llm/06-one-hot-encoding.svg){ .neural-network-image }
+![각 단어에 해당하는 위치의 1만 강조한 원-핫 벡터](../assets/images/llm/06-one-hot-encoding.svg){ .neural-network-image .word-embedding-image }
 
 원-핫 인코딩을 사용하면 숫자의 크기 때문에 원래 없던 순서나 관계가 생기는 문제를 피하면서 각 단어를 서로 독립적으로 구분할 수 있습니다. 다만 원-핫 인코딩은 **단어의 의미를 표현하지 못합니다.** “고양이”와 “강아지”가 둘 다 동물이라는 점이나, “고양이”가 “자동차”보다 “강아지”와 의미적으로 더 가깝다는 정보는 벡터에 담겨 있지 않습니다.
 
@@ -32,7 +32,7 @@ description: 단어를 숫자로 표현하는 정수 인코딩, 원핫 인코딩
 
 원-핫 인코딩 예시에서는 단어가 다섯 개였기 때문에 5차원 벡터가 필요했습니다. 반면 임베딩에서는 같은 단어들을 3차원 벡터로도 표현할 수 있습니다.
 
-![각 단어를 세 개의 숫자로 표현한 임베딩 벡터 예시](../assets/images/llm/06-embedding-values.svg){ .neural-network-image }
+![각 단어를 세 개의 숫자로 표현한 임베딩 벡터 예시](../assets/images/llm/06-embedding-values.svg){ .neural-network-image .word-embedding-image }
 
 이렇게 단어를 임베딩해 벡터로 바꿨을 때, 단어 사이의 의미나 관계가 잘 반영되었다고 가정해 봅시다. “고양이”와 “강아지”처럼 의미적으로 가까운 단어의 벡터는 비슷한 방향을 향하고, “자동차”처럼 의미적으로 먼 단어의 벡터는 서로 다른 방향을 향할 수 있습니다. 이처럼 벡터의 위치와 방향을 이용해 단어 사이의 의미와 관계를 표현하는 것이 임베딩의 핵심입니다. 이를 바탕으로 벡터의 [내적](05-high-dimensional-learning.md/#learning-and-vectors)을 활용하면 두 단어가 얼마나 비슷한지 수치로 비교할 수 있습니다.
 
@@ -54,13 +54,13 @@ description: 단어를 숫자로 표현하는 정수 인코딩, 원핫 인코딩
 
 첫 번째 방법은 **CBOW(Continuous Bag of Words)**입니다. CBOW는 주변 단어들을 하나의 묶음으로 보고, 그 가운데에 들어갈 단어를 예측합니다. 이름에서 Bag of Words는 단어의 순서를 구분하지 않고 하나의 묶음으로 다룬다는 뜻이고, Continuous는 각 단어를 연속적인 숫자값으로 이루어진 벡터로 표현한다는 의미입니다.
 
-![주변 단어로 가운데 빈칸을 맞히는 CBOW](../assets/images/llm/06-word2vec-cbow.svg){ .neural-network-image }
+![주변 단어로 가운데 빈칸을 맞히는 CBOW](../assets/images/llm/06-word2vec-cbow.svg){ .neural-network-image .word-embedding-image }
 
 ### Skip-gram {#skip-gram}
 
 두 번째 방법은 **Skip-gram**입니다. Skip-gram은 가운데 단어 하나를 보고 일정 범위 안에 있는 주변 단어들을 각각 예측합니다. 이름에서 gram은 단어로 이루어진 짧은 단위를 의미하고, skip은 바로 옆에 있는 단어뿐만 아니라 일정 범위 안에서 떨어져 있는 단어도 예측 대상으로 삼는다는 의미입니다.
 
-![가운데 단어로 주변 빈칸을 맞히는 Skip-gram](../assets/images/llm/06-word2vec-skip-gram.svg){ .neural-network-image }
+![가운데 단어로 주변 빈칸을 맞히는 Skip-gram](../assets/images/llm/06-word2vec-skip-gram.svg){ .neural-network-image .word-embedding-image }
 
 CBOW와 Skip-gram은 각각 장단점이 있기 때문에 학습 목적과 데이터의 특성에 따라 적절한 방식을 선택합니다. Skip-gram은 하나의 가운데 단어로 주변 단어를 각각 예측하기 때문에 단어와 문맥의 관계를 더 세밀하게 학습하는 편입니다. 특히 등장 빈도가 낮은 단어에서도 좋은 임베딩을 얻는 데 유리한 경향이 있습니다. 다만 예측해야 할 대상이 많아 계산량이 크고 학습 속도는 상대적으로 느립니다.
 

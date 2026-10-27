@@ -239,6 +239,10 @@
   filter: invert(0.9) hue-rotate(180deg);
 }
 
+[data-md-color-scheme="slate"] .md-typeset .word-embedding-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
 [data-md-color-scheme="slate"] .md-typeset .language-modeling-image {
   filter: invert(0.9) hue-rotate(180deg);
 }
@@ -260,6 +264,10 @@
 }
 
 [data-md-color-scheme="slate"] .md-typeset .after-pretraining-image {
+  filter: invert(0.9) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .modern-llm-image {
   filter: invert(0.9) hue-rotate(180deg);
 }
 
@@ -296,6 +304,16 @@
 
 .bmc-sidebar-button .bmc-btn svg {
   height: 26px !important;
+}
+
+[data-md-color-scheme="slate"] .bmc-sidebar-button .bmc-btn {
+  background-color: #c3a27f !important;
+  color: #171b20 !important;
+  border-color: #171b20 !important;
+}
+
+[data-md-color-scheme="slate"] .bmc-sidebar-button .bmc-btn:hover {
+  background-color: #d8b995 !important;
 }
 
 .md-typeset .url-example {
@@ -679,6 +697,10 @@
   display: block;
   width: min(100%, 38rem);
   margin: 1rem auto;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .neuron-signal-flow-image {
+  filter: invert(0.9) hue-rotate(180deg);
 }
 
 .md-typeset .chat-user-message-wrap {
