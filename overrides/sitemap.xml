@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for file in pages -%}
-    {% if not file.page.is_link and (file.page.abs_url or file.page.canonical_url) and 'noindex' not in file.page.meta.get('robots', '') %}
+{%- for page in pages -%}
+  {% if page.canonical_url and (not page.meta or 'noindex' not in (page.meta.robots | default(''))) %}
     <url>
-         <loc>{% if file.page.canonical_url %}{{ file.page.canonical_url|e }}{% else %}{{ file.page.abs_url|e }}{% endif %}</loc>
-         {% if file.page.update_date %}<lastmod>{{ file.page.update_date }}</lastmod>{% endif %}
+      <loc>{{ page.canonical_url | e }}</loc>
     </url>
-    {%- endif -%}
-{% endfor %}
+  {% endif %}
+{%- endfor %}
 </urlset>

@@ -1,0 +1,49 @@
+[project]
+site_name = "AI 시대를 여행하는 히치하이커를 위한 안내서"
+site_description = "머신러닝부터 트랜스포머, LLM과 AI Agent 개발까지 그림과 쉬운 설명으로 배우는 한국어 AI 입문 안내서입니다."
+site_url = "https://ai.qu3vipon.com"
+copyright = "Copyright &copy; 2026 Dong-hyeon Shin"
+repo_url = "https://github.com/qu3vipon/the-hitchhikers-guide-to-ai"
+repo_name = "the-hitchhikers-guide-to-ai"
+nav = [
+  { "시작하기" = [{ "프로젝트 소개" = "index.md" }, { "학습 방법" = "how-to-learn.md" }, { "히치하이커를 위하여" = "for-hitchhikers.md" }] },
+  { "LLM 이해하기" = [{ "시작하기 전에" = "llm/index.md" }, { "1. 컴퓨터가 배우는 방법" = "llm/01-machine-learning.md" }, { "2. 인공 신경망의 발명" = "llm/02-neural-networks.md" }, { "3. 판단하는 모델, 퍼셉트론" = "llm/03-perceptron.md" }, { "4. 거꾸로 계산하는 다층 신경망" = "llm/04-multilayer-perceptron.md" }, { "5. 고차원 공간에서의 학습" = "llm/05-high-dimensional-learning.md" }, { "6. 언어를 벡터로 표현하기" = "llm/06-word-embeddings.md" }, { "7. 언어는 확률적 패턴을 따른다" = "llm/07-probabilistic-language-modeling.md" }, { "8. 문맥을 연결하는 트랜스포머" = "llm/08-transformer.md" }, { "9. 트랜스포머 뜯어보기: 인코더" = "llm/09-transformer-encoder.md" }, { "10. 트랜스포머 뜯어보기: 디코더" = "llm/10-transformer-decoder.md" }, { "11. 대화하는 트랜스포머" = "llm/11-gpt.md" }, { "12. LLM에게 지시하는 방법" = "llm/12-prompting.md" }, { "13. LLM 학습, 그 이후" = "llm/13-after-pretraining.md" }, { "14. 오늘날의 LLM" = "llm/14-modern-llms.md" }, { "끝 마치며" = "llm/15-conclusion.md" }] },
+  { "사전 학습" = [{ "시작하기 전에" = "prerequisites/index.md" }, { "개발 환경" = [{ "터미널" = "prerequisites/terminal.md" }, { "터미널 기본 명령어" = "prerequisites/terminal-commands.md" }, { "VS Code" = "prerequisites/vscode.md" }] }, { "웹의 구조" = [{ "웹 서비스란?" = "prerequisites/web-service.md" }, { "인터넷" = "prerequisites/internet.md" }, { "클라이언트-서버 모델" = "prerequisites/client-server.md" }, { "HTTP" = "prerequisites/http.md" }, { "HTML" = "prerequisites/html.md" }, { "HTTP 메시지" = "prerequisites/http-message.md" }, { "URL" = "prerequisites/url.md" }, { "HTTP Method" = "prerequisites/http-method.md" }, { "REST API" = "prerequisites/rest-api.md" }, { "HTTP 상태 코드" = "prerequisites/http-status-codes.md" }, { "HTTPS" = "prerequisites/https.md" }] }, { "네트워크" = [{ "IP와 Port" = "prerequisites/ip-port.md" }, { "DNS" = "prerequisites/dns.md" }, { "Localhost" = "prerequisites/localhost.md" }] }, { "Python" = [{ "Python 설치" = "prerequisites/python-install.md" }, { "Python 가상환경" = "prerequisites/python-virtual-environment.md" }] }] },
+  { "FastAPI 기초" = "wip/fastapi.md" },
+  { "비동기 프로그래밍" = "wip/asyncio.md" },
+  { "AI 모델 서빙" = "wip/model-serving.md" },
+  { "LangChain & LangGraph" = "wip/langchain-langgraph.md" },
+  { "AI Agent 개발" = "wip/agent-development.md" },
+]
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+variant = "modern"
+custom_dir = "overrides"
+language = "ko"
+logo = "assets/images/shared/logo.png"
+favicon = "assets/images/shared/logo.png"
+features = ["navigation.tabs", "navigation.footer", "navigation.top", "search.suggest", "search.highlight"]
+palette = [{ "media" = "(prefers-color-scheme: light)", "scheme" = "default", "toggle" = { "icon" = "material/weather-night", "name" = "다크 모드로 전환" } }, { "media" = "(prefers-color-scheme: dark)", "scheme" = "slate", "toggle" = { "icon" = "material/weather-sunny", "name" = "라이트 모드로 전환" } }]
+
+[project.extra.analytics]
+provider = "google"
+property = "G-XYJMJ6G0BR"
+
+[project.markdown_extensions."attr_list"]
+
+[project.markdown_extensions."admonition"]
+
+[project.markdown_extensions."pymdownx.emoji"]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+
+[project.markdown_extensions."pymdownx.caret"]
+
+[project.markdown_extensions."pymdownx.details"]
+
+[project.markdown_extensions."pymdownx.superfences"]
+custom_fences = [{ "name" = "mermaid", "class" = "mermaid", "format" = "pymdownx.superfences.fence_code_format" }]
+
+[project.markdown_extensions."pymdownx.tabbed"]
+alternate_style = true

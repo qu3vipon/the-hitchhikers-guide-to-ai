@@ -6,6 +6,19 @@
 
 📖 **읽기:** [ai.qu3vipon.com](https://ai.qu3vipon.com)
 
+## 로컬 미리보기
+
+Python 3.12 이상을 사용합니다.
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+zensical serve
+```
+
+`zensical build --strict`로 빌드합니다. 설정은 `zensical.toml`에 있으며 Zensical의 Modern 테마를 사용합니다.
+
 ## 라이선스
 
 이 프로젝트는 [CC BY-NC-ND 4.0](LICENSE)에 따라 제공됩니다. 출처를 표시한 비상업적 공유는 허용하지만, 상업적 이용과 수정본의 배포는 허용하지 않습니다.
