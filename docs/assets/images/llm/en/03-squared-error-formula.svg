@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="70" viewBox="0 15 760 70" role="img" aria-labelledby="title desc">
+<title id="title">Squared-error loss L = (y − ŷ)²</title>
+<desc id="desc">Square the difference between the target and the prediction.</desc>
+<style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;text-anchor:middle}</style>
+<text x="280.13" y="60" font-size="30">L = (y − ŷ)<tspan font-size="20" dy="-13">2</tspan></text>
+<text x="491.87" y="60" font-size="25" fill="#69757b" style="fill:#69757b">(target − prediction)<tspan font-size="17" dy="-11">2</tspan></text>
+</svg>

@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+
+{% block htmltitle %}
+  <title>Page not found - {{ config.site_name | e }}</title>
+{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="robots" content="noindex, follow">
+{% endblock %}
+
+{% block content %}
+  <section lang="en" aria-labelledby="not-found-title">
+    <h1 id="not-found-title">404 — Page not found</h1>
+    <p>The page you’re looking for may have moved, or the address may be incorrect.</p>
+    <p>Choose an edition to continue exploring the guide.</p>
+    <p>
+      <a class="md-button md-button--primary" href="/">English home</a>
+      <a class="md-button" href="/ko/" lang="ko">한국어 안내서</a>
+    </p>
+  </section>
+{% endblock %}

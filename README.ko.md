@@ -4,7 +4,7 @@
 
 **언어:** [English](README.md) | 한국어
 
-📖 **읽기:** [ai.qu3vipon.com](https://ai.qu3vipon.com)
+📖 **읽기:** [ai.qu3vipon.com](https://ai.qu3vipon.com/ko/)
 
 ## 로컬 미리보기
 
@@ -14,10 +14,10 @@ Python 3.12 이상을 사용합니다.
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-zensical serve
+python scripts/site.py serve
 ```
 
-`zensical build --strict`로 빌드합니다. 설정은 `zensical.toml`에 있으며 Zensical의 Modern 테마를 사용합니다.
+`python scripts/site.py build`로 두 언어를 함께 빌드합니다. 영어는 `/`, 한국어는 `/ko/`에 배포됩니다. 미리보기는 시작할 때 한 번 빌드하므로 수정 후 다시 실행합니다. [언어별 구조와 번역 작업 안내](docs-i18n.md)를 참고하세요.
 
 ## 라이선스
 

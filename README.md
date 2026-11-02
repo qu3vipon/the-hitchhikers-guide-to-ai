@@ -14,10 +14,10 @@ Requires Python 3.12 or newer.
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-zensical serve
+python scripts/site.py serve
 ```
 
-Build with `zensical build --strict`. The site uses Zensical’s Modern theme with configuration in `zensical.toml`.
+Build both editions with `python scripts/site.py build`. English is served at `/`, Korean at `/ko/`. The preview builds once; restart it after editing. See [language structure and translation workflow](docs-i18n.md).
 
 ## License
 

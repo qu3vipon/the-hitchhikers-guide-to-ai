@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="135" viewBox="0 0 760 135" role="img" aria-labelledby="title desc"><title id="title">A computation path from weight to loss</title><desc id="desc">A weight affects a weighted sum, hidden-layer values, the output, and finally the loss. Parenthesized superscripts identify hidden layers.</desc><style>text { fill:#393630; font-family:'Chalkboard SE','Segoe Print',cursive; font-size:30px; text-anchor:middle; } .ink { fill:none; stroke:#393630; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }.label { font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive; font-size:20px; }</style>
+<text x="60" y="65">w</text>
+<text x="170" y="65">z</text>
+<text x="280" y="65">h<tspan font-size="18" dy="-13">(1)</tspan></text>
+<text x="380" y="65">…</text>
+<text x="480" y="65">h<tspan font-size="18" dy="-13">(k)</tspan></text>
+<text x="590" y="65">y</text>
+<text x="700" y="65">L</text>
+<path class="ink" d="M90 55 Q115.0 53 140 55 M131 48 L141 55 L131 62"/>
+<path class="ink" d="M200 55 Q225.0 53 250 55 M241 48 L251 55 L241 62"/>
+<path class="ink" d="M310 55 Q330.0 53 350 55 M341 48 L351 55 L341 62"/>
+<path class="ink" d="M410 55 Q430.0 53 450 55 M441 48 L451 55 L441 62"/>
+<path class="ink" d="M510 55 Q535.0 53 560 55 M551 48 L561 55 L551 62"/>
+<path class="ink" d="M620 55 Q645.0 53 670 55 M661 48 L671 55 L661 62"/>
+<text class="label" x="60" y="102">Weight</text>
+<text class="label" x="170" y="102">Weighted sum</text>
+<text class="label" x="380" y="102">Hidden-layer values</text>
+<text class="label" x="590" y="102">Output</text>
+<text class="label" x="700" y="102">Loss</text>
+</svg>

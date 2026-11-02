@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="374" viewBox="0 48 720 374" role="img" aria-labelledby="title desc">
+  <title id="title">The relationship between AI and machine learning</title>
+  <desc id="desc">A Venn diagram showing machine learning as a subset of artificial intelligence.</desc>
+  <style>
+    text { font-family: 'Inter', 'Arial', sans-serif; fill: #393630; }
+    .title { font-size: 26px; font-weight: 700; }
+    .body { font-size: 18px; font-weight: 500; }
+    .ml-title { font-size: 20px; font-weight: 700; }
+    .ml-body { font-size: 19px; font-weight: 500; }
+    .ink { stroke: #393630; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .echo { fill: none; stroke: #393630; stroke-width: 1; opacity: .28; stroke-linecap: round; }
+  </style>
+  <path class="ink" d="M350 55 C449 52 532 136 530 235 C533 334 449 417 350 415 C251 418 168 334 170 235 C167 136 251 53 350 55 Z" fill="#e7eef0"/>
+  <path class="echo" d="M353 58 C454 55 528 139 533 233 C530 337 446 413 348 418 C248 414 173 331 167 237 C171 133 254 58 353 58 Z"/>
+  <path class="ink" d="M418 180 C469 178 510 219 508 270 C511 320 468 362 418 360 C367 363 326 321 328 270 C325 220 368 178 418 180 Z" fill="#e7efdf"/>
+  <path class="echo" d="M421 183 C471 181 505 222 511 268 C507 323 465 358 416 363 C364 359 331 318 325 272 C329 217 371 183 421 183 Z"/>
+  <text x="350" y="130" text-anchor="middle" class="title">
+    <tspan x="350">Artificial intelligence</tspan>
+    <tspan x="350" dy="33">(AI)</tspan>
+  </text>
+  <text x="250" y="225" text-anchor="middle" class="body">Human-like</text>
+  <text x="250" y="255" text-anchor="middle" class="body">reasoning and</text>
+  <text x="250" y="285" text-anchor="middle" class="body">problem solving</text>
+  <text x="418" y="246" text-anchor="middle" class="ml-title">Machine learning</text>
+  <text x="418" y="274" text-anchor="middle" class="ml-title">(ML)</text>
+  <text x="418" y="299" text-anchor="middle" class="ml-body">Learns rules</text>
+  <text x="418" y="324" text-anchor="middle" class="ml-body">from data</text>
+</svg>

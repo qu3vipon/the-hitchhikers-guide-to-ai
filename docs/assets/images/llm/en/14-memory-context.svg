@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
+<title id="title">Stored preferences and a new question are combined into model context</title>
+<desc id="desc">Stored preferences and a new question are combined into model context</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;font-weight:400;text-anchor:middle}.small{font-size:16px;fill:#69757b}.flow{fill:none;stroke:#7d8a90;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}</style>
+<defs><marker id="arrow" markerUnits="userSpaceOnUse" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="14" markerHeight="14" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#7d8a90" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<path d="M27 54 V123 C27 146 224 146 224 123 V54" fill="#faeadf" stroke="#b8784e" stroke-width="2"/>
+<ellipse cx="125.5" cy="54" rx="98.5" ry="18" fill="#faeadf" stroke="#b8784e" stroke-width="2"/>
+<text x="126" y="94">Memory</text>
+<text x="126" y="115" class="small">User prefers</text><text x="126" y="134" class="small">vegetarian food</text>
+<path d="M27 213 Q126 211 224 213 L224 293 Q126 295 27 293 Z" fill="#e5eef5" stroke="#3d789d" stroke-width="2" stroke-linejoin="round"/>
+<text x="126" y="244">New question</text><text x="126" y="275" class="small">“Suggest dinner ideas”</text>
+<path d="M242 92 H264 Q277 92 277 105 V144 H300" class="flow"/>
+<path d="M242 253 H264 Q277 253 277 240 V209 H300" class="flow"/>
+<path d="M319 92 Q443 90 567 92 L567 255 Q443 257 319 255 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2" stroke-linejoin="round"/>
+<text x="443" y="125">Prompt</text>
+<text x="443" y="157" class="small">The user prefers</text><text x="443" y="178" class="small">vegetarian food.</text>
+<text x="443" y="205" class="small">Use this preference.</text>
+<text x="443" y="232" class="small">Question: Suggest dinner ideas.</text>
+<path d="M586 174 H623" class="flow"/>
+<path d="M691 127 C752 125 752 224 691 222 C630 224 630 125 691 127 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="2"/>
+<text x="691" y="182">LLM</text>
+</svg>

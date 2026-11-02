@@ -4,3 +4,9 @@ __pycache__/
 _internal/
 
 .DS_Store
+
+# Shared resources copied by scripts/site.py prepare
+/docs/en/assets/
+/docs/en/stylesheets/
+/docs/ko/assets/
+/docs/ko/stylesheets/

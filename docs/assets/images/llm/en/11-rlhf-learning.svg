@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="184" viewBox="0 192 760 184" role="img" aria-labelledby="title desc">
+<title id="title">Human response preferences train a reward model used for reinforcement learning</title><desc id="desc">Human response preferences train a reward model used for reinforcement learning</desc>
+<style>text{font-family:'Chalkboard SE','Segoe Print','Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',cursive;fill:#393630;font-size:23px;text-anchor:middle}.small{font-size:19px;fill:#69757b}.line{fill:none;stroke:#393630;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}</style>
+<defs><marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M2 2 L10 6 L2 10" fill="none" stroke="#393630" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="84" y="264" style="fill:#3d8b75">RLHF</text>
+<text x="84" y="294" class="small">Learning from</text>
+<text x="84" y="320" class="small">human feedback</text>
+<path d="M166 212 Q330 209 494 212 L495 356 Q330 359 166 356 Z" fill="#edf7f2" stroke="#3d8b75" stroke-width="2" stroke-linejoin="round"/>
+<text x="330" y="244" class="small">Two answers to one question</text>
+<path d="M188 262 Q251 260 314 262 L314 309 Q251 311 188 309 Z" fill="#f0f2f3" stroke="#7d8a90" stroke-width="1.6"/>
+<path d="M346 262 Q409 260 472 262 L472 309 Q409 311 346 309 Z" fill="#d4e9df" stroke="#3d8b75" stroke-width="1.8"/>
+<text x="251" y="294">Answer A</text><text x="330" y="294">&lt;</text><text x="409" y="294">Answer B</text>
+<text x="330" y="339" class="small">People prefer B</text>
+<path d="M515 282 Q540 281 565 282" class="line" marker-end="url(#arrow)"/>
+<text x="657" y="240" style="font-size:20px">Reinforcement</text><text x="657" y="266" style="font-size:20px">learning</text>
+<text x="657" y="292">guided by</text>
+<text x="657" y="318" style="font-size:18px">reward-model scores</text>
+</svg>

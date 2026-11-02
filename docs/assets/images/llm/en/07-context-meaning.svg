@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="270" viewBox="0 0 720 270" role="img" aria-labelledby="title desc"><title id="title">The meaning of bat depends on context</title><desc id="desc">A bat can be a flying animal or a piece of sports equipment.</desc><style>text{fill:#393630;font-family:'Chalkboard SE','Segoe Print',sans-serif;font-size:23px}.ink{fill:none;stroke:#393630;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}</style>
+<path d="M81 76 Q98 74 116 76 M82 84 Q99 82 116 84" stroke="#f1dfaa" stroke-width="12"/>
+<text x="35" y="86">The <tspan id="bat-animal">bat</tspan> flew from the cave.</text>
+<path d="M198 202 Q215 200 233 202 M199 210 Q216 208 233 210" stroke="#f1dfaa" stroke-width="12"/>
+<text x="35" y="212">She swung the <tspan id="bat-equipment">bat</tspan>.</text>
+<path class="ink" d="M420 78 Q459 76 497 78 M487 71 L498 78 L487 85 M420 204 Q459 202 497 204 M487 197 L498 204 L487 211"/>
+<g class="ink" transform="translate(600 76)"><path d="M-7 -7 L-13 -25 L-1 -17 L9 -25 L13 -7 Q35 -24 57 -26 L44 -7 L56 8 Q38 2 32 19 Q20 8 12 27 L0 37 L-12 27 Q-20 8 -32 19 Q-38 2 -56 8 L-44 -7 L-57 -26 Q-35 -24 -7 -7Z" fill="#e5eef5"/><circle cx="-4" cy="-4" r="1.5" fill="#393630"/><circle cx="5" cy="-4" r="1.5" fill="#393630"/></g>
+<g class="ink" transform="translate(597 196) rotate(35)"><path d="M-9 -48 Q0 -58 9 -48 L7 4 Q3 15 3 37 L7 40 L7 46 L-7 46 L-7 40 L-3 37 Q-3 15 -7 4Z" fill="#fbefd5"/></g></svg>

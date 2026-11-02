@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="230" viewBox="0 0 760 230" role="img" aria-labelledby="title desc">
+  <title id="title">Hyperparameters and parameters</title>
+  <desc id="desc">Settings such as learning rate and epoch count influence how weights and bias change during training.</desc>
+  <style>
+    text { fill: #393630; font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; text-anchor: middle; font-size: 19px; }
+    .small { font-size: 14px; }
+    .math { font-family: 'Chalkboard SE', 'Segoe Print', cursive; font-size: 23px; }
+  </style>
+  <g stroke="#393630" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36 42 Q143 39 250 42 L252 190 Q143 193 35 190 Z" fill="#fbefd5"/>
+    <path d="M510 42 Q617 39 724 42 L726 190 Q617 193 509 190 Z" fill="#e7eef0"/>
+    <path d="M268 106 Q380 104 492 106 M480 98 L493 106 L480 114" fill="none"/>
+  </g>
+  <text x="143" y="79" font-weight="600">Hyperparameters</text>
+  <text x="143" y="119" class="small">Learning rate · Epochs</text>
+  <text x="143" y="148" class="math">α, E</text>
+  <text x="143" y="177" class="small">(Chosen before training)</text>
+  <text x="617" y="79" font-weight="600">Parameters</text>
+  <text x="617" y="112" class="small">Weights · Bias</text>
+  <text x="617" y="148" class="math">w, b → w′, b′</text>
+  <text x="617" y="177" class="small">(Adjusted during training)</text>
+  <text x="380" y="90" class="small">Control training</text>
+</svg>

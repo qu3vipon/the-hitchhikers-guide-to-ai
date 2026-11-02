@@ -4,7 +4,7 @@ Python 코드를 실행하기 위해서는 사람이 작성한 Python 코드를 
 
 ## Python 설치하기 {#install-python}
 
-[Python 공식 다운로드 페이지](https://www.python.org/downloads/)에서 사용하는 운영체제에 맞는 Python 3 설치 방법을 선택하세요. 가장 최신 **Bugfix release**를 설치합니다.
+macOS에서는 Homebrew로, Windows에서는 Python 공식 설치 도구로 Python 3를 설치합니다. [Python 공식 다운로드 페이지](https://www.python.org/downloads/)에서 버전별 지원 상태를 확인할 수 있습니다. 별도 버전 요구 사항이 없다면 최신 안정 버전을 사용합니다.
 
 | 상태 | 의미 |
 | --- | --- |
@@ -16,13 +16,22 @@ Python 코드를 실행하기 위해서는 사람이 작성한 Python 코드를 
 
 ### macOS
 
-1. [macOS용 Python 다운로드 페이지](https://www.python.org/downloads/macos/)에서 최신 안정 버전의 macOS installer를 내려받습니다.
-2. 내려받은 `.pkg` 파일을 열고 설치 프로그램의 안내에 따라 설치합니다.
-3. 터미널을 열고 아래 명령어로 설치를 확인합니다.
+macOS에서는 프로그램을 명령어로 설치하고 관리하는 도구인 **Homebrew**를 사용합니다.
+
+1. Homebrew가 없다면 [Homebrew 공식 사이트](https://brew.sh/ko/)의 설치 명령어를 터미널에서 실행합니다. 설치가 끝나면 출력되는 **Next steps** 안내에 따라 Homebrew를 `PATH`에 등록합니다. 이미 설치되어 있다면 다음 단계로 넘어갑니다.
+2. 터미널에서 아래 명령어로 Python을 설치합니다.
+
+    ```shell
+    brew install python
+    ```
+
+3. 아래 명령어로 설치를 확인합니다.
 
     ```shell
     python3 --version
     ```
+
+Homebrew로 설치한 Python은 `python3` 명령어로 실행합니다. 자세한 내용은 [Homebrew의 Python 안내](https://docs.brew.sh/Language-Runtimes-and-Packages#python)를 참고하세요.
 
 ### Windows
 
@@ -51,8 +60,10 @@ Python을 설치하면 인터프리터는 컴퓨터의 정해진 위치에 저�
 
     ```console
     $ which python3
-    /Library/Frameworks/Python.framework/Versions/3.14/bin/python3
+    /opt/homebrew/bin/python3
     ```
+
+    위 경로는 Apple Silicon Mac의 예시입니다. Intel Mac에서는 일반적으로 `/usr/local/bin/python3`로 표시됩니다.
 
 === "Windows"
 
