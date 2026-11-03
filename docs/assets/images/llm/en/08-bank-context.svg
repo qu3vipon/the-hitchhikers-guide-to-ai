@@ -6,7 +6,7 @@
 <path d="M0 18 L32 1 L64 18 Z" fill="#e5eef5"/><path d="M5 23 H59 M8 51 H56 M3 54 H61 V60 H3 Z M12 24 V49 M25 24 V49 M39 24 V49 M52 24 V49"/>
 </g>
 <g class="ink" transform="translate(684 150)"><path d="M0 45 Q20 29 34 14 L64 14 L64 56 L0 56Z" fill="#e5eef5"/><path d="M0 20 Q18 7 34 0 L64 0 L64 14 L34 14 Q20 29 0 45Z" fill="#e7efdf"/><path d="M4 47 Q14 40 24 38 M19 50 Q33 43 44 44 M37 34 Q48 28 60 28" stroke="#5f8d9a"/></g><g fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-<path d="M173 42 C154 25 119 23 94 42 M98 33 L94 42 L104 41" stroke="#3d789d"/>
-<path d="M181 152 C158 129 122 133 94 152 M100 143 L94 152 L105 152" stroke="#3d8b75"/>
+<path d="M247 42 C221 15 158 15 130 42 M134 32 L130 42 L141 40" stroke="#3d789d"/>
+<path d="M127 152 C141 128 171 128 185 152 M175 147 L185 152 L184 141" stroke="#3d8b75"/>
 </g></g>
 </svg>
