@@ -26,15 +26,18 @@ Some tasks, such as arithmetic and coding, benefit from multiple intermediate st
 
 A [2022 paper](https://arxiv.org/abs/2201.11903) illustrated how a few worked examples could improve performance on multi-step tasks. Consider a similar problem:
 
-> Roger has 5 tennis balls. He buys 2 more cans, each containing 3 balls. How many balls does he have now?
+> Roger has 5 tennis balls.  
+> He buys 2 more cans, each containing 3 balls.  
+> How many balls does he have now?
 
 A worked example could show:
 
-> Two cans add `2 × 3 = 6` balls.\
-> Adding the original five gives `5 + 6 = 11`.\
+> Two cans add `2 × 3 = 6` balls.  
+> Adding the original five gives `5 + 6 = 11`.  
 > **Answer: 11 balls.**
 
-Examples containing intermediate calculations can help a model apply a similar pattern to new problems. Such generated explanations are not guaranteed to expose the model’s actual internal computation, nor does a longer explanation guarantee correctness.
+Examples containing intermediate calculations can help a model apply a similar pattern to new problems.  
+Such generated explanations are not guaranteed to expose the model’s actual internal computation, nor does a longer explanation guarantee correctness.
 
 ## The DeepSeek moment {#deepseek-shock}
 
