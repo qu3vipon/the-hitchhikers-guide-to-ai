@@ -16,9 +16,9 @@ Usually, the model does not independently remember every past conversation. The 
 
 **Memory and training are different.** Training changes weights. A memory feature supplies saved information as context; remembering your name does not require updating model weights during the conversation.
 
-Data retention and later training use are separate questions. Depending on a service’s policies and your settings, messages may be stored or used for future improvement. Consult the relevant service’s current controls rather than assuming every product behaves alike.
+This does not mean that the data you enter is never used to train models. Depending on the service, your input may be stored as conversation history or memory, and some services may use collected data for future model training or performance improvements. Whether your data is used in these ways depends on the service’s policies and your settings.
 
-Handle sensitive data carefully: government identification numbers, passwords, financial details, and confidential company documents all deserve particular care.
+In other words, the information you enter is not learned in real time during a conversation, but it may be used to train models later. When using an LLM, **avoid entering personal or sensitive information without due care**. In particular, do not enter sensitive personal information such as government identification numbers, passwords, or financial details. Do not enter confidential company documents without first checking your organization’s security policies.
 
 ## Working through intermediate steps {#chain-of-thought}
 

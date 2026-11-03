@@ -10,3 +10,6 @@ _internal/
 /docs/en/stylesheets/
 /docs/ko/assets/
 /docs/ko/stylesheets/
+
+# Local promotional images
+/outputs/linkedin/
