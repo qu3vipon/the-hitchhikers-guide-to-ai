@@ -85,9 +85,9 @@ Think of an automatic coffee machine. If the coffee tastes too bitter, changing 
 
 ## The chain rule {#chain-rule}
 
-Fortunately, there is a way to calculate these relationships. The **chain rule** connects rates of change through successive calculations. It lets us work backward from the loss to determine how each weight affects it.
+Fortunately, there is a way to calculate these relationships. The **chain rule** connects **derivatives** across successive calculations. It lets us work backward from the loss to determine how each weight affects it.
 
-If derivatives sound unfamiliar, think of them as **describing how much one quantity changes when another changes by a tiny amount**.
+If derivatives sound unfamiliar, think of a derivative as **describing how quickly one quantity changes as another changes**.
 
 A moving car changes position over time. Looking at its change in position over a very short time interval leads to its instantaneous speed. More precisely, the derivative of position gives velocity. If position is `x` and time is `t`, we write `dx/dt` for that rate of change.
 
